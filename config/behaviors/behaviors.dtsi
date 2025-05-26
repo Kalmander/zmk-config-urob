@@ -59,12 +59,13 @@
 			bindings = <&macro_tap &kp RA(SINGLE_QUOTE) &kp LS(Y)>;
 		};
 		
-		backfrontspace: backfrontspace {
-			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <0>;
-			bindings = <&kp BACKSPACE>, <&kp DELETE>;
-			mods = <(MOD_RSFT)>;
-		};
+    bspc_del: backspace_delete {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp BACKSPACE>, <&kp DELETE>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        keep-mods = <(MOD_LSFT)>;
+    };
 		
 		#define UNICODE(name, ...) \
 		ZMK_MACRO(name, \

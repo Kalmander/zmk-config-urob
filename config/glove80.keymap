@@ -47,7 +47,7 @@
 			&key_repeat     &kp N1        &kp N2         &kp N3        &kp N4           &kp N5                                                                                                     &kp N6   &kp N7       &kp N8        &kp N9         &kp N0         &key_repeat
 			&kp CAPS        &kp RA(Z)     &kp Y          &kp O         &kp U            &kp TAB                                                                                                    &kp F    &kp K        &kp D         &kp L          &kp BSLH       &kp SEMI
 			&kp X           &kp V         &hml LSHIFT I  &hml LCTRL E  &hml LGUI A      &kp ENTER                                                                                                  &kp W    &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive     &kp RA(D)
-			&kp Z           &kp RA(P)     &kp Q          &navigation   &backfrontspace  &kp ESC   &sk LSHIFT      &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT    &kp P    &kp M        &kp G         &kp J          &kp RA(T)         &sl ICE
+			&kp Z           &kp RA(P)     &kp Q          &navigation   &bspc_del  &kp ESC   &sk LSHIFT      &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT    &kp P    &kp M        &kp G         &kp J          &kp RA(T)         &sl ICE
 			&magic MAGIC 0  &kp K_CANCEL  &kp K_CANCEL   &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S            &lt PUNCT R               &kp DOWN     &adaptive_up        &kp K_CANCEL   &kp K_CANCEL  &kp PSCRN
 			
 			>;
@@ -62,7 +62,7 @@
 			&none               &kp N1         &kp N2         &kp N3       &kp N4           &kp N5                                                                                              &kp N6  &kp N7       &kp N8        &kp N9         &kp N0         &kp PG_DN
 			&kp CAPS         &kp RA(Z)      &kp Y          &kp O        &kp U            &kp TAB                                                                                             &kp F   &kp K        &kp D         &kp L          &kp BSLH       &kp SEMI
 			&kp X            &kp V          &kp I          &kp E        &kp A            &kp ENTER                                                                                           &kp W   &kp H        &kp T         &kp N          &adaptive     &kp RA(D)
-			&kp Z               &kp RA(P)      &kp Q          &navigation  &backfrontspace  &kp ESC   &sk LSHIFT   &kp FSLH  &_comma                   &kp X    &_dot  &sk RSHIFT         &kp P   &kp M        &kp G         &kp J          &kp RA(T)       &sl ICE
+			&kp Z               &kp RA(P)      &kp Q          &navigation  &bspc_del  &kp ESC   &sk LSHIFT   &kp FSLH  &_comma                   &kp X    &_dot  &sk RSHIFT         &kp P   &kp M        &kp G         &kp J          &kp RA(T)       &sl ICE
 			&to BASE            &kp K_CANCEL   &_comma    &kp LEFT     &kp RIGHT                  &lt SYMBOL  SPACE           &lt NUMPAD C  &kp B     &sl ICE  &kp S      &lt PUNCT R          &kp DOWN     &adaptive_up        &_dot      &kp AT         &kp DEL
 			
 			>;
@@ -132,7 +132,7 @@
 			&none  &kp N1      &kp N2     &kp N3    &kp N4           &kp N5                                                              &kp N6     &kp N7     &kp N8     &kp N9      &kp N0      &none
 			&none  &none       &kp C      &_comma   &kp B            &kp TAB                                                             &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC    &none
 			&none  &kp SEMI    &kp COLON  &_dot     &kp SPACE        &kp ENTER                                                           &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET   &kp GRAVE
-			&none  &sk LSHIFT  &kp FSLH   &kp BSLH  &backfrontspace  &none      &none  &none  &none     &none     &none       &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp EXCL    &kp QMARK
+			&none  &sk LSHIFT  &kp FSLH   &kp BSLH  &bspc_del  &none      &none  &none  &none     &none     &none       &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp EXCL    &kp QMARK
 			&none  &none       &none      &none     &none                       &none  &none  &none     &kp HASH  &kp DOLLAR  &kp PRCNT             &kp LPAR   &kp SQT    &kp DQT     &kp RPAR    &none
 			
 			>;
@@ -146,7 +146,7 @@
 			&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                                  &kp N6     &kp N7           &kp N8      &kp N9    &kp N0  &none
 			&none  &none      &kp LPAR   &kp RPAR   &kp SEMI   &none                                                   &kp TAB    &kp FSLH         &kp S       &kp R     &none   &none
 			&kp B  &kp AMPS   &kp QMARK  &kp EXCL   &kp COLON  &kp DQT                                                 &kp ENTER  &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
-			&none  &kp PRCNT  &kp X      &kp C      &kp SQT    &none    &none  &none    &none     &none  &none  &none  &none      &backfrontspace  &kp BSLH    &none     &none   &none
+			&none  &kp PRCNT  &kp X      &kp C      &kp SQT    &none    &none  &none    &none     &none  &none  &none  &none      &bspc_del  &kp BSLH    &none     &none   &none
 			&none  &none      &none      &none      &none               &_dot  &_comma  &kp AT    &none  &none  &none             &none            &none       &none     &none   &none
 			
 			>;
