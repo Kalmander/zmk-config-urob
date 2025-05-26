@@ -3,10 +3,11 @@ parse_config:
     - "modules/zmk/helpers/include"
 
   zmk_preamble: |
-    #include <zmk-helpers/key-labels/34.h>
+    #include <zmk-helpers/key-labels/glove80.h>
     #define CONFIG_WIRELESS
 
   raw_binding_map:
+    "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
     "&sys_reset": Reset
     "&bootloader": Boot
     "&caps_word": Caps Word
@@ -171,5 +172,6 @@ parse_config:
 
 draw_config:
   append_colon_to_layer_header: false
-  dark_mode: auto
+  dark_mode: true
   footer_text: "urob/zmk-config"
+  physical_layout: glove80
