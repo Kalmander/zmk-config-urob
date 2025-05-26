@@ -29,5 +29,11 @@
 
 		#define mouse mouse_hold_tap MOUSE MOUSE
 
+		lgui_base_1shot: lgui_base_1shot {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			bindings = <&to_then_sk BASE LGUI>, <&none>, <&to MOUSE>;
+		};
+
 	};
 };
