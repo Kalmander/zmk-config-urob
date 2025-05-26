@@ -1,0 +1,52 @@
+/ {
+	behaviors {
+
+		adaptive: adaptive {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp SPACE>;
+
+			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; };
+			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
+			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
+			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
+			ak_au { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
+			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
+			ak_zz   { trigger-keys = <Z>; max-prior-idle-ms = <2000>; bindings = <&kp Z>; };
+			ak_vae  { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp RA(Z)>; };
+			ak_qu  { trigger-keys = <Q>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
+				
+			ak_fr { trigger-keys = <F>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
+			ak_wr { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
+			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
+			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
+			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
+
+			ak_reth { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp W>; };
+			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; };
+		};
+
+		adaptive_up: adaptive_up {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp UP>;
+
+			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
+		};
+
+		shift_repeat: shift_repeat {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&sk LSHFT>;
+			repeat {
+				trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+				bindings = <&key_repeat>;
+				max-prior-idle-ms = <350>;
+				strict-modifiers;
+			};
+		};
+
+        };
+};

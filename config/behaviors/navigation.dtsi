@@ -1,0 +1,39 @@
+/ {
+	behaviors {
+
+		navigation_autolayer: navigation_autolayer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <LEFT DOWN UP RIGHT HOME END PG_UP PG_DN>;
+			ignore-numbers;
+			ignore-modifiers;
+		};
+
+		navigation_with_overlay: navigation_with_overlay {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+			&navigation_autolayer NAV_WORD
+			&navigation_autolayer KCAN_OVER
+			>;
+		};
+		
+		/* navigation_mod_morph: navigation_mod_morph { */
+		/*     compatible = "zmk,behavior-mod-morph"; */
+		/*     #binding-cells = <0>; */
+		/*     bindings = <&navigation_with_overlay>, <&to NAVIGATION>; */
+		/*     mods = <(MOD_LSFT|MOD_RSFT)>; */
+		/* }; */
+
+		navigation_hold_tap: navigation_hold_tap {
+		  compatible = "zmk,behavior-hold-tap";
+		  #binding-cells = <2>;
+		  flavor = "balanced";
+		  tapping-term-ms = <200>;
+		  bindings = <&mo>, <&navigation_autolayer>;
+		};
+
+		#define navigation navigation_hold_tap NAV_WORD NAV_WORD
+
+	};
+};

@@ -1,0 +1,89 @@
+/ {
+	behaviors {
+
+		_dot: _dot { 
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp DOT>, <&kp DOT>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		_comma: _comma {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp COMMA>, <&kp COMMA>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_0: _0 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N0>, <&kp N0>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_1: _1 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N1>, <&kp N1>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_2: _2 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N2>, <&kp N2>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_3: _3 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N3>, <&kp N3>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_4: _4 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N4>, <&kp N4>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_5: _5 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N5>, <&kp N5>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_6: _6 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N6>, <&kp N6>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_7: _7 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N7>, <&kp N7>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_8: _8 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N8>, <&kp N8>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		_9: _9 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp N9>, <&kp N9>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+	};
+};

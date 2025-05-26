@@ -1,0 +1,23 @@
+/ {
+	behaviors {
+
+		numword_autolayer: numword_autolayer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+			ignore-numbers;
+      ignore-modifiers;
+		};
+
+		numword_with_overlay: numword_with_overlay {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+			&numword_autolayer NUM_WORD
+			&numword_autolayer KCAN_OVER
+			>;
+		};
+		
+		#define numword numword_autolayer NUM_WORD
+	};
+};

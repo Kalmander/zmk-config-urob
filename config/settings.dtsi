@@ -1,0 +1,57 @@
+&mmv {
+  time-to-max-speed-ms = <500>;  // Default 300
+};
+
+&sk {  // sticky-key
+    release-after-ms = <5000>;
+    quick-release;             // no double capitalization when rolling keys
+};
+
+&sl {  // sticky-layer 
+    ignore-modifiers;          // allow chording sticky mods & layers
+};
+
+&lt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <170>;
+    quick-tap-ms = <150>;
+    retro-tap;
+};
+
+&mt {  // layer-tap config
+    flavor = "balanced";
+    tapping-term-ms = <170>;
+    quick-tap-ms = <150>;
+    retro-tap;
+};
+
+
+&mmv_input_listener {
+	MouseSlow {
+		layers = <MOUSE_SLOW>;
+		input-processors = <&zip_xy_scaler 1 5>;
+	};
+	MouseWarp {
+		layers = <MOUSE_WARP>;
+		input-processors = <&zip_xy_scaler 10 1>;
+	};
+	MouseFast {
+		layers = <MOUSE_FAST>;
+		input-processors = <&zip_xy_scaler 3 1>;
+	};
+};
+
+&msc_input_listener {
+	MouseSlow {
+		layers = <MOUSE_SLOW>;
+		input-processors = <&zip_scroll_scaler 1 4>;
+	};
+	MouseWarp {
+		layers = <MOUSE_WARP>;
+		input-processors = <&zip_scroll_scaler 12 1>;
+	};
+	MouseFast {
+		layers = <MOUSE_FAST>;
+		input-processors = <&zip_scroll_scaler 3 1>;
+	};
+};

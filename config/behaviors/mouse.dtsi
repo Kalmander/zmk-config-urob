@@ -1,0 +1,33 @@
+/ {
+	behaviors {
+
+		mouse_word: mouse_word {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			bindings = <&to MOUSE>, <&none>, <&to BASE>;
+			ignored-key-positions = <
+				/* left */
+				        25
+			       36 37 38
+				/* right */
+					       41 
+				/* thumbs */
+			POS_LH_T4 POS_LH_T5
+			POS_RH_T1 POS_RH_T3 POS_RH_T4 POS_RH_T5 POS_RH_T6
+			>;
+			ignored-layers = <MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
+			timeout-ms = <3000>;
+		};
+
+		mouse_hold_tap: mouse_hold_tap {
+		  compatible = "zmk,behavior-hold-tap";
+		  #binding-cells = <2>;
+		  flavor = "balanced";
+		  tapping-term-ms = <200>;
+		  bindings = <&mo>, <&to>;
+		};
+
+		#define mouse mouse_hold_tap MOUSE MOUSE
+
+	};
+};

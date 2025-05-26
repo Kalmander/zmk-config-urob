@@ -1,0 +1,34 @@
+/ {
+	behaviors {
+
+		capswordy: capswordy {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
+			mods = <(MOD_LSFT)>;
+			continue-list = <
+			UNDERSCORE
+			BACKSPACE DELETE
+			N1 N2 N3 N4 N5 N6 N7 N8 N9 N0
+			>;
+		};
+		
+		capsword_layer: capsword_layer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <UNDERSCORE BACKSPACE DELETE>;
+			ignore-alphas;
+			ignore-numbers;
+		};
+		
+		caps_word_with_layer: caps_word_with_layer {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			/* Order matters: turn on Caps Word first, then the layer */
+			bindings = <
+			&caps_word
+			&capsword_layer KCAN_OVER
+			>;
+		};
+
+	};
+};
