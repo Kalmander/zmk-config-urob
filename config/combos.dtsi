@@ -3,7 +3,7 @@
 		combo_spacec_macro: combo_spacec_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps C SPACE>, <&two_kps LS(C) SPACE>;
+			bindings = <&two_kps SPACE C>, <&two_kps SPACE LS(C)>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
@@ -139,7 +139,12 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-
+		combo_spacec {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_T5 POS_LH_T4>;
+			bindings = <&combo_spacec_macro>;
+			layers = <BASE TYPING>;
+		};
 
 		combo_rs {
 			timeout-ms = <COMBO_TIMEOUT>;
