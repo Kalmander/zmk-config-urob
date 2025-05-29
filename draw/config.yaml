@@ -8,6 +8,16 @@ parse_config:
 
   raw_binding_map:
     "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
+    "&kp RA(Z)": Æ
+    "&kp RA(P)": Ö
+    "&kp RA(D)": Ð
+    "&kp RA(T)": Þ
+    "&key_repeat": Repeat
+    "&mouse mouse_hold_tap 13 13": Mouse
+    "&numword numword_autolayer 4": Num Word
+    "&adaptive": Adapt
+    "&adaptive_up": ↑ (ak)
+
     "&sys_reset": Reset
     "&bootloader": Boot
     "&caps_word": Caps Word
@@ -38,8 +48,8 @@ parse_config:
     "&hm_combo_ldrsh": Shift+Leader
     "&hm_combo_lpar": { "t": "(", "right": "<" }
     "&hm_combo_rpar": { "t": ")", "right": ">" }
-    "&kp LBKT": { "t": "[", "right": "{" }
-    "&kp RBKT": { "t": "]", "right": "}" }
+    "&kp LBKT": "["
+    "&kp RBKT": "]"
 
     "&mmv MOVE_UP": Mouse ↑
     "&mmv MOVE_DOWN": Mouse ↓

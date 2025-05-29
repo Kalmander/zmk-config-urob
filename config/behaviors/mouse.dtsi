@@ -29,6 +29,22 @@
 
 		#define mouse mouse_hold_tap MOUSE MOUSE
 
+
+		base_gui: base_gui {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_tap &sk LGUI &sl BASE_OVERLAY>;
+		};
+
+		num_gui: num_gui {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&macro_tap &sk LGUI &sl NUMPAD_OVERLAY>;
+		};
+		
+
+		
+
 		lgui_base_1shot: lgui_base_1shot {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
