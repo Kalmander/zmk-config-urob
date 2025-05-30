@@ -44,13 +44,13 @@
 		Base {
 			display-name = "Base";
 			bindings = <
-		 	
-			&kp N1          &kp N2        &kp N3         &kp N4        &kp N5                                                                                                                             &kp N6       &kp N7        &kp N8         &kp N9        &kp N0
-			&kp LBKT        &kp RBKT      &kp RA(Z)      &kp RA(P)     &none         &kp K_CANCEL                                                                                           &key_repeat   &mouse       &kp V         &kp X          &kp LBKT      &kp RBKT
-			&none           &kp FSLH      &kp Y          &kp O         &kp U         &kp TAB                                                                                                &kp F         &kp K        &kp D         &kp L          &kp BSLH      &none       
-			&caps_word      &numword      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A   &kp ENTER                                                                                              &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive     &kp RA(D)
-			&kp CAPS        &kp Z         &kp Q          &navigation   &bspc_del     &kp ESC   &sk LSHIFT        &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT   &kp P         &kp M        &kp G         &kp J          &kp RA(T)     &sl ICE
-			&magic MAGIC 0  &none         &none          &kp LEFT      &kp RIGHT               &lt SYMBOL SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R                &kp DOWN     &adaptive_up  &none          &none         &kp PSCRN
+			
+			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &none        &kp K_CANCEL                                                                                               &key_repeat   &none        &kp V         &kp X          &kp LBKT   &kp RBKT
+			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
+			&kp CAPS        &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                  &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
+			&caps_word      &numword   &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
+			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none      &kp PSCRN
 			
 			>;
 		};
@@ -117,11 +117,11 @@
 			bindings = <
 			
 			&none     &none       &none       &none      &none                                                                                &none     &none   &none   &none      &none
-			&none     &none       &none       &none      &none      &none                                                          &none      &none     &none   &none   &none      &none
-			&none     &none       &kp C       &_comma    &kp B      &kp K                                                          &kp TAB    &kp N7    &kp N8  &kp N9  &none      &none
-			&kp SEMI  &kp UNDER   &kp COLON   &_dot      &kp SPACE  &kp LS(G)                                                      &kp ENTER  &kp N4    &kp N5  &kp N6  &kp MINUS  &kp CARET
-			&none     &sk LSHIFT  &kp LSHIFT  &kp LCTRL  &kp LGUI   &kp J      &none  &none  &none     &trans    &trans  &kp STAR  &none      &kp N1    &kp N2  &kp N3  &kp FSLH   &none
-			&none     &none       &none       &none      &kp LALT              &none  &none  &none     &kp HASH  &kp N0  &kp PRCNT            &kp PLUS  &kp LT  &kp GT  &none      &none
+			&none     &none       &none       &none      &none     &none                                                          &none      &none     &none   &none   &none      &none
+			&none     &none       &kp C       &_comma    &kp B     &kp K                                                          &kp TAB    &kp N7    &kp N8  &kp N9  &none      &none
+			&kp SEMI  &kp UNDER   &kp LSHIFT  &kp LCTRL  &kp LGUI  &kp LS(G)                                                      &kp MINUS  &kp N4    &kp N5  &kp N6  &kp SPACE  &kp CARET
+			&none     &sk LSHIFT  &kp COLON   &_dot      &kp LALT  &kp J      &none  &none  &none     &trans    &trans  &kp STAR  &kp ENTER  &kp N1    &kp N2  &kp N3  &kp FSLH   &none
+			&none     &none       &none       &none      &none                 &none  &none  &none     &kp HASH  &_0  &kp PRCNT               &kp PLUS  &kp LT  &kp GT  &none      &none
 			
 			>;
 		};
@@ -309,6 +309,34 @@
 			>;
 		};
 		
+		Base_Overlay {
+			display-name = "Base Overlay";
+			bindings = <
+			
+			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &none        &kp K_CANCEL                                                                                               &key_repeat   &none        &kp V         &kp X          &kp LBKT   &kp RBKT
+			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
+			&caps_word      &numword   &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                  &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
+			&kp CAPS        &kp Z      &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
+			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none      &kp PSCRN
+			
+			>;
+		};
+
+		Numpad_Overlay {
+			display-name = "Numpad Overlay";
+			bindings = <
+			
+			&none  &none  &none  &none  &none                                                                  &none   &none   &none   &none  &none
+			&none  &none  &none  &none  &none  &none                                                    &none  &none   &none   &none   &none  &none
+			&none  &none  &none  &none  &none  &none                                                    &none  &kp N7  &kp N8  &kp N9  &none  &none
+			&none  &none  &none  &none  &none  &none                                                    &none  &kp N4  &kp N5  &kp N6  &none  &none
+			&none  &none  &none  &none  &none  &none      &none  &none  &none     &none  &none   &none  &none  &kp N1  &kp N2  &kp N3  &none  &none
+			&none  &none  &none  &none  &none             &none  &none  &none     &none  &kp N0  &none         &none   &none   &none   &none  &none
+			
+			>;
+		};
+
 		MoergoMagic {
 			display-name = "Moergo Magic Layer";
 			bindings = <
