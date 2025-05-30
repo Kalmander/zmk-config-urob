@@ -125,12 +125,12 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		combo_numword {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_LH_C2R5 POS_LH_C4R5>;
-			bindings = <&numword>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_numword { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <POS_LH_C2R5 POS_LH_C4R5>; */
+		/* 	bindings = <&numword>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 		
 		/* combo_mouseword { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
@@ -182,13 +182,13 @@
 			layers = <BASE TYPING>;
 		};
 		
-		combo_capsword {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_LH_T1 POS_RH_T1>;
-			/* bindings = <&caps_word_with_layer>; */
-			bindings = <&caps_word>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_capsword { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <POS_LH_T1 POS_RH_T1>; */
+		/* bindings = <&caps_word_with_layer>; */
+		/* 	bindings = <&caps_word>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 		
 		combo_wh {
 			timeout-ms = <COMBO_TIMEOUT>;

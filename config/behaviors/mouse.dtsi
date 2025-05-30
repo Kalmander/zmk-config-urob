@@ -35,5 +35,18 @@
 			bindings = <&to_then_sk BASE LGUI>, <&none>, <&to MOUSE>;
 		};
 
+		base_gui: base_gui {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&sl BASE_OVERLAY &sk LGUI>;
+		};
+		
+		num_gui: num_gui {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&sl NUMPAD_OVERLAY &sk LGUI>;
+		};
+		
+
 	};
 };
