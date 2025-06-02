@@ -84,6 +84,13 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
+		combo_dv_macro: combo_dv_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps D V>, <&two_kps LS(D) V>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
 		combo_ZQ_macro: combo_ZQ_macro {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
@@ -215,6 +222,13 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_RH_C3R4 POS_RH_C3R5>;
 			bindings = <&combo_gt_macro>;
+			layers = <BASE TYPING>;
+		};
+		
+		combo_dv {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_RH_C3R2 POS_RH_C3R3>;
+			bindings = <&combo_dv_macro>;
 			layers = <BASE TYPING>;
 		};
 		
