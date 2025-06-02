@@ -46,7 +46,7 @@
 			bindings = <
 			
 			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &none        &kp K_CANCEL                                                                                               &key_repeat   &none        &kp V         &kp X          &kp LBKT   &kp RBKT
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp K_CANCEL &kp K_CANCEL                                                                                               &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
 			&kp CAPS        &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                  &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
 			&caps_word      &numword   &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
@@ -60,12 +60,12 @@
 			display-name = "Typing";
 			bindings = <
 			
-			&kp PSCRN           &kp LC(PSCRN)  &kp LBRC       &kp LPAR     &kp LBKT                                                                                                                     &kp RBKT     &kp SPACE     &kp RBRC       &none          &kp PG_UP
-			&none               &kp N1         &kp N2         &kp N3       &kp N4           &kp N5                                                                                              &kp N6  &kp N7       &kp N8        &kp N9         &kp N0         &kp PG_DN
-			&kp CAPS         &kp RA(Z)      &kp Y          &kp O        &kp U            &kp TAB                                                                                             &kp F   &kp K        &kp D         &kp L          &kp BSLH       &kp SEMI
-			&kp X            &kp V          &kp I          &kp E        &kp A            &kp ENTER                                                                                           &kp W   &kp H        &kp T         &kp N          &adaptive     &kp RA(D)
-			&kp Z               &kp RA(P)      &kp Q          &navigation  &bspc_del  &kp ESC   &sk LSHIFT   &kp FSLH  &_comma                   &kp X    &_dot  &sk RSHIFT         &kp P   &kp M        &kp G         &kp J          &kp RA(T)       &sl ICE
-			&to BASE            &kp K_CANCEL   &_comma    &kp LEFT     &kp RIGHT                  &lt SYMBOL  SPACE           &lt NUMPAD C  &kp B     &sl ICE  &kp S      &lt PUNCT R          &kp DOWN     &adaptive_up        &_dot      &kp AT         &kp DEL
+			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp K_CANCEL &kp K_CANCEL                                                                                               &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
+			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
+			&kp CAPS        &kp Z      &kp I          &kp E         &kp A        &kp ENTER                                                                                                  &kp W         &kp H        &kp T         &kp N          &adaptive  &kp RA(D)
+			&caps_word      &numword   &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &kp FSLH        &_comma             &mouse   &_dot            &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
+			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none      &kp PSCRN
 			
 			>;
 		};
@@ -286,7 +286,7 @@
 			bindings = <
 		 	
 			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &none        &kp K_CANCEL                                                                                               &key_repeat   &none        &kp V         &kp X          &kp LBKT   &kp RBKT
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp K_CANCEL &kp K_CANCEL                                                                                               &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
 			&kp CAPS        &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                  &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
 			&caps_word      &numword   &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
