@@ -46,8 +46,8 @@
 			bindings = <
 			
 			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp K_CANCEL &kp K_CANCEL                                                                                               &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
-			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp TAB      &kp TAB                                                                                                    &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
+			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp K_CANCEL                                                                                               &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
 			&kp CAPS        &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                  &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
 			&caps_word      &numword   &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
 			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none      &kp PSCRN
@@ -61,8 +61,8 @@
 			bindings = <
 			
 			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                  &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp K_CANCEL &kp K_CANCEL                                                                                               &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
-			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                    &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
+			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp RA(P)     &kp TAB      &kp TAB                                                                                                    &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
+			&none           &kp RA(Z)  &kp Y          &kp O         &kp U        &kp K_CANCEL                                                                                               &kp F         &kp K        &kp D         &kp L          &kp BSLH   &kp SEMI
 			&kp CAPS        &kp Z      &kp I          &kp E         &kp A        &kp ENTER                                                                                                  &kp W         &kp H        &kp T         &kp N          &adaptive  &kp RA(D)
 			&caps_word      &numword   &kp Q          &navigation   &bspc_del    &kp ESC       &sk LSHIFT         &kp FSLH        &_comma             &mouse   &_dot            &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp RA(T)  &sl ICE
 			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none      &kp PSCRN
@@ -229,8 +229,8 @@
 			bindings = <
 			
 			&none     &none      &none           &none           &none                                                                                                                             &none           &none           &none           &none     &none   
-			&none     &none      &none           &none           &to BASE         &to BASE                                                                                              &none      &none           &none           &none           &none     &none
-			&none     &none      &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &none                                                                                                 &none      &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
+			&none     &none      &none           &none           &none            &none                                                                                                 &none      &none           &none           &none           &none     &none
+			&none     &none      &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &to BASE                                                                                              &none      &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
 			&none     &kp LC(X)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &base_gui                                                                                             &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
 			&none     &none      &none           &none           &none            &none     &msc SCRL_LEFT  &msc SCRL_RIGHT  &none     &none  &kp LALT   &mkp MCLK                      &kp LC(A)  &kp LGUI        &kp LCTRL       &kp LSHFT       &kp LALT  &none
 			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP     &none     &num_gui  &mkp RCLK  &mkp LCLK                                 &none           &none           &none           &none     &none     
