@@ -48,7 +48,8 @@
 		gui_lock: gui_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			bindings = <&tog_on_kp_and_layer LGUI KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LGUI KCAN_OVER>;
+			/* bindings = <&tog_on_kp_and_layer LGUI KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LGUI KCAN_OVER>; */
+			bindings = <&tog_on_kp LGUI>, <&none>, <&tog_off_kp LGUI>;
 			ignored-key-positions = <
 			/* left */
 			0  1  2  3  4
@@ -69,14 +70,15 @@
 			70 53     56 73
 			71 54   55 72
 			>;
-			ignored-layers = <BASE KCAN_OVER NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
+			ignored-layers = <BASE NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
 			timeout-ms = <5000>;
 		};
 
 		ctrl_lock: ctrl_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>;
+			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
+			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp LCTRL>;
 			ignored-key-positions = <
 			/* left */
 			0  1  2  3  4
@@ -97,14 +99,15 @@
 			70 53     56 73
 			71 54   55 72
 			>;
-			ignored-layers = <BASE KCAN_OVER NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
+			ignored-layers = <BASE NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
 			timeout-ms = <5000>;
 		};
 
 		shift_lock: shift_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>;
+			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
+			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
 			ignored-key-positions = <
 			/* left */
 			0  1  2  3  4
@@ -125,14 +128,15 @@
 			70 53     56 73
 			71 54   55 72
 			>;
-			ignored-layers = <BASE KCAN_OVER NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
+			ignored-layers = <BASE NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
 			timeout-ms = <5000>;
 		};
 
 		alt_lock: alt_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>;
+			/* bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>; */
+			bindings = <&tog_on_kp LALT>, <&none>, <&tog_off_kp LALT>;
 			ignored-key-positions = <
 			/* left */
 			0  1  2  3  4
@@ -153,7 +157,7 @@
 			70 53     56 73
 			71 54   55 72
 			>;
-			ignored-layers = <BASE KCAN_OVER NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
+			ignored-layers = <BASE NAV_WORD NUM_WORD NUMPAD SYMBOL PUNCT FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
 			timeout-ms = <5000>;
 		};
 

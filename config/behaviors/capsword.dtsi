@@ -20,15 +20,15 @@
 			ignore-numbers;
 		};
 		
-		caps_word_with_layer: caps_word_with_layer {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			/* Order matters: turn on Caps Word first, then the layer */
-			bindings = <
-			&caps_word
-			&capsword_layer KCAN_OVER
-			>;
-		};
+		/* caps_word_with_layer: caps_word_with_layer { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* Order matters: turn on Caps Word first, then the layer */
+		/* 	bindings = < */
+		/* 	&caps_word */
+		/* 	&capsword_layer KCAN_OVER */
+		/* 	>; */
+		/* }; */
 
 	};
 };

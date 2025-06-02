@@ -177,22 +177,22 @@
 			continue-list = <>;
 		};
 		
-		sk_sh_o: sticky_shift_with_overlay {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <
-			&sk LSHIFT
-			&single_stroke KCAN_OVER
-			>;
-		};
+		/* sk_sh_o: sticky_shift_with_overlay { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = < */
+		/* 	&sk LSHIFT */
+		/* 	&single_stroke KCAN_OVER */
+		/* 	>; */
+		/* }; */
 		
-		sksh: sksh {
-			compatible = "zmk,behavior-hold-tap";
-			#binding-cells = <2>;
-			flavor = "balanced";
-			tapping-term-ms = <200>;
-			bindings = <&kp>, <&sk_sh_o>;
-		};
+		/* sksh: sksh { */
+		/* 	compatible = "zmk,behavior-hold-tap"; */
+		/* 	#binding-cells = <2>; */
+		/* 	flavor = "balanced"; */
+		/* 	tapping-term-ms = <200>; */
+		/* 	bindings = <&kp>, <&sk_sh_o>; */
+		/* }; */
 		
 		// |------------------------|------------------------|
 		// | LEFT_HAND_KEYS         |        RIGHT_HAND_KEYS |

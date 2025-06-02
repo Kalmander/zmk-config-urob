@@ -9,14 +9,14 @@
 			ignore-modifiers;
 		};
 
-		navigation_with_overlay: navigation_with_overlay {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <
-			&navigation_autolayer NAV_WORD
-			&navigation_autolayer KCAN_OVER
-			>;
-		};
+		/* navigation_with_overlay: navigation_with_overlay { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = < */
+		/* 	&navigation_autolayer NAV_WORD */
+		/* 	&navigation_autolayer KCAN_OVER */
+		/* 	>; */
+		/* }; */
 		
 		/* navigation_mod_morph: navigation_mod_morph { */
 		/*     compatible = "zmk,behavior-mod-morph"; */

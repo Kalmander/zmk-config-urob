@@ -12,24 +12,24 @@
 
 #define BASE 0
 #define TYPING 1
-#define KCAN_OVER 2
-#define NAV_WORD 3
-#define NUM_WORD 4
-#define NUMPAD 5
-#define SYMBOL 6
-#define PUNCT 7
-#define FUNCTIONS 8
-#define ICE 9
-#define MOD_LOCKS 10
-#define JOKER 11
-#define EDI 12
-#define MOUSE 13
-#define MOUSE_SLOW 14
-#define MOUSE_WARP 15
-#define MOUSE_FAST 16
-#define BASE_OVERLAY 17
-#define NUMPAD_OVERLAY 18
-#define MAGIC 19
+/* #define KCAN_OVER 2 */
+#define NAV_WORD 2
+#define NUM_WORD 3
+#define NUMPAD 4
+#define SYMBOL 5
+#define PUNCT 6
+#define FUNCTIONS 7
+#define ICE 8
+#define MOD_LOCKS 9
+#define JOKER 10
+#define EDI 11
+#define MOUSE 12
+#define MOUSE_SLOW 13
+#define MOUSE_WARP 14
+#define MOUSE_FAST 15
+#define BASE_OVERLAY 16
+#define NUMPAD_OVERLAY 17
+#define MAGIC 18
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -70,19 +70,19 @@
 			>;
 		};
 		
-		KCancelOverlay {
-			display-name = "K_CANCEL Overlay";
-			bindings = <
-			
-			&trans  &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &kp K_CANCEL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-			
-			>;
-		};
+		/* KCancelOverlay { */
+		/* 	display-name = "K_CANCEL Overlay"; */
+		/* 	bindings = < */
+		/**/
+		/* 	&trans  &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans */
+		/* 	&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans */
+		/* 	&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans */
+		/* 	&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans */
+		/* 	&trans  &trans  &trans  &trans  &trans  &kp K_CANCEL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans */
+		/* 	&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans */
+		/**/
+		/* 	>; */
+		/* }; */
 		
 		NavWord {
 			display-name = "NavWord";
