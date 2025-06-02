@@ -117,10 +117,10 @@
 			bindings = <
 			
 			&none     &none       &none       &none      &none                                                                                &none     &none   &none   &none      &none
-			&none     &none       &none       &none      &none     &none                                                          &none      &none     &none   &none   &none      &none
-			&none     &none       &kp C       &_comma    &kp B     &kp K                                                          &kp TAB    &kp N7    &kp N8  &kp N9  &none      &none
-			&kp SEMI  &kp UNDER   &kp LSHIFT  &kp LCTRL  &kp LGUI  &kp LS(G)                                                      &kp MINUS  &kp N4    &kp N5  &kp N6  &kp SPACE  &kp CARET
-			&none     &sk LSHIFT  &kp COLON   &_dot      &kp LALT  &kp J      &none  &none  &none     &trans    &trans  &kp STAR  &kp ENTER  &kp N1    &kp N2  &kp N3  &kp FSLH   &none
+			&none     &none       &none       &none      &none      &none                                                          &none      &none     &none   &none   &none      &none
+			&none     &none       &kp C       &_comma    &kp B      &kp K                                                          &kp TAB    &kp N7    &kp N8  &kp N9  &none      &none
+			&kp UNDER &kp SEMI    &hml LSHIFT COLON  &hml LCTRL DOT  &hml LGUI SPACE  &hml LALT LS(G)                              &kp MINUS  &kp N4    &kp N5  &kp N6  &kp SPACE  &kp CARET
+			&none     &sk LSHIFT  &kp FSLH    &kp BSLH   &bspc_del  &kp J      &none  &none  &none     &trans    &trans  &kp STAR  &kp ENTER  &kp N1    &kp N2  &kp N3  &kp FSLH   &none
 			&none     &none       &none       &none      &none                 &none  &none  &none     &kp HASH  &_0  &kp PRCNT               &kp PLUS  &kp LT  &kp GT  &none      &none
 			
 			>;
