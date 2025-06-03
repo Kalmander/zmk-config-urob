@@ -146,9 +146,9 @@
 			
 			&none  &none      &none      &none      &none                                                                         &none            &none       &none     &none   &none
 			&none  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                                  &kp N6     &kp N7           &kp N8      &kp N9    &kp N0  &none
-			&none  &none      &kp LPAR   &kp RPAR   &kp SEMI   &none                                                   &kp TAB    &kp FSLH         &kp S       &kp R     &none   &none
-			&kp B  &kp AMPS   &kp QMARK  &kp EXCL   &kp COLON  &kp DQT                                                 &kp ENTER  &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
-			&none  &kp PRCNT  &kp X      &kp C      &kp SQT    &none    &none  &none    &none     &none  &none  &none  &none      &bspc_del  &kp BSLH    &none     &none   &none
+			&none  &none      &kp LPAR   &kp RPAR   &kp SEMI   &none                                                   &kp TAB    &none            &kp S       &kp R     &none   &none
+			&kp B  &kp AMPS   &kp QMARK  &kp EXCL   &kp COLON  &kp DQT                                                 &kp FSLH   &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
+			&none  &kp PRCNT  &kp X      &kp C      &kp SQT    &none    &none  &none    &none     &none  &none  &none  &kp ENTER  &bspc_del  &kp BSLH    &none     &none   &none
 			&none  &none      &none      &none      &none               &_dot  &_comma  &kp AT    &none  &none  &none             &none            &none       &none     &none   &none
 			
 			>;
