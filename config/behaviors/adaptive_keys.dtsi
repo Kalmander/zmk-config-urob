@@ -14,7 +14,6 @@
 			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
 			ak_zz   { trigger-keys = <Z>; max-prior-idle-ms = <2000>; bindings = <&kp Z>; };
 			ak_vae  { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp RA(Z)>; };
-			ak_qu  { trigger-keys = <Q>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
 				
 			ak_fr { trigger-keys = <F>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
 			ak_wr { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
