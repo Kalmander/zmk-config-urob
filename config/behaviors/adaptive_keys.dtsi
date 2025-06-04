@@ -21,6 +21,7 @@
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			ak_lg { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
 
 			ak_rs { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp S>; };
