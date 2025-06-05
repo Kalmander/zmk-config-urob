@@ -38,6 +38,43 @@
 			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
 		};
 
+
+		shift_assist: shift_assist {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&sk LSHFT>;
+
+			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp Y>; };
+			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp I>; };
+			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp O>; };
+			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp E>; };
+			ak_au { trigger-keys = <A>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp U>; };
+			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp A>; };
+			ak_zz   { trigger-keys = <Z>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp Z>; };
+			ak_vae  { trigger-keys = <V>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp RA(Z)>; };
+				
+			ak_fr { trigger-keys = <F>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp R>; };
+			ak_wr { trigger-keys = <W>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp R>; };
+			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp R>; };
+			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp L>; };
+			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp G>; };
+			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp L>; };
+			ak_lg { trigger-keys = <L>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp G>; };
+			ak_td { trigger-keys = <T>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp D>; };
+
+			ak_rs { trigger-keys = <R>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp S>; };
+			ak_sr { trigger-keys = <S>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp R>; };
+     
+			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp C>; };
+
+			space {
+				trigger-keys = <C B N5>;
+				bindings = <&kp SPACE>;
+				max-prior-idle-ms = <350>;
+				strict-modifiers;
+			};
+		};
+
 		shift_repeat: shift_repeat {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
