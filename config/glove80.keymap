@@ -13,23 +13,24 @@
 #define BASE 0
 #define TYPING 1
 /* #define KCAN_OVER 2 */
-#define NAV_WORD 2
-#define NUM_WORD 3
-#define NUMPAD 4
-#define SYMBOL 5
-#define PUNCT 6
-#define FUNCTIONS 7
-#define ICE 8
-#define MOD_LOCKS 9
-#define JOKER 10
-#define EDI 11
-#define MOUSE 12
-#define MOUSE_SLOW 13
-#define MOUSE_WARP 14
-#define MOUSE_FAST 15
-#define BASE_OVERLAY 16
-#define NUMPAD_OVERLAY 17
-#define MAGIC 18
+#define CAPS_WORD 2
+#define NAV_WORD 3
+#define NUM_WORD 4
+#define NUMPAD 5
+#define SYMBOL 6
+#define PUNCT 7
+#define FUNCTIONS 8
+#define ICE 9
+#define MOD_LOCKS 10
+#define JOKER 11
+#define EDI 12
+#define MOUSE 13
+#define MOUSE_SLOW 14
+#define MOUSE_WARP 15
+#define MOUSE_FAST 16
+#define BASE_OVERLAY 17
+#define NUMPAD_OVERLAY 18
+#define MAGIC 19
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -49,7 +50,7 @@
 			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&kp CAPS        &kp RA(T)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                 &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
 			&kp RA(T)       &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                   &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
-			&caps_word      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
+			&capsword      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
 			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none       &kp PSCRN
 		
 			>;
@@ -64,7 +65,7 @@
 			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&kp CAPS        &kp RA(T)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                     &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
 			&kp RA(T)       &kp Z      &kp I          &kp E         &kp A        &kp ENTER                                                                                                   &kp W         &kp H        &kp T         &kp N          &adaptive  &kp RA(D)
-			&caps_word      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &kp FSLH  &_comma                   &mouse   &_dot            &sk RSHIFT  &kp P          &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
+			&capsword      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &kp FSLH  &_comma                   &mouse   &_dot            &sk RSHIFT  &kp P          &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
 			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R                &kp DOWN     &adaptive_up  &none          &none       &kp PSCRN
 			
 			>;
@@ -83,6 +84,20 @@
 		/**/
 		/* 	>; */
 		/* }; */
+
+		CapsWord { // Tilgangur: láta capsword takkann vera one-way, í stað toggle
+			display-name = "CapsWord";
+			bindings = <
+
+			&trans           &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans
+			&trans           &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+			&trans           &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+			&trans           &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+			&kp CLEAR_AGAIN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans   &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+
+			>;
+		};
 		
 		NavWord {
 			display-name = "NavWord";
@@ -102,12 +117,12 @@
 			display-name = "NumWord";
 			bindings = <
 			
-			&trans  &trans  &trans  &trans  &trans                                                                       &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &_1     &trans  &trans                                                       &trans  &trans  &_0     &trans  &trans  &trans
+			&trans  &trans          &trans  &trans  &trans                                                                       &trans  &trans  &trans  &trans  &trans
+			&trans  &trans          &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans          &trans  &_1     &trans  &trans                                                       &trans  &trans  &_0     &trans  &trans  &trans
 			&trans  &trans  &_2     &_3     &_4     &trans                                                       &trans  &_7     &_8     &_9     &trans  &trans
-			&trans  &trans  &trans  &_1     &trans  &trans    &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &_0     &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans            &trans  &_5     &trans     &trans  &_6     &trans          &trans  &trans  &trans  &trans  &trans
+			&trans  &kp CLEAR_AGAIN &trans  &_1     &trans  &trans    &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &_0     &trans  &trans  &trans
+			&trans  &trans          &trans  &trans  &trans            &trans  &_5     &trans     &trans  &_6     &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};

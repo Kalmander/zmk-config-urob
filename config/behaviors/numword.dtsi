@@ -4,7 +4,7 @@
 		numword_autolayer: numword_autolayer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+			continue-list = <BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN>;
 			ignore-numbers;
       ignore-modifiers;
 		};
