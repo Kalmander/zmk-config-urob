@@ -50,7 +50,7 @@
 			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&kp CAPS        &kp RA(T)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                 &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
 			&kp RA(T)       &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                   &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
-			&capsword      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT FSLH  &_comma             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
+			&capsword      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT MINUS  &kp UNDER             &mouse   &hmr_dot LALT 0  &sk RSHIFT  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
 			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &lt SYMBOL  SPACE  &lt NUMPAD C    &lt FUNCTIONS B     &sl ICE  &lt MOD_LOCKS S  &lt PUNCT R               &kp DOWN     &adaptive_up  &none          &none       &kp PSCRN
 		
 			>;
