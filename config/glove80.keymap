@@ -16,19 +16,19 @@
 #define CAPS_WORD 2
 #define NAV_WORD 3
 #define NUM_WORD 4
-#define NUMPAD 5
-#define SYMBOL 6
-#define PUNCT 7
-#define FUNCTIONS 8
-#define ICE 9
-#define MOD_LOCKS 10
-#define JOKER 11
-#define EDI 12
-#define MOUSE 13
-#define MOUSE_SLOW 14
-#define MOUSE_WARP 15
-#define MOUSE_FAST 16
-#define LIMBO 17
+#define LIMBO 5
+#define NUMPAD 6
+#define SYMBOL 7
+#define PUNCT 8
+#define FUNCTIONS 9
+#define ICE 10
+#define MOD_LOCKS 11
+#define JOKER 12
+#define EDI 13
+#define MOUSE 14
+#define MOUSE_SLOW 15
+#define MOUSE_WARP 16
+#define MOUSE_FAST 17
 #define BASE_OVERLAY 18
 #define NUMPAD_OVERLAY 19
 #define MAGIC 20
@@ -48,11 +48,11 @@
 			bindings = <
 			
 			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                   &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT   &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
+			&kp LBKT        &kp RBKT  &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&kp CAPS        &kp RA(T)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                 &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
 			&kp RA(T)       &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                   &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
-			&capsword      &numword   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT MINUS  &kp UNDER             &mouse   &hmr_dot LALT 0  &kp R  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
-			&magic MAGIC 0  &none      &none          &kp LEFT      &kp RIGHT                  &kp SPACE  &kp C    &kp B     &sl ICE  &kp S  &sl LIMBO               &kp DOWN     &adaptive_up  &none          &none       &kp PSCRN
+			&numword        &sl NUM_WORD   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT MINUS  &kp UNDER             &mouse   &hmr_dot LALT 0  &kp R  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
+			&magic MAGIC 0  &capsword      &none          &kp LEFT      &kp RIGHT                  &kp SPACE  &kp C    &kp B     &sl ICE  &kp S  &sl LIMBO               &kp DOWN     &adaptive_up  &none          &kp AT       &kp PSCRN
 		
 			>;
 		};
@@ -128,6 +128,20 @@
 			>;
 		};
 		
+		Limbo { 
+			display-name = "Limbo";
+			bindings = <
+
+			&none  &none      &none      &none      &none                                                                                        &none            &none       &none     &none   &none
+			&none  &none      &none      &none      &none      &none                                                                  &none      &none            &none      &none    &none  &none
+			&none  &none      &kp LPAR   &kp RPAR   &none      &none                                                                  &kp TAB    &none            &kp S       &kp R     &none   &none
+			&none  &kp AMPS   &kp EXCL   &_comma    &_dot      &kp DQT                                                                &kp FSLH   &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
+			&none  &kp PRCNT  &kp QMARK  &kp SEMI   &kp COLON  &kp SQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &sl MOD_LOCKS    &kp BSLH    &none     &none   &none
+			&none  &none      &none      &none      &none               &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
+
+			>;
+		};
+
 		Numpad {
 			display-name = "Numpad";
 			bindings = <
@@ -202,12 +216,12 @@
 			display-name = "Mod Locks";
 			bindings = <
 			
-			&trans  &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &shift_lock  &ctrl_lock  &gui_lock  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans        &trans  &alt_lock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+			&none  &none      &none        &none       &none                                                                        &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none  &none                                                        &none  &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none  &none                                                        &none  &none  &none  &none  &none  &none
+			&none  &alt_lock  &shift_lock  &ctrl_lock  &gui_lock  &alt_lock                                                        &none  &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none  &none        &none  &alt_lock  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none                &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none
 			
 			>;
 		};
@@ -296,20 +310,6 @@
 			>;
 		};
     
-		Limbo { 
-			display-name = "Limbo";
-			bindings = <
-
-			&none  &none      &none      &none      &none                                                                         &none            &none       &none     &none   &none
-			&none  &none      &none      &none      &none      &none                                                   &none     &none           &none      &none    &none  &none
-			&none  &none      &kp LPAR   &kp RPAR   &none      &none                                                   &kp TAB    &none            &kp S       &kp R     &none   &none
-			&none  &kp AMPS   &kp EXCL   &_comma    &_dot      &kp DQT                                                 &kp FSLH   &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
-			&none  &kp PRCNT  &kp QMARK  &kp SEMI   &kp COLON  &kp SQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &bspc_del  &kp BSLH    &none     &none   &none
-			&none  &none      &none      &none      &none               &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
-
-			>;
-		};
-
 		Base_Overlay {
 			display-name = "Base Overlay";
 			bindings = <
