@@ -47,12 +47,12 @@
 			display-name = "Base";
 			bindings = <
 			
-			&kp N1          &kp N2     &kp N3         &kp N4        &kp N5                                                                                                                   &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT  &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
-			&kp CAPS        &kp RA(T)  &kp Y          &kp O         &kp U        &kp TAB                                                                                                 &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
-			&kp RA(T)       &kp Z      &hml LSHIFT I  &hml LCTRL E  &hml LGUI A  &kp ENTER                                                                                                   &kp W         &hmr RGUI H  &hmr RCTRL T  &hmr RSHIFT N  &adaptive  &kp RA(D)
-			&numword        &sl NUM_WORD   &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &hml LALT MINUS  &kp UNDER             &mouse   &hmr_dot LALT 0  &kp R  &kp P         &kp M        &kp G         &kp J          &kp FSLH   &sl ICE
-			&magic MAGIC 0  &capsword      &none          &kp LEFT      &kp RIGHT                  &kp SPACE  &kp C    &kp B     &sl ICE  &kp S  &sl LIMBO               &kp DOWN     &adaptive_up  &none          &kp AT       &kp PSCRN
+			&kp N1          &kp N2        &kp N3         &kp N4        &kp N5                                                                                                                   &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
+			&kp LBKT        &kp RBKT      &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
+			&kp CAPS        &kp RA(T)     &kp Y          &kp O         &kp U        &kp TAB                                                                                                 &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
+			&kp RA(T)       &kp Z         &hml LALT I  &hml LSHIFT E  &hml LGUI A  &kp ENTER                                                                                                   &kp W         &hmr RGUI H &hmr RSHIFT T  &hmr LALT N  &adaptive  &kp RA(D)
+			&numword        &sl NUM_WORD  &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &kp MINUS     &kp UNDER             &mouse   &_dot  &kp R  &kp P         &kp M        &kp G         &kp J          &sl NUM_WORD   &kp FSLH
+			&magic MAGIC 0  &capsword     &none          &kp LEFT      &kp RIGHT                  &kp SPACE  &hml LCTRL C    &kp B     &sl ICE  &hmr LCTRL S  &sl LIMBO               &kp DOWN     &adaptive_up  &sl ICE          &kp AT       &kp PSCRN
 		
 			>;
 		};
@@ -120,9 +120,9 @@
 			
 			&trans  &trans          &trans  &trans  &trans                                                                       &trans  &trans  &trans  &trans  &trans
 			&trans  &trans          &trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans          &trans  &_1     &trans  &trans                                                       &trans  &trans  &_0     &trans  &trans  &trans
-			&trans  &trans  &_2     &_3     &_4     &trans                                                       &trans  &_7     &_8     &_9     &trans  &trans
-			&trans  &kp CLEAR_AGAIN &trans  &_1     &trans  &trans    &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &_0     &trans  &trans  &trans
+			&trans  &trans          &trans  &kp N1     &trans  &trans                                                       &trans  &trans  &kp N0     &trans  &trans  &trans
+			&trans  &trans          &kp N2  &kp N3     &kp N4     &trans                                                       &trans  &kp N7     &kp N8     &kp N9     &trans  &trans
+			&trans  &kp CLEAR_AGAIN &trans  &kp N1     &trans  &trans    &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &kp N0     &trans  &trans  &trans
 			&trans  &trans          &trans  &trans  &trans            &trans  &_5     &trans     &trans  &_6     &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;
@@ -149,7 +149,7 @@
 			&none     &none       &none       &none      &none                                                                                &none     &none   &none   &none      &none
 			&none     &none       &none       &none      &none      &none                                                          &none      &none     &none   &none   &none      &none
 			&none     &none       &kp C       &_comma    &kp B      &kp K                                                          &kp TAB    &kp N7    &kp N8  &kp N9  &none      &none
-			&kp UNDER &kp SEMI    &hml LSHIFT COLON  &hml LCTRL DOT  &hml LGUI SPACE  &hml LALT LS(G)                              &kp MINUS  &kp N4    &kp N5  &kp N6  &kp SPACE  &kp CARET
+			&kp UNDER &kp SEMI    &hml LALT COLON  &hml LSHIFT DOT  &hml LGUI SPACE  &hml LCTRL LS(G)                              &kp MINUS  &kp N4    &kp N5  &kp N6  &kp SPACE  &kp CARET
 			&none     &sk LSHIFT  &kp FSLH    &kp BSLH   &bspc_del  &kp J      &none  &none  &none     &trans    &trans  &kp STAR  &kp ENTER  &kp N1    &kp N2  &kp N3  &kp FSLH   &none
 			&none     &none       &none       &none      &none                 &none  &none  &none     &kp HASH  &kp N0  &kp PRCNT               &kp PLUS  &kp LT  &kp GT  &none      &none
 			
@@ -163,7 +163,7 @@
 			&none  &none       &none      &none     &none                                                                                           &none      &none      &none       &none       &none
 			&none  &kp N1      &kp N2     &kp N3    &kp N4           &kp N5                                                              &kp N6     &kp N7     &kp N8     &kp N9      &kp N0      &none
 			&none  &none       &kp C      &_comma   &kp B            &kp TAB                                                             &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC    &none
-			&none  &kp SEMI    &hml LSHIFT COLON  &hml LCTRL DOT  &hml LGUI SPACE  &hml LALT ENTER                                                           &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET   &kp GRAVE
+			&none  &kp SEMI    &hml LALT COLON  &hml LSHIFT DOT  &hml LGUI SPACE  &hml LCTRL ENTER                                                           &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET   &kp GRAVE
 			&none  &sk LSHIFT  &kp FSLH   &kp BSLH  &bspc_del  &none      &none  &none  &none     &none     &none       &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp EXCL    &kp QMARK
 			&none  &none       &none      &none     &none                       &none  &none  &none     &kp HASH  &kp DOLLAR  &kp PRCNT             &kp LPAR   &kp SQT    &kp DQT     &kp RPAR    &none
 			
@@ -219,9 +219,9 @@
 			&none  &none      &none        &none       &none                                                                        &none  &none  &none  &none  &none
 			&none  &none      &none        &none       &none  &none                                                        &none  &none  &none  &none  &none  &none
 			&none  &none      &none        &none       &none  &none                                                        &none  &none  &none  &none  &none  &none
-			&none  &alt_lock  &shift_lock  &ctrl_lock  &gui_lock  &alt_lock                                                        &none  &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &none  &none        &none  &alt_lock  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &none                &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none
+			&none  &none      &alt_lock    &shift_lock &gui_lock  &ctrl_lock                                                        &none  &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none  &none        &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none                &none  &ctrl_lock  &none  &none  &none  &none          &none  &none  &none  &none  &none
 			
 			>;
 		};
