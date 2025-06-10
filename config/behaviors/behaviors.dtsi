@@ -7,6 +7,17 @@
 #include "strict_kps.dtsi"
 / {
 	behaviors {
+
+    // Gerði þetta því vildi sl numword -> halda gui til að skipta um workspaces
+    // en virkar auðvitað ekki því vil ekki tölurnar á numword séu hold taps
+    // en kannski vil ég þetta seinna í eitthvað annað
+    sli: sticky_layer_ignoremods {
+      compatible = "zmk,behavior-sticky-key";
+      #binding-cells = <1>;
+      bindings = <&sl>;
+      release-after-ms = <2000>;
+      ignore-modifiers;
+    };
 		
 		to_then_tog: to_then_tog {
 			compatible = "zmk,behavior-macro-two-param";
