@@ -13,22 +13,22 @@
 #define BASE 0
 #define TYPING 1
 /* #define KCAN_OVER 2 */
-#define LIMBO 2
-#define CAPS_WORD 3
-#define NAV_WORD 4
-#define NUM_WORD 5
-#define NUMPAD 6
-#define SYMBOL 7
-#define PUNCT 8
-#define FUNCTIONS 9
-#define ICE 10
-#define MOD_LOCKS 11
-#define JOKER 12
-#define EDI 13
-#define MOUSE 14
-#define MOUSE_SLOW 15
-#define MOUSE_WARP 16
-#define MOUSE_FAST 17
+#define CAPS_WORD 2
+#define NAV_WORD 3
+#define NUM_WORD 4
+#define NUMPAD 5
+#define SYMBOL 6
+#define PUNCT 7
+#define FUNCTIONS 8
+#define ICE 9
+#define MOD_LOCKS 10
+#define JOKER 11
+#define EDI 12
+#define MOUSE 13
+#define MOUSE_SLOW 14
+#define MOUSE_WARP 15
+#define MOUSE_FAST 16
+#define LIMBO 17
 #define BASE_OVERLAY 18
 #define NUMPAD_OVERLAY 19
 #define MAGIC 20
@@ -85,20 +85,6 @@
 		/**/
 		/* 	>; */
 		/* }; */
-
-		Limbo { 
-			display-name = "Limbo";
-			bindings = <
-
-			&none  &none      &none      &none      &none                                                                         &none            &none       &none     &none   &none
-			&none  &none      &none      &none      &none      &none                                                   &none     &none           &none      &none    &none  &none
-			&none  &none      &kp LPAR   &kp RPAR   &none      &none                                                   &kp TAB    &none            &kp S       &kp R     &none   &none
-			&none  &kp AMPS   &kp EXCL   &_comma    &_dot      &kp DQT                                                 &kp FSLH   &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
-			&none  &kp PRCNT  &kp QMARK  &kp SEMI   &kp COLON  &kp SQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &bspc_del  &kp BSLH    &none     &none   &none
-			&none  &none      &none      &none      &none               &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
-
-			>;
-		};
 
 		CapsWord { // Tilgangur: láta capsword takkann vera one-way, í stað toggle
 			display-name = "CapsWord";
@@ -310,6 +296,19 @@
 			>;
 		};
     
+		Limbo { 
+			display-name = "Limbo";
+			bindings = <
+
+			&none  &none      &none      &none      &none                                                                         &none            &none       &none     &none   &none
+			&none  &none      &none      &none      &none      &none                                                   &none     &none           &none      &none    &none  &none
+			&none  &none      &kp LPAR   &kp RPAR   &none      &none                                                   &kp TAB    &none            &kp S       &kp R     &none   &none
+			&none  &kp AMPS   &kp EXCL   &_comma    &_dot      &kp DQT                                                 &kp FSLH   &kp SPACE        &sk LSHIFT  &sl ICE   &none   &none
+			&none  &kp PRCNT  &kp QMARK  &kp SEMI   &kp COLON  &kp SQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &bspc_del  &kp BSLH    &none     &none   &none
+			&none  &none      &none      &none      &none               &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
+
+			>;
+		};
 
 		Base_Overlay {
 			display-name = "Base Overlay";
