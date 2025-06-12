@@ -13,12 +13,16 @@ parse_config:
     "&kp RA(D)": Ð
     "&kp RA(T)": Þ
     "&key_repeat": Repeat
-    "&mouse_hold_tap 12 12": Mouse
-    "&numword_autolayer 3": Num Word
+    "&numword_autolayer 4": Num Word
     "&adaptive": Adapt
     "&adaptive_up": ↑ (ak)
-    "&magic 18 0": Magic
+    "&magic MAGIC BASE": Magic
     "&sl ICE": Ísl komma
+    "&bspc_del": ⌫ ⌦
+    "&sl NUM_WORD": Sticky Num
+    "&sl NEXUS": Nexus
+    "&capsword": Caps Word
+    "&mouse_hold_tap MOUSE MOUSE": Mouse
 
     "&sys_reset": Reset
     "&bootloader": Boot

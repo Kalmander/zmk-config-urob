@@ -1,0 +1,54 @@
+/ {
+	behaviors {
+		
+		y_lpar: y_lpar {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp LPAR>, <&kp LS(Y)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		o_rpar: o_rpar {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp RPAR>, <&kp LS(O)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		i_excl: i_excl {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp EXCL>, <&kp LS(I)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		e_comma: e_comma {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp COMMA>, <&kp LS(E)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		a_dot: a_dot {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp DOT>, <&kp LS(A)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		z_amps: z_amps {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp AMPS>, <&kp LS(Z)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+		rap_qmark: rap_qmark {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp QMARK>, <&kp LS(RA(P))>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		
+	};
+};

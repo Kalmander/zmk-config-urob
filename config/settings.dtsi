@@ -1,37 +1,42 @@
 &mmv {
-  time-to-max-speed-ms = <500>;  // Default 300
+	time-to-max-speed-ms = <500>;// Default 300
 };
 
-&sk {  // sticky-key
-    release-after-ms = <5000>;
-    quick-release;             // no double capitalization when rolling keys
+&sk {// sticky-key
+	release-after-ms = <5000>;
+	quick-release;// no double capitalization when rolling keys
 };
 
-/* &sl {  // sticky-layer  */
-/*     ignore-modifiers;          // allow chording sticky mods & layers */
+&sl {// sticky-key
+	release-after-ms = <5000>;
+	// quick-release;// no double capitalization when rolling keys
+};
+
+/* &sl {// sticky-layer  */
+	/*     ignore-modifiers;// allow chording sticky mods & layers */
 /* }; */
 
-&lt {  // layer-tap config
-    flavor = "balanced";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <150>;
-    retro-tap;
+&lt {// layer-tap config
+	flavor = "balanced";
+	tapping-term-ms = <150>;
+	quick-tap-ms = <150>;
+	retro-tap;
 };
 
-/* &lt {  // prófum urob home row stillingarnar */
-/*     flavor = "balanced"; */
-/*     tapping-term-ms = <280>; */
-/*     quick-tap-ms = <175>; */
-    /* require-prior-idle-ms = <150>; */
-/*     hold-trigger-on-release; */
+/* &lt {// prófum urob home row stillingarnar */
+	/*     flavor = "balanced"; */
+	/*     tapping-term-ms = <280>; */
+	/*     quick-tap-ms = <175>; */
+	/* require-prior-idle-ms = <150>; */
+	/*     hold-trigger-on-release; */
 /* }; */
 
 
-&mt {  // layer-tap config
-    flavor = "balanced";
-    tapping-term-ms = <170>;
-    quick-tap-ms = <150>;
-    retro-tap;
+&mt {// layer-tap config
+	flavor = "balanced";
+	tapping-term-ms = <170>;
+	quick-tap-ms = <150>;
+	retro-tap;
 };
 
 

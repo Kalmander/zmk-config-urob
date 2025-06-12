@@ -55,7 +55,6 @@
 			>;
 		};
 		
-		
 		Typing {
 			display-name = "Typing";
 			bindings = <
@@ -117,10 +116,10 @@
 			bindings = <
 			
 			&none  &none      &none      &none      &none                                                                                        &none            &none       &none     &none   &none
-			&none  &none      &none      &none      &none      &none                                                                  &none      &none            &none      &none    &none  &none
-			&none  &none      &kp LPAR   &kp RPAR   &none      &none                                                                  &kp TAB    &none            &kp S       &kp R     &none   &none
-			&none  &kp AMPS   &kp EXCL   &_comma    &_dot      &kp SQT                                                                &kp FSLH   &kp SPACE        &sk RSHIFT  &sl ICE   &none   &none
-			&none  &kp PRCNT  &kp QMARK  &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &sl MOD_LOCKS    &kp BSLH    &none     &none   &none
+			&none  &none      &kp RA(Z)      &kp Q      &none      &none                                                                  &none      &none            &none      &none    &none  &none
+			&none  &none      &y_lpar    &o_rpar   &none      &none                                                                  &kp TAB    &none            &kp S       &kp R     &none   &none
+			&none  &z_amps   &i_excl    &e_comma   &a_dot     &kp SQT                                                                &kp FSLH   &kp SPACE        &sk RSHIFT  &sl ICE   &none   &none
+			&none  &kp PRCNT  &rap_qmark  &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &sl MOD_LOCKS    &kp BSLH    &none     &none   &none
 			&none  &none      &none      &none      &bspc_del           &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
 			
 			>;
