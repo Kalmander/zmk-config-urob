@@ -115,12 +115,12 @@
 			display-name = "Nexus";
 			bindings = <
 			
-			&none  &none      &none      &none      &none                                                                                        &none            &none       &none     &none   &none
-			&none  &none      &kp RA(Z)      &kp Q      &none      &none                                                                  &none      &none            &none      &none    &none  &none
-			&none  &none      &y_lpar    &o_rpar   &none      &none                                                                  &kp TAB    &none            &kp S       &kp R     &none   &none
-			&none  &z_amps   &i_excl    &e_comma   &a_dot     &kp SQT                                                                &kp FSLH   &kp SPACE        &sk RSHIFT  &sl ICE   &none   &none
-			&none  &kp PRCNT  &rap_qmark  &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &sl MOD_LOCKS    &kp BSLH    &none     &none   &none
-			&none  &none      &none      &none      &bspc_del           &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
+			&none      &none      &none      &none      &none                                                                                        &none            &none       &none     &none   &none
+			&none      &none      &kp RA(Z)  &kp Q      &none      &none                                                                  &none      &none            &none      &none    &none  &none
+			&none      &kp RA(T)  &y_lpar    &o_rpar   &none      &none                                                                  &kp TAB    &none            &kp S       &kp R     &none   &none
+			&kp RA(T)  &z_amps    &i_excl    &e_comma   &a_dot     &kp SQT                                                                &kp FSLH   &kp SPACE        &sk RSHIFT  &sl ICE   &none   &none
+			&none      &kp PRCNT  &rap_qmark &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &sl MOD_LOCKS    &kp BSLH    &none     &none   &none
+			&none      &none      &none      &none      &bspc_del           &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none            &none       &none     &none   &none
 			
 			>;
 		};
@@ -171,12 +171,12 @@
 			display-name = "Icelandic letters";
 			bindings = <
 			
-			&trans    &trans  &trans     &trans     &trans                                                                        &trans  &trans     &trans     &trans  &trans
-			&degsign  &trans  &trans     &trans     &trans     &trans                                                     &trans  &trans  &trans     &trans     &trans  &trans
-			&trans    &trans  &isl_y     &kp RA(O)  &kp RA(U)  &trans                                                     &trans  &trans  &kp RA(D)  &trans     &trans  &trans
-			&trans    &trans  &kp RA(I)  &kp RA(E)  &kp RA(A)  &trans                                                     &trans  &trans  &kp RA(T)  &trans     &trans  &trans
-			&trans    &trans  &trans     &kp RA(P)  &kp RA(Z)  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans     &polish_l  &trans  &trans
-			&trans    &trans  &trans     &trans     &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans     &trans     &trans  &trans
+			&trans    &trans  &trans     &trans     &trans                                                                        &trans  &trans  &trans     &trans  &trans
+			&degsign  &trans  &trans     &trans     &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &isl_y     &kp RA(O)  &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &kp RA(I)  &kp RA(E)  &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
+			&trans    &trans  &trans     &trans     &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
 		};
