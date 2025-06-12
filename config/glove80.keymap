@@ -12,24 +12,25 @@
 
 #define BASE 0
 #define TYPING 1
-#define CAPS_WORD 2
-#define NAV_WORD 3
-#define NUM_WORD 4
-#define NEXUS 5
-#define NUMPAD 6
-#define SYMBOL 7
-#define FUNCTIONS 8
-#define ICE 9
-#define MOD_LOCKS 10
-#define JOKER 11
-#define EDI 12
-#define MOUSE 13
-#define MOUSE_SLOW 14
-#define MOUSE_WARP 15
-#define MOUSE_FAST 16
-#define BASE_OVERLAY 17
-#define NUMPAD_OVERLAY 18
-#define MAGIC 19
+#define SPEED_CHANGER 2
+#define CAPS_WORD 3
+#define NAV_WORD 4
+#define NUM_WORD 5
+#define NEXUS 6
+#define NUMPAD 7
+#define SYMBOL 8
+#define FUNCTIONS 9
+#define ICE 10
+#define MOD_LOCKS 11
+#define JOKER 12
+#define EDI 13
+#define MOUSE 14
+#define MOUSE_SLOW 15
+#define MOUSE_WARP 16
+#define MOUSE_FAST 17
+#define BASE_OVERLAY 18
+#define NUMPAD_OVERLAY 19
+#define MAGIC 20
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -45,12 +46,12 @@
 			display-name = "Base";
 			bindings = <
 			
-			&kp N1          &kp N2        &kp N3       &kp N4         &kp N5                                                                                                            &kp N6       &kp N7         &kp N8       &kp N9        &kp N0
-			&msc SCRL_DOWN  &msc SCRL_UP  &kp RA(Z)    &kp Q          &kp ESC      &kp ESC                                                                                &key_repeat   &key_repeat  &kp V          &kp X        &kp LBKT      &kp RBKT
-			&sk LSHIFT      &kp RA(T)     &kp Y        &kp O          &kp U        &kp TAB                                                                                &kp F         &kp K        &kp D          &kp L        &kp BSLH      &none
-			&kp RA(T)       &kp Z         &hml LALT I  &hml LSHIFT E  &hml LGUI A  &kp ENTER                                                                              &kp W         &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &adaptive     &kp RA(D)
-			&numword        &sl NUM_WORD  &kp RA(P)    &navigation    &bspc_del    &kp K_CANCEL  &sk LSHIFT &kp UNDER     &kp MINUS     &mouse   &_dot         &kp R      &kp P         &kp M        &kp G          &kp J        &sl NUM_WORD  &kp FSLH
-			&magic MAGIC 0  &capsword     &kp CAPS     &kp LEFT       &kp RIGHT                  &kp SPACE  &hml LCTRL C  &kp B         &sl ICE  &hmr LCTRL S  &sl NEXUS                &kp DOWN     &adaptive_up   &sl ICE      &kp AT        &kp PSCRN
+			&kp N1          &kp N2          &kp N3       &kp N4         &kp N5                                                                                                            &kp N6       &kp N7         &kp N8       &kp N9        &kp N0
+			&msc SCRL_UP    &msc SCRL_DOWN  &kp RA(Z)    &kp Q          &kp ESC      &kp ESC                                                                                &key_repeat   &key_repeat  &kp V          &kp X        &kp LBKT      &kp RBKT
+			&sk LSHIFT      &kp RA(T)       &kp Y        &kp O          &kp U        &kp TAB                                                                                &kp F         &kp K        &kp D          &kp L        &kp BSLH      &sl ICE
+			&kp RA(T)       &kp Z           &hml LALT I  &hml LSHIFT E  &hml LGUI A  &kp ENTER                                                                              &kp W         &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &adaptive     &kp RA(D)
+			&numword        &sl NUM_WORD    &kp RA(P)    &navigation    &bspc_del    &kp K_CANCEL  &sk LSHIFT &kp UNDER     &kp MINUS     &mouse   &_dot         &kp R      &kp P         &kp M        &kp G          &kp J        &sl NUM_WORD  &kp FSLH
+			&magic MAGIC 0  &capsword       &kp CAPS     &kp LEFT       &kp RIGHT                  &kp SPACE  &hml LCTRL C  &kp B         &sl ICE  &hmr LCTRL S  &sl NEXUS                &kp DOWN     &adaptive_up   &scroll_speed_up      &kp AT        &kp PSCRN
 			
 			>;
 		};
@@ -65,6 +66,20 @@
 			&kp RA(T)       &kp Z         &kp I        &kp E          &kp A        &kp ENTER                                                                              &kp W         &kp H        &kp T          &kp N        &adaptive     &kp RA(D)
 			&numword        &sl NUM_WORD  &kp RA(P)    &navigation    &bspc_del    &kp K_CANCEL  &sk LSHIFT &kp UNDER     &kp MINUS     &mouse   &_dot         &kp R      &kp P         &kp M        &kp G          &kp J        &sl NUM_WORD  &kp FSLH
 			&magic MAGIC 0  &capsword     &kp CAPS     &kp LEFT       &kp RIGHT                  &kp SPACE  &kp C         &kp B         &sl ICE  &kp S         &sl NEXUS                &kp DOWN     &adaptive_up   &sl ICE      &kp AT        &kp PSCRN
+			
+			>;
+		};
+
+		SpeedChanger {
+			display-name = "SpeedChanger";
+			bindings = <
+			
+			&trans           &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans
+			&trans           &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+			&trans           &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+			&trans           &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans   &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &scroll_speed_down  &trans  &trans
 			
 			>;
 		};
