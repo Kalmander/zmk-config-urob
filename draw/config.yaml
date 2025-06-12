@@ -13,7 +13,7 @@ parse_config:
     "&kp RA(D)": Ð
     "&kp RA(T)": Þ
     "&key_repeat": Repeat
-    "&numword_autolayer 4": Num Word
+    "&numword_autolayer NUM_WORD": Num Word
     "&adaptive": Adapt
     "&adaptive_up": ↑ (ak)
     "&magic MAGIC BASE": Magic
@@ -23,6 +23,8 @@ parse_config:
     "&sl NEXUS": Nexus
     "&capsword": Caps Word
     "&mouse_hold_tap MOUSE MOUSE": Mouse
+    "&scroll_speed_up": Scroll Speed ↑
+    "&scroll_speed_down": Scroll Speed ↓
 
     "&sys_reset": Reset
     "&bootloader": Boot

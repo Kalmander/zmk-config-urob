@@ -71,7 +71,7 @@
 		};
 
 		SpeedChanger {
-			display-name = "SpeedChanger";
+			display-name = "Scroll speed toggle";
 			bindings = <
 			
 			&trans           &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans
