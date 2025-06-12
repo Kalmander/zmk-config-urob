@@ -16,7 +16,7 @@
 #define CAPS_WORD 2
 #define NAV_WORD 3
 #define NUM_WORD 4
-#define LIMBO 5
+#define NEXUS 5
 #define NUMPAD 6
 #define SYMBOL 7
 #define PUNCT 8
@@ -48,11 +48,11 @@
 			bindings = <
 			
 			&kp N1          &kp N2        &kp N3         &kp N4        &kp N5                                                                                                                   &kp N6        &kp N7       &kp N8        &kp N9         &kp N0       
-			&kp LBKT        &kp RBKT      &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
+			&msc SCRL_DOWN  &msc SCRL_UP  &kp RA(Z)      &kp Q         &kp ESC      &kp ESC                                                                                                     &key_repeat   &key_repeat  &kp V         &kp X          &kp LBKT   &kp RBKT
 			&kp CAPS        &kp RA(T)     &kp Y          &kp O         &kp U        &kp TAB                                                                                                 &kp F         &kp K        &kp D         &kp L          &kp BSLH   &none
 			&kp RA(T)       &kp Z         &hml LALT I  &hml LSHIFT E  &hml LGUI A  &kp ENTER                                                                                                   &kp W         &hmr RGUI H &hmr RSHIFT T  &hmr LALT N  &adaptive  &kp RA(D)
 			&numword        &sl NUM_WORD  &kp RA(P)      &navigation   &bspc_del    &kp K_CANCEL  &sk LSHIFT         &kp MINUS     &kp UNDER             &mouse   &_dot  &kp R  &kp P         &kp M        &kp G         &kp J          &sl NUM_WORD   &kp FSLH
-			&magic MAGIC 0  &capsword     &none          &kp LEFT      &kp RIGHT                  &kp SPACE  &hml LCTRL C    &kp B     &sl ICE  &hmr LCTRL S  &sl LIMBO               &kp DOWN     &adaptive_up  &sl ICE          &kp AT       &kp PSCRN
+			&magic MAGIC 0  &capsword     &none          &kp LEFT      &kp RIGHT                  &kp SPACE  &hml LCTRL C    &kp B     &sl ICE  &hmr LCTRL S  &sl NEXUS               &kp DOWN     &adaptive_up  &sl ICE          &kp AT       &kp PSCRN
 		
 			>;
 		};
@@ -72,20 +72,6 @@
 			>;
 		};
 		
-		/* KCancelOverlay { */
-		/* 	display-name = "K_CANCEL Overlay"; */
-		/* 	bindings = < */
-		/**/
-		/* 	&trans  &trans  &trans  &trans  &trans                                                                        &trans  &trans  &trans  &trans  &trans */
-		/* 	&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans */
-		/* 	&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans */
-		/* 	&trans  &trans  &trans  &trans  &trans  &trans                                                        &trans  &trans  &trans  &trans  &trans  &trans */
-		/* 	&trans  &trans  &trans  &trans  &trans  &kp K_CANCEL  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans */
-		/* 	&trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans */
-		/**/
-		/* 	>; */
-		/* }; */
-
 		CapsWord { // Tilgangur: láta capsword takkann vera one-way, í stað toggle
 			display-name = "CapsWord";
 			bindings = <
@@ -128,8 +114,8 @@
 			>;
 		};
 		
-		Limbo { 
-			display-name = "Limbo";
+		Nexus { 
+			display-name = "Nexus";
 			bindings = <
 
 			&none  &none      &none      &none      &none                                                                                        &none            &none       &none     &none   &none
