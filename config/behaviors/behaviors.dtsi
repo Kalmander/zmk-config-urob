@@ -40,6 +40,18 @@
 			<&macro_param_2to1>, <&to MACRO_PLACEHOLDER>;
 		};
 
+    cto: cancel_then_to {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			bindings = <&kp K_CANCEL>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;
+    };
+
+    kpc: kp_then_cancel {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp K_CANCEL>;
+    };
+
   layer_with_mod: layer_with_mod {
       compatible = "zmk,behavior-macro-two-param";
       wait-ms = <0>;
