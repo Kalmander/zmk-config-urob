@@ -21,6 +21,32 @@
 				ignored-layers = <BASE TYPING SPEED_CHANGER MOUSE_WARP MOUSE_SLOW>;
 		};
 
+
+		mouse_slow: mouse_slow {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&none>, <&tog_on_layer MOUSE_SLOW>, <&tog_off_layer MOUSE_SLOW>;
+				ignored-key-positions = <0 1 2 3    8 9>;
+				ignored-layers = <BASE TYPING MOUSE_SLOW>;
+		};
+
+
+		mouse_fast: mouse_fast {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&none>, <&tog_on_layer MOUSE_FAST>, <&tog_off_layer MOUSE_FAST>;
+				ignored-key-positions = <0 1 2 3    8 9>;
+				ignored-layers = <BASE TYPING MOUSE_FAST>;
+		};
+
+		mouse_warp: mouse_warp {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&none>, <&tog_on_layer MOUSE_WARP>, <&tog_off_layer MOUSE_WARP>;
+				ignored-key-positions = <0 1 2 3    8 9>;
+				ignored-layers = <BASE TYPING MOUSE_WARP>;
+		};
+
 		scroll_speed_down: scroll_speed_down {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
