@@ -25,6 +25,9 @@ parse_config:
     "&mouse_hold_tap MOUSE MOUSE": Mouse
     "&scroll_speed_up": Scroll Speed ↑
     "&scroll_speed_down": Scroll Speed ↓
+    "&mouse_slow": Slow
+    "&mouse_fast": Fast
+    "&mouse_warp": Warp
 
     "&sys_reset": Reset
     "&bootloader": Boot
