@@ -26,7 +26,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&none>, <&tog_on_layer MOUSE_SLOW>, <&tog_off_layer MOUSE_SLOW>;
-				ignored-key-positions = <0 1 2 3    8 9>;
+				ignored-key-positions = <0 1    6 7 8 9>;
 				ignored-layers = <BASE TYPING MOUSE_SLOW>;
 		};
 
@@ -35,7 +35,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&none>, <&tog_on_layer MOUSE_FAST>, <&tog_off_layer MOUSE_FAST>;
-				ignored-key-positions = <0 1 2 3    8 9>;
+				ignored-key-positions = <0 1    6 7 8 9>;
 				ignored-layers = <BASE TYPING MOUSE_FAST>;
 		};
 
@@ -43,7 +43,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&none>, <&tog_on_layer MOUSE_WARP>, <&tog_off_layer MOUSE_WARP>;
-				ignored-key-positions = <0 1 2 3    8 9>;
+				ignored-key-positions = <0 1    6 7 8 9>;
 				ignored-layers = <BASE TYPING MOUSE_WARP>;
 		};
 
