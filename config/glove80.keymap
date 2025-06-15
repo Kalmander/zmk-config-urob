@@ -148,7 +148,7 @@
 			&none        &none       &none            &none              &none             &none                                                                 &none      &none     &none   &none      &none      &none
 			&none        &none       &kp C            &kp B              &none             &kp BSLH                                                              &kp PLUS   &kp N7    &kp N8  &kp N9     &none      &none
 			&cto NUMPAD  &kp AMPS    &hml LALT QMARK  &hml LSHIFT COMMA  &hml LGUI DOT     &kp SQT                                                               &kp MINUS  &kp N4    &kp N5  &kp N6     &kp UNDER  &none
-			&sk LSHIFT   &kp PRCNT   &kp EXCL         &kp SEMI           &hml LCTRL COLON  &to DQT      &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp N1    &kp N2  &kp N3     &kp CARET  &none
+			&sk LSHIFT   &kp PRCNT   &kp EXCL         &kp SEMI           &hml LCTRL COLON  &kp DQT      &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp N1    &kp N2  &kp N3     &kp CARET  &none
 			&none        &none       &none            &none              &bspc_del                      &none  &none  &none     &kp HASH  &kp N0  &kp SPACE                 &kp LT    &kp GT  &none      &none      &none
 			
 			>;
@@ -162,7 +162,7 @@
 			&none        &kp N1      &kp N2          &kp N3             &kp N4            &kp N5                                                               &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &none
 			&none        &none       &kp C           &kp B              &none             &kp BSLH                                                             &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
 			&cto SYMBOL  &kp AMPS    &hml LALT QMARK &hml LSHIFT COMMA  &hml LGUI DOT     &kp SQT                                                              &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET  &kp GRAVE
-			&sk LSHIFT   &sk PRCNT   &kp EXCL        &kp SEMI           &hml LCTRL COLON  &to DQT     &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
+			&sk LSHIFT   &sk PRCNT   &kp EXCL        &kp SEMI           &hml LCTRL COLON  &kp DQT     &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
 			&none        &none       &none           &none              &bspc_del                     &none  &none  &none     &kp HASH  &kp BSLH    &kp SPACE             &kp LPAR   &kp RPAR   &none       &none      &none
 			
 			>;
