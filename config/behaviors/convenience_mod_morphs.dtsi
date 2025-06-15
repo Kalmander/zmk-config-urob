@@ -15,10 +15,10 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
-		i_excl: i_excl {
+		i_qmark: i_qmark {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&kp EXCL>, <&kp LS(I)>;
+			bindings = <&kp QMARK>, <&kp LS(I)>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
@@ -43,10 +43,10 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
-		rap_qmark: rap_qmark {
+		rap_excl: rap_excl {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&kp QMARK>, <&kp LS(RA(P))>;
+			bindings = <&kp EXCL>, <&kp LS(RA(P))>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		

@@ -133,8 +133,8 @@
 			&none       &none      &none      &none      &none                                                                                        &none      &none          &none    &none   &none
 			&none       &none      &kp RA(Z)  &kp Q      &none      &none                                                                  &none      &none      &none          &none    &none   &none
 			&none       &kp RA(T)  &y_lpar    &o_rpar    &none      &none                                                                  &kp TAB    &none      &kp S          &kp R    &none   &none
-			&kp RA(T)   &z_amps    &i_excl    &e_comma   &a_dot     &kp SQT                                                                &kp FSLH   &kp SPACE  &sk RSHIFT     &sl ICE  &none   &none
-			&sk LSHIFT  &kp PRCNT  &rap_qmark &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &kp BSLH   &sl MOD_LOCKS  &none    &none   &none
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                &kp FSLH   &kp SPACE  &sk RSHIFT     &sl ICE  &none   &none
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp ENTER  &kp BSLH   &sl MOD_LOCKS  &none    &none   &none
 			&none       &none      &none      &none      &bspc_del           &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none             &none      &none          &none    &none   &none
 			
 			>;
@@ -147,8 +147,8 @@
 			&none        &none       &none            &none              &none                                                                                           &none     &none   &none      &none      &none
 			&none        &none       &none            &none              &none             &none                                                              &none      &none     &none   &none      &none      &none
 			&none        &none       &kp C            &kp B              &none             &kp TAB                                                            &kp PLUS   &kp N7    &kp N8  &kp N9     &none      &none
-			&cto NUMPAD  &kp AMPS    &hml LALT EXCL   &hml LSHIFT COMMA  &hml LGUI DOT     &kp ENTER                                                          &kp MINUS  &kp N4    &kp N5  &kp N6     &kp UNDER  &kp CARET
-			&sk LSHIFT   &kp PRCNT   &kp QMARK        &kp SEMI           &hml LCTRL COLON  &to BASE      &none  &none  &none     &none     &kp AT  &kp STAR   &kp FSLH   &kp N1    &kp N2  &kp N3     &sk RSHIFT &kp DOLLAR
+			&cto NUMPAD  &kp AMPS    &hml LALT QMARK  &hml LSHIFT COMMA  &hml LGUI DOT     &kp ENTER                                                          &kp MINUS  &kp N4    &kp N5  &kp N6     &kp UNDER  &kp CARET
+			&sk LSHIFT   &kp PRCNT   &kp EXCL         &kp SEMI           &hml LCTRL COLON  &to BASE      &none  &none  &none     &none     &kp AT  &kp STAR   &kp FSLH   &kp N1    &kp N2  &kp N3     &sk RSHIFT &kp DOLLAR
 			&none        &none       &none            &none              &bspc_del                       &none  &none  &none     &kp HASH  &kp N0  &kp SPACE             &kp LT    &kp GT  &none      &none      &none
 			
 			>;
@@ -161,8 +161,8 @@
 			&none        &none       &none           &none              &none                                                                                                &none      &none      &none       &none      &none
 			&none        &kp N1      &kp N2          &kp N3             &kp N4            &kp N5                                                                  &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &none
 			&none        &none       &kp C           &kp B              &none             &kp TAB                                                                 &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
-			&cto SYMBOL  &kp AMPS    &hml LALT EXCL  &hml LSHIFT COMMA  &hml LGUI DOT     &kp ENTER                                                               &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET  &kp GRAVE
-			&sk LSHIFT   &sk PRCNT   &kp QMARK       &kp SEMI           &hml LCTRL COLON  &to BASE       &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
+			&cto SYMBOL  &kp AMPS    &hml LALT QMARK &hml LSHIFT COMMA  &hml LGUI DOT     &kp ENTER                                                               &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET  &kp GRAVE
+			&sk LSHIFT   &sk PRCNT   &kp EXCL        &kp SEMI           &hml LCTRL COLON  &to BASE       &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
 			&none        &none       &none           &none              &bspc_del                        &none  &none  &none     &kp HASH  &kp BSLH    &kp SPACE             &kp LPAR   &kp SQT    &kp DQT     &kp RPAR   &none
 			
 			>;
