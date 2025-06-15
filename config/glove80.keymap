@@ -46,12 +46,12 @@
 			display-name = "Base";
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &msc SCRL_UP  &msc SCRL_DOWN  &kp K_CANCEL                                                                                                     &mouse_fast  &mouse_warp    &mouse_slow  &mmv MOVE_UP    &mmv MOVE_RIGHT
-			&kp CAPS        &capsword        &kp RA(Z)     &kp Q           &kp ESC      &kp ESC                                                                                &key_repeat  &adaptive    &kp V          &kp X        &kp LBKT        &kp RBKT
-			&sk LSHIFT      &kp RA(T)        &kp Y         &kp O           &kp U        &kp TAB                                                                                &kp F        &kp K        &kp D          &kp L        &sl ICE         &sk RSHIFT
-			&kp RA(T)       &kp Z            &hml LALT I   &hml LSHIFT E   &hml LGUI A  &kp ENTER                                                                              &kp W        &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &adaptive       &kp RA(D)
-			&numword        &sl NUM_WORD     &kp RA(P)     &navigation     &bspc_del    &kp K_CANCEL  &sk LSHIFT &kp UNDER     &kp MINUS     &mouse   &_dot         &kp R      &kp P        &kp M        &kp G          &kp J        &sl NUM_WORD    &numword
-			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                  &kp SPACE  &hml LCTRL C  &kp B         &sl ICE  &hmr LCTRL S  &sl NEXUS               &kp DOWN     &adaptive_up   &kp AT       &capsword       &kp PSCRN
+			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &mouse_warp     &mouse_fast                                                                                                      &kp K_CANCEL &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_UP    &mmv MOVE_RIGHT
+			&kp CAPS        &capsword        &kp RA(Z)     &kp Q           &kp ESC      &kp ESC                                                                                &key_repeat  &adaptive    &kp V           &kp X         &kp LBKT        &kp RBKT
+			&sk LSHIFT      &kp RA(T)        &kp Y         &kp O           &kp U        &kp TAB                                                                                &kp F        &kp K        &kp D           &kp L         &sl ICE         &sk RSHIFT
+			&kp RA(T)       &kp Z            &hml LALT I   &hml LSHIFT E   &hml LGUI A  &kp ENTER                                                                              &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &adaptive       &kp RA(D)
+			&numword        &sl NUM_WORD     &kp RA(P)     &navigation     &bspc_del    &kp K_CANCEL  &sk LSHIFT &kp UNDER     &kp MINUS     &mouse   &_dot         &kp R      &kp P        &kp M        &kp G           &kp J         &sl NUM_WORD    &numword
+			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                  &kp SPACE  &hml LCTRL C  &kp B         &sl ICE  &hmr LCTRL S  &sl NEXUS               &kp DOWN     &adaptive_up    &kp AT        &capsword       &kp PSCRN
 			
 			>;
 		};
@@ -134,7 +134,7 @@
 			&none       &none      &kp RA(Z)  &kp Q      &none      &none                                                                  &none     &none          &none       &none    &none   &none
 			&none       &kp RA(T)  &y_lpar    &o_rpar    &none      &kp BSLH                                                               &none     &none          &kp S       &kp R    &none   &none
 			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                &kp BSLH  &kp SPACE      &sk RSHIFT  &sl ICE  &none   &none
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp DQT  &none  &none    &none                    &none  &none  &none  &kp FSLH  &sl MOD_LOCKS  &none       &none    &none   &none
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp DQT  &kp ENTER   &none    &none               &none  &none  &none  &kp FSLH  &sl MOD_LOCKS  &none       &none    &none   &none
 			&none       &none      &none      &none      &bspc_del           &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none            &none          &none       &none    &none   &none
 			
 			>;
