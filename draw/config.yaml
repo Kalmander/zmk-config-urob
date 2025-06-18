@@ -19,6 +19,7 @@ parse_config:
     "&magic MAGIC BASE": Magic
     "&sl ICE": Ísl komma
     "&bspc_del": ⌫ ⌦
+    "&kp BACKSPACE": ⌫
     "&sl NUM_WORD": Sticky Num
     "&sl NEXUS": Nexus
     "&capsword": Caps Word
@@ -28,6 +29,11 @@ parse_config:
     "&mouse_slow": Slow
     "&mouse_fast": Fast
     "&mouse_warp": Warp
+    "&page_up": PAGE ↑
+    "&page_down": PAGE ↓
+    "&kp CLEAR_AGAIN": Stay
+    "&fnumword": Num Word
+    "&fsl_num": Sticky Num
 
     "&sys_reset": Reset
     "&bootloader": Boot

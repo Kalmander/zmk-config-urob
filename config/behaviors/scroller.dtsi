@@ -1,27 +1,6 @@
 / {
 	behaviors {
 
-		all_off: all_off {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&tog_off_layer MOUSE_WARP>, <&tog_off_layer MOUSE_SLOW>, <&tog_off_layer SPEED_CHANGER>;
-		};
-
-		speed_up_and_activate_overlay: speed_up_and_activate_overlay {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&tog_on_layer MOUSE_WARP>, <&tog_on_layer SPEED_CHANGER>;
-		};
-
-		scroll_speed_up: scroll_speed_up {
-				compatible = "zmk,behavior-tri-state";
-				#binding-cells = <0>;
-				bindings = <&none>, <&speed_up_and_activate_overlay>, <&all_off>;
-				ignored-key-positions = <10 11 77>;
-				ignored-layers = <BASE TYPING SPEED_CHANGER MOUSE_WARP MOUSE_SLOW>;
-		};
-
-
 		mouse_slow: mouse_slow {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;

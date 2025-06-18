@@ -3,4 +3,6 @@
  --export-filename=gauntlet-of-kalmanathas.png \
  --export-background="#333333" \
  --export-background-opacity=1 \
- --export-dpi=300
+ --export-dpi=500
+
+ eða bara nota td eog
