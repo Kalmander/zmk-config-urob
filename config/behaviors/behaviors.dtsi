@@ -7,6 +7,7 @@
 #include "strict_kps.dtsi"
 #include "convenience_mod_morphs.dtsi"
 #include "scroller.dtsi"
+#include "volume.dtsi"
 / {
 	behaviors {
 		
@@ -20,6 +21,15 @@
 			release-after-ms = <2000>;
 			ignore-modifiers;
 		};
+    
+    // eeeh virkaði ekki
+		/* sln: sl_norelease { */
+		/* 	compatible = "zmk,behavior-sticky-key"; */
+		/* 	#binding-cells = <1>; */
+		/* 	bindings = <&sl>; */
+		/*     release-after-ms = <5000>; */
+		/*     /delete-property/ quick-release; */
+		/* }; */
 		
 		to_then_tog: to_then_tog {
 			compatible = "zmk,behavior-macro-two-param";

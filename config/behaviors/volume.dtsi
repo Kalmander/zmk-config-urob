@@ -1,0 +1,39 @@
+/ {
+	behaviors {
+
+		all_off: all_off {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&tog_off_layer MOUSE_WARP>, <&tog_off_layer MOUSE_SLOW>, <&tog_off_layer SPEED_CHANGER>;
+		};
+
+		kpc: kp_then_cancel {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp K_CANCEL>;
+		};
+
+		cto: cancel_then_to {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			bindings = <&kp K_CANCEL>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;
+		};
+
+		volume_up: volume_up {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto FUNCTIONS>, <&kp C_VOL_UP>, <&to BASE>;
+				ignored-key-positions = <73 74>;
+				ignored-layers = <FUNCTIONS>;
+		};
+
+		volume_down: volume_down {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto FUNCTIONS>, <&kp C_VOL_DN>, <&to BASE>;
+				ignored-key-positions = <73 74>;
+				ignored-layers = <FUNCTIONS>;
+		};
+
+	};
+};
