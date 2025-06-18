@@ -8,6 +8,7 @@
 #include "convenience_mod_morphs.dtsi"
 #include "scroller.dtsi"
 #include "volume.dtsi"
+#include "pgupdn.dtsi"
 / {
 	behaviors {
 		

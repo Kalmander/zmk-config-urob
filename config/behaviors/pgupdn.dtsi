@@ -1,0 +1,21 @@
+/ {
+	behaviors {
+
+		page_up: page_up {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto NEXUS>, <&kp PG_UP>, <&to BASE>;
+				ignored-key-positions = <26 29>;
+				ignored-layers = <BASE NEXUS>;
+		};
+
+		page_down: page_down {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto NEXUS>, <&kp PG_DN>, <&to BASE>;
+				ignored-key-positions = <26 29>;
+				ignored-layers = <BASE NEXUS>;
+		};
+
+	};
+};

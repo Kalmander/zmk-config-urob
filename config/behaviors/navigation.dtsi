@@ -34,6 +34,7 @@
 		};
 
 		#define navigation navigation_hold_tap NAV_WORD NAV_WORD
+		#define stay kp CLEAR_AGAIN
 
 	};
 };

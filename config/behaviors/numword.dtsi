@@ -19,5 +19,18 @@
 		/* }; */
 		
 		#define numword numword_autolayer NUM_WORD
+
+		fsl_num: force_sl_num {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp K_CANCEL>, <&sl NUM_WORD>;
+		};
+
+		fnumword: force_numword {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp K_CANCEL>, <&numword>;
+		};
+
 	};
 };
