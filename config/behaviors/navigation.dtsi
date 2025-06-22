@@ -9,6 +9,14 @@
 			ignore-modifiers;
 		};
 
+		vimigation_autolayer: vimigation_autolayer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <H J K L HOME END PG_UP PG_DN CLEAR_AGAIN>;
+			ignore-numbers;
+			ignore-modifiers;
+		};
+
 		/* navigation_with_overlay: navigation_with_overlay { */
 		/* 	compatible = "zmk,behavior-macro"; */
 		/* 	#binding-cells = <0>; */
@@ -33,8 +41,31 @@
 		  bindings = <&mo>, <&navigation_autolayer>;
 		};
 
-		#define navigation navigation_hold_tap NAV_WORD NAV_WORD
-		#define stay kp CLEAR_AGAIN
+		vimigation_hold_tap: vimigation_hold_tap {
+		  compatible = "zmk,behavior-hold-tap";
+		  #binding-cells = <2>;
+		  flavor = "balanced";
+		  tapping-term-ms = <200>;
+		  bindings = <&mo>, <&vimigation_autolayer>;
+		};
+
+
+    #define navigation navigation_hold_tap NAV_WORD NAV_WORD
+    #define vimigation vimigation_hold_tap VIM_WORD VIM_WORD
+
+
+		cnav: cancel_then_navword {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp K_CANCEL>, <&navigation>;
+		};
+		/* navigation: navigation { */
+		/* 	compatible = "zmk,behavior-mod-morph"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = <&navigation_hold_tap NAV_WORD NAV_WORD>, <&vimigation_hold_tap VIM_WORD VIM_WORD>; */
+		/* 	mods = <(MOD_LSFT|MOD_RSFT)>; */
+		/* 	keep-mods = <(MOD_LSFT)>; */
+		/* }; */
 
 	};
 };

@@ -9,6 +9,9 @@
 #include "scroller.dtsi"
 #include "volume.dtsi"
 #include "pgupdn.dtsi"
+
+#define stay kp CLEAR_AGAIN
+
 / {
 	behaviors {
 		

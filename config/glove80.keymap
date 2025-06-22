@@ -14,22 +14,23 @@
 #define TYPING 1
 #define CAPS_WORD 2
 #define NAV_WORD 3
-#define NUM_WORD 4
-#define NEXUS 5
-#define NUMPAD 6
-#define SYMBOL 7
-#define FUNCTIONS 8
-#define ICE 9
-#define MOD_LOCKS 10
-#define JOKER 11
-#define EDI 12
-#define MOUSE 13
-#define MOUSE_SLOW 14
-#define MOUSE_WARP 15
-#define MOUSE_FAST 16
-#define BASE_OVERLAY 17
-#define NUMPAD_OVERLAY 18
-#define MAGIC 19
+#define VIM_WORD 4
+#define NUM_WORD 5
+#define NEXUS 6
+#define NUMPAD 7
+#define SYMBOL 8
+#define FUNCTIONS 9
+#define ICE 10
+#define MOD_LOCKS 11
+#define JOKER 12
+#define EDI 13
+#define MOUSE 14
+#define MOUSE_SLOW 15
+#define MOUSE_WARP 16
+#define MOUSE_FAST 17
+#define BASE_OVERLAY 18
+#define NUMPAD_OVERLAY 19
+#define MAGIC 20
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -92,6 +93,20 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
 			&trans  &trans  &trans    &stay   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
+		VimWord {
+			display-name = "NavWord";
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp H     &kp J      &kp K      &kp L      &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -171,12 +186,12 @@
 			display-name = "Icelandic letters";
 			bindings = <
 			
-			&trans    &trans  &trans     &trans     &trans                                                                        &trans  &trans  &trans     &trans  &trans
-			&degsign  &trans  &trans     &trans     &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &isl_y     &kp RA(O)  &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &kp RA(I)  &kp RA(E)  &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
-			&trans    &trans  &trans     &trans     &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans     &trans       &trans                                                                        &trans  &trans  &trans     &trans  &trans
+			&degsign  &trans  &trans     &trans       &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &isl_y     &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &kp RA(I)  &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans     &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
+			&trans    &trans  &trans     &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
 		};
