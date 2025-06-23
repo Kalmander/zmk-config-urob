@@ -130,12 +130,12 @@
 			display-name = "Nexus";
 			bindings = <
 			
-			&none       &none      &none      &none      &none                                                                                       &none      &none       &none    &none   &none
-			&none       &none      &kp RA(Z)  &kp Q      &none      &none                                                                  &none     &none      &none       &none    &none   &none
-			&none       &kp RA(T)  &y_lpar    &o_rpar    &page_up   &kp BSLH                                                               &none     &page_down &kp S       &kp R    &none   &none
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                &kp MINUS &kp SPACE  &sk RSHIFT  &sl ICE  &none   &none
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp DQT  &kp ENTER   &none       &none            &none  &none  &none  &kp FSLH  &kp UNDER  &kp ESC     &sl MOD_LOCKS  &none  &none
-			&none       &none      &none      &none      &kp BACKSPACE       &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &none  &none  &none            &kp HOME   &kp END     &none    &none   &none
+			&trans      &trans     &trans     &trans     &trans                                                                                      &trans     &trans      &trans   &trans  &trans
+			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                 &trans    &trans     &trans      &trans   &trans  &trans
+			&trans      &kp RA(T)  &y_lpar    &o_rpar    &page_up   &kp BSLH                                                               &trans    &page_down &kp S       &kp R    &trans  &trans
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                &kp MINUS &kp SPACE  &sk RSHIFT  &sl ICE  &trans  &trans
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp DQT  &kp ENTER   &trans      &trans           &trans &trans &trans &kp FSLH  &kp UNDER  &kp ESC     &sl MOD_LOCKS  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE       &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &trans &trans &trans           &kp HOME   &kp END     &trans   &trans  &trans
 			
 			>;
 		};
