@@ -48,7 +48,7 @@
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &mouse_warp     &mouse_fast                                                                                                   &kp K_CANCEL &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_UP    &mmv MOVE_RIGHT
 			&mkp LCLK       &kp DELETE       &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                           &key_repeat  &key_repeat  &kp V           &kp X         &kp LBKT        &kp RBKT
-			&sk LSHIFT      &kp RA(T)        &kp Y         &kp O           &kp U          &kp TAB                                                                           &kp F        &kp K        &kp D           &kp L         &sl ICE         &sk RSHIFT
+			&sk LSHIFT      &kp RA(T)        &kp Y         &kp O           &kp U          &kp TAB                                                                           &kp F        &kp K        &kp D           &kp L         &sk RSHIFT      &sl ICE
 			&kp RA(T)       &kp Z            &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                         &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &adaptive       &kp RA(D)
 			&numword        &sl NUM_WORD     &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &_dot         &mouse     &mouse   &kp SPACE     &kp R    &kp P        &kp M        &kp G           &kp J         &sl NUM_WORD    &numword
 			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &kp B      &sl ICE  &hmr LCTRL S  &sl NEXUS             &kp DOWN     &adaptive_up    &kp AT        &capsword       &kp PSCRN
