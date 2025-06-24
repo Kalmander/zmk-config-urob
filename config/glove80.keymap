@@ -16,21 +16,22 @@
 #define NAV_WORD 3
 #define VIM_WORD 4
 #define NUM_WORD 5
-#define NEXUS 6
-#define NUMPAD 7
-#define SYMBOL 8
-#define FUNCTIONS 9
-#define ICE 10
-#define MOD_LOCKS 11
-#define JOKER 12
-#define EDI 13
-#define MOUSE 14
-#define MOUSE_SLOW 15
-#define MOUSE_WARP 16
-#define MOUSE_FAST 17
-#define BASE_OVERLAY 18
-#define NUMPAD_OVERLAY 19
-#define MAGIC 20
+#define NUM_WORD_MODDED 6
+#define NEXUS 7
+#define NUMPAD 8
+#define SYMBOL 9
+#define FUNCTIONS 10
+#define ICE 11
+#define MOD_LOCKS 12
+#define JOKER 13
+#define EDI 14
+#define MOUSE 15
+#define MOUSE_SLOW 16
+#define MOUSE_WARP 17
+#define MOUSE_FAST 18
+#define BASE_OVERLAY 19
+#define NUMPAD_OVERLAY 20
+#define MAGIC 21
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -47,10 +48,10 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &mouse_warp     &mouse_fast                                                                                                   &kp K_CANCEL &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_UP    &mmv MOVE_RIGHT
-			&mkp MCLK       &kp DELETE       &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                           &key_repeat  &key_repeat  &kp V           &kp X         &kp LBKT        &kp RBKT
+			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                           &key_repeat  &key_repeat  &kp V           &kp X         &kp DELETE        &mkp MCLK
 			&sk LSHIFT      &atd             &kp Y         &kp O           &kp U          &kp TAB                                                                           &kp F        &kp K        &kp D           &kp L         &mkp LCLK      &mkp MCLK
-			&kp Z           &kp RA(T)        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                         &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &adaptive       &sl ICE
-			&mouse          &kp RA(D)        &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &_dot         &numword         &numword   &kp SPACE     &kp R    &kp P        &kp M        &kp G           &kp J         &kp B    &mouse
+			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                         &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B       &kp RA(T)
+			&mouse          &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &_dot         &numword         &numword   &kp SPACE     &kp R    &kp P        &kp M        &kp G           &kp J         &kp RA(D)    &mouse
 			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS             &kp DOWN     &adaptive_up    &kp AT        &capsword       &kp PSCRN
 			
 			>;
@@ -116,12 +117,27 @@
 			display-name = "NumWord";
 			bindings = <
 			
-			&trans     &trans    &trans  &trans  &trans                                                                                     &trans  &trans  &trans  &trans    &trans
-			&trans     &trans    &trans  &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans    &trans
-			&trans     &trans    &trans  &kp N1  &trans  &trans                                                                     &trans  &trans  &kp N0  &trans  &trans    &trans
-			&trans     &trans    &kp N2  &kp N3  &kp N4  &trans                                                                     &trans  &kp N7  &kp N8  &kp N9  &trans    &trans
-			&trans     &trans    &trans  &kp N1  &trans  &trans    &trans  &kpc LS(G)  &fnumword     &fnumword  &kpc LS(G)  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans
-			&trans     &trans    &trans  &trans  &sk LCTRL            &trans  &kp N5      &fsl_num      &fsl_num   &kp N6      &trans          &sk RCTRL  &trans  &trans  &trans    &trans
+			&trans     &trans     &trans    &trans      &trans                                                                                     &trans  &trans  &trans  &trans    &trans
+			&trans     &trans     &trans    &trans      &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans    &trans
+			&trans     &trans     &trans    &kp N1      &trans  &trans                                                                     &trans  &trans  &kp N0  &trans  &trans    &trans
+			&trans     &trans     &kp N2    &kp N3      &kp N4  &trans                                                                     &trans  &kp N7  &kp N8  &kp N9  &trans    &trans
+			&trans     &trans     &trans    &kp N1      &trans  &trans    &trans  &kpc LS(G)  &fnumword     &fnumword  &kpc LS(G)  &trans  &trans  &trans  &kp N0  &trans  &trans  &trans
+			&trans     &numod_sk LCTRL  &numod_sk LALT  &numod_sk LSHIFT  &numod_sk LGUI          &trans  &kp N5      &fsl_num      &fsl_num   &kp N6      &trans          &numod_sk RGUI  &numod_sk RSHIFT  &numod_sk LALT  &numod_sk RCTRL    &trans
+			
+			>;
+		};
+
+
+		NumWordModded {
+			display-name = "NumWordModded";
+			bindings = <
+			
+			&trans     &trans     &trans    &trans      &trans                                                                                     &trans  &trans  &trans  &trans    &trans
+			&trans     &trans     &trans    &trans      &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans    &trans
+			&trans     &trans     &trans    &kpcb N1      &trans  &trans                                                                     &trans  &trans  &kpcb N0  &trans  &trans    &trans
+			&trans     &trans     &kpcb N2    &kpcb N3      &kpcb N4  &trans                                                                     &trans  &kpcb N7  &kpcb N8  &kpcb N9  &trans    &trans
+			&trans     &trans     &trans    &kpcb N1      &trans  &trans    &trans  &kpcb LS(G)  &fnumword     &fnumword  &kpcb LS(G)  &trans  &trans  &trans  &kpcb N0  &trans  &trans  &trans
+			&trans     &numod_sk LCTRL  &numod_sk LALT  &numod_sk LSHIFT  &numod_sk LGUI          &trans  &kpcb N5      &fsl_num      &fsl_num   &kpcb N6      &trans          &numod_sk RGUI  &numod_sk RSHIFT  &numod_sk LALT  &numod_sk RCTRL    &trans
 			
 			>;
 		};

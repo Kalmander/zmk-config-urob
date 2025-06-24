@@ -9,7 +9,7 @@
 
 &sl {// sticky-key
 	release-after-ms = <5000>;
-	// quick-release;// no double capitalization when rolling keys
+  /* /delete-property/ quick-release; */
 };
 
 /* &sl {// sticky-layer  */
