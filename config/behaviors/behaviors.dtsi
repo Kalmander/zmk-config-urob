@@ -50,8 +50,6 @@
 			<&macro_param_2to1>, <&sk MACRO_PLACEHOLDER>;
 		};
 
-    #define numod_sk to_then_sk NUM_WORD_MODDED
-		
 		to_then_to: to_then_to {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;

@@ -19,6 +19,8 @@
 		/* }; */
 		
 		#define numword numword_autolayer NUM_WORD
+    #define nsk to_then_sk NUM_WORD_MODDED
+		
 
 		fsl_num: force_sl_num {
 			compatible = "zmk,behavior-macro";
