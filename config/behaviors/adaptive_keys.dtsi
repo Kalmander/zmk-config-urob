@@ -30,6 +30,14 @@
 			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; };
 		};
 
+		atd: a_thorn_eth {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp RA(T)>;
+
+			ak_gd { trigger-keys = <RA(Z)>; max-prior-idle-ms = <2000>; bindings = <&kp RA(D)>; };
+		};
+
 		adaptive_up: adaptive_up {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
