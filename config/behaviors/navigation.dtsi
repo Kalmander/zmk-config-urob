@@ -52,6 +52,7 @@
 
     #define navigation navigation_hold_tap NAV_WORD NAV_WORD
     #define vimigation vimigation_hold_tap VIM_WORD VIM_WORD
+    #define pagigaiton navigation_hold_tap PAGE_WORD PAGE_WORD
 
 
 		cnav: cancel_then_navword {

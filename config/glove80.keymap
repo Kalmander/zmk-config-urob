@@ -15,23 +15,24 @@
 #define CAPS_WORD 2
 #define NAV_WORD 3
 #define VIM_WORD 4
-#define NUM_WORD 5
-#define NUM_WORD_MODDED 6
-#define NEXUS 7
-#define NUMPAD 8
-#define SYMBOL 9
-#define FUNCTIONS 10
-#define ICE 11
-#define MOD_LOCKS 12
-#define JOKER 13
-#define EDI 14
-#define MOUSE 15
-#define MOUSE_SLOW 16
-#define MOUSE_WARP 17
-#define MOUSE_FAST 18
-#define BASE_OVERLAY 19
-#define NUMPAD_OVERLAY 20
-#define MAGIC 21
+#define PAGE_WORD 5
+#define NUM_WORD 6
+#define NUM_WORD_MODDED 7
+#define NEXUS 8
+#define NUMPAD 9
+#define SYMBOL 10
+#define FUNCTIONS 11
+#define ICE 12
+#define MOD_LOCKS 13
+#define JOKER 14
+#define EDI 15
+#define MOUSE 16
+#define MOUSE_SLOW 17
+#define MOUSE_WARP 18
+#define MOUSE_FAST 19
+#define BASE_OVERLAY 20
+#define NUMPAD_OVERLAY 21
+#define MAGIC 22
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -107,6 +108,20 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp H     &kp J      &kp K      &kp L      &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
+		PageWord {
+			display-name = "PageWord";
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
 			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
@@ -202,12 +217,12 @@
 			display-name = "Icelandic letters";
 			bindings = <
 			
-			&trans    &trans  &trans     &trans       &trans                                                                        &trans  &trans  &trans     &trans  &trans
-			&degsign  &trans  &trans     &trans       &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &isl_y     &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &kp RA(I)  &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &trans     &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
-			&trans    &trans  &trans     &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans       &trans       &trans                                                                        &trans  &trans  &trans     &trans  &trans
+			&degsign  &trans  &trans       &trans       &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &pagigaiton  &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
+			&trans    &trans  &trans       &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
 		};
