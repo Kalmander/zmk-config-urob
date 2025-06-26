@@ -161,12 +161,12 @@
 			display-name = "Nexus";
 			bindings = <
 			
-			&trans      &trans     &trans     &trans     &trans                                                                                      &trans     &trans      &trans   &trans  &trans
-			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                 &trans    &trans     &trans      &trans   &trans  &trans
-			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                               &trans    &trans     &kp S       &kp R    &trans  &trans
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                &kp MINUS &kp SPACE  &sk RSHIFT  &sl ICE  &trans  &trans
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER   &page_up    &page_down       &trans &trans &trans &kp FSLH  &kp UNDER  &kp ESC     &sl MOD_LOCKS  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &trans &trans &trans           &kp HOME   &kp END     &trans   &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                           &trans     &trans      &trans     &trans  &trans
+			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                      &trans    &trans     &trans      &trans     &trans  &trans
+			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                    &trans    &trans     &kp S       &kp R      &trans  &trans
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                     &trans    &kp SPACE  &sk RSHIFT  &kp UNDER  &sl ICE    &trans
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER   &page_up    &page_down       &trans &trans &trans &kp FSLH  &kp MINUS  &kp ESC     &sl MOD_LOCKS  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &trans &trans &trans           &kp HOME   &kp END     &trans     &trans  &trans
 			
 			>;
 		};
