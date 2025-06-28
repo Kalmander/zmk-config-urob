@@ -203,12 +203,12 @@
 			display-name = "Function keys";
 			bindings = <
 			
-			&none  &none  &none     &none      &none                                                                                   &kp F13  &kp F14  &kp F15  &none  &none
-			&none  &none  &none     &none      &none     &none                                                                  &none  &kp F10  &kp F11  &kp F12  &none  &none
-			&none  &none  &none     &none      &none     &none                                                                  &none  &kp F7   &kp F8   &kp F9   &none  &none
-			&none  &none  &kp SLCK  &kp KP_NUM &kp CAPS  &none                                                                  &none  &kp F4   &kp F5   &kp F6   &none  &none
-			&none  &none  &none     &none      &none     &none  &none  &none  &none     &none       &kp C_BRI_DN  &kp C_BRI_UP  &none  &kp F1   &kp F2   &kp F3   &none  &to TYPING
-			&none  &none  &none     &none      &none            &none  &none  &none     &kp C_MUTE  &volume_down  &volume_up           &none    &none    &none    &none  &to JOKER
+			&none  &none  &none     &none      &none                                                                                              &kp F13  &kp F14  &kp F15  &none  &none
+			&none  &none  &none     &none      &none     &none                                                                        &none       &kp F10  &kp F11  &kp F12  &none  &none
+			&none  &none  &none     &none      &none     &none                                                                        &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
+			&none  &none  &kp LALT  &kp LSHIFT &kp LGUI  &none                                                                        &kp CAPS    &kp F4   &kp F5   &kp F6   &none  &none
+			&none  &none  &none     &none      &kp LCTRL &kp K_CANCEL &none  &none  &none     &none       &kp C_BRI_DN  &kp C_BRI_UP  &kp SLCK    &kp F1   &kp F2   &kp F3   &none  &to TYPING
+			&none  &none  &none     &none      &none                  &none  &none  &none     &kp C_MUTE  &volume_down  &volume_up                &none    &none    &none    &none  &to JOKER
 			
 			>;
 		};
