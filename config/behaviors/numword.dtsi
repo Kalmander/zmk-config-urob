@@ -9,6 +9,14 @@
       ignore-modifiers;
 		};
 
+		numwordplus_autolayer: numwordplus_autolayer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <SPACE UNDER LEFT RIGHT UP DOWN BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN G>;
+			ignore-numbers;
+      ignore-modifiers;
+		};
+
 		/* numword_with_overlay: numword_with_overlay { */
 		/* 	compatible = "zmk,behavior-macro"; */
 		/* 	#binding-cells = <0>; */
@@ -20,6 +28,7 @@
 		
 		#define numword numword_autolayer NUM_WORD
     #define nsk to_then_sk NUM_WORD_MODDED
+		#define numword_plus numwordplus_autolayer NUM_WORD_PLUS
 		
 
 		fsl_num: force_sl_num {
@@ -32,6 +41,12 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings = <&kp K_CANCEL>, <&numword>;
+		};
+
+		fnumwordp: force_numword_plus {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp K_CANCEL>, <&numword_plus>;
 		};
 
 	};

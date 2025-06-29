@@ -18,21 +18,22 @@
 #define PAGE_WORD 5
 #define NUM_WORD 6
 #define NUM_WORD_MODDED 7
-#define NEXUS 8
-#define NUMPAD 9
-#define SYMBOL 10
-#define FUNCTIONS 11
-#define ICE 12
-#define MOD_LOCKS 13
-#define JOKER 14
-#define EDI 15
-#define MOUSE 16
-#define MOUSE_SLOW 17
-#define MOUSE_WARP 18
-#define MOUSE_FAST 19
-#define BASE_OVERLAY 20
-#define NUMPAD_OVERLAY 21
-#define MAGIC 22
+#define NUM_WORD_PLUS 8
+#define NEXUS 9
+#define NUMPAD 10
+#define SYMBOL 11
+#define FUNCTIONS 12
+#define ICE 13
+#define MOD_LOCKS 14
+#define JOKER 15
+#define EDI 16
+#define MOUSE 17
+#define MOUSE_SLOW 18
+#define MOUSE_WARP 19
+#define MOUSE_FAST 20
+#define BASE_OVERLAY 21
+#define NUMPAD_OVERLAY 22
+#define MAGIC 23
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -52,7 +53,7 @@
 			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                                          &key_repeat  &key_repeat  &kp V           &kp X         &kp DELETE    &mkp MCLK
 			&sk LSHIFT      &atd             &kp Y         &kp O           &kp U          &kp TAB                                                                                          &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &mkp MCLK
 			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                        &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
-			&mouse          &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &numword      &_dot            &kp SPACE     &numword      &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &mouse
+			&kp SPACE       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &numword      &_dot            &kp SPACE     &numword      &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &mouse
 			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
 			>;
@@ -156,6 +157,20 @@
 			
 			>;
 		};
+
+		NumWordPlus {
+			display-name = "NumWordPlus";
+			bindings = <
+			
+			&trans     &trans      &trans     &trans       &trans                                                                                     &trans     &trans       &trans     &trans     &trans
+			&trans     &trans      &trans     &trans       &trans  &trans                                                                     &trans  &trans     &trans       &trans     &trans     &trans
+			&trans     &trans      &trans     &kp N1       &trans  &trans                                                                     &trans  &trans     &kp N0       &trans     &trans     &trans
+			&trans     &kp DOT     &kp N2     &kp N3       &kp N4  &trans                                                                     &trans  &kp N7     &kp N8       &kp N9     &kp MINUS  &trans
+			&trans     &kp COMMA   &trans     &kp N1       &trans  &trans    &trans  &kpc LS(G)  &fnumword     &fnumword  &kpc LS(G)  &trans  &trans  &trans     &kp N0       &trans     &kp UNDER  &trans
+			&trans     &trans      &trans     &trans       &trans            &trans  &kp N5      &fsl_num      &fsl_num   &kp N6      &trans          &trans     &trans       &trans     &trans     &trans
+			
+			>;
+		};
 		
 		Nexus {
 			display-name = "Nexus";
@@ -165,8 +180,8 @@
 			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                      &trans    &trans     &trans      &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                    &trans    &trans     &kp S       &kp R      &trans  &trans
 			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                     &trans    &kp SPACE  &sk RSHIFT  &kp UNDER  &sl ICE    &trans
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER   &page_up    &page_down       &trans &trans &trans &kp FSLH  &kp MINUS  &kp ESC     &sl MOD_LOCKS  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &sl SYMBOL  &sl NUMPAD  &sl FUNCTIONS    &trans &trans &trans           &kp HOME   &kp END     &trans     &trans  &trans
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &kp ENTER  &trans           &trans &trans &trans &kp FSLH  &kp MINUS  &kp ESC     &sl MOD_LOCKS  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &sl SYMBOL     &sl NUMPAD &fnumwordp       &trans &trans &trans           &kp HOME   &kp END     &trans     &trans  &trans
 			
 			>;
 		};
