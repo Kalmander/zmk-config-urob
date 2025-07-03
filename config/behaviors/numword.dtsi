@@ -49,5 +49,12 @@
 			bindings = <&kp K_CANCEL>, <&numword_plus>;
 		};
 
+		numword_or_c: numword_or_c {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&fnumwordp>, <&kp LS(C)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
 	};
 };
