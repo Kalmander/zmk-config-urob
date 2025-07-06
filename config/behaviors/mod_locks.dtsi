@@ -71,7 +71,7 @@
 			71 54   55 72
 			>;
 			ignored-layers = <BASE CAPS_WORD NAV_WORD NUM_WORD NEXUS NUMPAD SYMBOL FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
-			timeout-ms = <5000>;
+			timeout-ms = <10000>;
 		};
 		
 		ctrl_lock: ctrl_lock {
@@ -100,7 +100,7 @@
 			71 54   55 72
 			>;
 			ignored-layers = <BASE CAPS_WORD NAV_WORD NUM_WORD NEXUS NUMPAD SYMBOL FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
-			timeout-ms = <5000>;
+			timeout-ms = <10000>;
 		};
 		
 		shift_lock: shift_lock {
@@ -129,7 +129,7 @@
 			71 54   55 72
 			>;
 			ignored-layers = <BASE CAPS_WORD NAV_WORD NUM_WORD NEXUS NUMPAD SYMBOL FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
-			timeout-ms = <5000>;
+			timeout-ms = <10000>;
 		};
 		
 		alt_lock: alt_lock {
@@ -158,7 +158,7 @@
 			71 54   55 72
 			>;
 			ignored-layers = <BASE CAPS_WORD NAV_WORD NUM_WORD NEXUS NUMPAD SYMBOL FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
-			timeout-ms = <5000>;
+			timeout-ms = <10000>;
 		};
 		
 	};
