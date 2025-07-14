@@ -50,7 +50,7 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                                 &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                                          &key_repeat  &key_repeat  &kp V           &kp X         &kp DELETE    &mkp MCLK
+			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                                          &key_repeat  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
 			&sk LSHIFT      &atd             &kp Y         &kp O           &kp U          &kp TAB                                                                                          &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &mkp MCLK
 			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                        &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
 			&kp SPACE       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &numword      &_dot            &kp SPACE     &numword      &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &mouse
