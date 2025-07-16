@@ -125,6 +125,13 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 
+		combo_space {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_T4 POS_RH_T4>;
+			bindings = <&kp SPACE>;
+			layers = <BASE TYPING>;
+		};
+
 		/* combo_second_numword { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <POS_LH_T4 POS_RH_T4 POS_LH_C2R4 POS_RH_C2R4>; */
