@@ -52,11 +52,11 @@
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                                     &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
 			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &key_repeat          &kp SPACE                                                                                          &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
 			&sk LSHIFT      &kp ESC       &kp Y         &kp O           &kp U          &kp TAB                                                                                              &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &sk RSHIFT
-			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &hml LCTRL ENTER                                                                                     &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
-			&sk LSHIFT      &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL   &numword      &_dot            &kp SPACE     &numword      &hmr LCTRL R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
-			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
+			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                     &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
+			&sk LSHIFT      &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL   &numword      &_dot            &kp SPACE     &numword      &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
+      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
-			>;
+      >;
 		};
 		
 		Typing {
@@ -207,9 +207,9 @@
 			&none        &none      &none           &none              &none                                                                                           &none      &none      &none       &none      &none
 			&none        &kp N1     &kp N2          &kp N3             &kp N4           &kp N5                                                             &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &none
 			&none        &none      &kp C           &kp B              &kp DQT          &kp BSLH                                                           &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
-			&cto SYMBOL  &kp AMPS   &fnumword       &sk LSHIFT         &hml LGUI SPACE  &kp DELETE                                                         &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET  &kp GRAVE
-			&sk LSHIFT   &sk PRCNT  &hml LALT EXCL  &hml LSHIFT SEMI   &hml LCTRL ESC    &to BASE   &none  &none  &none     &none     &kp DOLLAR  &kp STAR  &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
-			&none        &none      &none           &none              &hml LGUI BACKSPACE        &none  &none  &none     &kp HASH  &kp BSLH    &sk NEXUS            &kp LPAR   &kp RPAR   &none       &none      &none
+			&cto SYMBOL  &kp AMPS   &fnumword       &sk LSHIFT         &hml LCTRL SPACE &hml LGUI SQT                                                         &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET  &kp GRAVE
+			&sk LSHIFT   &sk PRCNT  &hml LALT EXCL  &kp SEMI           &kp DELETE       &to BASE   &none  &none  &none     &none     &kp DOLLAR  &kp STAR  &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
+			&none        &none      &none           &none              &none            &none  &none  &none     &kp HASH  &kp BSLH    &sk NEXUS            &kp LPAR   &kp RPAR   &none       &none      &none
 			
 			>;
 		};
