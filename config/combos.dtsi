@@ -128,8 +128,8 @@
 		combo_space {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_T4 POS_RH_T4>;
-			bindings = <&kp SPACE>;
-			layers = <BASE TYPING>;
+			bindings = <&mouse>;
+			/* layers = <BASE TYPING>; */
 		};
 
 		/* combo_second_numword { */
