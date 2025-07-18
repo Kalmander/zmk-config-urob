@@ -127,7 +127,7 @@
 
 		combo_space {
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_LH_T4 POS_RH_T4>;
+			key-positions = <POS_LH_T1 POS_RH_T4>;
 			bindings = <&mouse>;
 			/* layers = <BASE TYPING>; */
 		};
