@@ -49,12 +49,12 @@
 			display-name = "Base";
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                                     &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &key_repeat    &kp SPACE                                                                                          &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
-			&sk LSHIFT      &kp ESC          &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                              &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &sk RSHIFT
-			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                     &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
-			&sk LSHIFT      &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL   &kp TAB      &_dot            &kp SPACE     &kp TAB      &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
-      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
+			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                          &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
+			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &key_repeat    &kp SPACE                                                                                       &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
+			&sk LSHIFT      &kp ESC          &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &mkp LCLK     &sk RSHIFT
+			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp W  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
+			&sk LSHIFT      &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp SPACE     &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
+      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
       >;
 		};
@@ -63,12 +63,12 @@
 			display-name = "Typing";
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &mouse_warp     &mouse_fast                                                                                                                  &kp K_CANCEL &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                                          &key_repeat  &key_repeat  &kp V           &kp X         &kp DELETE    &mkp MCLK
-			&sk LSHIFT      &atd             &kp Y         &kp O           &kp U          &kp TAB                                                                                          &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &mkp MCLK
-			&kp Z           &adaptive        &kp I         &kp E           &kp A          &kp ENTER                                                                                        &kp W        &kp H        &kp T           &kp N         &kp B         &kp RA(T)
-			&mouse          &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &_dot         &numword         &numword   &kp SPACE        &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &mouse
-			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
+			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                          &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
+			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &key_repeat    &kp SPACE                                                                                       &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
+			&sk LSHIFT      &kp ESC          &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &mkp LCLK     &sk RSHIFT
+			&kp Z           &adaptive        &kp I         &kp E           &kp A          &kp ENTER                                                                                       &kp W  &kp H        &kp T           &kp N         &kp B         &kp RA(T)
+			&sk LSHIFT      &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp SPACE     &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
+      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
 			>;
 		};
@@ -162,12 +162,12 @@
 			display-name = "NumWordPlus";
 			bindings = <
 			
-			&none  &none      &none   &none     &none                                                                             &none     &none        &none      &none      &none 
-			&none  &none      &none   &none     &none          &none                                                              &none     &none      &none        &none      &none      &none 
-			&none  &none      &none   &kp N1    &none          &kp SEMI                                                           &kp PLUS  &none      &kp N0       &none      &none      &none 
-			&none  &kp DOT    &kp N2  &kp N3    &kp N4         &kp ENTER                                                          &kp COLON &kp N7     &kp N8       &kp N9     &kp MINUS  &none 
-			&none  &kp COMMA  &none   &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &none  &kp TAB  &none  &kp FSLH  &none      &kp N0       &none      &kp UNDER  &none 
-			&none  &none      &none   &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &none         &none  &kp N6   &bsl NEXUS            &kp DOWN      &kp UP        &none      &none      &none 
+			&none  &none      &none   &none     &none                                                                                      &none     &none      &none   &none   &none 
+			&none  &none      &none   &none     &none          &none                                                                       &none     &none      &none   &none   &none      &none 
+			&none  &none      &none   &kp N1    &kp STAR       &kp BSLH                                                                    &kp PLUS  &none      &kp N0  &none   &none      &none 
+			&none  &kp DOT    &kp N2  &kp N3    &kp N4         &kp ENTER                                                                   &kp LT    &kp N7     &kp N8  &kp N9     &kp COLON  &kp GT 
+			&none  &kp COMMA  &none   &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &kp DOLLAR  &kp TAB  &kp CARET  &kp FSLH  &kp UNDER  &kp N0  &none   &kp SEMI   &none 
+			&none  &none      &none   &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &none         &kp HASH    &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
 			
 			>;
 		};
@@ -204,12 +204,12 @@
 			display-name = "Symbol";
 			bindings = <
 			
-			&none        &none      &none           &none              &none                                                                                           &none      &none      &none       &none      &none
-			&none        &kp N1     &kp N2          &kp N3             &kp N4           &kp N5                                                             &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &none
-			&none        &none      &kp C           &kp B              &kp DQT          &kp BSLH                                                           &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
-			&cto SYMBOL  &kp AMPS   &fnumword       &sk LSHIFT         &hml LCTRL SPACE &hml LGUI SQT                                                         &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp CARET  &kp GRAVE
-			&sk LSHIFT   &sk PRCNT  &hml LALT EXCL  &kp SEMI           &kp DELETE       &to BASE   &none  &none  &none     &none     &kp DOLLAR  &kp STAR  &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &kp AT     &none
-			&none        &none      &none           &none              &none            &none  &none  &none     &kp HASH  &kp BSLH    &sk NEXUS            &kp LPAR   &kp RPAR   &none       &none      &none
+			&none        &none      &none           &none       &none                                                                                            &none      &none      &none       &none      &none
+			&none        &kp N1     &kp N2          &kp N3      &kp N4           &kp N5                                                               &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &none
+			&none        &none      &kp C           &kp B       &kp DQT          &kp BSLH                                                             &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
+			&cto SYMBOL  &kp AMPS   &fnumword       &sk LSHIFT  &hml LCTRL SPACE &hml LGUI SQT                                                        &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp GRAVE  &none
+			&sk LSHIFT   &sk PRCNT  &hml LALT EXCL  &kp SEMI    &kp DELETE       &to BASE       &none  &none  &none     &none  &kp DOLLAR  &kp CARET  &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
+			&none        &none      &none           &none       &none                           &none  &none  &none     &none  &kp HASH    &kp STAR              &kp LPAR   &kp RPAR   &kp AT      &none      &none
 			
 			>;
 		};
@@ -344,12 +344,12 @@
 			display-name = "Base Overlay";
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &mouse_warp     &mouse_fast                                                                                                                  &kp K_CANCEL &msc SCRL_DOWN  &msc SCRL_UP  &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &kp ESC        &kp ESC                                                                                          &key_repeat  &key_repeat  &kp V           &kp X         &kp DELETE    &mkp MCLK
-			&sk LSHIFT      &atd             &kp Y         &kp O           &kp U          &kp TAB                                                                                          &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &mkp MCLK
-			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                        &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
-			&mouse          &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sk LSHIFT &_dot         &numword         &numword   &kp SPACE        &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &mouse
-			&magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
+			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                                     &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
+			&kp LBKT        &kp RBKT         &kp RA(Z)     &kp Q           &key_repeat    &kp SPACE                                                                                          &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
+			&sk LSHIFT      &kp ESC          &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                              &kp F        &kp K        &kp D           &kp L         &mkp LCLK     &sk RSHIFT
+			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                     &kp W        &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
+			&sk LSHIFT      &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL   &kp TAB      &_dot            &kp SPACE     &kp TAB      &kp R        &kp P        &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
+      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE  &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
 			>;
 		};
