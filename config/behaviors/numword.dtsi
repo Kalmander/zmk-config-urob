@@ -49,10 +49,16 @@
 			bindings = <&kp K_CANCEL>, <&macro_param_1to1>, <&numword_autolayer MACRO_PLACEHOLDER>;
 		};
 
+		/* fnumwordp: force_numword_plus { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = <&kp K_CANCEL>, <&numword_plus>; */
+		/* }; */
+
 		fnumwordp: force_numword_plus {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&kp K_CANCEL>, <&numword_plus>;
+			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>;
 		};
 
 		numword_or_c: numword_or_c {

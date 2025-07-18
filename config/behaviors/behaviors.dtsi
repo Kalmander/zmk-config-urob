@@ -74,6 +74,12 @@
 			#binding-cells = <1>;
 			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp K_CANCEL>, <&to BASE>;
 		};
+
+		bsl: to_base_then_sl {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			bindings = <&to BASE>, <&macro_param_1to1>, <&sl MACRO_PLACEHOLDER>;
+		};
 		
 		layer_with_mod: layer_with_mod {
 			compatible = "zmk,behavior-macro-two-param";
