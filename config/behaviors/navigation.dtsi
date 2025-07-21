@@ -17,6 +17,12 @@
 			ignore-modifiers;
 		};
 
+		oneshot: oneshot {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <>;
+		};
+
 		/* navigation_with_overlay: navigation_with_overlay { */
 		/* 	compatible = "zmk,behavior-macro"; */
 		/* 	#binding-cells = <0>; */
@@ -50,10 +56,16 @@
 		};
 
 
-    #define navigation navigation_hold_tap NAV_WORD NAV_WORD
+    #define navigation_base navigation_hold_tap NAV_WORD NAV_WORD
     #define vimigation vimigation_hold_tap VIM_WORD VIM_WORD
     #define pagigaiton navigation_hold_tap PAGE_WORD PAGE_WORD
 
+
+		navigation: navigation {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&oneshot NAV_WORD_SWITCH>, <&navigation_base>;
+		};
 
 		cnav: cancel_then_navword {
 			compatible = "zmk,behavior-macro";

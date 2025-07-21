@@ -14,26 +14,27 @@
 #define TYPING 1
 #define CAPS_WORD 2
 #define NAV_WORD 3
-#define VIM_WORD 4
-#define PAGE_WORD 5
-#define NUM_WORD 6
-#define NUM_WORD_MODDED 7
-#define NUM_WORD_PLUS 8
-#define NEXUS 9
-#define NUMPAD 10
-#define SYMBOL 11
-#define FUNCTIONS 12
-#define ICE 13
-#define MOD_LOCKS 14
-#define JOKER 15
-#define EDI 16
-#define MOUSE 17
-#define MOUSE_SLOW 18
-#define MOUSE_WARP 19
-#define MOUSE_FAST 20
-#define BASE_OVERLAY 21
-#define NUMPAD_OVERLAY 22
-#define MAGIC 23
+#define NAV_WORD_SWITCH 4
+#define VIM_WORD 5
+#define PAGE_WORD 6
+#define NUM_WORD 7
+#define NUM_WORD_MODDED 8
+#define NUM_WORD_PLUS 9
+#define NEXUS 10
+#define NUMPAD 11
+#define SYMBOL 12
+#define FUNCTIONS 13
+#define ICE 14
+#define MOD_LOCKS 15
+#define JOKER 16
+#define EDI 17
+#define MOUSE 18
+#define MOUSE_SLOW 19
+#define MOUSE_WARP 20
+#define MOUSE_FAST 21
+#define BASE_OVERLAY 22
+#define NUMPAD_OVERLAY 23
+#define MAGIC 24
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -50,7 +51,7 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                          &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &navigation   &kp Q           &navigation    &key_repeat                                                                                     &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
+			&kp LBKT        &kp RBKT         &kp ESC       &kp Q           &key_repeat    &key_repeat                                                                                     &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
 			&capsword       &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &sk RSHIFT    &capsword
 			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp W  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
 			&sk RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp SPACE     &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
@@ -96,6 +97,21 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
 			&trans  &trans  &trans    &stay   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
+
+		NavWordSwitcher {
+			display-name = "NavWordSwitcher";
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
+			&trans  &trans  &vimigation    &trans   &pagigaiton  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -166,8 +182,8 @@
 			&none  &none      &none      &kp STAR  &none          &none                                                                       &none     &none      &none   &none   &none      &none 
 			&none  &none      &kp CARET  &kp N1    &kp HASH       &kp BSLH                                                                    &kp PLUS  &none      &kp N0  &none   &none      &none 
 			&none  &kp DOT    &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT    &kp N7     &kp N8  &kp N9  &kp COLON  &kp GT 
-			&none  &kp COMMA  &none      &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &kp DOLLAR  &kp TAB  &none      &kp FSLH  &kp UNDER  &kp N0  &none   &kp SEMI   &none 
-			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &spacebase    &kp PRCNT   &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
+			&none  &kp COMMA  &kp DOLLAR &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &none      &kp TAB  &none      &kp FSLH  &kp UNDER  &kp N0  &none   &kp SEMI   &none 
+			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &spacebase    &kp PRCNT  &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
 			
 			>;
 		};
@@ -204,12 +220,12 @@
 			display-name = "Symbol";
 			bindings = <
 			
-			&none        &none      &none      &none       &none                                                                                            &none      &none      &none       &none      &none
-			&none        &none      &none      &none       &none            &none                                                                &none      &none      &none      &none       &none      &none
-			&none        &none      &kp CARET  &kp STAR    &kp HASH         &none                                                                &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
-			&cto SYMBOL  &none      &fnumword  &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                             &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp GRAVE  &none
-			&none        &none      &kp LALT   &none       &kp DELETE       &to BASE       &none  &none  &none     &none  &none       &none      &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
-			&none        &none      &none      &none       &none                           &none  &none  &none     &none  &kp DELETE  &kp MINUS             &kp LPAR   &kp RPAR   &kp AT      &none      &none
+			&none        &none      &none       &none       &none                                                                                            &none      &none      &none       &none      &none
+			&none        &none      &none       &none       &none            &none                                                                &none      &none      &none      &none       &none      &none
+			&none        &none      &kp CARET   &kp STAR    &kp HASH         &none                                                                &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
+			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                             &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp GRAVE  &none
+			&none        &none      &kp DOLLAR  &none       &kp DELETE       &to BASE       &none  &none  &none     &none      &none      &none      &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
+			&none        &none      &none       &none       &none                           &none  &none  &none     &kp PRCNT  &kp DOLLAR  &kp SPACE             &kp LPAR   &kp RPAR   &kp AT      &none      &none
 			
 			>;
 		};
