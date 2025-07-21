@@ -51,7 +51,7 @@
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &kp K_CANCEL                                                                                                          &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
 			&kp LBKT        &kp RBKT         &navigation   &kp Q           &navigation    &key_repeat                                                                                     &kp B  &key_repeat  &kp V           &kp X         &kp RIGHT     &kp DELETE
-			&sk LSHIFT      &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &capsword     &sk RSHIFT
+			&capsword       &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &sk RSHIFT    &capsword
 			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp W  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp B         &kp RA(T)
 			&sk RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp SPACE     &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(D)     &sk RSHIFT
       &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
@@ -167,7 +167,7 @@
 			&none  &none      &kp CARET  &kp N1    &kp HASH       &kp BSLH                                                                    &kp PLUS  &none      &kp N0  &none   &none      &none 
 			&none  &kp DOT    &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT    &kp N7     &kp N8  &kp N9  &kp COLON  &kp GT 
 			&none  &kp COMMA  &none      &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &kp DOLLAR  &kp TAB  &none      &kp FSLH  &kp UNDER  &kp N0  &none   &kp SEMI   &none 
-			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &none         &kp PRCNT   &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
+			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &spacebase    &kp PRCNT   &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
 			
 			>;
 		};
@@ -180,7 +180,7 @@
 			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                            &trans    &trans     &trans      &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &trans     &kp S       &kp R      &trans  &trans
 			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &trans    &kp SPACE  &sk RSHIFT  &fnumword   &sl ICE    &sl MOD_LOCKS
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &kp ENTER     &trans        &trans &trans &trans     &kp FSLH  &kp ESC    &none       &trans  &trans &trans
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &trans     &trans        &trans &trans &trans     &kp FSLH  &kp ESC    &none       &fnumwordp  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &mouse         &numword_or_c &to JOKER     &trans &trans &sl NEXUS            &kp HOME   &kp END     &trans     &trans  &trans
 			
 			>;

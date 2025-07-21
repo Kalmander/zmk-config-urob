@@ -68,5 +68,11 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		spacebase: spacebase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp SPACE>, <&to BASE>;
+		};
+
 	};
 };
