@@ -181,9 +181,9 @@
 			&none  &none      &none      &none     &none                                                                                      &none     &none      &none   &none   &none 
 			&none  &none      &none      &kp STAR  &none          &none                                                                       &none     &none      &none   &none   &none      &none 
 			&none  &none      &kp CARET  &kp N1    &kp HASH       &kp BSLH                                                                    &kp PLUS  &none      &kp N0  &none   &none      &none 
-			&none  &kp DOT    &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT    &kp N7     &kp N8  &kp N9  &kp COLON  &kp GT 
-			&none  &kp COMMA  &kp DOLLAR &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &none      &kp TAB  &none      &kp FSLH  &kp UNDER  &kp N0  &none   &kp SEMI   &none 
-			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &spacebase    &kp PRCNT  &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
+			&none  &kp SPACE  &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT    &kp N7     &kp N8  &kp N9  &kp COLON  &kp GT 
+			&none  &kp PRCNT  &kp DOT    &kp N1    &kp BACKSPACE  &to BASE  &none      &kp TAB  &none         &none      &kp TAB  &kp DOLLAR   &kp FSLH  &kp UNDER  &kp N0  &kp COMMA   &kp SEMI   &none 
+			&none  &none      &none      &kp LEFT  &kp RIGHT                &spacebase  &kp N5   &none      &kp PRCNT  &kp N6   &kp MINUS            &kp DOWN   &kp UP  &kp AT  &none      &none 
 			
 			>;
 		};
@@ -195,8 +195,8 @@
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans     &trans      &trans     &trans  &trans
 			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                            &trans    &trans     &trans      &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &trans     &kp S       &kp R      &trans  &trans
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &trans    &kp SPACE  &sk RSHIFT  &fnumword   &sl ICE    &sl MOD_LOCKS
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &trans     &trans        &trans &trans &trans     &kp FSLH  &kp ESC    &none       &fnumwordp  &trans &trans
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &trans    &kp SPACE  &sk RSHIFT  &fnumword  &sl ICE    &sl MOD_LOCKS
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &trans     &trans           &trans &trans &trans     &kp FSLH  &kp ESC    &fnumwordp  &none      &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &mouse         &numword_or_c &to JOKER     &trans &trans &sl NEXUS            &kp HOME   &kp END     &trans     &trans  &trans
 			
 			>;
@@ -224,8 +224,8 @@
 			&none        &none      &none       &none       &none            &none                                                                &none      &none      &none      &none       &none      &none
 			&none        &none      &kp CARET   &kp STAR    &kp HASH         &none                                                                &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
 			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                             &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp GRAVE  &none
-			&none        &none      &kp DOLLAR  &none       &kp DELETE       &to BASE       &none  &none  &none     &none      &none      &none      &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
-			&none        &none      &none       &none       &none                           &none  &none  &none     &kp PRCNT  &kp DOLLAR  &kp SPACE             &kp LPAR   &kp RPAR   &kp AT      &none      &none
+			&none        &none      &kp DOLLAR  &none       &kp DELETE       &to BASE       &none  &none  &none     &none      &none      &kp DOLLAR      &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
+			&none        &none      &none       &none       &none                           &none  &none  &none     &kp PRCNT      &none  &kp SPACE             &kp LPAR   &kp RPAR   &kp AT      &none      &none
 			
 			>;
 		};

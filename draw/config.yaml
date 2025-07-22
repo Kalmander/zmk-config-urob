@@ -9,6 +9,7 @@ parse_config:
   raw_binding_map:
     # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
     "&navigation": Nav Word
+    "&fnumwordp": Num Plus
     "&kp RA(Z)": Æ
     "&kp RA(P)": Ö
     "&kp RA(D)": Ð
