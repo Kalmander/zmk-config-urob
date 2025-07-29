@@ -21,20 +21,21 @@
 #define NUM_WORD_MODDED 8
 #define NUM_WORD_PLUS 9
 #define NEXUS 10
-#define NUMPAD 11
-#define SYMBOL 12
-#define FUNCTIONS 13
-#define ICE 14
-#define MOD_LOCKS 15
-#define JOKER 16
-#define EDI 17
-#define MOUSE 18
-#define MOUSE_SLOW 19
-#define MOUSE_WARP 20
-#define MOUSE_FAST 21
-#define BASE_OVERLAY 22
-#define NUMPAD_OVERLAY 23
-#define MAGIC 24
+#define NEXUS_OVER 11
+#define NUMPAD 12
+#define SYMBOL 13
+#define FUNCTIONS 14
+#define ICE 15
+#define MOD_LOCKS 16
+#define JOKER 17
+#define EDI 18
+#define MOUSE 19
+#define MOUSE_SLOW 20
+#define MOUSE_WARP 21
+#define MOUSE_FAST 22
+#define BASE_OVERLAY 23
+#define NUMPAD_OVERLAY 24
+#define MAGIC 25
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -54,7 +55,7 @@
 			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &key_repeat                                                                                     &key_repeat  &kp B  &kp V           &kp B         &kp RIGHT     &kp DELETE
 			&capsword       &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &sk RSHIFT    &capsword
 			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp W  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp RA(D)     &kp X
-			&kp RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp SPACE     &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(T)     &sk RSHIFT
+			&kp RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp RIGHT      &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(T)     &sk RSHIFT
       &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
       >;
@@ -194,7 +195,23 @@
 			
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
 			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                            &trans    &trans      &trans      &trans     &trans  &trans
-			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &trans      &kp S       &kp R      &trans  &trans
+			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &trans    &sk RSHIFT  &fnumword   &fnumwordp  &sl ICE    &sl MOD_LOCKS
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &trans     &trans           &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &gui_lock  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE      &mouse     &to JOKER     &trans &trans &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans
+			
+			>;
+		};
+
+
+    /* til að láta sqt_nex virka í jaðartilfelli  */
+		NexusOverlay {
+			display-name = "Nexus Overlay";
+			bindings = <
+			
+			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
+			&trans      &trans     &kp RA(Z)  &kp Q      &trans     &trans                                                                            &trans    &trans      &trans      &trans     &trans  &trans
+			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
 			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &trans    &sk RSHIFT  &fnumword   &fnumwordp  &sl ICE    &sl MOD_LOCKS
 			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &sl FUNCTIONS  &trans     &trans           &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &gui_lock  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE      &mouse     &to JOKER     &trans &trans &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans

@@ -228,6 +228,13 @@
 			#binding-cells = <1>;
 			continue-list = <>;
 		};
+
+
+		sqt_nex: sqt_nex {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp SQT>, <&sl NEXUS_OVER>;
+		};
 		
 		/* sk_sh_o: sticky_shift_with_overlay { */
 			/* 	compatible = "zmk,behavior-macro"; */
