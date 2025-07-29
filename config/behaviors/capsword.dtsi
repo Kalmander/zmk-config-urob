@@ -25,6 +25,21 @@
 			>;
 		};
 
+
+		pcapsword: permissive_caps_word {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
+			mods = <(MOD_LSFT)>;
+      // Default: underscore, backspace, delete, alphanumerics
+      // verður að taka aftur fram undrescore, backspace og delete
+      // en alphanumerics koma sjálfkrafa
+			continue-list = <
+        UNDERSCORE BACKSPACE DELETE 
+        CLEAR_AGAIN
+        DOT COMMA MINUS 
+      >;
+		};
+
 		capsword_layer: capsword_layer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
