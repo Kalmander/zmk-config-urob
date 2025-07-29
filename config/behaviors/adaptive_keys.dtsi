@@ -33,6 +33,22 @@
 			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; };
 		};
 
+
+		lh_repeat: lh_repeat {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&key_repeat>;
+			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
+		};
+
+
+		rh_repeat: rh_repeat {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&key_repeat>;
+			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+		};
+
 		atd: a_thorn_eth {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
