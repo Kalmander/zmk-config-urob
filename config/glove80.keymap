@@ -70,7 +70,7 @@
 			&pcapsword      &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &capsword     &pcapsword
 			&kp Z           &adaptive        &kp I         &kp E           &kp A          &kp ENTER                                                                                       &kp W  &kp H       &kp T   &kp N   &kp RA(D)     &kp X
 			&kp RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp RIGHT      &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(T)     &sk RSHIFT
-      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
+      &to BASE        &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
 			>;
 		};
