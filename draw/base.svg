@@ -3225,10 +3225,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(980, 224)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Mod-Locks">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-1.2em">Mod</tspan><tspan x="0" dy="1.2em">Locks</tspan>
-</text>
+<a href="#ModLocks">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">ModLocks</tspan></text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(28, 280)" class="key keypos-46">
@@ -3259,10 +3257,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(371, 312) rotate(30.0)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Function-keys">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-1.2em" style="font-size: 88%">Function</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">keys</tspan>
-</text>
+<a href="#FunctionKeys">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">FunctionKe…</tspan></text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(420, 350) rotate(45.0)" class="key trans keypos-53">
@@ -3366,8 +3362,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 5734)" class="layer-Nexus Overlay">
-<text x="0" y="28" class="label" id="Nexus-Overlay">Nexus Overlay</text>
+<g transform="translate(30, 5734)" class="layer-NexusOverlay">
+<text x="0" y="28" class="label" id="NexusOverlay">NexusOverlay</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3539,10 +3535,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(980, 224)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Mod-Locks">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-1.2em">Mod</tspan><tspan x="0" dy="1.2em">Locks</tspan>
-</text>
+<a href="#ModLocks">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">ModLocks</tspan></text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(28, 280)" class="key keypos-46">
@@ -3573,10 +3567,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(371, 312) rotate(30.0)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Function-keys">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-1.2em" style="font-size: 88%">Function</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">keys</tspan>
-</text>
+<a href="#FunctionKeys">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">FunctionKe…</tspan></text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(420, 350) rotate(45.0)" class="key trans keypos-53">
@@ -4257,8 +4249,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 7297)" class="layer-Function keys">
-<text x="0" y="28" class="label" id="Function-keys">Function keys</text>
+<g transform="translate(30, 7297)" class="layer-FunctionKeys">
+<text x="0" y="28" class="label" id="FunctionKeys">FunctionKeys</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -4542,8 +4534,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 7819)" class="layer-Icelandic letters">
-<text x="0" y="28" class="label" id="Icelandic-letters">Icelandic letters</text>
+<g transform="translate(30, 7819)" class="layer-IcelandicKeys">
+<text x="0" y="28" class="label" id="IcelandicKeys">IcelandicKeys</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -4806,8 +4798,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 8340)" class="layer-Mod Locks">
-<text x="0" y="28" class="label" id="Mod-Locks">Mod Locks</text>
+<g transform="translate(30, 8340)" class="layer-ModLocks">
+<text x="0" y="28" class="label" id="ModLocks">ModLocks</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5355,8 +5347,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(314, 347) rotate(20.0)" class="key keypos-69">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#EDI">
-<text x="0" y="0" class="key tap layer-activator">EDI</text>
+<a href="#x_x">
+<text x="0" y="0" class="key tap layer-activator">18</text>
 </a></g>
 <g transform="translate(369, 379) rotate(40.0)" class="key keypos-70">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5402,8 +5394,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 9382)" class="layer-EDI">
-<text x="0" y="28" class="label" id="EDI">EDI</text>
+<g transform="translate(30, 9382)" class="layer-18">
+<text x="0" y="28" class="label" id="x_x">18</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5829,24 +5821,18 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(756, 196)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Mouse-Fast">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">(Fast)</tspan>
-</text>
+<a href="#MouseFast">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">MouseFast</tspan></text>
 </a></g>
 <g transform="translate(812, 196)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Mouse-Warp">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">(Warp)</tspan>
-</text>
+<a href="#MouseWarp">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">MouseWarp</tspan></text>
 </a></g>
 <g transform="translate(868, 196)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Mouse-Slow">
-<text x="0" y="0" class="key tap layer-activator">
-<tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">(Slow)</tspan>
-</text>
+<a href="#MouseSlow">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 78%">MouseSlow</tspan></text>
 </a></g>
 <g transform="translate(924, 224)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5989,8 +5975,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 10425)" class="layer-Mouse (Slow)">
-<text x="0" y="28" class="label" id="Mouse-Slow">Mouse (Slow)</text>
+<g transform="translate(30, 10425)" class="layer-MouseSlow">
+<text x="0" y="28" class="label" id="MouseSlow">MouseSlow</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6234,8 +6220,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 10946)" class="layer-Mouse (Warp)">
-<text x="0" y="28" class="label" id="Mouse-Warp">Mouse (Warp)</text>
+<g transform="translate(30, 10946)" class="layer-MouseWarp">
+<text x="0" y="28" class="label" id="MouseWarp">MouseWarp</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6479,8 +6465,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 11467)" class="layer-Mouse (Fast)">
-<text x="0" y="28" class="label" id="Mouse-Fast">Mouse (Fast)</text>
+<g transform="translate(30, 11467)" class="layer-MouseFast">
+<text x="0" y="28" class="label" id="MouseFast">MouseFast</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6724,8 +6710,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 11989)" class="layer-Base Overlay">
-<text x="0" y="28" class="label" id="Base-Overlay">Base Overlay</text>
+<g transform="translate(30, 11989)" class="layer-Base_Overlay">
+<text x="0" y="28" class="label" id="Base_Overlay">Base_Overlay</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -7093,8 +7079,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 12510)" class="layer-Numpad Overlay">
-<text x="0" y="28" class="label" id="Numpad-Overlay">Numpad Overlay</text>
+<g transform="translate(30, 12510)" class="layer-Numpad_Overlay">
+<text x="0" y="28" class="label" id="Numpad_Overlay">Numpad_Overlay</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -7348,8 +7334,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 13031)" class="layer-Moergo Magic Layer">
-<text x="0" y="28" class="label" id="Moergo-Magic-Layer">Moergo Magic Layer</text>
+<g transform="translate(30, 13031)" class="layer-MoergoMagic">
+<text x="0" y="28" class="label" id="MoergoMagic">MoergoMagic</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
