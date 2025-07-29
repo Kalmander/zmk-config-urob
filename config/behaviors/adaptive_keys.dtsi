@@ -47,6 +47,7 @@
 			#binding-cells = <0>;
 			bindings = <&key_repeat>;
 			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp Q>; };
 		};
 
 		atd: a_thorn_eth {
