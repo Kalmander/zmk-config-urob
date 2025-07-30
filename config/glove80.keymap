@@ -106,8 +106,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &vimigation    &trans  &pagigaiton  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
-			&trans  &trans  &numword    &trans   &fnumwordp  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &fnumwordp    &trans  &numword  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
+			&trans  &trans  &vimigation    &trans   &pagigaiton  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
