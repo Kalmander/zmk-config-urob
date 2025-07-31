@@ -57,6 +57,7 @@
 
 
     #define navigation_base navigation_hold_tap NAV_WORD NAV_WORD
+    #define nav_gui navigation_autolayer NAV_WORD_GUI
     #define vimigation vimigation_hold_tap VIM_WORD VIM_WORD
     #define pagigaiton navigation_hold_tap PAGE_WORD PAGE_WORD
 
@@ -72,6 +73,7 @@
 			#binding-cells = <0>;
 			bindings = <&kp K_CANCEL>, <&navigation>;
 		};
+
 		/* navigation: navigation { */
 		/* 	compatible = "zmk,behavior-mod-morph"; */
 		/* 	#binding-cells = <0>; */
