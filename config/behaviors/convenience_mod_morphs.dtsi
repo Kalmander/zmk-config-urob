@@ -49,6 +49,13 @@
 			bindings = <&kp EXCL>, <&kp LS(RA(P))>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
+
+		mouse_or_c: mouse_or_c {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&mouse>, <&kp LS(C)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
 		
 	};
 };

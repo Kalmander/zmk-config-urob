@@ -3329,7 +3329,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#Mouse">
 <text x="0" y="0" class="key tap layer-activator">Mouse</text>
-</a></g>
+</a><text x="0" y="-24" class="key shifted">Sft+C</text>
+</g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#FunctionKeys">
@@ -3639,7 +3640,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#Mouse">
 <text x="0" y="0" class="key tap layer-activator">Mouse</text>
-</a></g>
+</a><text x="0" y="-24" class="key shifted">Sft+C</text>
+</g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#Joker">
