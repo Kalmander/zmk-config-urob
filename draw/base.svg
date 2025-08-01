@@ -1414,8 +1414,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(140, 84)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(196, 84)" class="key trans keypos-13">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(196, 84)" class="key keypos-13">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Gui+Q</text>
 </g>
 <g transform="translate(252, 84)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1531,7 +1532,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 252)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Stay</text>
+<text x="0" y="0" class="key tap">&amp;cnav</text>
 </g>
 <g transform="translate(252, 252)" class="key trans keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3210,6 +3211,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(371, 312) rotate(30.0)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bsk_symbol</tspan></text>
 </g>
 <g transform="translate(420, 350) rotate(45.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3279,10 +3281,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(598, 427) rotate(-60.0)" class="key keypos-72">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">%</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(639, 379) rotate(-40.0)" class="key keypos-73">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3290,7 +3293,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(694, 347) rotate(-20.0)" class="key keypos-74">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">-</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;bsk_nexus</tspan></text>
 </g>
 <g transform="translate(756, 308)" class="key keypos-75">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3509,6 +3512,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(371, 312) rotate(30.0)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bsk_symbol</tspan></text>
 </g>
 <g transform="translate(420, 350) rotate(45.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3578,10 +3582,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(598, 427) rotate(-60.0)" class="key keypos-72">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">%</text>
+<text x="0" y="0" class="key tap">-</text>
 </g>
 <g transform="translate(639, 379) rotate(-40.0)" class="key keypos-73">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3589,7 +3594,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(694, 347) rotate(-20.0)" class="key keypos-74">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">-</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;bsk_nexus</tspan></text>
 </g>
 <g transform="translate(756, 308)" class="key keypos-75">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
