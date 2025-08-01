@@ -21,23 +21,24 @@
 #define NUM_WORD 8
 #define NUM_WORD_MODDED 9
 #define NUM_WORD_PLUS 10
-#define NEXUS 11
-#define NEXUS_OVER 12
-#define BASE_NEXUS 13
-#define NUMPAD 14
-#define SYMBOL 15
-#define FUNCTIONS 16
-#define ICE 17
-#define MOD_LOCKS 18
-#define JOKER 19
-#define EDI 20
-#define MOUSE 21
-#define MOUSE_SLOW 22
-#define MOUSE_WARP 23
-#define MOUSE_FAST 24
-#define BASE_OVERLAY 25
-#define NUMPAD_OVERLAY 26
-#define MAGIC 27
+#define NUM_WORD_PLUS_SPACE 11
+#define NEXUS 12
+#define NEXUS_OVER 13
+#define BASE_NEXUS 14
+#define NUMPAD 15
+#define SYMBOL 16
+#define FUNCTIONS 17
+#define ICE 18
+#define MOD_LOCKS 19
+#define JOKER 20
+#define EDI 21
+#define MOUSE 22
+#define MOUSE_SLOW 23
+#define MOUSE_WARP 24
+#define MOUSE_FAST 25
+#define BASE_OVERLAY 26
+#define NUMPAD_OVERLAY 27
+#define MAGIC 28
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -186,9 +187,23 @@
 			&none  &none      &none      &none     &none                                                                                      &none        &none      &none     &none      &none 
 			&none  &none      &kp HASH   &kp STAR  &none          &kpcb LS(G)                                                                 &kpcb LS(G)  &none      &kp STAR  &kp HASH   &none      &none 
 			&none  &none      &kp DOT    &kp N1    &kp CARET      &kp BSLH                                                                    &kp PLUS     &kp CARET  &kp N0    &kp DOT    &none      &none 
+			&none  &spacebase  &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT       &kp N7     &kp N8    &kp N9     &kp COLON  &kp GT 
+			&none  &kp PRCNT  &kp COMMA  &kp N1    &kp BACKSPACE  &to BASE  &none       &kp TAB  &none      &none      &kp TAB  &kp DOLLAR    &kp FSLH     &kp UNDER  &kp N0    &kp COMMA  &kp SEMI   &none 
+			&none  &none      &none      &leftbase  &rightbase                &spacebase  &kp N5   &none      &kp PRCNT  &kp N6   &kp MINUS                  &downbase   &upbase    &kp AT     &none      &none 
+			
+			>;
+		};
+
+
+		NumWordPlusSpace {
+			bindings = <
+			
+			&none  &none      &none      &none     &none                                                                                      &none        &none      &none     &none      &none 
+			&none  &none      &kp HASH   &kp STAR  &none          &kpcb LS(G)                                                                 &kpcb LS(G)  &none      &kp STAR  &kp HASH   &none      &none 
+			&none  &none      &kp DOT    &kp N1    &kp CARET      &kp BSLH                                                                    &kp PLUS     &kp CARET  &kp N0    &kp DOT    &none      &none 
 			&none  &kp SPACE  &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT       &kp N7     &kp N8    &kp N9     &kp COLON  &kp GT 
 			&none  &kp PRCNT  &kp COMMA  &kp N1    &kp BACKSPACE  &to BASE  &none       &kp TAB  &none      &none      &kp TAB  &kp DOLLAR    &kp FSLH     &kp UNDER  &kp N0    &kp COMMA  &kp SEMI   &none 
-			&none  &none      &none      &kp LEFT  &kp RIGHT                &spacebase  &kp N5   &none      &kp PRCNT  &kp N6   &kp MINUS                  &kp DOWN   &kp UP    &kp AT     &none      &none 
+			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &none      &kp PRCNT  &kp N6   &kp MINUS                  &kp DOWN   &kp UP    &kp AT     &none      &none 
 			
 			>;
 		};

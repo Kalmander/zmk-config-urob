@@ -26,7 +26,8 @@
 		/* 	>; */
 		/* }; */
 		
-		#define numword numword_autolayer NUM_WORD
+		/* #define numword numword_autolayer NUM_WORD */
+		#define numword to NUM_WORD_PLUS
     #define nsk to_then_sk NUM_WORD_MODDED
 		#define numword_plus numwordplus_autolayer NUM_WORD_PLUS
 		
@@ -58,7 +59,7 @@
 		fnumwordp: force_numword_plus {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>;
+			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS_SPACE>;
 		};
 
 		numword_or_c: numword_or_c {
@@ -72,6 +73,30 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings = <&kp SPACE>, <&to BASE>;
+		};
+
+		leftbase: leftbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LEFT>, <&to BASE>;
+		};
+
+		rightbase: rightbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp RIGHT>, <&to BASE>;
+		};
+
+		downbase: downbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp DOWN>, <&to BASE>;
+		};
+
+		upbase: upbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp UP>, <&to BASE>;
 		};
 
 	};
