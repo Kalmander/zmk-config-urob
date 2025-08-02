@@ -67,6 +67,7 @@
     #define navigation_base navigation_hold_tap NAV_WORD NAV_WORD
     #define nav_gui navigation_autolayer NAV_WORD_GUI
     #define nav_ctrl navigation_autolayer_bs NAV_WORD_CTRL
+    #define nav_mirrored navigation_autolayer NAV_WORD_MIRRORED
     #define vimigation vimigation_hold_tap VIM_WORD VIM_WORD
     #define pagigaiton navigation_hold_tap PAGE_WORD PAGE_WORD
 

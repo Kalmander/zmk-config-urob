@@ -94,7 +94,7 @@
 		combo_ZQ_macro: combo_ZQ_macro {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&macro_tap &kp LS(Z)>, <&macro_tap &kp LS(Q)>;
+      bindings = <&macro_tap &kp LS(Z)>, <&macro_tap &kp LS(Q)>;
 		};
 		
 		combo_ZZ_macro: combo_ZZ_macro {
@@ -179,14 +179,18 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_T5 POS_RH_T6>;
 			bindings = <&combo_ZQ_macro>;
-			layers = <BASE TYPING>;
+			layers = <BASE TYPING \
+                NAV_WORD NAV_WORD_MIRRORED NAV_WORD_GUI \
+                NAV_WORD_CTRL NAV_WORD_SWITCH VIM_WORD PAGE_WORD>;
 		};
 		
 		combo_ZZ {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_T6 POS_RH_T6>;
 			bindings = <&combo_ZZ_macro>;
-			layers = <BASE TYPING>;
+			layers = <BASE TYPING \
+                NAV_WORD NAV_WORD_MIRRORED NAV_WORD_GUI \
+                NAV_WORD_CTRL NAV_WORD_SWITCH VIM_WORD PAGE_WORD>;
 		};
 		
 		combo_cx {
