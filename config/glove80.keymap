@@ -151,7 +151,7 @@
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &fnumwordp  &trans       &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton  &trans   &nav_gui  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &trans      &nav_ctrl       &trans          &numword  &nav_mirrored  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &trans      &nav_mirrored       &trans          &numword  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
