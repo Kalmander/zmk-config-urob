@@ -15,30 +15,31 @@
 #define CAPS_WORD 2
 #define NAV_WORD 3
 #define NAV_WORD_GUI 4
-#define NAV_WORD_SWITCH 5
-#define VIM_WORD 6
-#define PAGE_WORD 7
-#define NUM_WORD 8
-#define NUM_WORD_MODDED 9
-#define NUM_WORD_PLUS 10
-#define NUM_WORD_PLUS_SPACE 11
-#define NEXUS 12
-#define NEXUS_OVER 13
-#define BASE_NEXUS 14
-#define NUMPAD 15
-#define SYMBOL 16
-#define FUNCTIONS 17
-#define ICE 18
-#define MOD_LOCKS 19
-#define JOKER 20
-#define EDI 21
-#define MOUSE 22
-#define MOUSE_SLOW 23
-#define MOUSE_WARP 24
-#define MOUSE_FAST 25
-#define BASE_OVERLAY 26
-#define NUMPAD_OVERLAY 27
-#define MAGIC 28
+#define NAV_WORD_CTRL 5
+#define NAV_WORD_SWITCH 6
+#define VIM_WORD 7
+#define PAGE_WORD 8
+#define NUM_WORD 9
+#define NUM_WORD_MODDED 10
+#define NUM_WORD_PLUS 11
+#define NUM_WORD_PLUS_SPACE 12
+#define NEXUS 13
+#define NEXUS_OVER 14
+#define BASE_NEXUS 15
+#define NUMPAD 16
+#define SYMBOL 17
+#define FUNCTIONS 18
+#define ICE 19
+#define MOD_LOCKS 20
+#define JOKER 21
+#define EDI 22
+#define MOUSE 23
+#define MOUSE_SLOW 24
+#define MOUSE_WARP 25
+#define MOUSE_FAST 26
+#define BASE_OVERLAY 27
+#define NUMPAD_OVERLAY 28
+#define MAGIC 29
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -115,15 +116,28 @@
 			>;
 		};
 
+		NavWordCtrl {
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &cnav   &kp LC(BACKSPACE)  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
 		NavWordSwitcher {
 			bindings = <
 			
-			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &fnumwordp    &trans  &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
-			&trans  &vimigation  &pagigaiton    &trans   &nav_gui  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans          &numword  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &trans      &trans       &trans                                                                         &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &fnumwordp  &trans       &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
+			&trans  &vimigation  &pagigaiton  &trans   &nav_gui  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &trans      &nav_ctrl       &trans          &numword  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
