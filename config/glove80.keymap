@@ -125,7 +125,7 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &kp LG(ENTER)                                                       &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
 			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &kp LG(M)     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans          &kp LG(SPACE)  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
