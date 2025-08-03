@@ -1,6 +1,13 @@
 / {
 	behaviors {
 		
+		q_star: q_star {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp STAR>, <&kp Q>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
 		y_lpar: y_lpar {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
