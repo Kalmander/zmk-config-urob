@@ -240,7 +240,7 @@
 			bindings = <
 			
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp HASH   &q_star    &trans     &trans                                                                            &trans    &trans      &kp STAR    &kp HASH   &trans  &trans
+			&trans      &trans     &trans     &q_hash    &trans     &trans                                                                            &trans    &trans      &kp STAR    &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
 			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &fnumwordp  &sl ICE    &sl MOD_LOCKS
 			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &gui_lock  &trans &trans
@@ -255,7 +255,7 @@
 			bindings = <
 			
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp HASH   &q_star    &trans     &trans                                                                            &trans    &trans      &kp STAR    &kp HASH   &trans  &trans
+			&trans      &trans     &trans     &q_hash    &trans     &trans                                                                            &trans    &trans      &kp STAR    &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
 			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &fnumwordp  &sl ICE    &sl MOD_LOCKS
 			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &gui_lock  &trans &trans

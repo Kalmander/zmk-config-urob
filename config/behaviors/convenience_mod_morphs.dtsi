@@ -1,10 +1,10 @@
 / {
 	behaviors {
 		
-		q_star: q_star {
+		q_hash: q_hash {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&kp STAR>, <&kp Q>;
+			bindings = <&kp HASH>, <&kp Q>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
