@@ -17,30 +17,31 @@
 #define NAV_WORD_MIRRORED 4
 #define NAV_WORD_GUI 5
 #define NAV_WORD_CTRL 6
-#define NAV_WORD_SWITCH 7
-#define VIM_WORD 8
-#define PAGE_WORD 9
-#define NUM_WORD 10
-#define NUM_WORD_MODDED 11
-#define NUM_WORD_PLUS 12
-#define NUM_WORD_PLUS_SPACE 13
-#define NEXUS 14
-#define NEXUS_OVER 15
-#define BASE_NEXUS 16
-#define NUMPAD 17
-#define SYMBOL 18
-#define FUNCTIONS 19
-#define ICE 20
-#define MOD_LOCKS 21
-#define JOKER 22
-#define EDI 23
-#define MOUSE 24
-#define MOUSE_SLOW 25
-#define MOUSE_WARP 26
-#define MOUSE_FAST 27
-#define BASE_OVERLAY 28
-#define NUMPAD_OVERLAY 29
-#define MAGIC 30
+#define NAV_WORD_ALT 7
+#define NAV_WORD_SWITCH 8
+#define VIM_WORD 9
+#define PAGE_WORD 10
+#define NUM_WORD 11
+#define NUM_WORD_MODDED 12
+#define NUM_WORD_PLUS 13
+#define NUM_WORD_PLUS_SPACE 14
+#define NEXUS 15
+#define NEXUS_OVER 16
+#define BASE_NEXUS 17
+#define NUMPAD 18
+#define SYMBOL 19
+#define FUNCTIONS 20
+#define ICE 21
+#define MOD_LOCKS 22
+#define JOKER 23
+#define EDI 24
+#define MOUSE 25
+#define MOUSE_SLOW 26
+#define MOUSE_WARP 27
+#define MOUSE_FAST 28
+#define BASE_OVERLAY 29
+#define NUMPAD_OVERLAY 30
+#define MAGIC 31
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -143,6 +144,19 @@
 			>;
 		};
 
+		NavWordAlt {
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP)     &kp LA(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
 		NavWordSwitcher {
 			bindings = <
 			
@@ -150,8 +164,8 @@
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &fnumwordp  &trans       &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
-			&trans  &vimigation  &pagigaiton  &trans   &nav_gui  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &trans      &nav_mirrored       &trans          &numword  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &vimigation  &pagigaiton  &trans   &numword  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &nav_ctrl   &nav_alt       &nav_gui          &numword  &nav_mirrored  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
