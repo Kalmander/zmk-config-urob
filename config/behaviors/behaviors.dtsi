@@ -142,6 +142,15 @@
 			#binding-cells = <0>;
 			bindings = <&macro_tap &kp RA(SINGLE_QUOTE) &kp Y>;
 		};
+
+
+		shift_ice: shift_ice {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&sk LSHIFT &sl ICE>;
+		};
 		
 		cap_isl_y: cap_isl_y {
 			compatible = "zmk,behavior-macro";

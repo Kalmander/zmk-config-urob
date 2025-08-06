@@ -24,22 +24,21 @@
 #define NUM_WORD 11
 #define NUM_WORD_MODDED 12
 #define NUM_WORD_PLUS 13
-#define NUM_WORD_PLUS_SPACE 14
-#define NEXUS 15
-#define NEXUS_OVER 16
-#define BASE_NEXUS 17
-#define SYMBOL 18
-#define FUNCTIONS 19
-#define ICE 20
-#define MOD_LOCKS 21
-#define JOKER 22
-#define EDI 23
-#define MOUSE 24
-#define MOUSE_SLOW 25
-#define MOUSE_WARP 26
-#define MOUSE_FAST 27
-#define MOUSE_SWITCHER 28
-#define MAGIC 29
+#define NEXUS 14
+#define NEXUS_OVER 15
+#define BASE_NEXUS 16
+#define SYMBOL 17
+#define FUNCTIONS 18
+#define ICE 19
+#define MOD_LOCKS 20
+#define JOKER 21
+#define EDI 22
+#define MOUSE 23
+#define MOUSE_SLOW 24
+#define MOUSE_WARP 25
+#define MOUSE_FAST 26
+#define MOUSE_SWITCHER 27
+#define MAGIC 28
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -161,7 +160,7 @@
 			&trans  &trans       &trans      &trans       &trans                                                                         &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &fnumwordp  &trans       &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
+			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton  &trans   &fnumword  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &trans  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
@@ -235,26 +234,13 @@
 		};
 
 
-		NumWordPlusSpace {
-			bindings = <
-			
-			&none  &none      &none      &none     &none                                                                                      &none        &none      &none     &none      &none 
-			&none  &none      &kp HASH   &kp STAR  &none          &kpcb LS(G)                                                                 &kpcb LS(G)  &none      &kp STAR  &kp HASH   &none      &none 
-			&none  &kp LPAR      &kp DOT    &kp N1    &kp CARET      &kp BSLH                                                                    &kp PLUS     &kp CARET  &kp N0    &kp DOT    &kp RPAR      &none 
-			&none  &kp SPACE  &kp N2     &kp N3    &kp N4         &kp ENTER                                                                   &kp LT       &kp N7     &kp N8    &kp N9     &kp COLON  &kp GT 
-			&none  &kp PRCNT  &kp COMMA  &kp N1    &kp BACKSPACE  &to BASE  &bsk_symbol       &kp TAB  &none      &none      &kp TAB  &kp DOLLAR    &kp FSLH     &kp UNDER  &kp N0    &kp COMMA  &kp SEMI   &none 
-			&none  &none      &none      &kp LEFT  &kp RIGHT                &kp SPACE  &kp N5   &kp MINUS      &kp MINUS  &kp N6   &bsk_nexus                  &kp DOWN   &kp UP    &kp AT     &none      &none 
-			
-			>;
-		};
-		
 		Nexus {
 			bindings = <
 			
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
 			&trans      &trans     &trans     &q_hash    &trans     &trans                                                                            &trans    &trans      &kp STAR    &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &fnumwordp  &sl ICE    &sl MOD_LOCKS
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &shift_ice  &sl ICE    &sl MOD_LOCKS
 			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &gui_lock  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c     &sl FUNCTIONS     &trans &trans &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans
 			
@@ -269,7 +255,7 @@
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
 			&trans      &trans     &trans     &q_hash    &trans     &trans                                                                            &trans    &trans      &kp STAR    &trans     &trans  &trans
 			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &fnumwordp  &sl ICE    &sl MOD_LOCKS
+			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &shift_ice  &sl ICE    &sl MOD_LOCKS
 			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &gui_lock  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c     &sl FUNCTIONS     &trans &trans &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans
 			
@@ -335,7 +321,7 @@
 			&none  &none      &none        &none       &none       &none                                                     &none  &none  &none  &none  &none  &none
 			&none  &none      &none        &none       &none       &none                                                     &none  &none  &none  &none  &none  &none
 			&none  &none      &alt_lock    &shift_lock &gui_lock   &none                                                     &none  &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &ctrl_lock  &none    &none  &none  &none         &none  &none  &none  &none  &none  &none  &none  &none  &none
+			&none  &none      &none        &none       &none       &none    &none  &none  &none         &none  &none  &none  &none  &none  &none  &none  &none  &none
 			&none  &none      &none        &none       &none                &none  &ctrl_lock  &none    &none  &none  &none         &none  &none  &none  &none  &none
 			
 			>;
