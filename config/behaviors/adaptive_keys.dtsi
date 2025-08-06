@@ -47,6 +47,21 @@
 			ak_08 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N8>; };
 		};
 
+		n1_adapt: n1_adapt {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp N1>;
+
+			ak_13 { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp N3>; };
+		};
+
+		n0_adapt: n0_adapt {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp N0>;
+
+			ak_08 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N8>; };
+		};
 
 		lh_repeat: lh_repeat {
 			compatible = "zmk,behavior-adaptive-key";
