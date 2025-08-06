@@ -28,20 +28,18 @@
 #define NEXUS 15
 #define NEXUS_OVER 16
 #define BASE_NEXUS 17
-#define NUMPAD 18
-#define SYMBOL 19
-#define FUNCTIONS 20
-#define ICE 21
-#define MOD_LOCKS 22
-#define JOKER 23
-#define EDI 24
-#define MOUSE 25
-#define MOUSE_SLOW 26
-#define MOUSE_WARP 27
-#define MOUSE_FAST 28
-#define BASE_OVERLAY 29
-#define NUMPAD_OVERLAY 30
-#define MAGIC 31
+#define SYMBOL 18
+#define FUNCTIONS 19
+#define ICE 20
+#define MOD_LOCKS 21
+#define JOKER 22
+#define EDI 23
+#define MOUSE 24
+#define MOUSE_SLOW 25
+#define MOUSE_WARP 26
+#define MOUSE_FAST 27
+#define MOUSE_SWITCHER 28
+#define MAGIC 29
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -291,19 +289,6 @@
       >;
 		};
 		
-		Numpad {
-			bindings = <
-			
-			&none        &none       &none            &none              &none                                                                                           &none     &none   &none   &none      &none
-			&none        &none       &none            &none              &none             &none                                                              &none      &none     &none   &none   &none      &none
-			&none        &none       &kp C            &kp B              &kp DQT           &kp BSLH                                                           &kp PLUS   &kp N7    &kp N8  &kp N9  &none      &none
-			&cto NUMPAD  &kp AMPS    &hml LALT QMARK  &hml LSHIFT COMMA  &hml LGUI DOT     &kp SQT                                                            &kp MINUS  &kp N4    &kp N5  &kp N6  &kp UNDER  &none
-			&sk LSHIFT   &kp PRCNT   &kp EXCL         &kp SEMI           &hml LCTRL COLON  &to BASE   &none  &none  &none     &none     &kp DOLLAR  &kp STAR   &kp FSLH   &kp N1    &kp N2  &kp N3  &kp CARET  &none
-			&none        &none       &none            &none              &kp BACKSPACE                &none  &none  &none     &kp HASH  &kp N0  &kp SPACE                 &kp LT    &kp GT  &none   &none      &none
-			
-			>;
-		};
-		
 		Symbol {
 			bindings = <
 			
@@ -385,12 +370,12 @@
 		Mouse {
 			bindings = <
 			
-			&base_gui &num_gui   &none           &none           &none                                                                                                          &none           &none           &none           &none     &none
+			&none     &none      &none           &none           &none                                                                                                          &none           &none           &none           &none     &none
 			&none     &none      &none           &none           &none            &none                                                                              &none      &none           &none           &none           &none     &none
 			&none     &kp LC(X)  &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &kp LC(TAB)                                                                        &none      &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
 			&none     &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                          &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
 			&none     &none      &none           &none           &none            &to BASE  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none     &none  &none      &mkp MCLK   &none      &kp LGUI        &kp LSHFT       &kp LALT        &none     &none
-			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP     &none     &none  &mkp RCLK  &mkp LCLK                              &kp LCTRL       &none           &none           &none     &none
+			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP     &to MOUSE_SWITCHER     &to MOUSE_SWITCHER  &mkp RCLK  &mkp LCLK                              &kp LCTRL       &none           &none           &none     &none
 			
 			>;
 		};
@@ -433,29 +418,16 @@
 			
 			>;
 		};
-		
-		Base_Overlay {
+
+		MouseSwitcher {
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &rh_repeat  &kp B  &kp V           &kp B         &kp RIGHT     &kp DELETE
-			&pcapsword      &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &capsword     &pcapsword
-			&kp Z           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp W  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp RA(D)     &kp X
-			&kp RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp RIGHT      &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(T)     &sk RSHIFT
-      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
-			
-			>;
-		};
-		
-		Numpad_Overlay {
-			bindings = <
-			
-			&none  &none  &none  &none  &none                                                                &none   &none   &none   &none  &none
-			&none  &none  &none  &none  &none  &none                                                  &none  &none   &none   &none   &none  &none
-			&none  &none  &none  &none  &none  &none                                                  &none  &kp N7  &kp N8  &kp N9  &none  &none
-			&none  &none  &none  &none  &none  &none                                                  &none  &kp N4  &kp N5  &kp N6  &none  &none
-			&none  &none  &none  &none  &none  &none    &none  &none  &none     &none  &none   &none  &none  &kp N1  &kp N2  &kp N3  &none  &none
-			&none  &none  &none  &none  &none           &none  &none  &none     &none  &kp N0  &none         &none   &none   &none   &none  &none
+			&none      &none       &none      &none        &none                                                                         &none      &none        &none      &none      &none 
+			&none      &none       &none      &none        &none   &none                                                         &none   &none      &none        &none      &none      &none 
+			&none      &none       &none      &kpm LG(N1)   &none   &none                                                         &none   &none      &kpm LG(N0)       &none      &none      &none 
+			&none      &none       &kpm LG(N2) &kpm LG(N3)   &kpm LG(N4)  &none                                                         &none   &kpm LG(N7)     &kpm LG(N8)       &kpm LG(N9)     &none      &none 
+			&none      &none       &none      &none        &none   &none     &none   &none   &none       &none   &none   &kpm LG(R)   &none   &none      &none       &none      &none      &none 
+			&none      &none       &none      &none        &none             &none   &kpm LG(N5)  &none       &none   &kpm LG(N6)  &none           &none      &none        &none      &none      &none 
 			
 			>;
 		};

@@ -167,14 +167,6 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 
-		combo_numpad_dollar {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_RH_T5 POS_RH_T4>;
-			bindings = <&kp DOLLAR>;
-			layers = <NUMPAD>;
-		};
-		
-		
 		combo_ZQ {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_T5 POS_RH_T6>;

@@ -30,16 +30,12 @@
 		#define mouse mouse_hold_tap MOUSE MOUSE
 
 
-		base_gui: base_gui {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&macro_tap &sk LGUI &sl BASE_OVERLAY>;
-		};
-
-		num_gui: num_gui {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings = <&macro_tap &sk LGUI &sl NUMPAD_OVERLAY>;
+		kpm: kp_then_mouse {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&to MOUSE>;
 		};
 	};
 };
