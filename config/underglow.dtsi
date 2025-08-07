@@ -25,7 +25,7 @@
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug TEAL  &ug TEAL   &ug TEAL     &ug TEAL  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug WHITE  &ug WHITE   &ug WHITE     &ug WHITE  &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			
@@ -53,8 +53,8 @@
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug RED  &ug RED   &ug RED     &ug RED  &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___   &ug RED  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug TEAL  &ug TEAL   &ug TEAL     &ug TEAL  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug TEAL  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			
 			>;
