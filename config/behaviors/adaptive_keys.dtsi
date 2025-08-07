@@ -38,12 +38,15 @@
 		num_adaptive: num_adaptive {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
-			bindings = <&spacebase>;
+			bindings = <&kp N1>;
 
 			ak_31 { trigger-keys = <N3>; max-prior-idle-ms = <2000>; bindings = <&kp N1>; };
 			ak_13 { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp N3>; };
 
 			ak_80 { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
+			ak_60 { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
+			ak_70 { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
+			ak_90 { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
 			ak_08 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N8>; };
 		};
 
