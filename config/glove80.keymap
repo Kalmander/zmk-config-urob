@@ -44,6 +44,7 @@
 #include "moergo.dtsi"
 #include "behaviors/behaviors.dtsi"
 #include "combos.dtsi"
+#include "underglow.dtsi"
 
 / {
 	keymap {
