@@ -75,6 +75,12 @@
 			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp K_CANCEL>, <&to BASE>;
 		};
 
+		base_cancel: base_cancel {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&to BASE &kp K_CANCEL>;
+		};
+
 		bsl: to_base_then_sl {
 			compatible = "zmk,behavior-macro-one-param";
 			#binding-cells = <1>;
