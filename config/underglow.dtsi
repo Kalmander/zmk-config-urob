@@ -11,19 +11,132 @@
     #define WHITE 0xffffff
     #define ___ 0x000000
 
+    /* &ug COLOR sets the underglow LED to the specified color.  */
+    /* &ug_cl COLOR_OFF COLOR_ON sets the underglow color according to the CAPSLOCK state.  */
+    /* &ug_nl and &ug_sl do the same for NumLock & ScrollLock respectively. */
+
     underglow-layer {
         compatible  = "zmk,underglow-layer";
 
-        Nexus {
-            bindings = <
-    &ug ___    &ug ___  &ug ___    &ug ___    &ug ___                                                                                 &ug ___             &ug ___           &ug ___           &ug ___     &ug ___
-    &ug PURPLE &ug PINK &ug PINK   &ug   PINK &ug   PINK &ug PINK                                                             &ug ___ &ug_nl WHITE ORANGE &ug ORANGE        &ug ORANGE        &ug ORANGE  &ug RED
-    &ug PURPLE &ug ___  &ug ___    &ug ORANGE &ug ___    &ug ___                                                              &ug ___ &ug_nl RED YELLOW   &ug_nl RED YELLOW &ug_nl RED YELLOW &ug ORANGE  &ug ___
-    &ug PURPLE &ug ___  &ug ORANGE &ug    RED &ug ORANGE &ug ___                                                              &ug ___ &ug_nl RED YELLOW   &ug_nl RED YELLOW &ug_nl RED YELLOW &ug ORANGE  &ug ___
-    &ug   BLUE &ug ___  &ug RED    &ug    RED &ug    RED &ug ___  &ug_cl BLUE TEAL &ug ___   &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug_nl RED YELLOW   &ug_nl RED YELLOW &ug_nl RED YELLOW &ug    RED  &ug BLUE
-    &ug ___    &ug ___  &ug ORANGE &ug ORANGE &ug ORANGE          &ug ___          &ug GREEN &ug ___  &ug ___ &ug ___ &ug ___         &ug_nl RED YELLOW   &ug_nl RED YELLOW &ug ORANGE        &ug    RED  &ug ___
-                >;
-            layer-id = <NEXUS>;
-        };
+
+		NavWord {
+			bindings = <
+			
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug TEAL  &ug TEAL   &ug TEAL     &ug TEAL  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			
+			>;
+      layer-id = <NAV_WORD>;
+		};
+
+		NavWordGui {
+			bindings = <
+			
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ORANGE  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ORANGE                                                       &ug ORANGE  &ug ORANGE   &ug ORANGE     &ug ORANGE  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ORANGE  &ug ___  &ug ___         &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &kp LG(M)     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___         &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			
+			>;
+      layer-id = <NAV_WORD_GUI>;
+		};
+
+		NavWordCtrl {
+			bindings = <
+			
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug RED  &ug RED   &ug RED     &ug RED  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug RED  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			
+			>;
+      layer-id = <NAV_WORD_CTRL>;
+		};
+
+		NavWordAlt {
+			bindings = <
+			
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug BLUE  &ug BLUE   &ug BLUE     &ug BLUE  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			
+			>;
+      layer-id = <NAV_WORD_ALT>;
+		};
+
+		NavWordShift {
+			bindings = <
+			
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug PINK  &ug PINK   &ug PINK     &ug PINK  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			>;
+      layer-id = <NAV_WORD_SHIFT>;
+		};
+
+		NavWordSwitcher {
+			bindings = <
+			
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug WHITE  &ug WHITE   &ug WHITE     &ug WHITE  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug WHITE   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			>;
+      layer-id = <NAV_WORD_SWITCH>;
+		};
+
+
+    NumWord {
+        bindings = <
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug WHITE &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug WHITE &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug WHITE &ug WHITE &ug WHITE &ug ___                                                  &ug ___ &ug WHITE &ug WHITE &ug WHITE &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug WHITE &ug ___  &ug ___ &ug WHITE &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            >;
+        layer-id = <NUM_WORD>;
+    };
+
+    NumWordModded {
+        bindings = <
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug GREEN &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug GREEN &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug GREEN &ug GREEN &ug GREEN &ug ___                                                  &ug ___ &ug GREEN &ug GREEN &ug GREEN &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug GREEN &ug ___  &ug ___ &ug GREEN &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            >;
+        layer-id = <NUM_WORD_MODDED>;
+    };
+
+    NumWordPlus {
+        bindings = <
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug GOLD  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug GOLD  &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug GOLD  &ug GOLD  &ug GOLD  &ug ___                                                  &ug ___ &ug GOLD  &ug GOLD  &ug GOLD  &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            &ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug GOLD &ug ___  &ug ___ &ug GOLD &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+            >;
+        layer-id = <NUM_WORD_PLUS>;
+    };
+
     };
 };
