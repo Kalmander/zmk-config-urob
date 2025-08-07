@@ -160,7 +160,7 @@
 			&trans  &trans       &trans      &trans       &trans                                                                         &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &nav_alt   &nav_shift       &nav_gui  &trans                                                       &trans  &trans   &trans     &trans  &trans  &trans
+			&trans  &trans       &nav_alt   &nav_shift       &nav_gui  &nav_gui                                                       &trans  &trans   &trans     &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton  &trans   &fnumword  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &trans  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
