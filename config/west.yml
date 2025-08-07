@@ -3,7 +3,7 @@ manifest:
     # - name: moergo-sc
     #   url-base: https://github.com/moergo-sc
     - name: darknao
-      url-base: https://github.com/darknao
+      url-base: https://github.com/darknao # darknao gerði moergo útgáfu af per layer per key rgb moddinu fyrir zmk
     - name: urob
       url-base: https://github.com/urob
   projects:
@@ -12,7 +12,7 @@ manifest:
       # remote: moergo-sc
       # revision: main
       # revision: v25.04-beta.1
-      revision: rgb-layer-25.08
+      revision: rgb-layer-25.08 # 25.08 hjá moergo svarar til v0.3.0 hjá zmk
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
