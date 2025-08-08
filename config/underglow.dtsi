@@ -53,6 +53,43 @@
 	#define ColNumMod  GREEN
 	#define ColNumPlus GOLD
 	
+	// Numeric shades (distinct hues per layer)
+	// ColNum: vivid but not harsh, varied hues
+	#define ColNum1  0x66ccff
+	#define ColNum2  0x99aaff
+	#define ColNum3  0xff99c2
+	#define ColNum4  0x66ffcc
+	#define ColNum5  0xffcc66
+	#define ColNum6  0x66ffff
+	#define ColNum7  0xcc99ff
+	#define ColNum8  0xff99e6
+	#define ColNum9  0x66ffd9
+	#define ColNum0  0x80e5ff
+	
+	// ColNumMod: green/teal family, brighter tints
+	#define ColNumMod1  0x2ee6a6
+	#define ColNumMod2  0x00cc99
+	#define ColNumMod3  0x66ff66
+	#define ColNumMod4  0x99ff33
+	#define ColNumMod5  0x00ff99
+	#define ColNumMod6  0x33ffcc
+	#define ColNumMod7  0x66e6b8
+	#define ColNumMod8  0x00e673
+	#define ColNumMod9  0x7fff7f
+	#define ColNumMod0  0x33d17a
+	
+	// ColNumPlus: amber/orange family, distinct steps
+	#define ColNumPlus1  0xffb84d
+	#define ColNumPlus2  0xffc266
+	#define ColNumPlus3  0xff9933
+	#define ColNumPlus4  0xffd24d
+	#define ColNumPlus5  0xffbf00
+	#define ColNumPlus6  0xffcc33
+	#define ColNumPlus7  0xffa64d
+	#define ColNumPlus8  0xff8c1a
+	#define ColNumPlus9  0xffb366
+	#define ColNumPlus0  0xffa500
+	
 	// Page/Vim layers
 	#define ColVim  WHITE
 	#define ColPage WHITE
@@ -207,10 +244,10 @@
 			bindings = <
 			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNum &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNum &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNum &ug ColNum &ug ColNum &ug ___                                                  &ug ___ &ug ColNum &ug ColNum &ug ColNum &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ColNum1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNum0 &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColNum2 &ug ColNum3 &ug ColNum4 &ug ___                                                  &ug ___ &ug ColNum7 &ug ColNum8 &ug ColNum9 &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum &ug ___  &ug ___ &ug ColNum &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum5 &ug ___  &ug ___ &ug ColNum6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD>;
 		};
@@ -219,10 +256,10 @@
 			bindings = <
 			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNumMod &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumMod &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNumMod &ug ColNumMod &ug ColNumMod &ug ___                                                  &ug ___ &ug ColNumMod &ug ColNumMod &ug ColNumMod &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ColNumMod1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumMod0 &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColNumMod2 &ug ColNumMod3 &ug ColNumMod4 &ug ___                                                  &ug ___ &ug ColNumMod7 &ug ColNumMod8 &ug ColNumMod9 &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumMod &ug ___  &ug ___ &ug ColNumMod &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumMod5 &ug ___  &ug ___ &ug ColNumMod6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_MODDED>;
 		};
@@ -231,10 +268,10 @@
 			bindings = <
 			&ug ColLayer &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNumPlus  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumPlus  &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNumPlus  &ug ColNumPlus  &ug ColNumPlus  &ug ___                                                  &ug ___ &ug ColNumPlus  &ug ColNumPlus  &ug ColNumPlus  &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ColNumPlus1  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumPlus0  &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColNumPlus2  &ug ColNumPlus3  &ug ColNumPlus4  &ug ___                                                  &ug ___ &ug ColNumPlus7  &ug ColNumPlus8  &ug ColNumPlus9  &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumPlus &ug ___  &ug ___ &ug ColNumPlus &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumPlus5 &ug ___  &ug ___ &ug ColNumPlus6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_PLUS>;
 		};
