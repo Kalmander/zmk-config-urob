@@ -68,11 +68,11 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &rh_repeat  &kp B  &kp V           &kp B         &kp RIGHT     &kp DELETE
+			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &rh_repeat  &kp RA(T)  &kp V           &kp DELETE         &kp RIGHT     &mkp RCLK
 			&pcapsword      &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &capsword     &pcapsword
-			&kp Z           &adaptive        &kp I         &kp E           &kp A          &kp ENTER                                                                                       &kp W  &kp H       &kp T   &kp N   &kp RA(D)     &kp X
-			&kp RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp RIGHT      &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp J         &kp RA(T)     &sk RSHIFT
-      &to BASE        &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
+			&kp Z           &adaptive        &kp I   &kp E   &kp A    &kp ENTER                                                                                       &kp W  &kp H  &kp T   &kp N   &kp RA(D)     &kp X
+			&kp RA(Z)       &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &kp RIGHT      &kp TAB       &kp R      &kp P  &kp M        &kp G           &kp B         &kp J     &sk RSHIFT
+      &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C  &sl NUM_WORD     &sl NUM_WORD  &kp S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
 			>;
 		};
