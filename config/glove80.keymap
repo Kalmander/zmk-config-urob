@@ -240,8 +240,8 @@
 			
 			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
 			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                            &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
-			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &shift_ice  &trans    &sl MOD_LOCKS
+			&trans      &kp DOT    &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
+			&kp DOT     &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &shift_ice  &trans    &sl MOD_LOCKS
 			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &trans  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c     &sl FUNCTIONS     &trans &trans &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans
 			
