@@ -215,7 +215,7 @@
 			&trans     &trans      &trans     &trans      &trans    &kpcb LS(G)                                                                 &kpcb LS(G)  &trans     &trans       &trans     &trans     &trans
 			&trans     &trans      &trans     &kpcb N1    &trans    &trans                                                                      &trans  &trans     &kpcb N0     &trans     &trans     &trans
 			&trans     &trans      &kpcb N2   &kpcb N3    &kpcb N4  &trans                                                                      &trans  &kpcb N7   &kpcb N8     &kpcb N9   &trans     &trans
-			&trans     &trans      &trans     &kpcb N1    &trans    &base_cancel   &trans  &trans    &fnumword     &fnumword  &trans    &trans  &trans  &trans     &kpcb N0     &trans     &trans     &trans
+			&trans     &trans      &trans     &trans      &trans    &base_cancel   &trans  &trans    &fnumword     &fnumword  &trans    &trans  &trans  &trans     &trans       &trans     &trans     &trans
 			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI          &trans  &kpcb N5  &fsl_num      &fsl_num   &kpcb N6  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
 			
 			>;
@@ -224,12 +224,12 @@
 		NumWordPlus {
 			bindings = <
 			
-			&none  &none       &none      &none     &none                                                                                      &none        &none      &none     &none      &none 
-			&none  &none       &kp STAR   &kp HASH  &kp CARET      &kpcb LS(G)                                                                 &kpcb LS(G)  &kp CARET     &kp STAR  &kp HASH   &none      &none 
-			&none  &kp LPAR    &kp DOT    &kp N1    &kp SPACE      &kp BSLH                                                                    &kp PLUS     &kp SPACE  &kp N0    &kp DOT    &kp RPAR      &none 
-			&none  &spacebase   &kp N2     &kp N3    &kp N4         &enterbase                                                                   &kp LT       &kp N7     &kp N8    &kp N9     &num_adaptive  &kp GT 
-			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol &kp TAB  &kp ENTER    &kp SPACE  &kp TAB  &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS    &kp COMMA  &kp PRCNT   &kp SEMI 
-			&none  &none       &none      &leftbase &rightbase               &spacebase  &kp N5   &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &downbase   &upbase    &kp AT     &kp COLON      &none 
+			&none  &none       &none      &none     &none                                                                                             &none        &none      &none     &none      &none 
+			&none  &none       &kp STAR   &kp HASH  &kp CARET      &kpcb LS(G)                                                                        &kpcb LS(G)  &kp CARET  &kp STAR  &kp HASH   &none      &none 
+			&none  &kp LPAR    &kp DOT    &kp N1    &kp SPACE      &kp BSLH                                                                           &kp PLUS     &kp SPACE  &kp N0    &kp DOT    &kp RPAR      &none 
+			&none  &spacebase  &kp N2     &kp N3    &kp N4         &enterbase                                                                         &kp LT       &kp N7     &kp N8    &kp N9     &num_adaptive  &kp GT 
+			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol &kp TAB    &kp ENTER        &kp ENTER      &kp TAB  &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS &kp COMMA  &kp SEMI   &none 
+			&none  &none       &none      &leftbase &rightbase               &spacebase  &kp N5  &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &downbase  &upbase   &kp AT     &kp COLON      &none 
 			
 			>;
 		};
@@ -294,7 +294,7 @@
 			
 			&none  &none  &none     &none      &none                                                                                              &kp F13  &kp F14  &kp F15  &none  &none
 			&none  &none  &none     &none      &none     &none                                                                        &none       &kp F10  &kp F11  &kp F12  &none  &none
-			&none  &none  &none     &none      &none     &none                                                                        &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
+			&none  &none  &none     &kp RSHIFT &none     &none                                                                        &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
 			&none  &none  &kp LALT  &kp LSHIFT &kp LGUI  &none                                                                        &kp CAPS    &kp F4   &kp F5   &kp F6   &none  &none
 			&none  &none  &none     &none      &kp LCTRL &kp K_CANCEL &none  &none  &none     &none       &kp C_BRI_DN  &kp C_BRI_UP  &kp SLCK    &kp F1   &kp F2   &kp F3   &none  &to TYPING
 			&none  &none  &none     &none      &none                  &none  &none  &none     &kp C_MUTE  &volume_down  &volume_up                &none    &none    &none    &none  &to JOKER
