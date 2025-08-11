@@ -21,24 +21,25 @@
 #define NAV_WORD_SWITCH 8
 #define VIM_WORD 9
 #define PAGE_WORD 10
-#define NUM_WORD 11
-#define NUM_WORD_MODDED 12
-#define NUM_WORD_PLUS 13
-#define NEXUS 14
-#define NEXUS_OVER 15
-#define BASE_NEXUS 16
-#define SYMBOL 17
-#define FUNCTIONS 18
-#define ICE 19
-#define MOD_LOCKS 20
-#define JOKER 21
-#define EDI 22
-#define MOUSE 23
-#define MOUSE_SLOW 24
-#define MOUSE_WARP 25
-#define MOUSE_FAST 26
-#define MOUSE_SWITCHER 27
-#define MAGIC 28
+#define NUM_SPACE 11
+#define NUM_WORD 12
+#define NUM_WORD_MODDED 13
+#define NUM_WORD_PLUS 14
+#define NEXUS 15
+#define NEXUS_OVER 16
+#define BASE_NEXUS 17
+#define SYMBOL 18
+#define FUNCTIONS 19
+#define ICE 20
+#define MOD_LOCKS 21
+#define JOKER 22
+#define EDI 23
+#define MOUSE 24
+#define MOUSE_SLOW 25
+#define MOUSE_WARP 26
+#define MOUSE_FAST 27
+#define MOUSE_SWITCHER 28
+#define MAGIC 29
 
 #include "settings.dtsi"
 #include "moergo.dtsi"
@@ -194,14 +195,28 @@
 			>;
 		};
 		
+
+		NumSpaceOverlay {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &stay   &trans  &trans  &trans          &trans  &trans  &kp SPACE  &kp SPACE  &trans  &trans          &trans  &trans  &trans  &stay   &trans
+			
+			>;
+		};
+
 		NumWord {
 			bindings = <
 			
 			&trans     &trans      &trans     &trans       &trans                                                                                     &trans     &trans       &trans     &trans     &trans
 			&trans     &trans      &trans     &trans       &trans  &kpcb LS(G)                                                                &kpcb LS(G)  &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &kp N1       &trans  &trans                                                                     &trans  &trans     &kp N0       &trans     &trans     &trans
-			&trans     &trans      &kp N2     &kp N3       &kp N4  &trans                                                                     &trans  &kp N7     &kp N8       &kp N9     &trans     &trans
-			&trans     &trans      &trans     &kp N1       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans  &trans     &kp N0       &trans     &trans     &trans
+			&trans     &trans      &trans     &N1s       &trans  &trans                                                                     &trans  &trans     &N0s       &trans     &trans     &trans
+			&trans     &trans      &N2s     &N3s       &N4s  &trans                                                                     &trans  &N7s     &N8s       &N9s     &trans     &trans
+			&trans     &trans      &trans     &trans       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans
 			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &kp N5  &fsl_num      &fsl_num   &kp N6  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
 			
 			>;

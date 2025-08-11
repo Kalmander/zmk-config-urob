@@ -71,6 +71,7 @@
 			#binding-cells = <0>;
 			bindings = <&key_repeat>;
 			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
+			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 		};
 
 
