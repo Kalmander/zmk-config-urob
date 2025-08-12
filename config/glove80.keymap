@@ -217,7 +217,7 @@
 			&trans     &trans      &trans     &N1s       &trans  &trans                                                                     &trans  &trans     &N0s       &trans     &trans     &trans
 			&trans     &trans      &N2s     &N3s       &N4s  &trans                                                                     &trans  &N7s     &N8s       &N9s     &trans     &trans
 			&trans     &trans      &trans     &trans       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans
-			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &kp N5  &fsl_num      &fsl_num   &kp N6  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
+			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &N5s  &fsl_num      &fsl_num   &N6s  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
 			
 			>;
 		};
