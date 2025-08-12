@@ -22,7 +22,8 @@
 			ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
-			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+			ak_gv2 { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_lg { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
