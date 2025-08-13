@@ -107,12 +107,12 @@
 		NavWordGui {
 			bindings = <
 			
-			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &kp LG(Q)  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &kp LG(ENTER)                                                       &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
-			&trans  &trans  &trans    &cnav   &kp LG(BACKSPACE)  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &kp LG(M)     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans                                                                                              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &kp LG(Q)  &trans         &kp LG(ENTER)                                                                  &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans            &trans                                                                  &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans            &trans                                                                  &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &cnav   &kp LG(BACKSPACE) &trans        &trans  &kp LG(TAB) &kp LG(SPACE)    &kp LG(M)  &kp LG(TAB) &trans  &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans                          &trans  &trans      &trans    &trans  &trans      &trans            &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
