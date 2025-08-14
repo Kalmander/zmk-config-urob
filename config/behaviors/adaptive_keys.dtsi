@@ -20,7 +20,8 @@
 			ak_pk { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 			ak_mk { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 			/* ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; }; */
-			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			/* ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
+			ak_kspace { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };

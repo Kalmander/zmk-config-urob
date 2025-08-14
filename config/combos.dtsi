@@ -21,6 +21,40 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_ck_macro: combo_ck_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps C K>, <&two_kps LS(C) K>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+    
+		lower_cksp: lower_cksp {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp C &kp K &kp SPACE>;
+		};
+
+		upper_cksp: upper_cksp {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LS(C) &kp K &kp SPACE>;
+		};
+
+		combo_ckspace_macro: combo_ckspace_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&lower_cksp>, <&upper_cksp>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		caps_cksp: caps_cksp {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LS(C) &kp LS(K) &kp SPACE>;
+		};
+
+
 		/* wh_and_kp: wh_and_kp { */
 		/* 	compatible = "zmk,behavior-macro-one-param"; */
 		/* 	#binding-cells = <1>; */
@@ -167,6 +201,13 @@
 			layers = <BASE TYPING>;
 		};
 
+		combo_rs_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_RH_T5 POS_RH_T4>;
+			bindings = <&two_kps LS(R) LS(S)>;
+			layers = <CAPS_WORD>;
+		};
+
 		combo_ZQ {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_T1 POS_RH_T4>;
@@ -187,12 +228,12 @@
 			/*              NAV_WORD_CTRL NAV_WORD_SWITCH VIM_WORD PAGE_WORD>; */
 		};
 		
-		combo_cx {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_LH_T2 POS_LH_T5>;
-			bindings = <&combo_cx_macro>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_cx { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <POS_LH_T2 POS_LH_T5>; */
+		/* 	bindings = <&combo_cx_macro>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 		
 		/* combo_capsword { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
@@ -209,7 +250,15 @@
 			bindings = <&combo_wh_macro>;
 			layers = <BASE TYPING>;
 		};
-		
+
+		combo_wh_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
+			key-positions = <POS_RH_C2R4 POS_RH_C2R5>;
+			bindings = <&two_kps LS(W) LS(H)>;
+			layers = <CAPS_WORD>;
+		};
+    
 		/* combo_wha { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <POS_LH_C2R4 POS_RH_C2R4 POS_RH_C1R4>; */
@@ -230,6 +279,14 @@
 			bindings = <&combo_gt_macro>;
 			layers = <BASE TYPING>;
 		};
+
+		combo_gt_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_RH_C3R4 POS_RH_C3R5>;
+			bindings = <&two_kps LS(G) LS(T)>;
+			layers = <CAPS_WORD>;
+		};
+		
 		
 		combo_dv {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -252,11 +309,42 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		combo_au {
+		/* combo_au { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <POS_LH_C2R3 POS_LH_C2R4>; */
+		/* 	bindings = <&combo_au_macro>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
+
+		combo_ck {
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_LH_C2R3 POS_LH_C2R4>;
-			bindings = <&combo_au_macro>;
+			key-positions = <POS_LH_T2 POS_LH_T5>;
+			bindings = <&combo_ck_macro>;
 			layers = <BASE TYPING>;
 		};
+
+		combo_ck_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_T2 POS_LH_T5>;
+			bindings = <&two_kps LS(C) LS(K)>;
+			layers = <CAPS_WORD>;
+		};
+
+		combo_ckspace {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_T1 POS_LH_T4>;
+			bindings = <&combo_ckspace_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_ckspace_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_T1 POS_LH_T4>;
+			bindings = <&caps_cksp>;
+			layers = <CAPS_WORD>;
+		};
+
+
+
 	};
 };
