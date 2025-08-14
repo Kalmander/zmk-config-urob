@@ -56,9 +56,9 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &rh_repeat  &kp RA(T)  &kp V           &kp DELETE         &kp RIGHT     &mkp RCLK
-			&pcapsword      &capsword        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &kp F  &kp K        &kp D           &kp L         &capsword     &pcapsword
-			&kp RA(Z)       &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp RA(D)     &kp X
+			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &rh_repeat  &kp RA(D)  &kp V           &kp DELETE         &kp RIGHT     &mkp RCLK
+			&pcapsword      &kp X            &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &sk RSHIFT  &kp F        &kp D           &kp L         &capsword     &pcapsword
+			&kp RA(Z)       &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &kp K     &kp RA(T)
 			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &_dot            &sk LGUI      &kp TAB       &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &sk RSHIFT
       &magic MAGIC 0  &capsword        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &capsword     &kp PSCRN
 			
@@ -111,7 +111,7 @@
 			&trans  &trans  &trans    &kp LG(Q)  &trans         &kp LG(ENTER)                                                                  &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans            &trans                                                                  &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans            &trans                                                                  &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
-			&trans  &trans  &trans    &cnav   &kp LG(BACKSPACE) &trans        &trans  &kp LG(TAB) &kp LG(SPACE)    &kp LG(M)  &kp LG(TAB) &trans  &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &cnav   &kp LG(BACKSPACE) &trans        &trans  &kp LG(TAB) &kp LG(SPACE)    &kp LG(M)  &trans &trans  &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans                          &trans  &trans      &trans    &trans  &trans      &trans            &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -253,12 +253,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                            &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
-			&trans      &kp DOT    &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
-			&kp DOT     &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &shift_ice  &trans    &sl MOD_LOCKS
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &trans  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c     &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                                         &trans      &trans      &trans     &trans  &trans
+			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
+			&trans      &kp DOT    &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                                  &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
+			&kp DOT     &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                                   &to BASE_NEXUS    &fnumword  &kp ESC   &ctrl_lock  &sl MOD_LOCKS    &trans
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER    &to TYPING        &trans &trans          &trans     &kp FSLH  &trans     &trans  &trans  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS            &kp HOME    &kp END     &trans     &trans  &trans
 			
 			>;
 		};
@@ -268,12 +268,12 @@
 		NexusOverlay {
 			bindings = <
 			
-			&trans      &trans     &trans     &trans     &trans                                                                                                 &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                            &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
-			&trans      &kp RA(T)  &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                          &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
-			&kp RA(T)   &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                           &to BASE_NEXUS    &sk RSHIFT  &fnumword   &shift_ice  &trans    &sl MOD_LOCKS
-			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER  &to TYPING        &trans &trans &trans     &kp FSLH  &kp ESC     &ctrl_lock  &trans  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c     &sl FUNCTIONS     &trans &trans &sl NEXUS               &kp HOME    &kp END     &trans     &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                                         &trans      &trans      &trans     &trans  &trans
+			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
+			&trans      &kp DOT    &y_lpar    &o_rpar    &kp DQT    &kp BSLH                                                                                  &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
+			&kp DOT     &z_amps    &i_qmark   &e_comma   &a_dot     &kp SQT                                                                                   &to BASE_NEXUS    &fnumword  &kp ESC   &ctrl_lock  &sl MOD_LOCKS    &trans
+			&sk LSHIFT  &kp PRCNT  &rap_excl  &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER  &to JOKER    &to TYPING        &trans &trans          &trans     &kp FSLH  &trans     &trans  &trans  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE  &mouse_or_c  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS            &kp HOME    &kp END     &trans     &trans  &trans
 			
 			>;
 		};

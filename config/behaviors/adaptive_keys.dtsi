@@ -19,8 +19,10 @@
 			/* ak_wr { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
 			ak_pk { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 			ak_mk { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
-			ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
-			ak_nk { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			/* ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; }; */
+			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
@@ -80,7 +82,7 @@
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&key_repeat>;
-			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			/* ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
 			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp Q>; };
 		};
 

@@ -237,6 +237,13 @@
 			bindings = <&combo_dv_macro>;
 			layers = <BASE TYPING>;
 		};
+
+		combo_caps {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_C1R3 POS_RH_C1R3>;
+			bindings = <&capsword>;
+			layers = <BASE TYPING>;
+		};
 		
 		/* combo_ph { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
