@@ -12,7 +12,7 @@
 		navigation_autolayer_gui: navigation_autolayer_gui {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <LEFT DOWN UP RIGHT Q HOME END PG_UP PG_DN CLEAR_AGAIN>;
+			continue-list = <LEFT DOWN UP RIGHT LG(TAB) HOME END PG_UP PG_DN CLEAR_AGAIN>;
 			ignore-numbers;
 			ignore-modifiers;
 		};
@@ -87,7 +87,7 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&kp K_CANCEL>, <&navigation_autolayer NAV_WORD_GUI>;
+			bindings = <&kp K_CANCEL>, <&navigation_autolayer_gui NAV_WORD_GUI>;
 		};
 
 		nav_ctrl: nav_ctrl {
