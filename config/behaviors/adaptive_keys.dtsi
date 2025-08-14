@@ -53,6 +53,16 @@
 			ak_08 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N8>; };
 		};
 
+		thorn_eth: thorn_eth {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp RA(D)>;
+
+			ak_thorn_eth1 { trigger-keys = <SPACE>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth2 { trigger-keys = <LSHIFT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth3 { trigger-keys = <RSHIFT>; bindings = <&kp RA(T)>; };
+		};
+
 		n1_adapt: n1_adapt {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
