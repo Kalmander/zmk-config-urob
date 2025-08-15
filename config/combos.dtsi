@@ -32,12 +32,16 @@
 		lower_cksp: lower_cksp {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings = <&kp C &kp K &kp SPACE>;
 		};
 
 		upper_cksp: upper_cksp {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings = <&kp LS(C) &kp K &kp SPACE>;
 		};
 
@@ -51,6 +55,8 @@
 		caps_cksp: caps_cksp {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings = <&kp LS(C) &kp LS(K) &kp SPACE>;
 		};
 
@@ -208,15 +214,12 @@
 			layers = <CAPS_WORD>;
 		};
 
-		combo_ZQ {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <POS_LH_T1 POS_RH_T4>;
-			bindings = <&combo_ZQ_macro>;
-			/* layers = <BASE TYPING CAPS_WORD NAV_WORD NAV_WORD_GUI NAV_WORD_CTRL NAV_WORD_ALT NAV_WORD_SHIFT NAV_WORD_SWITCH VIM_WORD PAGE_WORD>; */
-			/* layers = <BASE TYPING \ */
-			/*              NAV_WORD NAV_WORD_MIRRORED NAV_WORD_GUI \ */
-			/*              NAV_WORD_CTRL NAV_WORD_SWITCH VIM_WORD PAGE_WORD>; */
-		};
+		/* combo_ZQ { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <POS_LH_T1 POS_RH_T4>; */
+		/* 	bindings = <&combo_ZQ_macro>; */
+		/* layers = <BASE TYPING CAPS_WORD NAV_WORD NAV_WORD_GUI NAV_WORD_CTRL NAV_WORD_ALT NAV_WORD_SHIFT NAV_WORD_SWITCH VIM_WORD PAGE_WORD>; */ 
+		/* }; */
 		
 		combo_ZZ {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -266,12 +269,12 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		/* combo_mp { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* 	key-positions = <POS_RH_C2R5 POS_RH_C1R5>; */
-		/* 	bindings = <&combo_mp_macro>; */
-		/* 	layers = <BASE TYPING>; */
-		/* }; */
+		combo_mp {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_RH_C1R4 POS_RH_C1R5>;
+			bindings = <&combo_mp_macro>;
+			layers = <BASE TYPING>;
+		};
 		
 		combo_gt {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -298,6 +301,13 @@
 		combo_caps {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_C1R3 POS_RH_C1R3>;
+			bindings = <&capsword>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_caps2 {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <POS_LH_T1 POS_RH_T4>;
 			bindings = <&capsword>;
 			layers = <BASE TYPING>;
 		};
