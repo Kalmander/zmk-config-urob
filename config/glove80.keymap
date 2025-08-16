@@ -56,10 +56,10 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &rh_repeat  &kp MINUS        &kp V           &kp UNDER         &kp RIGHT     &mkp RCLK
+			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &kp SPACE  &rh_repeat        &kp V           &kp UNDER         &kp RIGHT     &_dot
 			&pcapsword      &kp RA(Z)        &kp Y         &kp O           &kp U          &sk LSHIFT                                                                                      &sk RSHIFT  &kp F        &kp D           &kp L         &pcapsword     &pcapsword
 			&kp X           &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &thorn_eth     &kp RA(D)
-			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp K       &_dot            &sk LGUI      &kp TAB       &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
+			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp K       &kp ENTER            &sk LGUI      &kp TAB       &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
       &magic MAGIC 0  &kp DELETE        &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &adaptive_up    &kp AT        &kp DELETE     &kp PSCRN
 			
       >;
@@ -240,7 +240,7 @@
 			bindings = <
 			
 			&none  &none       &none      &none     &none                                                                                             &none        &none      &none     &none      &none 
-			&none  &none       &kp STAR   &kp HASH  &kp CARET      &kpcb LS(G)                                                                        &kpcb LS(G)  &kp CARET  &kp STAR  &kp HASH   &none      &none 
+			&none  &none       &kp STAR   &kp HASH  &kp CARET      &kpcb LS(G)                                                                        &spacebase   &kp CARET  &kp STAR  &kp HASH   &none      &none 
 			&none  &kp LPAR    &kp DOT    &kp N1    &kp SPACE      &kp BSLH                                                                           &kp PLUS     &kp SPACE  &kp N0    &kp DOT    &kp RPAR      &none 
 			&none  &spacebase  &kp N2     &kp N3    &kp N4         &enterbase                                                                         &kp LT       &kp N7     &kp N8    &kp N9     &num_adaptive  &kp GT 
 			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol &kp TAB    &kp ENTER        &kp ENTER      &kp TAB  &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS &kp COMMA  &kp SEMI   &none 
