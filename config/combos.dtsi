@@ -21,6 +21,16 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+
+		space_caps: space_caps {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp SPACE &capsword>;
+		};
+
+
 		combo_ck_macro: combo_ck_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
@@ -308,7 +318,7 @@
 		combo_caps2 {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <POS_LH_T1 POS_RH_T4>;
-			bindings = <&capsword>;
+			bindings = <&space_caps>;
 			layers = <BASE TYPING>;
 		};
 		

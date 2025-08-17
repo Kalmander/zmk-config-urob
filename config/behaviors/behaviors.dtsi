@@ -179,6 +179,20 @@
 			bindings = <&macro_tap &kp RA(SINGLE_QUOTE) &kp LS(Y)>;
 		};
 		
+		rshiftcaps: rshiftcaps {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&sk RSHIFT>, <&capsword>;
+			mods = <(MOD_LSFT)>;
+		};
+
+		lshiftcaps: lshiftcaps {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&sk LSHIFT>, <&capsword>;
+			mods = <(MOD_RSFT)>;
+		};
+
 		bspc_del: backspace_delete {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
