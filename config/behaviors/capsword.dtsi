@@ -12,21 +12,9 @@
 		/* 	>; */
 		/* }; */
 		
-		caps_word: caps_word {
-			compatible = "zmk,behavior-caps-word";
-			#binding-cells = <0>;
-			mods = <(MOD_LSFT)>;
-      // Default: underscore, backspace, delete, alphanumerics
-      // verður að taka aftur fram undrescore, backspace og delete
-      // en alphanumerics koma sjálfkrafa
-			continue-list = <
-        UNDERSCORE BACKSPACE DELETE 
-        CLEAR_AGAIN
-			>;
-		};
 
 
-		pcapsword: permissive_caps_word {
+		pcaps: permissive_caps_word {
 			compatible = "zmk,behavior-caps-word";
 			#binding-cells = <0>;
 			mods = <(MOD_LSFT)>;
@@ -40,6 +28,28 @@
       >;
 		};
 
+		pcapsword_layer: pcapsword_layer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <
+        UNDERSCORE BACKSPACE DELETE 
+        CLEAR_AGAIN
+        DOT COMMA MINUS 
+      >;
+			ignore-alphas;
+			ignore-numbers;
+		};
+
+		pcapsword: pcapsword {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <
+			&pcaps
+			&pcapsword_layer CAPS_WORD
+			>;
+		};
+
+
 		capsword_layer: capsword_layer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
@@ -47,16 +57,30 @@
 			ignore-alphas;
 			ignore-numbers;
 		};
-		
-		capsword: capsword {
-			compatible = "zmk,behavior-macro";
+
+		caps_word: caps_word {
+			compatible = "zmk,behavior-caps-word";
 			#binding-cells = <0>;
-		/* Order matters: turn on Caps Word first, then the layer */
-			bindings = <
-			&caps_word
-			&capsword_layer CAPS_WORD
+			mods = <(MOD_LSFT)>;
+      // Default: underscore, backspace, delete, alphanumerics
+      // verður að taka aftur fram undrescore, backspace og delete
+      // en alphanumerics koma sjálfkrafa
+			continue-list = <
+        UNDERSCORE BACKSPACE DELETE 
+        CLEAR_AGAIN
 			>;
 		};
+
+    #define capsword caps_word
+		/* capsword: capsword { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* Order matters: turn on Caps Word first, then the layer */
+		/* 	bindings = < */
+		/* 	&caps_word */
+		/* 	&capsword_layer CAPS_WORD */
+		/* 	>; */
+		/* }; */
 
 	};
 };
