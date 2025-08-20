@@ -1,0 +1,93 @@
+#define LC2  4  // left-ceiling row
+#define LC3  3
+#define LC4  2
+#define LC5  1
+#define LC6  0
+
+#define RC2  5  // right-ceiling row
+#define RC3  6
+#define RC4  7
+#define RC5  8
+#define RC6  9
+
+#define LN1 15  // left-number row
+#define LN2 14
+#define LN3 13
+#define LN4 12
+#define LN5 11
+#define LN6 10
+
+#define RN1 16  // right-number row
+#define RN2 17
+#define RN3 18
+#define RN4 19
+#define RN5 20
+#define RN6 21
+
+#define LT1 27  // left-top row
+#define LT2 26
+#define LT3 25
+#define LT4 24
+#define LT5 23
+#define LT6 22
+
+#define RT1 28  // right-top row
+#define RT2 29
+#define RT3 30
+#define RT4 31
+#define RT5 32
+#define RT6 33
+
+#define LM1 39  // left-middle row
+#define LM2 38
+#define LM3 37
+#define LM4 36
+#define LM5 35
+#define LM6 34
+
+#define RM1 40  // right-middle row
+#define RM2 41
+#define RM3 42
+#define RM4 43
+#define RM5 44
+#define RM6 45
+
+#define LB1 51  // left-bottom row
+#define LB2 50
+#define LB3 49
+#define LB4 48
+#define LB5 47
+#define LB6 46
+
+#define RB1 58  // right-bottom row
+#define RB2 59
+#define RB3 60
+#define RB4 61
+#define RB5 62
+#define RB6 63
+
+#define LF2 68  // left-floor row
+#define LF3 67
+#define LF4 66
+#define LF5 65
+#define LF6 64
+
+#define RF2 75  // right-floor row
+#define RF3 76
+#define RF4 77
+#define RF5 78
+#define RF6 79
+
+#define LH1 52  // left thumb keys
+#define LH2 53
+#define LH3 54
+#define LH4 69
+#define LH5 70
+#define LH6 71
+
+#define RH1 57  // right thumb keys
+#define RH2 56
+#define RH3 55
+#define RH4 74
+#define RH5 73
+#define RH6 72

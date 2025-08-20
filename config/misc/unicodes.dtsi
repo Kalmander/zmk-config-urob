@@ -1,0 +1,630 @@
+#pragma once
+
+#define livelong_uc 0x1f596 0  // 🖖
+
+
+// ==== Common Symbols ====
+#define trademark_uc 0x2122 0    // ™
+#define copyright_uc 0x00a9 0    // ©
+#define registered_uc 0x00ae 0   // ®
+#define section_uc 0x00a7 0      // §
+#define pilcrow_uc 0x00b6 0      // ¶
+#define dagger_uc 0x2020 0       // †
+#define ddagger_uc 0x2021 0      // ‡
+#define bullet_uc 0x2022 0       // •
+#define tbull_uc 0x2023 0        // ‣
+#define ellipsis_uc 0x2026 0     // …
+#define permille_uc 0x2030 0     // ‰
+#define permyriad_uc 0x2031 0    // ‱
+
+// ==== Currency & Finance ====
+#define euro_uc 0x20ac 0         // €
+#define pound_uc 0x00a3 0        // £
+#define yen_uc 0x00a5 0          // ¥
+#define won_uc 0x20a9 0          // ₩
+#define bitcoin_uc 0x20bf 0      // ₿
+#define cent_uc 0x00a2 0         // ¢
+#define rupee_uc 0x20b9 0        // ₹
+
+// ==== Arrows & Directions (basics) ====
+#define left_uc 0x2190 0         // ←
+#define up_uc 0x2191 0           // ↑
+#define right_uc 0x2192 0        // →
+#define down_uc 0x2193 0         // ↓
+#define leftright_uc 0x2194 0    // ↔
+#define updown_uc 0x2195 0       // ↕
+#define implies_uc 0x21d2 0      // ⇒
+#define iff_uc 0x21d4 0          // ⇔
+#define return_arrow_uc 0x21a9 0 // ↩
+#define cw_arrow_uc 0x2934 0     // ⤴
+#define ccw_arrow_uc 0x2935 0    // ⤵
+
+// ==== Decorative / Dingbats ====
+#define star_black_uc 0x2605 0   // ★
+#define star_white_uc 0x2606 0   // ☆
+#define sun_simple_uc 0x2600 0   // ☀
+#define cloud_simple_uc 0x2601 0 // ☁
+#define umbrella_simple_uc 0x2602 0 // ☂
+#define snowman_simple_uc 0x2603 0 // ☃
+#define ballot_box_check_uc 0x2611 0 // ☑
+#define check_uc 0x2713 0        // ✓
+#define check_heavy_uc 0x2714 0  // ✔
+#define cross_uc 0x2717 0        // ✗
+#define cross_heavy_uc 0x2718 0  // ✘
+#define phone_uc 0x260e 0        // ☎
+#define envelope_uc 0x2709 0     // ✉
+#define recycle_uc 0x267b 0      // ♻
+#define peace_uc 0x262e 0        // ☮
+#define yinyang_uc 0x262f 0      // ☯
+
+// ==== Emojis — Faces ====
+#define joy_uc 0x1f602 0                 // 😂 Face with Tears of Joy
+#define partying_face_uc 0x1f973 0       // 🥳 Partying Face
+#define sob_uc 0x1f62d 0                 // 😭 Loudly Crying Face
+#define saluting_face_uc 0x1fae1 0       // 🫡 Saluting Face
+#define exploding_head_uc 0x1f92f 0      // 🤯 Exploding Head
+#define scream_uc 0x1f631 0              // 😱 Face Screaming in Fear
+#define thinking_uc 0x1f914 0            // 🤔 Thinking Face
+#define heart_eyes_uc 0x1f60d 0          // 😍 Smiling Face with Heart-Eyes
+#define star_struck_uc 0x1f929 0         // 🤩 Star-Struck
+#define smirk_uc 0x1f60f 0               // 😏 Smirking Face
+#define face_with_peeking_eye_uc 0x1fae3 0 // 🫣 Face with Peeking Eye
+#define no_mouth_uc 0x1f636 0            // 😶 Face Without Mouth
+#define clown_uc 0x1f921 0               // 🤡 Clown Face
+
+// ==== Emojis — Hands & Gestures ====
+#define ok_hand_uc 0x1f44c 0             // 👌 OK Hand
+#define muscle_uc 0x1f4aa 0              // 💪 Flexed Biceps
+#define pinched_fingers_uc 0x1f90c 0     // 🤌 Pinched Fingers
+#define point_up_2_uc 0x1f446 0          // 👆 Backhand Index Pointing Up
+#define pray_uc 0x1f64f 0                // 🙏 Folded Hands
+#define handshake_uc 0x1f91d 0           // 🤝 Handshake
+#define metal_uc 0x1f918 0               // 🤘 Sign of the Horns
+#define palm_up_hand_uc 0x1faf4 0        // 🫴 Palm Up Hand
+#define palm_down_hand_uc 0x1faf3 0      // 🫳 Palm Down Hand
+#define index_pointing_at_the_viewer_uc 0x1faf5 0 // 🫵 Index Pointing at the Viewer
+#define waving_hand_uc 0x1f44b 0         // 👋 Waving Hand
+
+// ==== Emojis — Animals ====
+#define see_no_evil_uc 0x1f648 0         // 🙈 See-No-Evil Monkey
+#define hear_no_evil_uc 0x1f649 0        // 🙉 Hear-No-Evil Monkey
+#define speak_no_evil_uc 0x1f64a 0       // 🙊 Speak-No-Evil Monkey
+#define turtle_uc 0x1f422 0              // 🐢 Turtle
+
+// ==== Emojis — Love & Hearts ====
+#define red_heart_uc 0x2764 0xfe0f 0     // ❤️ Red Heart (emoji presentation)
+#define broken_heart_uc 0x1f494 0        // 💔 Broken Heart
+#define two_hearts_uc 0x1f495 0          // 💕 Two Hearts
+#define cupid_uc 0x1f498 0               // 💘 Heart with Arrow
+#define sparkling_heart_uc 0x1f496 0     // 💖 Sparkling Heart
+#define revolving_hearts_uc 0x1f49e 0    // 💞 Revolving Hearts
+#define mending_heart_uc 0x2764 0xfe0f 0x200d 0x1fa79 0 // ❤️‍🩹 Mending Heart
+#define heart_on_fire_uc 0x2764 0xfe0f 0x200d 0x1f525 0 // ❤️‍🔥 Heart on Fire
+
+// ==== Emojis — Objects & Symbols ====
+#define boom_uc 0x1f4a5 0                // 💥 Collision (Boom)
+#define brain_uc 0x1f9e0 0               // 🧠 Brain
+#define tada_uc 0x1f389 0                // 🎉 Party Popper
+#define exclamation_uc 0x2757 0          // ❗ Heavy Exclamation Mark
+#define question_uc 0x2753 0             // ❓ Black Question Mark Ornament
+#define bangbang_uc 0x203c 0             // ‼ Double Exclamation Mark
+#define interrobang_uc 0x2049 0          // ⁉ Exclamation Question Mark (Interrobang)
+#define underage_uc 0x1f51e 0            // 🔞 No One Under Eighteen
+#define no_mobile_phones_uc 0x1f4f5 0    // 📵 No Mobile Phones
+
+// ==== Emojis — Flags ====
+#define flag_is_uc 0x1f1ee 0x1f1f8 0     // 🇮🇸 Flag: Iceland
+
+// ==== Suits & Fun ====
+#define spade_uc 0x2660 0        // ♠
+#define heart_uc 0x2665 0        // ♥
+#define diamond_uc 0x2666 0      // ♦
+#define club_uc 0x2663 0         // ♣
+#define music_note_uc 0x266a 0   // ♪
+#define music_notes_uc 0x266b 0  // ♫
+#define music_beam_uc 0x266c 0   // ♬
+#define flag_white_uc 0x2690 0   // ⚐
+#define flag_black_uc 0x2691 0   // ⚑
+#define lightning_bolt_uc 0x26a1 0 // ⚡
+#define gear_uc 0x2699 0         // ⚙
+
+// ==== Math & Logic ====
+#define plusminus_uc 0x00b1 0    // ±
+#define infinity_uc 0x221e 0     // ∞
+#define sqrt_uc 0x221a 0         // √
+#define sum_uc 0x2211 0          // ∑
+#define product_uc 0x220f 0      // ∏
+#define integral_uc 0x222b 0     // ∫
+#define forall_uc 0x2200 0       // ∀
+#define exists_uc 0x2203 0       // ∃
+#define in_uc 0x2208 0           // ∈
+#define notin_uc 0x2209 0        // ∉
+#define subset_uc 0x2282 0       // ⊂
+#define superset_uc 0x2283 0     // ⊃
+#define subseteq_uc 0x2286 0     // ⊆
+#define supeseteq_uc 0x2287 0    // ⊇
+#define and_uc 0x2227 0          // ∧
+#define or_uc 0x2228 0           // ∨
+#define not_uc 0x00ac 0          // ¬
+#define logical_implies_uc 0x21d2 0 // ⇒
+#define logical_iff_uc 0x21d4 0  // ⇔
+
+// ==== Sci-Fi & Fantasy ====
+#define alien_uc 0x1f47d 0       // 👽
+#define ufo_uc 0x1f6f8 0         // 🛸
+#define rocket_uc 0x1f680 0      // 🚀
+#define atom_uc 0x269b 0         // ⚛
+#define crystal_ball_uc 0x1f52e 0 // 🔮
+#define planet_ringed_uc 0x1fa90 0 // 🪐
+#define wizard_uc 0x1f9d9 0      // 🧙
+#define elf_uc 0x1f9dd 0         // 🧝
+#define zombie_uc 0x1f9df 0      // 🧟
+#define genie_uc 0x1f9de 0       // 🧞
+#define vampire_uc 0x1f9db 0     // 🧛
+#define swords_uc 0x2694 0       // ⚔
+#define shield_uc 0x1f6e1 0      // 🛡
+#define magic_wand_uc 0x1fa84 0  // 🪄
+
+// ==== Elements & Weather ====
+#define fire_uc 0x1f525 0        // 🔥
+#define droplet_uc 0x1f4a7 0     // 💧
+#define wave_uc 0x1f30a 0        // 🌊
+#define tornado_uc 0x1f32a 0     // 🌪
+#define snowflake_uc 0x2744 0    // ❄
+#define volcano_uc 0x1f30b 0     // 🌋
+#define lightning_uc 0x26a1 0    // ⚡
+#define sun_uc 0x2600 0          // ☀
+#define cloud_uc 0x2601 0        // ☁
+#define umbrella_uc 0x2602 0     // ☂
+#define snowman_uc 0x2603 0      // ☃
+
+// ==== Celestial ====
+#define moon_new_uc 0x1f311 0    // 🌑
+#define moon_crescent_uc 0x1f312 0 // 🌒
+#define moon_first_quarter_uc 0x1f313 0 // 🌓
+#define moon_gibbous_uc 0x1f314 0 // 🌔
+#define moon_full_uc 0x1f315 0    // 🌕
+#define star_glow_uc 0x1f31f 0    // 🌟
+#define sparkle_uc 0x2728 0       // ✨
+#define dizzy_uc 0x1f4ab 0        // 💫
+#define comet_uc 0x2604 0         // ☄
+#define milky_way_uc 0x1f30c 0    // 🌌
+#define sun_face_uc 0x1f31e 0     // 🌞
+#define planet_uc 0x1fa90 0       // 🪐
+
+// ==== Retro & Geeky ====
+#define gamepad_uc 0x1f3ae 0     // 🎮
+#define joystick_uc 0x1f579 0    // 🕹
+#define puzzle_uc 0x1f9e9 0      // 🧩
+#define moai_uc 0x1f5ff 0        // 🗿
+#define dice_uc 0x1f3b2 0        // 🎲
+#define hanafuda_uc 0x1f3b4 0    // 🎴
+#define chess_pawn_uc 0x265f 0   // ♟
+#define chess_queen_uc 0x265b 0  // ♛
+#define chess_king_uc 0x265a 0   // ♚
+
+// ==== Navigation / Arrows (fancy) ====
+#define compass_uc 0x1f9ed 0     // 🧭
+#define arrow_up_uc 0x2b06 0     // ⬆
+#define arrow_down_uc 0x2b07 0   // ⬇
+#define arrow_left_uc 0x2b05 0   // ⬅
+#define arrow_right_uc 0x27a1 0  // ➡
+#define arrow_upleft_uc 0x2196 0 // ↖
+#define arrow_upright_uc 0x2197 0 // ↗
+#define arrow_downleft_uc 0x2199 0 // ↙
+#define arrow_downright_uc 0x2198 0 // ↘
+#define stop_sign_uc 0x1f6d1 0   // 🛑
+#define barrier_uc 0x1f6a7 0     // 🚧
+#define torii_uc 0x26e9 0        // ⛩
+
+// ==== Arts & Culture ====
+#define masks_uc 0x1f3ad 0       // 🎭
+#define palette_uc 0x1f3a8 0     // 🎨
+#define score_uc 0x1f3bc 0       // 🎼
+#define violin_uc 0x1f3bb 0      // 🎻
+#define trumpet_uc 0x1f3ba 0     // 🎺
+#define banjo_uc 0x1fa95 0       // 🪕
+#define drum_uc 0x1fa98 0        // 🪘
+#define books_uc 0x1f4da 0       // 📚
+
+// ==== Warning & Symbols ====
+#define skull_crossbones_uc 0x2620 0 // ☠
+#define skull_uc 0x1f480 0      // 💀
+#define firecracker_uc 0x1f9e8 0 // 🧨
+#define candle_uc 0x1f56f 0     // 🕯
+#define coffin_uc 0x26b0 0      // ⚰
+#define urn_uc 0x26b1 0         // ⚱
+#define warning_uc 0x26a0 0     // ⚠
+#define radiation_uc 0x2622 0   // ☢
+#define biohazard_uc 0x2623 0   // ☣
+
+
+
+// ==== Sci-Fi & Fantasy ====
+#define wizard_m_uc 0x1f9d9 0  // 🧙
+#define elf_m_uc 0x1f9dd 0     // 🧝
+
+// ==== Elements & Weather ====
+
+// ==== Celestial ====
+
+// ==== Retro & Geeky ====
+
+// ==== Navigation / Arrows ====
+
+// ==== Arts & Culture ====
+
+// ==== Warning & Symbols ====
+
+
+// ==== Greek Letters (Uppercase) ====
+#define Alpha_uc 0x0391 0   // Α
+#define Beta_uc 0x0392 0    // Β
+#define Gamma_uc 0x0393 0   // Γ
+#define Delta_uc 0x0394 0   // Δ
+#define Epsilon_uc 0x0395 0 // Ε
+#define Zeta_uc 0x0396 0    // Ζ
+#define Eta_uc 0x0397 0     // Η
+#define Theta_uc 0x0398 0   // Θ
+#define Iota_uc 0x0399 0    // Ι
+#define Kappa_uc 0x039a 0   // Κ
+#define Lambda_uc 0x039b 0  // Λ
+#define Mu_uc 0x039c 0      // Μ
+#define Nu_uc 0x039d 0      // Ν
+#define Xi_uc 0x039e 0      // Ξ
+#define Omicron_uc 0x039f 0 // Ο
+#define Pi_uc 0x03a0 0      // Π
+#define Rho_uc 0x03a1 0     // Ρ
+#define Sigma_uc 0x03a3 0   // Σ
+#define Tau_uc 0x03a4 0     // Τ
+#define Upsilon_uc 0x03a5 0 // Υ
+#define Phi_uc 0x03a6 0     // Φ
+#define Chi_uc 0x03a7 0     // Χ
+#define Psi_uc 0x03a8 0     // Ψ
+#define Omega_uc 0x03a9 0   // Ω
+
+// ==== Greek Letters (Lowercase) ====
+#define alpha_uc 0x03b1 0   // α
+#define beta_uc 0x03b2 0    // β
+#define gamma_uc 0x03b3 0   // γ
+#define delta_uc 0x03b4 0   // δ
+#define epsilon_uc 0x03b5 0 // ε
+#define zeta_uc 0x03b6 0    // ζ
+#define eta_uc 0x03b7 0     // η
+#define theta_uc 0x03b8 0   // θ
+#define iota_uc 0x03b9 0    // ι
+#define kappa_uc 0x03ba 0   // κ
+#define lambda_uc 0x03bb 0  // λ
+#define mu_uc 0x03bc 0      // μ
+#define nu_uc 0x03bd 0      // ν
+#define xi_uc 0x03be 0      // ξ
+#define omicron_uc 0x03bf 0 // ο
+#define pi_uc 0x03c0 0      // π
+#define rho_uc 0x03c1 0     // ρ
+#define sigma_uc 0x03c3 0   // σ
+#define tau_uc 0x03c4 0     // τ
+#define upsilon_uc 0x03c5 0 // υ
+#define phi_uc 0x03c6 0     // φ
+#define chi_uc 0x03c7 0     // χ
+#define psi_uc 0x03c8 0     // ψ
+#define omega_uc 0x03c9 0   // ω
+#define sigma_final_uc 0x03c2 0 // ς (final sigma)
+
+
+// ==== Blackboard Bold (Sets & Common Symbols) ====
+#define bbN_uc 0x2115 0    // ℕ (Natural numbers)
+#define bbZ_uc 0x2124 0    // ℤ (Integers)
+#define bbQ_uc 0x211a 0    // ℚ (Rationals)
+#define bbR_uc 0x211d 0    // ℝ (Reals)
+#define bbC_uc 0x2102 0    // ℂ (Complex numbers)
+#define bbH_uc 0x210d 0    // ℍ (Quaternions)
+#define bbP_uc 0x2119 0    // ℙ (Primes / projective space)
+#define bbE_uc 0x2147 0    // ℯ (Euler’s number “e”)
+#define bbPi_uc 0x213f 0   // ℿ (Double-struck Pi)
+#define bbGamma_uc 0x213d 0 // ℽ (Double-struck Gamma)
+#define bb1_uc 0x1d7d9 0   // 𝟙 (Double-struck digit one / indicator function)
+
+// ==== Hebrew Letters (full alphabet) ====
+#define aleph_uc 0x05d0 0   // א
+#define bet_uc 0x05d1 0     // ב
+#define gimel_uc 0x05d2 0   // ג
+#define dalet_uc 0x05d3 0   // ד
+#define he_uc 0x05d4 0      // ה
+#define vav_uc 0x05d5 0     // ו
+#define zayin_uc 0x05d6 0   // ז
+#define het_uc 0x05d7 0     // ח
+#define tet_uc 0x05d8 0     // ט
+#define yod_uc 0x05d9 0     // י
+#define kaf_uc 0x05db 0     // כ
+#define lamed_uc 0x05dc 0   // ל
+#define mem_uc 0x05de 0     // מ
+#define nun_uc 0x05e0 0     // נ
+#define samekh_uc 0x05e1 0  // ס
+#define ayin_uc 0x05e2 0    // ע
+#define pe_uc 0x05e4 0      // פ
+#define tsadi_uc 0x05e6 0   // צ
+#define qof_uc 0x05e7 0     // ק
+#define resh_uc 0x05e8 0    // ר
+#define shin_uc 0x05e9 0    // ש
+#define tav_uc 0x05ea 0     // ת
+
+// Special Hebrew math symbols
+#define aleph_symbol_uc 0x2135 0  // ℵ (Aleph, for cardinalities)
+#define beth_symbol_uc 0x2136 0   // ℶ
+#define gimel_symbol_uc 0x2137 0  // ℷ
+#define daleth_symbol_uc 0x2138 0 // ℸ
+
+// ==== Extra Math / Set Theory Operators ====
+#define emptyset_uc 0x2205 0     // ∅
+#define nabla_uc 0x2207 0        // ∇
+#define partial_uc 0x2202 0      // ∂
+#define element_uc 0x2208 0      // ∈
+#define not_element_uc 0x2209 0  // ∉
+#define subset_strict_uc 0x2282 0 // ⊂
+#define superset_strict_uc 0x2283 0 // ⊃
+#define subset_eq_uc 0x2286 0    // ⊆
+#define superset_eq_uc 0x2287 0  // ⊇
+#define union_uc 0x222a 0        // ∪
+#define intersection_uc 0x2229 0 // ∩
+#define setminus_uc 0x2216 0     // ∖
+#define cartesian_uc 0x2a2f 0    // ⨯
+#define exists_unique_uc 0x2203 0 // ∃ (unique is usually ∃! in LaTeX, but no single symbol)
+#define implies_arrow_uc 0x21d2 0 // ⇒
+#define iff_arrow_uc 0x21d4 0    // ⇔
+#define therefore_uc 0x2234 0    // ∴
+#define because_uc 0x2235 0      // ∵
+#define proportional_uc 0x221d 0 // ∝
+#define congruent_uc 0x2261 0    // ≡
+#define approx_uc 0x2248 0       // ≈
+#define neq_uc 0x2260 0          // ≠
+#define leq_uc 0x2264 0          // ≤
+#define geq_uc 0x2265 0          // ≥
+#define muchless_uc 0x226a 0     // ≪
+#define muchgreater_uc 0x226b 0  // ≫
+#define angle_uc 0x2220 0        // ∠
+#define measured_angle_uc 0x2221 0 // ∡
+#define perpendicular_uc 0x27c2 0 // ⟂
+#define parallel_uc 0x2225 0     // ∥
+#define dotproduct_uc 0x22c5 0   // ⋅
+#define times_uc 0x00d7 0        // ×
+#define divide_uc 0x00f7 0       // ÷
+
+
+// ==== Script Letters (Mathematical Script, U+1D49C –) ====
+// Commonly used for categories, sheaves, algebras, etc.
+#define scrA_uc 0x1d49c 0   // 𝒜
+#define scrB_uc 0x212c 0    // ℬ
+#define scrC_uc 0x1d49e 0   // 𝒞
+#define scrD_uc 0x1d49f 0   // 𝒟
+#define scrE_uc 0x2130 0    // ℰ
+#define scrF_uc 0x2131 0    // ℱ
+#define scrG_uc 0x1d4a2 0   // 𝒢
+#define scrH_uc 0x210b 0    // ℋ
+#define scrI_uc 0x2110 0    // ℐ
+#define scrJ_uc 0x1d4a5 0   // 𝒥
+#define scrK_uc 0x1d4a6 0   // 𝒦
+#define scrL_uc 0x2112 0    // ℒ
+#define scrM_uc 0x2133 0    // ℳ
+#define scrN_uc 0x1d4a9 0   // 𝒩
+#define scrO_uc 0x1d4aa 0   // 𝒪
+#define scrP_uc 0x1d4ab 0   // 𝒫
+#define scrQ_uc 0x1d4ac 0   // 𝒬
+#define scrR_uc 0x211b 0    // ℛ
+#define scrS_uc 0x1d4ae 0   // 𝒮
+#define scrT_uc 0x1d4af 0   // 𝒯
+#define scrU_uc 0x1d4b0 0   // 𝒰
+#define scrV_uc 0x1d4b1 0   // 𝒱
+#define scrW_uc 0x1d4b2 0   // 𝒲
+#define scrX_uc 0x1d4b3 0   // 𝒳
+#define scrY_uc 0x1d4b4 0   // 𝒴
+#define scrZ_uc 0x1d4b5 0   // 𝒵
+
+// Script lowercase (fewer in math usage, but included)
+#define scra_uc 0x1d4b6 0   // 𝒶
+#define scrb_uc 0x1d4b7 0   // 𝒷
+#define scrc_uc 0x1d4b8 0   // 𝒸
+#define scrd_uc 0x1d4b9 0   // 𝒹
+#define scre_uc 0x212f 0    // ℯ
+#define scrf_uc 0x1d4bb 0   // 𝒻
+#define scrg_uc 0x210a 0    // ℊ
+#define scrh_uc 0x1d4bd 0   // 𝒽
+#define scri_uc 0x1d4be 0   // 𝒾
+#define scrj_uc 0x1d4bf 0   // 𝒿
+#define scrk_uc 0x1d4c0 0   // 𝓀
+#define scrl_uc 0x1d4c1 0   // 𝓁
+#define scrm_uc 0x1d4c2 0   // 𝓂
+#define scrn_uc 0x1d4c3 0   // 𝓃
+#define scro_uc 0x2134 0    // ℴ
+#define scrp_uc 0x1d4c5 0   // 𝓅
+#define scrq_uc 0x1d4c6 0   // 𝓆
+#define scrr_uc 0x1d4c7 0   // 𝓇
+#define scrs_uc 0x1d4c8 0   // 𝓈
+#define scrt_uc 0x1d4c9 0   // 𝓉
+#define scru_uc 0x1d4ca 0   // 𝓊
+#define scrv_uc 0x1d4cb 0   // 𝓋
+#define scrw_uc 0x1d4cc 0   // 𝓌
+#define scrx_uc 0x1d4cd 0   // 𝓍
+#define scry_uc 0x1d4ce 0   // 𝓎
+#define scrz_uc 0x1d4cf 0   // 𝓏
+
+// ==== Fraktur Letters (Mathematical Fraktur, U+1D504 –) ====
+// Widely used for Lie algebras, ideals, etc.
+#define frakA_uc 0x1d504 0  // 𝔄
+#define frakB_uc 0x1d505 0  // 𝔅
+#define frakC_uc 0x212d 0   // ℭ
+#define frakD_uc 0x1d507 0  // 𝔇
+#define frakE_uc 0x1d508 0  // 𝔈
+#define frakF_uc 0x1d509 0  // 𝔉
+#define frakG_uc 0x1d50a 0  // 𝔊
+#define frakH_uc 0x210c 0   // ℌ
+#define frakI_uc 0x2111 0   // ℑ
+#define frakJ_uc 0x1d50d 0  // 𝔍
+#define frakK_uc 0x1d50e 0  // 𝔎
+#define frakL_uc 0x1d50f 0  // 𝔏
+#define frakM_uc 0x1d510 0  // 𝔐
+#define frakN_uc 0x1d511 0  // 𝔑
+#define frakO_uc 0x1d512 0  // 𝔒
+#define frakP_uc 0x1d513 0  // 𝔓
+#define frakQ_uc 0x1d514 0  // 𝔔
+#define frakR_uc 0x211c 0   // ℜ
+#define frakS_uc 0x1d516 0  // 𝔖
+#define frakT_uc 0x1d517 0  // 𝔗
+#define frakU_uc 0x1d518 0  // 𝔘
+#define frakV_uc 0x1d519 0  // 𝔙
+#define frakW_uc 0x1d51a 0  // 𝔚
+#define frakX_uc 0x1d51b 0  // 𝔛
+#define frakY_uc 0x1d51c 0  // 𝔜
+#define frakZ_uc 0x2128 0   // ℨ
+
+// Fraktur lowercase
+#define fraka_uc 0x1d51e 0  // 𝔞
+#define frakb_uc 0x1d51f 0  // 𝔟
+#define frakc_uc 0x1d520 0  // 𝔠
+#define frakd_uc 0x1d521 0  // 𝔡
+#define frake_uc 0x1d522 0  // 𝔢
+#define frakf_uc 0x1d523 0  // 𝔣
+#define frakg_uc 0x1d524 0  // 𝔤
+#define frakh_uc 0x1d525 0  // 𝔥
+#define fraki_uc 0x1d526 0  // 𝔦
+#define frakj_uc 0x1d527 0  // 𝔧
+#define frakk_uc 0x1d528 0  // 𝔨
+#define frakl_uc 0x1d529 0  // 𝔩
+#define frakm_uc 0x1d52a 0  // 𝔪
+#define frakn_uc 0x1d52b 0  // 𝔫
+#define frako_uc 0x1d52c 0  // 𝔬
+#define frakp_uc 0x1d52d 0  // 𝔭
+#define frakq_uc 0x1d52e 0  // 𝔮
+#define frakr_uc 0x1d52f 0  // 𝔯
+#define fraks_uc 0x1d530 0  // 𝔰
+#define frakt_uc 0x1d531 0  // 𝔱
+#define fraku_uc 0x1d532 0  // 𝔲
+#define frakv_uc 0x1d533 0  // 𝔳
+#define frakw_uc 0x1d534 0  // 𝔴
+#define frakx_uc 0x1d535 0  // 𝔵
+#define fraky_uc 0x1d536 0  // 𝔶
+#define frakz_uc 0x1d537 0  // 𝔷
+
+
+// ==== Accented Vowels (Umlauts / Diaeresis) ====
+#define a_umlaut_uc 0x00e4 0   // ä
+#define o_umlaut_uc 0x00f6 0   // ö
+#define u_umlaut_uc 0x00fc 0   // ü
+#define A_umlaut_uc 0x00c4 0   // Ä
+#define O_umlaut_uc 0x00d6 0   // Ö
+#define U_umlaut_uc 0x00dc 0   // Ü
+#define e_umlaut_uc 0x00eb 0   // ë
+#define i_umlaut_uc 0x00ef 0   // ï
+#define y_umlaut_uc 0x00ff 0   // ÿ
+
+// ==== Accented Vowels (Acute / Grave) ====
+#define a_acute_uc 0x00e1 0    // á
+#define e_acute_uc 0x00e9 0    // é
+#define i_acute_uc 0x00ed 0    // í
+#define o_acute_uc 0x00f3 0    // ó
+#define u_acute_uc 0x00fa 0    // ú
+#define a_grave_uc 0x00e0 0    // à
+#define e_grave_uc 0x00e8 0    // è
+#define i_grave_uc 0x00ec 0    // ì
+#define o_grave_uc 0x00f2 0    // ò
+#define u_grave_uc 0x00f9 0    // ù
+
+// ==== Accented Vowels (Circumflex / Tilde) ====
+#define a_circ_uc 0x00e2 0     // â
+#define e_circ_uc 0x00ea 0     // ê
+#define i_circ_uc 0x00ee 0     // î
+#define o_circ_uc 0x00f4 0     // ô
+#define u_circ_uc 0x00fb 0     // û
+#define a_tilde_uc 0x00e3 0    // ã
+#define o_tilde_uc 0x00f5 0    // õ
+#define n_tilde_uc 0x00f1 0    // ñ
+#define A_tilde_uc 0x00c3 0    // Ã
+#define O_tilde_uc 0x00d5 0    // Õ
+#define N_tilde_uc 0x00d1 0    // Ñ
+
+// ==== Other Latin Extended ====
+#define sharp_s_uc 0x00df 0    // ß
+#define eth_uc 0x00f0 0        // ð
+#define thorn_uc 0x00fe 0      // þ
+#define aesc_uc 0x00e6 0       // æ
+#define oelig_uc 0x0153 0      // œ
+#define Aesc_uc 0x00c6 0       // Æ
+#define OElig_uc 0x0152 0      // Œ
+#define slash_o_uc 0x00f8 0    // ø
+#define Slash_O_uc 0x00d8 0    // Ø
+#define l_stroke_uc 0x0142 0   // ł
+#define L_stroke_uc 0x0141 0   // Ł
+#define eng_uc 0x014b 0        // ŋ
+#define Eng_uc 0x014a 0        // Ŋ
+#define dotless_i_uc 0x0131 0  // ı
+#define long_s_uc 0x017f 0     // ſ
+
+// ==== Polish / Czech / Slavic Goodies ====
+#define c_caron_uc 0x010d 0    // č
+#define C_caron_uc 0x010c 0    // Č
+#define s_caron_uc 0x0161 0    // š
+#define S_caron_uc 0x0160 0    // Š
+#define z_caron_uc 0x017e 0    // ž
+#define Z_caron_uc 0x017d 0    // Ž
+#define z_dot_uc 0x017c 0      // ż
+#define Z_dot_uc 0x017b 0      // Ż
+#define e_ogonek_uc 0x0119 0   // ę
+#define E_ogonek_uc 0x0118 0   // Ę
+
+// ==== French-style Accents ====
+#define c_cedilla_uc 0x00e7 0  // ç
+#define C_cedilla_uc 0x00c7 0  // Ç
+#define a_ring_uc 0x00e5 0     // å
+#define A_ring_uc 0x00c5 0     // Å
+
+// ==== Misc Latin Variants ====
+#define crossed_d_uc 0x0111 0  // đ
+#define Crossed_D_uc 0x0110 0  // Đ
+#define crossed_h_uc 0x0127 0  // ħ
+#define Crossed_H_uc 0x0126 0  // Ħ
+#define crossed_t_uc 0x0167 0  // ŧ
+#define Crossed_T_uc 0x0166 0  // Ŧ
+#define barred_o_uc 0x022f 0   // ȯ
+#define barred_a_uc 0x023a 0   // Ⱥ
+#define barred_g_uc 0x0260 0   // ɠ
+
+
+// ==== Corporate / Official Meme Symbols ====
+#define servicemark_uc 0x2120 0   // ℠
+#define hammer_sickle_uc 0x262d 0 // ☭
+#define star_david_uc 0x2721 0    // ✡
+
+// ==== Sarcasm / Irony Formatting ====
+#define star_fancy_uc 0x2605 0    // ★ (uwu stars)
+#define quotes_left_uc 0x275d 0   // ❝
+#define quotes_right_uc 0x275e 0  // ❞
+#define double_exclam_uc 0x203c 0 // ‼
+#define exclam_question_uc 0x2049 0 // ⁉
+#define frown_uc 0x2639 0         // ☹
+#define smile_uc 0x263a 0         // ☺
+#define smile_inv_uc 0x263b 0     // ☻
+#define writing_hand_uc 0x270d 0  // ✍
+#define hundred_uc 0x1f4af 0      // 💯
+#define b_letter_uc 0x1f171 0     // 🅱
+
+// ==== Irony / Cursed Posting ====
+#define eye_uc 0x1f441 0          // 👁
+#define mouth_uc 0x1f444 0        // 👄
+#define crab_uc 0x1f980 0         // 🦀
+#define frog_uc 0x1f438 0         // 🐸
+#define snake_uc 0x1f40d 0        // 🐍
+
+// ==== RNG / Mock Seriousness ====
+#define bullseye_uc 0x1f3af 0     // 🎯
+#define scales_uc 0x2696 0        // ⚖
+#define hourglass_uc 0x231b 0     // ⌛
+#define hourglass_flowing_uc 0x23f3 0 // ⏳
+
+// ==== Red “NO” Symbols ====
+#define no_entry_uc 0x26d4 0      // ⛔
+#define prohibited_uc 0x1f6ab 0   // 🚫
+#define cross_mark_uc 0x274c 0    // ❌
+#define no_under18_uc 0x1f51e 0   // 🔞
+
+// ==== Nerd / Sarcastic Aesthetic ====
+#define notequal_uc 0x2260 0      // ≠
+#define directsum_uc 0x2295 0     // ⊕

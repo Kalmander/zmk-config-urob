@@ -69,3 +69,7 @@
 		input-processors = <&zip_scroll_scaler 5 1>;
 	};
 };
+
+&uc {
+  default-mode = <UC_MODE_LINUX>;
+};
