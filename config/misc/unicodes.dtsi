@@ -27,10 +27,11 @@
 #define rupee_uc 0x20b9 0        // ₹
 
 // ==== Arrows & Directions (basics) ====
-#define left_uc 0x2190 0         // ←
-#define up_uc 0x2191 0           // ↑
-#define right_uc 0x2192 0        // →
-#define down_uc 0x2193 0         // ↓
+// Combined thin/heavy: unshifted thin, shifted heavy
+#define left_uc 0x2190 0x2b05    // ← ⬅
+#define up_uc 0x2191 0x2b06      // ↑ ⬆
+#define right_uc 0x2192 0x27a1   // → ➡
+#define down_uc 0x2193 0x2b07    // ↓ ⬇
 #define leftright_uc 0x2194 0    // ↔
 #define updown_uc 0x2195 0       // ↕
 #define implies_uc 0x21d2 0      // ⇒
@@ -38,6 +39,11 @@
 #define return_arrow_uc 0x21a9 0 // ↩
 #define cw_arrow_uc 0x2934 0     // ⤴
 #define ccw_arrow_uc 0x2935 0    // ⤵
+
+#define impliesiff_uc 0x21d2 0x21d4      // ⇒
+// Combined variants, thickness-only differences
+#define check_uc 0x2713 0x2714    // ✓ ✔
+#define cross_uc 0x2717 0x2718    // ✗ ✘
 
 // ==== Decorative / Dingbats ====
 #define star_black_uc 0x2605 0   // ★
@@ -47,10 +53,6 @@
 #define umbrella_simple_uc 0x2602 0 // ☂
 #define snowman_simple_uc 0x2603 0 // ☃
 #define ballot_box_check_uc 0x2611 0 // ☑
-#define check_uc 0x2713 0        // ✓
-#define check_heavy_uc 0x2714 0  // ✔
-#define cross_uc 0x2717 0        // ✗
-#define cross_heavy_uc 0x2718 0  // ✘
 #define phone_uc 0x260e 0        // ☎
 #define envelope_uc 0x2709 0     // ✉
 #define recycle_uc 0x267b 0      // ♻
@@ -105,8 +107,8 @@
 #define boom_uc 0x1f4a5 0                // 💥 Collision (Boom)
 #define brain_uc 0x1f9e0 0               // 🧠 Brain
 #define tada_uc 0x1f389 0                // 🎉 Party Popper
-#define exclamation_uc 0x2757 0          // ❗ Heavy Exclamation Mark
-#define question_uc 0x2753 0             // ❓ Black Question Mark Ornament
+#define exclamation_uc 0x2755 0x2757     // ❕ ❗
+#define question_uc 0x2754 0x2753        // ❔ ❓
 #define bangbang_uc 0x203c 0             // ‼ Double Exclamation Mark
 #define interrobang_uc 0x2049 0          // ⁉ Exclamation Question Mark (Interrobang)
 #define underage_uc 0x1f51e 0            // 🔞 No One Under Eighteen
@@ -628,3 +630,44 @@
 // ==== Nerd / Sarcastic Aesthetic ====
 #define notequal_uc 0x2260 0      // ≠
 #define directsum_uc 0x2295 0     // ⊕
+// (moved near bottom alongside other related operators)
+
+// ==== Smart combos (thin vs heavy, related pairs) ====
+// Fire vs Explosion
+#define fire_combo_uc 0x1f525 0x1f4a5       // 🔥 / 💥
+// Heart vs Heart-Eyes
+// Use plain heart vs heart-eyes emoji
+#define heart_vs_hearteyes_uc 0x2764 0x1f60d    // ❤ / 😍
+// Broken Heart vs Heart (mending heart is multi-codepoint; see dedicated macro above)
+#define broken_vs_heart_uc 0x1f494 0x2764      // 💔 / ❤
+// Diagonal arrows (down-left vs up-right)
+#define diag_lr_uc 0x2199 0x2196            // ↙ / ↖
+#define diag_rl_uc 0x2198 0x2197            // ↘ / ↗
+// ≤ vs ≪ (less or equal vs much less)
+#define less_combo_uc 0x2264 0x226a         // ≤ / ≪
+#define greater_combo_uc 0x2265 0x226b      // ≥ / ≫
+
+#define boom_vs_tada_uc 0x1f4a5 0x1f389     // 💥 / 🎉
+#define skull_vs_skullbones_uc 0x1f480 0x2620 // 💀 / ☠
+#define smile_vs_sob_uc 0x263a 0x1f62d      // ☺ / 😭
+#define sob_skull_uc 0x1f62d 0x1f480  // 😭 / 💀
+#define thumbs_vs_metal_uc 0x1f44d 0x1f918  // 👍 / 🤘
+
+// Note: For multi-codepoint emoji like mending heart (❤️‍🩹), prefer the dedicated macro above
+// mending_heart_uc which is already defined as 0x2764 0xfe0f 0x200d 0x1fa79 and should be used directly
+
+// More sensible pairs
+#define diag_downleft_upright_uc 0x2199 0x2197   // ↙ / ↗
+#define diag_downright_upleft_uc 0x2198 0x2196   // ↘ / ↖
+#define angle_vs_measured_uc 0x2220 0x2221       // ∠ / ∡
+#define parallel_vs_perp_uc 0x2225 0x27c2        // ∥ / ⟂
+#define subset_vs_subseteq_uc 0x2282 0x2286      // ⊂ / ⊆
+#define superset_vs_superseteq_uc 0x2283 0x2287  // ⊃ / ⊇
+#define star_white_black_uc 0x2606 0x2605        // ☆ / ★
+#define sun_vs_cloud_uc 0x2600 0x2601            // ☀ / ☁
+#define noentry_vs_prohibited_uc 0x26d4 0x1f6ab  // ⛔ / 🚫
+#define note_vs_notes_uc 0x266a 0x266b           // ♪ / ♫
+#define smile_vs_frown_uc 0x263a 0x2639          // ☺ / ☹
+#define accept_vs_cancel_uc 0x2714 0x274c        // ✔ / ❌
+#define updown_vs_leftright_uc 0x2195 0x2194     // ↕ / ↔
+#define gear_vs_wrench_uc 0x2699 0x1f527         // ⚙ / 🔧
