@@ -648,9 +648,8 @@
 #define greater_combo_uc 0x2265 0x226b      // ≥ / ≫
 
 #define boom_vs_tada_uc 0x1f4a5 0x1f389     // 💥 / 🎉
-#define skull_vs_skullbones_uc 0x1f480 0x2620 // 💀 / ☠
+#define sob_skull_uc 0x1f62d 0x1f480 // � / 💀
 #define smile_vs_sob_uc 0x263a 0x1f62d      // ☺ / 😭
-#define sob_skull_uc 0x1f62d 0x1f480  // 😭 / 💀
 #define thumbs_vs_metal_uc 0x1f44d 0x1f918  // 👍 / 🤘
 
 // Note: For multi-codepoint emoji like mending heart (❤️‍🩹), prefer the dedicated macro above
@@ -671,3 +670,6 @@
 #define accept_vs_cancel_uc 0x2714 0x274c        // ✔ / ❌
 #define updown_vs_leftright_uc 0x2195 0x2194     // ↕ / ↔
 #define gear_vs_wrench_uc 0x2699 0x1f527         // ⚙ / 🔧
+
+
+#define tradecopy_uc 0x2122 0x00a9    // ™ ©

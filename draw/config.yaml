@@ -1,14 +1,22 @@
 parse_config:
   zmk_additional_includes:
     - "modules/zmk/helpers/include"
+    - "config"
 
   zmk_preamble: |
     #include <zmk-helpers/key-labels/glove80.h>
     #define CONFIG_WIRELESS
+    #include "misc/unicodes.dtsi"
 
   raw_binding_map:
     # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
     "&navigation": Nav Word
+    "&spacebase": Space Base
+    "&enterbase": Enter Base
+    "&bnexus": Base Nexus
+    "&bsymbol": Base Symbol
+    "&kp TAB": Tab
+    "&kp ENTER": Enter
     "&fnumwordp": Num Plus
     "&kp RA(Z)": Æ
     "&kp RA(P)": Ö
@@ -90,6 +98,78 @@ parse_config:
     "&mkp MCLK": Middle Click
     "&mkp MB4": Back Click
     "&mkp MB5": Forward Click
+
+    # Unicode layer bindings → rendered symbols
+    "&uc alien_uc": "👽"
+    "&uc ufo_uc": "🛸"
+    "&uc rocket_uc": "🚀"
+    "&uc magic_wand_uc": "🪄"
+    "&uc wizard_uc": "🧙"
+    "&uc elf_uc": "🧝"
+    "&uc vampire_uc": "🧛"
+    "&uc zombie_uc": "🧟"
+    "&uc crystal_ball_uc": "🔮"
+    "&uc sparkle_uc": "✨"
+
+    "&uc clown_uc": "🤡"
+    "&uc partying_face_uc": "🥳"
+    "&uc joy_uc": "😂"
+    "&uc star_struck_uc": "🤩"
+    "&uc heart_eyes_uc": "😍"
+    "&uc exploding_head_uc": "🤯"
+    "&uc smirk_uc": "😏"
+    "&uc thinking_uc": "🤔"
+    "&uc scream_uc": "😱"
+    "&uc boom_uc": "💥"
+    "&uc skull_uc": "💀"
+
+    "&uc hear_no_evil_uc": "🙉"
+    "&uc ok_hand_uc": "👌"
+    "&uc brain_uc": "🧠"
+    "&uc waving_hand_uc": "👋"
+    "&uc fire_combo_uc": "🔥 💥"
+    "&uc dagger_uc": "†"
+    "&uc livelong_uc": "🖖"
+    "&uc metal_uc": "🤘"
+    "&uc turtle_uc": "🐢"
+
+    "&uc yinyang_uc": "☯"
+    "&uc pinched_fingers_uc": "🤌"
+    "&uc euro_uc": "€"
+    "&uc palm_up_hand_uc": "🫴"
+    "&uc less_combo_uc": "≤ ≪"
+    "&uc saluting_face_uc": "🫡"
+    "&uc greater_combo_uc": "≥ ≫"
+    "&uc impliesiff_uc": "⇒ ⇔"
+    "&uc index_pointing_at_the_viewer_uc": "🫵"
+
+    "&uc star_glow_uc": "🌟"
+    "&uc 0x2764 0": "❤"
+    "&uc broken_heart_uc": "💔"
+    "&uc two_hearts_uc": "💕"
+    "&uc permille_uc": "‰"
+    "&uc sparkling_heart_uc": "💖"
+    "&uc revolving_hearts_uc": "💞"
+    "&uc tada_uc": "🎉"
+    "&uc books_uc": "📚"
+
+    "&uc warning_uc": "⚠"
+    "&uc exclamation_uc": "❕ ❗"
+    "&uc question_uc": "❔ ❓"
+    "&uc left_uc": "←"
+    "&uc right_uc": "→"
+    "&uc tradecopy_uc": "™ ©"
+    "&uc dice_uc": "🎲"
+    "&uc bullseye_uc": "🎯"
+    "&uc sob_skull_uc": "😭 💀"
+    "&uc down_uc": "↓"
+    "&uc up_uc": "↑"
+    "&uc underage_uc": "🔞"
+    "&uc no_mobile_phones_uc": "📵"
+    "&uc peace_uc": "☮"
+
+    # Direct numeric example
+    "&uc fire_combo_uc": "🔥 💥"
 
   trans_legend: { "t": "", "type": "trans" }
 
