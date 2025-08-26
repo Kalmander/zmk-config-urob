@@ -26,7 +26,8 @@
 			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
-			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
+			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
+			/* ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; }; */
 			/* ak_lg { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp G>; }; */
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
@@ -102,7 +103,7 @@
 			#binding-cells = <0>;
 			bindings = <&kp RA(T)>;
 
-			ak_gd { trigger-keys = <RA(Z)>; max-prior-idle-ms = <2000>; bindings = <&kp RA(D)>; };
+			ak_razrad { trigger-keys = <RA(Z)>; max-prior-idle-ms = <2000>; bindings = <&kp RA(D)>; };
 		};
 
 		adaptive_up: adaptive_up {
@@ -110,9 +111,17 @@
 			#binding-cells = <0>;
 			bindings = <&kp UP>;
 
-			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp L>; };
+			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; }; */
+			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp V>; };
 		};
 
+		adaptive_down: adaptive_down {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp DOWN>;
+
+			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp V>; };
+		};
 
 		shift_assist: shift_assist {
 			compatible = "zmk,behavior-adaptive-key";
