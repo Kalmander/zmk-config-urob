@@ -262,7 +262,7 @@
 			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
 			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
 			&kp DOT     &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &to BASE_NEXUS    &fnumword  &kp ESC   &ctrl_lock  &sl MOD_LOCKS    &trans
-			&sk LSHIFT  &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING        &trans &trans          &trans     &kp FSLH  &kp ENTER     &kp DELETE  &trans  &trans &trans
+			&sk LSHIFT  &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING        &trans &trans          &trans     &kp FSLH  &kp ENTER     &kp DELETE  &kp INSERT  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &mouse  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS            &kp HOME    &kp END     &trans     &trans  &trans
 			
 			>;
@@ -277,7 +277,7 @@
 			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
 			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
 			&kp DOT     &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &to BASE_NEXUS    &fnumword  &kp ESC   &ctrl_lock  &sl MOD_LOCKS    &trans
-			&sk LSHIFT  &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING        &trans &trans          &trans     &kp FSLH  &kp ENTER     &kp DELETE  &trans  &trans &trans
+			&sk LSHIFT  &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING        &trans &trans          &trans     &kp FSLH  &kp ENTER     &kp DELETE  &kp INSERT  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &mouse  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS            &kp HOME    &kp END     &trans     &trans  &trans
 			
 			>;
@@ -314,9 +314,9 @@
 			
 			&none  &none  &none     &none      &none                                                                                              &kp F13  &kp F14  &kp F15  &none  &none
 			&none  &none  &none     &none      &none     &none                                                                        &none       &kp F10  &kp F11  &kp F12  &none  &none
-			&none  &none  &none     &kp RSHIFT &none     &none                                                                        &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
+			&none  &none  &none     &none      &none     &none                                                                        &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
 			&none  &none  &kp LALT  &kp LSHIFT &kp LGUI  &none                                                                        &kp CAPS    &kp F4   &kp F5   &kp F6   &none  &none
-			&none  &none  &none     &none      &kp LCTRL &kp K_CANCEL &none  &none  &none     &none       &kp C_BRI_DN  &kp C_BRI_UP  &kp SLCK    &kp F1   &kp F2   &kp F3   &none  &to TYPING
+			&none  &none  &none     &kp RSHIFT &kp LCTRL &kp K_CANCEL &none  &none  &none     &none       &kp C_BRI_DN  &kp C_BRI_UP  &kp SLCK    &kp F1   &kp F2   &kp F3   &none  &to TYPING
 			&none  &none  &none     &none      &none                  &none  &none  &none     &kp C_MUTE  &volume_down  &volume_up                &none    &none    &none    &none  &to JOKER
 			
 			>;
