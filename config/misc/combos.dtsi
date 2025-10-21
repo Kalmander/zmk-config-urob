@@ -211,12 +211,12 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		combo_spacec {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LH5 LH4>;
-			bindings = <&combo_spacec_macro>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_spacec { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LH5 LH4>; */
+		/* 	bindings = <&combo_spacec_macro>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 
 		combo_rs {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -367,16 +367,30 @@
 			layers = <CAPS_WORD>;
 		};
 
-		combo_ckspace {
+		combo_ck2 {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH1 LH4>;
+			bindings = <&combo_ck_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_ck_cap2 {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LH1 LH4>;
+			bindings = <&two_kps LS(C) LS(K)>;
+			layers = <CAPS_WORD>;
+		};
+
+		combo_ckspace {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LH5 LH4>;
 			bindings = <&combo_ckspace_macro>;
 			layers = <BASE TYPING>;
 		};
 
 		combo_ckspace_cap {
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LH1 LH4>;
+			key-positions = <LH5 LH4>;
 			bindings = <&caps_cksp>;
 			layers = <CAPS_WORD>;
 		};
