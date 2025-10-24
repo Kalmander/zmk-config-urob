@@ -193,6 +193,21 @@
 			mods = <(MOD_RSFT)>;
 		};
 
+
+		rshcaprep: rshcaprep {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&rshift_repeat>, <&capsword>;
+			mods = <(MOD_LSFT)>;
+		};
+
+		lshcaprep: lshcaprep {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&shift_repeat>, <&capsword>;
+			mods = <(MOD_RSFT)>;
+		};
+
 		bspc_del: backspace_delete {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;

@@ -21,6 +21,12 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_rk_macro: combo_rk_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps R K>, <&two_kps LS(R) K>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
 
 		space_caps: space_caps {
 			compatible = "zmk,behavior-macro";
@@ -46,6 +52,12 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_sk_macro: combo_sk_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps S K>, <&two_kps LS(S) K>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
     
 		lower_cksp: lower_cksp {
 			compatible = "zmk,behavior-macro";
@@ -367,6 +379,34 @@
 			layers = <CAPS_WORD>;
 		};
 
+		combo_sk {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH2 RH5>;
+			bindings = <&combo_sk_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_sk_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH2 RH5>;
+			bindings = <&two_kps LS(S) LS(K)>;
+			layers = <CAPS_WORD>;
+		};
+
+		combo_sk2 {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH4>;
+			bindings = <&combo_sk_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_sk_cap2 {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH4>;
+			bindings = <&two_kps LS(S) LS(K)>;
+			layers = <CAPS_WORD>;
+		};
+
 		combo_ck2 {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH1 LH4>;
@@ -380,6 +420,21 @@
 			bindings = <&two_kps LS(C) LS(K)>;
 			layers = <CAPS_WORD>;
 		};
+
+		combo_rk {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH2>;
+			bindings = <&combo_rk_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_rk_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH2>;
+			bindings = <&two_kps LS(R) LS(K)>;
+			layers = <CAPS_WORD>;
+		};
+
 
 		combo_ckspace {
 			timeout-ms = <COMBO_TIMEOUT>;

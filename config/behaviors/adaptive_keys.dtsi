@@ -21,7 +21,6 @@
 			ak_mk { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 			/* ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; }; */
 			/* ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
-			ak_kspace { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
@@ -33,7 +32,9 @@
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 
-			ak_rs { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp S>; };
+			/* ak_rs { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp S>; }; */
+			/* ak_rk { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
+			ak_kr { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
 			ak_sr { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
      
 			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; };
@@ -163,6 +164,19 @@
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&sk LSHFT>;
+			repeat {
+				trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+				bindings = <&key_repeat>;
+				max-prior-idle-ms = <350>;
+				strict-modifiers;
+			};
+		};
+
+
+		rshift_repeat: rshift_repeat {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&sk RSHFT>;
 			repeat {
 				trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
 				bindings = <&key_repeat>;
