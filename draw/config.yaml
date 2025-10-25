@@ -10,6 +10,11 @@ parse_config:
 
   raw_binding_map:
     # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
+    "&pcapsword": Dotted Caps Word
+    "&shift_repeat": Shift Repeat
+    "&rshift_repeat": RShift Repeat
+    "&to UNIC_LAYER": Unicode Layer
+    "&thorn_eth": Þ / Ð
     "&navigation": Nav Word
     "&spacebase": Space Base
     "&enterbase": Enter Base
