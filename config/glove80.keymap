@@ -261,7 +261,7 @@
 			&trans      &trans     &trans     &trans     &trans                                                                                                              &trans      &trans      &trans     &trans  &trans
 			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans         &kp CARET   &kp STAR    &kp HASH   &trans  &trans
 			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex       &kp K       &kp S       &kp R      &trans  &trans
-			&kp LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &to BASE_NEXUS &fnumword   &kp ESC     &ctrl_lock  &sl MOD_LOCKS    &trans
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &to BASE_NEXUS &fnumword   &kp ESC     &ctrl_lock  &sl MOD_LOCKS    &trans
 			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH       &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &mouse  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS                    &kp HOME    &kp END     &trans     &trans  &trans
 			
