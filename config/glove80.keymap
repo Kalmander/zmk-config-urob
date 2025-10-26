@@ -169,7 +169,7 @@
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &nav_alt   &nav_shift       &nav_gui  &nav_gui                                                       &trans  &trans   &trans     &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton  &trans   &fnumword  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &sk LGUI  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &kp UNDER  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
@@ -330,7 +330,7 @@
 			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &pagigaiton  &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
-			&trans    &trans  &trans       &trans       &trans             &kp UNDER  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans       &trans       &trans             &sk LGUI  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
 		};
