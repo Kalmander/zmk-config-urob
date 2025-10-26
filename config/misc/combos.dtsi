@@ -36,6 +36,13 @@
 			bindings = <&kp SPACE &capsword>;
 		};
 
+		dot_dqt_space: dot_dqt_space {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp DOT &kp DQT &kp SPACE>;
+		};
 
 		space_base_caps: space_base_caps {
 			compatible = "zmk,behavior-macro";
@@ -453,7 +460,7 @@
 		combo_dot_quote {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LT2 LM2>;
-			bindings = <&two_kps DOT DQT>;
+			bindings = <&dot_dqt_space>;
 			layers = <NEXUS>;
 		};
 

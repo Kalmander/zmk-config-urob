@@ -169,7 +169,7 @@
 			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans       &nav_alt   &nav_shift       &nav_gui  &nav_gui                                                       &trans  &trans   &trans     &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton  &trans   &fnumword  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &kp UNDER  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &sk LGUI  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
@@ -258,12 +258,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans      &trans     &trans     &trans     &trans                                                                                                              &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans         &kp CARET   &kp STAR    &kp HASH   &trans  &trans
-			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex       &kp K       &kp S       &kp R      &trans  &trans
-			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &to BASE_NEXUS &fnumword   &kp ESC     &ctrl_lock  &sl MOD_LOCKS    &trans
-			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH       &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &mouse  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS                    &kp HOME    &kp END     &trans     &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                                          &trans      &trans      &trans     &trans  &trans
+			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans     &kp CARET   &kp STAR    &kp HASH   &trans  &trans
+			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock    &sl MOD_LOCKS
+			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH   &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &kp UNDER  &sl FUNCTIONS  &trans &combo_rs_macro &sl NEXUS                &mouse      &to BASE_NEXUS     &trans     &trans  &trans
 			
 			>;
 		};
@@ -330,7 +330,7 @@
 			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &pagigaiton  &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
-			&trans    &trans  &trans       &trans       &trans             &sk LGUI  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans       &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
 		};
