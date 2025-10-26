@@ -185,5 +185,17 @@
 			};
 		};
 
+		dot_shift: dot_shift {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&sk LSHIFT>;
+			repeat {
+				trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+				bindings = <&kp DOT>;
+				max-prior-idle-ms = <600>;
+				strict-modifiers;
+			};
+		};
+
         };
 };

@@ -450,7 +450,12 @@
 			layers = <CAPS_WORD>;
 		};
 
-
+		combo_dot_quote {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LT2 LM2>;
+			bindings = <&two_kps DOT DQT>;
+			layers = <NEXUS>;
+		};
 
 	};
 };
