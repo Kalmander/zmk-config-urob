@@ -77,6 +77,13 @@
 			, <&macro_release &mo MACRO_PLACEHOLDER>
 			;
 		};
+
+		dot_assist: dot_assist { 
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&_dot>, <&pcapsword>;
+			mods = <(MOD_LSFT)>;
+		};
 		
 		kpc: kp_then_cancel {
 			compatible = "zmk,behavior-macro-one-param";
