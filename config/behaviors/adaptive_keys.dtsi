@@ -22,14 +22,15 @@
 			/* ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; }; */
 			/* ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
-			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
+			/* ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; }; */
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
 			/* ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; }; */
 			/* ak_lg { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp G>; }; */
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
-			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			/* ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; /* Virkar því miður ekki, registerar bara sem T */
 
 			ak_mh { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp H>; };
@@ -67,6 +68,8 @@
 			ak_thorn_eth1 { trigger-keys = <SPACE>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth2 { trigger-keys = <LSHIFT>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth3 { trigger-keys = <RSHIFT>; bindings = <&kp RA(T)>; };
+			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 		};
 
 		n1_adapt: n1_adapt {
@@ -181,7 +184,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk RSHFT>;
 			repeat {
-				trigger-keys = <K L Z>;
+				trigger-keys = <D K L Z>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
