@@ -70,6 +70,7 @@
 			ak_thorn_eth3 { trigger-keys = <RSHIFT>; bindings = <&kp RA(T)>; };
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
+			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
 		};
 
 		n1_adapt: n1_adapt {
