@@ -165,7 +165,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk LSHFT>;
 			repeat {
-				trigger-keys = <B D G J K L N P R S T X Z>;
+				trigger-keys = <B G J X>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
@@ -178,7 +178,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk RSHFT>;
 			repeat {
-				trigger-keys = <B D G J K L N P R S T X Z>;
+				trigger-keys = <K L Z>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;

@@ -14,34 +14,35 @@
 #define BASE 0
 #define TYPING 1
 #define CAPS_WORD 2
-#define NAV_WORD 3
-#define NAV_WORD_GUI 4
-#define NAV_WORD_CTRL 5
-#define NAV_WORD_ALT 6
-#define NAV_WORD_SHIFT 7
-#define NAV_WORD_SWITCH 8
-#define VIM_WORD 9
-#define PAGE_WORD 10
-#define NUM_SPACE 11
-#define NUM_WORD 12
-#define NUM_WORD_MODDED 13
-#define NUM_WORD_PLUS 14
-#define NEXUS 15
-#define NEXUS_OVER 16
-#define BASE_NEXUS 17
-#define SYMBOL 18
-#define FUNCTIONS 19
-#define ICE 20
-#define MOD_LOCKS 21
-#define JOKER 22
-#define EDI 23
-#define MOUSE 24
-#define MOUSE_SLOW 25
-#define MOUSE_WARP 26
-#define MOUSE_FAST 27
-#define MOUSE_SWITCHER 28
-#define UNIC_LAYER 29
-#define MAGIC 30
+#define UNDER_SPACE 3
+#define NAV_WORD 4
+#define NAV_WORD_GUI 5
+#define NAV_WORD_CTRL 6
+#define NAV_WORD_ALT 7
+#define NAV_WORD_SHIFT 8
+#define NAV_WORD_SWITCH 9
+#define VIM_WORD 10
+#define PAGE_WORD 11
+#define NUM_SPACE 12
+#define NUM_WORD 13
+#define NUM_WORD_MODDED 14
+#define NUM_WORD_PLUS 15
+#define NEXUS 16
+#define NEXUS_OVER 17
+#define BASE_NEXUS 18
+#define SYMBOL 19
+#define FUNCTIONS 20
+#define ICE 21
+#define MOD_LOCKS 22
+#define JOKER 23
+#define EDI 24
+#define MOUSE 25
+#define MOUSE_SLOW 26
+#define MOUSE_WARP 27
+#define MOUSE_FAST 28
+#define MOUSE_SWITCHER 29
+#define UNIC_LAYER 30
+#define MAGIC 31
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -61,8 +62,8 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &sk LSHIFT                                                                                      &sk RSHIFT  &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
-			&pcapsword      &sk LCTRL        &kp Y         &kp O           &kp U          &lshcaprep                                                                                      &rshcaprep  &kp F        &kp D           &kp L         &kp RA(D)     &pcapsword
+			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &capsword                                                                                       &capsword   &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
+			&tog UNDER_SPACE      &sk LCTRL        &kp Y         &kp O           &kp U          &shift_repeat                                                                                   &rshift_repeat  &kp F        &kp D           &kp L         &kp RA(D)     &tog UNDER_SPACE
 			&kp RA(Z)       &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &thorn_eth     &kp X
 			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &kp UNDER        &sk LGUI      &kp K         &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
       &magic MAGIC 0  &to UNIC_LAYER   &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &kp UP    &kp AT        &to UNIC_LAYER     &kp PSCRN
@@ -92,6 +93,19 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+			
+			>;
+		};
+
+		UnderSpace {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans   &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &spacebase                                               &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans          &kp UNDER  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
