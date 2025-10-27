@@ -18,11 +18,11 @@
 			/* ak_fr { trigger-keys = <F>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
 			/* ak_wr { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
 			/* ak_pk { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
-			ak_mk { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			/* ak_mk { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };  */
 			/* ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; }; */
 			/* ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
-			ak_lj { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
@@ -30,7 +30,10 @@
 			/* ak_lg { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp G>; }; */
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
-			ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; /* Virkar því miður ekki, registerar bara sem T */
+
+			ak_mh { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp H>; };
+			ak_hm { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp M>; };
 
 			/* ak_rs { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp S>; }; */
 			/* ak_rk { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
@@ -165,7 +168,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk LSHFT>;
 			repeat {
-				trigger-keys = <B G J X>;
+				trigger-keys = <B G J X AT>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
