@@ -50,6 +50,13 @@
 			<&macro_param_2to1>, <&sk MACRO_PLACEHOLDER>;
 		};
 
+		kp_sk: kp_then_sk {
+			compatible = "zmk,behavior-macro-two-param";
+			#binding-cells = <2>;
+			bindings =  <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>,
+			<&macro_param_2to1>, <&sk MACRO_PLACEHOLDER>;
+		};
+
 		to_then_to: to_then_to {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
