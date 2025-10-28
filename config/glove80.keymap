@@ -131,7 +131,7 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                                 &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                                 &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
 			&trans  &trans  &trans    &cnav   &trans  &trans        &trans  &trans  &kp LG(SPACE)    &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans                &trans  &trans  &trans           &trans  &trans  &kp_sk K_CANCEL LGUI            &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans                &trans  &trans  &trans           &trans  &trans  &sk LGUI            &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
