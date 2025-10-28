@@ -72,7 +72,7 @@
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 
       /* Held ég shit hugmynd en skoðum það */
-			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
+			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
 		};
 
 		n1_adapt: n1_adapt {
