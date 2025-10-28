@@ -274,14 +274,13 @@
 		/* 	bindings = <&combo_cx_macro>; */
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
-		
-		/* combo_capsword { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* 	key-positions = <POS_LH_T1 POS_RH_T1>; */
-		/* bindings = <&caps_word_with_layer>; */
-		/* 	bindings = <&caps_word>; */
-		/* 	layers = <BASE TYPING>; */
-		/* }; */
+
+		combo_capsword {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RN1 LN1>;
+			bindings = <&pcapsword>;
+			layers = <BASE TYPING>;
+		};
 		
 		combo_wh {
 			timeout-ms = <COMBO_TIMEOUT>;
