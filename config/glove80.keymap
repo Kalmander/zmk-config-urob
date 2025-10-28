@@ -104,7 +104,7 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans   &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &spacebase                                               &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &to BASE  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans          &kp UNDER  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;

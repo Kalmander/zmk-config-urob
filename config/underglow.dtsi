@@ -143,10 +143,22 @@
 			>;
 			layer-id = <CAPS_WORD>;
 		};
+
+		UnderSpace {
+			bindings = <
+			&ug ColLayer &ug ColLayer &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug WHITE                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug WHITE &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <UNDER_SPACE>;
+		};
 		
 		NavWord {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColNav  &ug ColNav   &ug ColNav     &ug ColNav  &ug ___  &ug ___
@@ -158,7 +170,7 @@
 		
 		NavWordGui {
 			bindings = <
-			&ug ___  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ColLayer  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ORANGE  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ColGui                                                       &ug ColGui  &ug ColGui   &ug ColGui     &ug ColGui  &ug ___  &ug ___
@@ -170,7 +182,7 @@
 		
 		NavWordCtrl {
 			bindings = <
-			&ug ColLayer  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColCtrl  &ug ColCtrl   &ug ColCtrl     &ug ColCtrl  &ug ___  &ug ___
@@ -182,7 +194,7 @@
 		
 		NavWordAlt {
 			bindings = <
-			&ug ___  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ColLayer  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColAlt  &ug ColAlt   &ug ColAlt     &ug ColAlt  &ug ___  &ug ___
@@ -194,7 +206,7 @@
 		
 		NavWordShift {
 			bindings = <
-			&ug ColLayer  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ColLayer  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColShift  &ug ColShift   &ug ColShift     &ug ColShift  &ug ___  &ug ___
@@ -206,7 +218,7 @@
 		
 		NavWordSwitcher {
 			bindings = <
-			&ug ___  &ug ___  &ug ___    &ug ColLayer  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ColNav  &ug ColNav   &ug ColNav     &ug ColNav  &ug ___  &ug ___
@@ -218,7 +230,7 @@
 		
 		VimWord {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ColVim &ug ColVim   &ug ColVim   &ug ColVim &ug ___ &ug ___
@@ -230,7 +242,7 @@
 		
 		PageWord {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ColPage &ug ColPage   &ug ColPage   &ug ColPage &ug ___ &ug ___
@@ -242,7 +254,7 @@
 		
 		NumWord {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ColNum1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNum0 &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ColNum2 &ug ColNum3 &ug ColNum4 &ug ___                                                  &ug ___ &ug ColNum7 &ug ColNum8 &ug ColNum9 &ug ___ &ug ___
@@ -254,7 +266,7 @@
 		
 		NumWordModded {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ColNumMod1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumMod0 &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ColNumMod2 &ug ColNumMod3 &ug ColNumMod4 &ug ___                                                  &ug ___ &ug ColNumMod7 &ug ColNumMod8 &ug ColNumMod9 &ug ___ &ug ___
@@ -266,7 +278,7 @@
 		
 		NumWordPlus {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ColNumPlus1  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumPlus0  &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ColNumPlus2  &ug ColNumPlus3  &ug ColNumPlus4  &ug ___                                                  &ug ___ &ug ColNumPlus7  &ug ColNumPlus8  &ug ColNumPlus9  &ug ___ &ug ___
@@ -278,7 +290,7 @@
 		
 		Nexus {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -290,7 +302,7 @@
 		
 		NexusOverlay {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ColLayer                                                                  &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -302,7 +314,7 @@
 		
 		BaseNexus {
 			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ColLayer                                                                  &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ___ &ug ___   &ug ___   &ug ColLayer                                                           &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -314,7 +326,7 @@
 		
 		Symbol {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ___   &ug ColLayer                                                           &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                           &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                              	&ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                              	&ug ___ &ug ColSym2   &ug ColSym3   &ug ColSym3 &ug ColSym2 &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                              	&ug ColSym1 &ug ___   &ug ___   &ug ColSym1 &ug ___ &ug ___
@@ -326,7 +338,7 @@
 		
 		FunctionKeys {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                           &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
@@ -338,7 +350,7 @@
 		
 		IcelandicKeys {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColLayer   &ug ___   &ug ColLayer                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                        		  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ColIce    &ug ColIce   &ug ColIce   &ug ___                                        		  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ColIce    &ug ColIce   &ug ColIce   &ug ___                                        		  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -350,7 +362,7 @@
 		
 		ModLocks {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ___   &ug ColLayer                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ___ &ug ColLayer   &ug ___   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -362,7 +374,7 @@
 		
 		Joker {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ColLayer   &ug ___   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ColLayer &ug ColLayer   &ug ___   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -374,7 +386,7 @@
 		
 		EDI {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ColLayer   &ug ___   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ColLayer &ug ColLayer   &ug ___   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -386,7 +398,7 @@
 		
 		Mouse {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ColLayer   &ug ___   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ColLayer   &ug ColLayer                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___     &ug ColMouse   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ColMouse     &ug ColMouse   &ug ColMouse   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ColMouse &ug ___ &ug ColMouse
@@ -398,7 +410,7 @@
 		
 		MouseSlow {
 			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ColLayer   &ug ColLayer                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                             &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___    &ug ColSlow   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ColSlow    &ug ColSlow   &ug ColSlow   &ug ___                                             &ug ___ &ug ___   &ug ___   &ug ColSlow &ug ___ &ug ColSlow
@@ -410,7 +422,7 @@
 		
 		MouseWarp {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ColLayer &ug ___   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___    &ug ColWarp   &ug ___   &ug ___                                         &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ColWarp    &ug ColWarp   &ug ColWarp   &ug ___                                         &ug ___ &ug ___   &ug ___   &ug ColWarp &ug ___ &ug ColWarp
@@ -422,7 +434,7 @@
 		
 		MouseFast {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___    &ug ColFast   &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ColFast    &ug ColFast   &ug ColFast   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ColFast &ug ___ &ug ColFast
@@ -434,7 +446,7 @@
 		
 		MouseSwitcher {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ColMouse &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColMouse &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ColMouse &ug ColMouse &ug ColMouse &ug ___                                                  &ug ___ &ug ColMouse &ug ColMouse &ug ColMouse &ug ___ &ug ___
@@ -446,7 +458,7 @@
 		
 		MoergoMagic {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
