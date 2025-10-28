@@ -33,13 +33,12 @@
 			bindings = <&kp N1>;
 
 			ak_31 { trigger-keys = <N3>; max-prior-idle-ms = <2000>; bindings = <&kp N1>; };
-			ak_13 { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp N3>; };
+			ak_15 { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp N5>; };
+			ak_55 { trigger-keys = <N5>; max-prior-idle-ms = <2000>; bindings = <&kp N5>; };
 
 			ak_80 { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
-			ak_60 { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
-			ak_70 { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
-			ak_90 { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp N0>; };
-			ak_08 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N8>; };
+			ak_06 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N6>; };
+			ak_66 { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp N6>; };
 		};
 
 		thorn_eth: thorn_eth {
@@ -66,7 +65,7 @@
       /* (og er með td og bn uppi líka svo t og b eru báðu megin) */
 
       /* Held ég shit hugmynd en skoðum það */
-			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
+			/* ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
 		};
 
 		n1_adapt: n1_adapt {
