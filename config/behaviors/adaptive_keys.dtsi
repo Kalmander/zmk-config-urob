@@ -12,32 +12,14 @@
 			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
 			ak_au { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
 			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
-			ak_zz   { trigger-keys = <Z>; max-prior-idle-ms = <2000>; bindings = <&kp Z>; };
-			ak_vae  { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp RA(Z)>; };
 				
-			/* ak_fr { trigger-keys = <F>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
-			/* ak_wr { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
-			/* ak_pk { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
-			/* ak_mk { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };  */
-			/* ak_kp { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp P>; }; */
-			/* ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
-			/* ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; }; */
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
-			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
-			/* ak_gv { trigger-keys = <G>; max-prior-idle-ms = <2000>; bindings = <&kp V>; }; */
-			/* ak_lg { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp G>; }; */
-			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
-			/* ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
+			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
 			ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; /* Virkar því miður ekki, registerar bara sem T */
 
-			ak_mh { trigger-keys = <M>; max-prior-idle-ms = <2000>; bindings = <&kp H>; };
-			ak_hm { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp M>; };
-
-			/* ak_rs { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp S>; }; */
-			/* ak_rk { trigger-keys = <R>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 			ak_kr { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
 			ak_sr { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
      
@@ -68,8 +50,17 @@
 			ak_thorn_eth1 { trigger-keys = <SPACE>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth2 { trigger-keys = <LSHIFT>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth3 { trigger-keys = <RSHIFT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth3 { trigger-keys = <LPAR>; bindings = <&kp RA(T)>; };
+
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
+			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
+
+      /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
+      /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ */
+      /* Þar með ætti að vera í lagi að hafa þau hér,  */
+      /* en er með nl, dg, gd uppi samt, vil ekki tvítaka þau */
+      /* (og er með td og bn uppi líka svo t og b eru báðu megin) */
 
       /* Held ég shit hugmynd en skoðum það */
 			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
