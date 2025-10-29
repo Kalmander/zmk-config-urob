@@ -36,12 +36,36 @@
 			bindings = <&kp SPACE &capsword>;
 		};
 
-		dot_dqt_space: dot_dqt_space {
+		dqt_shift: dqt_shift {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&kp DOT &kp DQT &kp SPACE>;
+			bindings = <&kp DQT &sk LSHIFT>;
+		};
+
+		dot_dqt_space_shift: dot_dqt_space_shift {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp DOT &kp DQT &kp SPACE &sk LSHIFT>;
+		};
+
+		sqt_shift: sqt_shift {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp SQT &sk LSHIFT>;
+		};
+
+		dot_sqt_space_shift: dot_sqt_space_shift {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp DOT &kp SQT &kp SPACE &sk LSHIFT>;
 		};
 
 		space_base_caps: space_base_caps {
@@ -456,10 +480,31 @@
 			layers = <CAPS_WORD>;
 		};
 
-		combo_dot_quote {
+		combo_quote_shift {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LT2 LT1>;
+			bindings = <&dqt_shift>;
+			layers = <NEXUS>;
+		};
+
+		combo_dot_quote_shift {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LT2 LM2>;
-			bindings = <&dot_dqt_space>;
+			bindings = <&dot_dqt_space_shift>;
+			layers = <NEXUS>;
+		};
+
+		combo_squote_shift {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LT1 LM1>;
+			bindings = <&sqt_shift>;
+			layers = <NEXUS>;
+		};
+
+		combo_dot_squote_shift {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LM2 LM1>;
+			bindings = <&dot_sqt_space_shift>;
 			layers = <NEXUS>;
 		};
 
