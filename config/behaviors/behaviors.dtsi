@@ -88,9 +88,16 @@
 		nexus_autolayer: nexus_autolayer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <LEFT DOWN UP RIGHT HOME END PG_UP PG_DN CLEAR_AGAIN>;
-			ignore-numbers;
+			continue-list = <STAR HASH CARET AMPS PRCNT LPAR RPAR DQT BSLH QMARK COMMA DOT SQT EXCL SEMI COLON BACKSPACE>;
 			ignore-modifiers;
+		};
+
+		nexus_auto: nexus_auto {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp K_CANCEL>, <&nexus_autolayer NEXUS>;
 		};
 
 		dot_assist: dot_assist { 

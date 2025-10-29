@@ -65,7 +65,7 @@
 			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &capsword                                                                                       &capsword   &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
 			&tog UNDER_SPACE      &sk LCTRL        &kp Y         &kp O           &kp U          &shift_repeat                                                                                   &rshift_repeat  &kp F        &kp D           &kp L         &kp RA(D)     &tog UNDER_SPACE
 			&kp RA(Z)       &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &thorn_eth     &kp X
-			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &kp UNDER        &sk LGUI      &kp K         &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
+			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &kp UNDER        &nexus_auto   &kp K         &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
       &magic MAGIC 0  &to UNIC_LAYER   &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &kp UP    &kp AT        &to UNIC_LAYER     &kp PSCRN
 			
       >;
