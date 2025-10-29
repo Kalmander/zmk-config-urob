@@ -53,6 +53,9 @@
 			ak_thorn_eth5 { trigger-keys = <LBRC>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth6 { trigger-keys = <LBKT>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth7 { trigger-keys = <LT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth8 { trigger-keys = <DQT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth9 { trigger-keys = <SQT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth10 { trigger-keys = <ENTER>; bindings = <&kp RA(T)>; };
 
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
