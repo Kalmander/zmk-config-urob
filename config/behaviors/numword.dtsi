@@ -71,6 +71,22 @@
 			bindings = <&kp SPACE>, <&to BASE>;
 		};
 
+		minusbase: minusbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp MINUS>, <&to BASE>;
+		};
+
+		sbase: sbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp S>, <&kp SPACE>, <&to BASE>;
+		};
+
 		enterbase: enterbase {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
