@@ -272,8 +272,8 @@
 		Nexus {
 			bindings = <
 			
-			&trans      &trans     &trans     &trans     &trans                                                                                                          &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans     &kp CARET   &kp STAR    &kp HASH   &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                                          &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
+			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &kp LCTRL  &kp CARET   &kp STAR    &kp HASH   &trans  &trans
 			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
 			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock    &sl MOD_LOCKS
 			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH   &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
