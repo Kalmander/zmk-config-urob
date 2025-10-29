@@ -16,8 +16,19 @@ parse_config:
     "&to UNIC_LAYER": Unicode Layer
     "&thorn_eth": Þ / Ð
     "&navigation": Nav Word
+    "&nexus_auto": Nexus Auto
+    "&tog UNDER_SPACE": _ space
     "&spacebase": Space Base
     "&enterbase": Enter Base
+    "&leftbase": ← Base
+    "&rightbase": → Base
+    "&downbase": ↓ Base
+    "&upbase": ↑ Base
+    "&sbase": S Base
+    "&minusbase": "- Base"
+    "&num_adaptive": Num Adapt
+    "&bnav": Nav
+    "&cnav": Nav
     "&bnexus": Base Nexus
     "&bsymbol": Base Symbol
     "&kp TAB": Tab

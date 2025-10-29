@@ -75,11 +75,11 @@
 			bindings = <
 			
 			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp UNDER      &lh_repeat                                                                                      &kp SPACE  &rh_repeat        &kp V           &kp UNDER         &kp RIGHT     &_dot
-			&pcapsword      &kp RA(Z)        &kp Y         &kp O           &kp U          &lshiftcaps                                                                                      &rshiftcaps  &kp F        &kp D           &kp L         &kp RA(D)     &pcapsword
-			&kp RA(Z)       &adaptive        &kp I   &kp E   &kp A    &kp ENTER                                                                                       &kp M  &kp H  &kp T   &kp N   &thorn_eth     &kp X
-			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp K       &kp ENTER            &sk LGUI      &kp TAB       &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
-      &to BASE        &to UNIC_LAYER   &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C  &sl NUM_WORD     &sl NUM_WORD  &kp S  &sl NEXUS         &kp DOWN     &kp UP    &kp AT        &to UNIC_LAYER     &kp PSCRN
+			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &capsword                                                                                       &capsword   &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
+			&tog UNDER_SPACE      &sk LCTRL        &kp Y         &kp O           &kp U          &shift_repeat                                                                                   &rshift_repeat  &kp F        &kp D           &kp L         &kp RA(D)     &tog UNDER_SPACE
+			&kp RA(Z)       &adaptive        &kp I         &kp E           &kp A          &kp ENTER                                                                                       &kp M  &kp H        &kp T          &kp N   &thorn_eth     &kp X
+			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
+      &magic MAGIC 0  &to UNIC_LAYER   &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS         &kp DOWN     &kp UP    &kp AT        &to UNIC_LAYER     &kp PSCRN
 			
 			>;
 		};
@@ -323,7 +323,7 @@
 			>;
 		};
 		
-		FunctionKeys {
+		Function {
 			bindings = <
 			
 			&none  &none  &none     &none      &none                                                                                              &kp F13  &kp F14  &kp F15  &none  &none

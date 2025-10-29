@@ -336,7 +336,7 @@
 			layer-id = <SYMBOL>;
 		};
 		
-		FunctionKeys {
+		Function {
 			bindings = <
 			&ug ColLayer &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
