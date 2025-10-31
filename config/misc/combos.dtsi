@@ -36,6 +36,14 @@
 			bindings = <&kp SPACE &capsword>;
 		};
 
+		k_sqt: k_sqt {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp K &sqt_nex>;
+		};
+
 		dqt_shift: dqt_shift {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
@@ -478,6 +486,13 @@
 			key-positions = <LH5 LH4>;
 			bindings = <&caps_cksp>;
 			layers = <CAPS_WORD>;
+		};
+
+		combo_k_sqt {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RT2 RT1>;
+			bindings = <&k_sqt>;
+			layers = <NEXUS>;
 		};
 
 		combo_quote_shift {
