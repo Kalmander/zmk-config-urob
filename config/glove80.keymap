@@ -262,8 +262,8 @@
 			&none  &none       &minusbase &kp HASH  &kp CARET      &kpcb LS(G)                                                                        &kpcb LS(G)  &kp CARET  &kp STAR  &minusbase &none      &none 
 			&none  &kp LT    &kp DOT    &kp N1    &kp SPACE      &kp BSLH                                                                           &kp PLUS     &kp SPACE  &kp N0    &kp DOT    &kp GT      &none 
 			&none  &spacebase  &kp N2     &kp N3    &kp N4         &enterbase                                                                         &kp LPAR       &kp N7     &kp N8    &kp N9     &kp RPAR  &none 
-			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol    &kp TAB    &kp ENTER     &kp ENTER      &sbase   &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS &kp COMMA  &kp SEMI   &none 
-			&none  &none       &none      &leftbase &rightbase               &spacebase  &kp N5  &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &downbase  &upbase   &kp AT     &kp COLON      &none 
+			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol    &kp TAB    &kp ENTER     &kp ENTER      &sbase   &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS &kp COMMA  &kp COLON   &none 
+			&none  &none       &none      &leftbase &rightbase               &spacebase  &kp N5  &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &downbase  &upbase   &kp AT     &kp SEMI      &none 
 			
 			>;
 		};
