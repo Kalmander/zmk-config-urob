@@ -18,6 +18,7 @@ parse_config:
     "&navigation": Nav Word
     "&nexus_auto": Nexus Auto
     "&tog UNDER_SPACE": _ space
+    "&sqt_nex": "' Nexus"
     "&spacebase": Space Base
     "&enterbase": Enter Base
     "&leftbase": ← Base
