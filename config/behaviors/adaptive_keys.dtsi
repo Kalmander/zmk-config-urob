@@ -63,6 +63,9 @@
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 
+      /* Varðandi NL: fyrir "fannðig" etc getur notað auka Ð takkann */
+			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
       /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ */
       /* Þar með ætti að vera í lagi að hafa þau hér,  */
