@@ -74,6 +74,9 @@
 
       /* Held ég shit hugmynd en skoðum það */
 			/* ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
+
+
+			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 		};
 
 		n1_adapt: n1_adapt {
