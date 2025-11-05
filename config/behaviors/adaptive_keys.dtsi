@@ -14,7 +14,7 @@
 			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
 				
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
-			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
+			ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
 			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
@@ -61,13 +61,13 @@
 			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
-			ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
+			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 
       /* Varðandi NL: fyrir "fannðig" etc getur notað auka Ð takkann */
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
-      /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ */
+      /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ*/
       /* Þar með ætti að vera í lagi að hafa þau hér,  */
       /* en er með nl, dg, gd uppi samt, vil ekki tvítaka þau */
       /* (og er með td og bn uppi líka svo t og b eru báðu megin) */
