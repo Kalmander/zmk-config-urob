@@ -64,6 +64,7 @@
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
+			ak_wf { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp F>; };
 
       /* Varðandi NL: fyrir "fannðig" etc getur notað auka Ð takkann */
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };

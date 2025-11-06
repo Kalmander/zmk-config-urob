@@ -192,7 +192,7 @@
 			layer-id = <NAV_WORD_CTRL>;
 		};
 		
-		NavWordAlt {
+		NavWordShiftCtrl {
 			bindings = <
 			&ug ColLayer  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
@@ -201,10 +201,10 @@
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			>;
-			layer-id = <NAV_WORD_ALT>;
+			layer-id = <NAV_WORD_SHIFT_CTRL>;
 		};
 		
-		NavWordShift {
+		NavWordGuiShift {
 			bindings = <
 			&ug ___  &ug ___  &ug ___    &ug ColLayer  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
@@ -213,9 +213,21 @@
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			>;
-			layer-id = <NAV_WORD_SHIFT>;
+			layer-id = <NAV_WORD_SHIFT_GUI>;
 		};
 		
+		NavWordGuiCtrl {
+			bindings = <
+			&ug ___  &ug ___  &ug ___    &ug ColLayer  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColShift  &ug ColShift   &ug ColShift     &ug ColShift  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			>;
+			layer-id = <NAV_WORD_CTRL_GUI>;
+		};
+
 		NavWordSwitcher {
 			bindings = <
 			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -358,18 +370,6 @@
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <ICE>;
-		};
-		
-		ModLocks {
-			bindings = <
-			&ug ColLayer &ug ___ &ug ColLayer   &ug ___   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <MOD_LOCKS>;
 		};
 		
 		Joker {

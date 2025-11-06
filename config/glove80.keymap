@@ -18,22 +18,22 @@
 #define NAV_WORD 4
 #define NAV_WORD_GUI 5
 #define NAV_WORD_CTRL 6
-#define NAV_WORD_ALT 7
-#define NAV_WORD_SHIFT 8
-#define NAV_WORD_SWITCH 9
-#define VIM_WORD 10
-#define PAGE_WORD 11
-#define NUM_SPACE 12
-#define NUM_WORD 13
-#define NUM_WORD_MODDED 14
-#define NUM_WORD_PLUS 15
-#define NEXUS 16
-#define NEXUS_OVER 17
-#define BASE_NEXUS 18
-#define SYMBOL 19
-#define FUNCTIONS 20
-#define ICE 21
-#define MOD_LOCKS 22
+#define NAV_WORD_SHIFT_CTRL 7
+#define NAV_WORD_SHIFT_GUI 8
+#define NAV_WORD_CTRL_GUI 9
+#define NAV_WORD_SWITCH 10
+#define VIM_WORD 11
+#define PAGE_WORD 12
+#define NUM_SPACE 13
+#define NUM_WORD 14
+#define NUM_WORD_MODDED 15
+#define NUM_WORD_PLUS 16
+#define NEXUS 17
+#define NEXUS_OVER 18
+#define BASE_NEXUS 19
+#define SYMBOL 20
+#define FUNCTIONS 21
+#define ICE 22
 #define JOKER 23
 #define EDI 24
 #define MOUSE 25
@@ -149,26 +149,39 @@
 			>;
 		};
 
-		NavWordAlt {
+		NavWordShiftCtrl {
 			bindings = <
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP)     &kp LA(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans  &copy_base  &trans &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
+		NavWordGuiShift {
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LG(LEFT))  &kp LS(LG(DOWN))   &kp LS(LG(UP))     &kp LS(LG(RIGHT))  &trans  &trans
 			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
 		};
 
-		NavWordShift {
+		NavWordGuiCtrl {
 			bindings = <
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)     &kp LS(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LC(LG(LEFT))  &kp LC(LG(DOWN))   &kp LC(LG(UP))     &kp LC(LG(RIGHT))  &trans  &trans
 			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
@@ -178,12 +191,12 @@
 		NavWordSwitcher {
 			bindings = <
 			
-			&trans  &trans       &trans      &trans       &trans                                                                         &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &trans      &trans       &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &nav_alt   &nav_shift       &nav_gui  &nav_gui                                                       &trans  &trans   &trans     &trans  &trans  &trans
-			&trans  &vimigation  &pagigaiton  &trans   &fnumword  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans       &nav_alt   &nav_shift       &nav_gui          &sk LGUI  &nav_ctrl  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			&trans  &trans       &trans      &trans      &trans                                                                                &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans     &trans                                                             &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans     &trans                                                             &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &nav_guishift_macro      &trans      &nav_gui   &nav_guictrl                                                       &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &vimigation  &pagigaiton &trans      &fnumword  &trans       &trans  &trans  &trans         &trans  &trans  &trans &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans                  &sk LGUI  &nav_ctrl  &nav_ctrlshift_macro    &trans  &trans  &trans         &trans   &trans  &trans  &trans  &trans
 			
 			>;
 		};
@@ -275,7 +288,7 @@
 			&trans      &trans     &trans     &trans     &trans                                                                                                          &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
 			&trans      &trans     &trans     &q_hash    &kp CARET  &trans                                                                                    &kp LCTRL  &kp CARET   &kp STAR    &trans     &trans  &trans
 			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock    &sl MOD_LOCKS
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock    &trans
 			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH   &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &kp UNDER  &sl FUNCTIONS  &trans &combo_rs_macro &sl NEXUS                &mouse      &to BASE_NEXUS     &trans     &trans  &trans
 			
@@ -287,12 +300,12 @@
 		NexusOverlay {
 			bindings = <
 			
-			&trans   &trans  &trans     &trans     &trans                                                                                                         &trans      &trans      &trans     &trans  &trans
-			&trans      &trans     &kp STAR   &q_hash    &kp CARET  &trans                                                                                    &trans    &kp CARET   &kp STAR    &kp HASH   &trans  &trans
-			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &trans    &sqt_nex    &kp S       &kp R      &trans  &trans
-			&kp DOT     &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &to BASE_NEXUS    &fnumword  &kp ESC   &ctrl_lock  &sl MOD_LOCKS    &trans
-			&sk LSHIFT  &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING        &trans &trans          &trans     &kp FSLH  &kp ENTER     &kp DELETE  &kp INSERT  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &mouse  &sl FUNCTIONS     &trans &combo_rs_macro &sl NEXUS            &kp HOME    &kp END     &trans     &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                                          &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
+			&trans      &trans     &trans     &q_hash    &kp CARET  &trans                                                                                    &kp LCTRL  &kp CARET   &kp STAR    &trans     &trans  &trans
+			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock    &trans
+			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH   &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
+			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &kp UNDER  &sl FUNCTIONS  &trans &combo_rs_macro &sl NEXUS                &mouse      &to BASE_NEXUS     &trans     &trans  &trans
 			
 			>;
 		};
@@ -345,19 +358,6 @@
 			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &pagigaiton  &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
 			&trans    &trans  &trans       &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
-			
-			>;
-		};
-		
-		ModLocks {
-			bindings = <
-			
-			&none  &none      &none        &none       &none                                                                        &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &none       &none                                                     &none  &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &none       &none                                                     &none  &none  &none  &none  &none  &none
-			&none  &none      &alt_lock    &shift_lock &gui_lock   &none                                                     &none  &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &none       &none    &none  &none  &none         &none  &none  &none  &none  &none  &none  &none  &none  &none
-			&none  &none      &none        &none       &none                &none  &ctrl_lock  &none    &none  &none  &none         &none  &none  &none  &none  &none
 			
 			>;
 		};
