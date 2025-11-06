@@ -194,9 +194,9 @@
 			&trans  &trans       &trans      &trans      &trans                                                                                &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans      &trans     &trans                                                             &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans      &trans     &trans                                                             &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &nav_guishift_macro      &trans      &nav_gui   &nav_guictrl                                                       &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &sk LGUI       &trans      &trans      &nav_gui   &nav_guishift_macro                                                       &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton &trans      &fnumword  &trans       &trans  &trans  &trans         &trans  &trans  &trans &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans      &trans                  &sk LGUI  &nav_ctrl  &nav_ctrlshift_macro    &trans  &trans  &trans         &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans                  &nav_guictrl  &nav_ctrl  &nav_ctrlshift_macro    &trans  &trans  &trans         &trans   &trans  &trans  &trans  &trans
 			
 			>;
 		};
@@ -288,7 +288,7 @@
 			&trans      &trans     &trans     &trans     &trans                                                                                                          &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
 			&trans      &trans     &trans     &q_hash    &kp CARET  &trans                                                                                    &kp LCTRL  &kp CARET   &kp STAR    &trans     &trans  &trans
 			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock    &trans
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &sk LGUI    &ctrl_lock
 			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH   &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
 			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &kp UNDER  &sl FUNCTIONS  &trans &combo_rs_macro &sl NEXUS                &mouse      &to BASE_NEXUS     &trans     &trans  &trans
 			
