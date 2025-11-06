@@ -24,6 +24,8 @@
 			ak_sr { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
      
 			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; };
+
+			ak_vt { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp T>; }; /* fyrir vt (velja til) í vim */
 		};
 
 
