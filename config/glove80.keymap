@@ -130,7 +130,7 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                           &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                           &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans        &trans  &trans  &trans     &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans        &trans  &trans  &trans     &kp ESC &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans                &trans  &trans  &trans     &trans  &trans  &sk LGUI          &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -169,7 +169,7 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LG(LEFT))  &kp LS(LG(DOWN))   &kp LS(LG(UP))     &kp LS(LG(RIGHT))  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &kp ESC &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &sk LGUI            &trans     &trans     &trans     &trans  &trans
 			
 			>;
