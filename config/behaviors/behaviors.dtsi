@@ -7,7 +7,7 @@
 #include "strict_kps.dtsi"
 #include "convenience_mod_morphs.dtsi"
 #include "scroller.dtsi"
-#include "volume.dtsi"
+#include "tristates.dtsi"
 #include "pgupdn.dtsi"
 
 #define stay kp CLEAR_AGAIN
@@ -39,6 +39,8 @@
 		to_then_tog: to_then_tog {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings =  <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&kt MACRO_PLACEHOLDER>;
 		};
@@ -46,6 +48,8 @@
 		to_then_sk: to_then_sk {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings =  <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&sk MACRO_PLACEHOLDER>;
 		};
@@ -53,6 +57,8 @@
 		kp_sk: kp_then_sk {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings =  <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&sk MACRO_PLACEHOLDER>;
 		};
@@ -60,6 +66,8 @@
 		to_then_to: to_then_to {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings =  <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&to MACRO_PLACEHOLDER>;
 		};
@@ -67,6 +75,8 @@
 		cto: cancel_then_to {
 			compatible = "zmk,behavior-macro-one-param";
 			#binding-cells = <1>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings = <&kp K_CANCEL>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;
 		};
 
@@ -174,22 +184,6 @@
 			/* 	ignored-layers = <NAVIGATION>; */
 			/* 	timeout-ms = <4000>; */
 		/* }; */
-
-		ctrl_tab: ctrl_tab {
-				compatible = "zmk,behavior-tri-state";
-				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LC(TAB)>, <&to BASE>;
-				ignored-key-positions = <RF2 RF3>;
-				ignored-layers = <TABBER>;
-		};
-
-		sctrl_tab: sctrl_tab {
-				compatible = "zmk,behavior-tri-state";
-				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LC(LS(TAB))>, <&to BASE>;
-				ignored-key-positions = <RF2 RF3>;
-				ignored-layers = <TABBER>;
-		};
 
 		holdme_layer: holdme_layer {
 			compatible = "zmk,behavior-hold-tap";

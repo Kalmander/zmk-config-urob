@@ -24,13 +24,13 @@
 #define NAV_WORD_SWITCH 10
 #define VIM_WORD 11
 #define PAGE_WORD 12
-#define NUM_SPACE 13
-#define NUM_WORD 14
-#define NUM_WORD_MODDED 15
-#define NUM_WORD_PLUS 16
-#define NEXUS 17
-#define NEXUS_OVER 18
-#define TABBER 19
+#define NUM_WORD 13
+#define NUM_WORD_MODDED 14
+#define NUM_WORD_PLUS 15
+#define NEXUS 16
+#define NEXUS_OVER 17
+#define TABBER 18
+#define OVERMODS 19
 #define SYMBOL 20
 #define FUNCTIONS 21
 #define ICE 22
@@ -191,12 +191,12 @@
 		NavWordSwitcher {
 			bindings = <
 			
-			&trans  &trans       &trans      &trans      &trans                                                                                &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans      &trans     &trans                                                             &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans      &trans     &trans                                                             &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &sk LGUI       &trans      &trans      &nav_gui   &nav_guishift_macro                                                       &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &vimigation  &pagigaiton &trans      &fnumword  &trans       &trans  &trans  &trans         &trans  &trans  &trans &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans      &trans                  &nav_guictrl  &nav_ctrl  &nav_ctrlshift_macro    &trans  &trans  &trans         &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans      &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &vimigation  &pagigaiton &trans      &fnumword  &trans       &nav_ctrlshift_macro  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &cskalt     &cskshift   &cskgui                 &nav_guictrl          &nav_ctrl  &cskctrl    &cskctrl &trans  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
@@ -228,28 +228,15 @@
 		};
 		
 
-		NumSpaceOverlay {
-			bindings = <
-			
-			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &stay   &trans  &trans  &trans          &trans  &trans  &kp SPACE  &kp SPACE  &trans  &trans          &trans  &trans  &trans  &stay   &trans
-			
-			>;
-		};
-
 		NumWord {
 			bindings = <
 			
 			&trans     &trans      &trans     &trans       &trans                                                                                     &trans     &trans       &trans     &trans     &trans
 			&trans     &trans      &trans     &trans       &trans  &kpcb LS(G)                                                                &kpcb LS(G)  &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &N1s       &trans  &trans                                                                     &trans  &trans     &N0s       &trans     &trans     &trans
-			&trans     &trans      &N2s     &N3s       &N4s  &trans                                                                     &trans  &N7s     &N8s       &N9s     &trans     &trans
+			&trans     &trans      &trans     &kp N1       &trans  &trans                                                                     &trans  &trans     &kp N0       &trans     &trans     &trans
+			&trans     &trans      &kp N2     &kp N3       &kp N4  &trans                                                                     &trans  &kp N7     &kp N8       &kp N9     &trans     &trans
 			&trans     &trans      &trans     &trans       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans
-			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &N5s  &fsl_num      &fsl_num   &N6s  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
+			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &kp N5  &fsl_num      &fsl_num   &kp N6  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
 			
 			>;
 		};
@@ -285,12 +272,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans      &trans     &trans     &trans     &trans                                                                                                          &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans      &trans     &trans     &q_hash    &kp CARET  &trans                                                                                    &kp LCTRL  &kp CARET   &kp STAR    &trans     &trans  &trans
-			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                  &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                   &kp HOME   &fnumword   &kp ESC     &kp END    &sk LGUI    &ctrl_lock
-			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans &trans          &trans        &kp FSLH   &kp ENTER   &kp DELETE  &kp INSERT  &trans &trans
-			&trans      &trans     &trans     &trans     &kp BACKSPACE            &kp SPACE    &kp UNDER  &sl FUNCTIONS  &trans &combo_rs_macro &sl NEXUS                &mouse      &sk LGUI     &trans     &trans  &trans
+			&trans      &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
+			&trans      &trans     &trans     &q_hash    &kp CARET  &trans                                                                                   &kp LCTRL  &kp CARET   &kp STAR    &trans     &trans  &trans
+			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &kp BSLH                                                                                 &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                  &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans   &trans          &trans     &kp FSLH   &kp ENTER   &kp DELETE  &mouse     &trans &trans
+			&trans      &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &trans
 			
 			>;
 		};
@@ -317,8 +304,8 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ctrl_w  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &cs_pgup  &cs_pgdn          &trans  &trans  &trans  &trans  &trans  &trans          &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
@@ -336,6 +323,19 @@
 		/*     >; */
 		/* }; */
 		
+		OverMods {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &skalt  &skshift  &skgui        &trans  &trans  &skctrl   &skctrl  &trans  &trans         &skgui  &skshift  &skalt  &trans  &trans
+			
+			>;
+		};
+
 		Symbol {
 			bindings = <
 			

@@ -163,84 +163,84 @@
 		#define bnexus bnexus_hold NEXUS 0
 		#define bsymbol bsym_hold SYMBOL 0
 
-		N1s: N1s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N1>, <&oneshot NUM_SPACE>;
-		};
-
-		N2s: N2s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N2>, <&oneshot NUM_SPACE>;
-		};
-
-		N3s: N3s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N3>, <&oneshot NUM_SPACE>;
-		};
-
-		N4s: N4s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N4>, <&oneshot NUM_SPACE>;
-		};
-
-		N5s: N5s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N5>, <&oneshot NUM_SPACE>;
-		};
-
-		N6s: N6s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N6>, <&oneshot NUM_SPACE>;
-		};
-
-		N7s: N7s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N7>, <&oneshot NUM_SPACE>;
-		};
-
-		N8s: N8s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N8>, <&oneshot NUM_SPACE>;
-		};
-
-		N9s: N9s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N9>, <&oneshot NUM_SPACE>;
-		};
-
-		N0s: N0s {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp N0>, <&oneshot NUM_SPACE>;
-		};
+		/* N1s: N1s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N1>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N2s: N2s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N2>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N3s: N3s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N3>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N4s: N4s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N4>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N5s: N5s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N5>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N6s: N6s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N6>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N7s: N7s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N7>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N8s: N8s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N8>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N9s: N9s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N9>, <&oneshot NUM_SPACE>; */
+		/* }; */
+		/**/
+		/* N0s: N0s { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp N0>, <&oneshot NUM_SPACE>; */
+		/* }; */
 	};
 };

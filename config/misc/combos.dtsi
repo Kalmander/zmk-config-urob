@@ -380,13 +380,19 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		combo_caps3 {
+		/* combo_caps3 { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LH1 RH4>; */
+		/* 	bindings = <&space_base_caps>; */
+		/* 	layers = <CAPS_WORD \ */
+		/*     NAV_WORD NAV_WORD_GUI NAV_WORD_CTRL NAV_WORD_SWITCH VIM_WORD PAGE_WORD \ */
+		/*     NUM_SPACE NUM_WORD NUM_WORD_MODDED NUM_WORD_PLUS SYMBOL FUNCTIONS ICE>; */
+		/* }; */
+
+		combo_mouse {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH1 RH4>;
-			bindings = <&space_base_caps>;
-			layers = <CAPS_WORD \
-      NAV_WORD NAV_WORD_GUI NAV_WORD_CTRL NAV_WORD_SWITCH VIM_WORD PAGE_WORD \
-      NUM_SPACE NUM_WORD NUM_WORD_MODDED NUM_WORD_PLUS SYMBOL FUNCTIONS ICE>;
+			bindings = <&mouse>;
 		};
 		
 		/* combo_ph { */
