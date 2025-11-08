@@ -175,6 +175,21 @@
 			/* 	timeout-ms = <4000>; */
 		/* }; */
 
+		ctrl_tab: ctrl_tab {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp LC(TAB)>, <&to BASE>;
+				ignored-key-positions = <RF2 RF3>;
+				ignored-layers = <TABBER>;
+		};
+
+		sctrl_tab: sctrl_tab {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp LC(LS(TAB))>, <&to BASE>;
+				ignored-key-positions = <RF2 RF3>;
+				ignored-layers = <TABBER>;
+		};
 
 		holdme_layer: holdme_layer {
 			compatible = "zmk,behavior-hold-tap";
