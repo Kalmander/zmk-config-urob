@@ -18,6 +18,20 @@ parse_config:
     "&navigation": Nav Word
     "&nexus_auto": Nexus Auto
     "&tog UNDER_SPACE": _ space
+    "&basecaps": "Caps Word"
+    "&skalt": "Alt Sticky"
+    "&skshift": "Shift Sticky"
+    "&skgui": "Gui Sticky"
+    "&skctrl": "Ctrl Sticky"
+    "&cskalt": "Alt Sticky"
+    "&cskshift": "Shift Sticky"
+    "&cskgui": "Gui Sticky"
+    "&cskctrl": "Ctrl Sticky"
+    "&cs_pgup": "CtSh Page Up"
+    "&cs_pgdn": "CtSh Page Down"
+    "&ctrl_w": "Ctrl W"
+    "&ctrl_tab": "Ctrl Tab"
+    "&sctrl_tab": "CtSh Tab"
     "&sqt_nex": "' Nexus"
     "&spacebase": Space Base
     "&enterbase": Enter Base
