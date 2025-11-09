@@ -45,10 +45,26 @@
 			#binding-cells = <0>;
 			bindings = <
 			&pcaps
-			&pcapsword_layer CAPS_WORD
+			&pcapsword_layer CAPS_WORD_DOT
 			>;
 		};
 
+
+		mpcaps: more_permissive_caps_word {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
+			mods = <(MOD_LSFT)>;
+      // Default: underscore, backspace, delete, alphanumerics
+      // verður að taka aftur fram undrescore, backspace og delete
+      // en alphanumerics koma sjálfkrafa
+      // ókei WEIRD ! virðist vera continue by default en ekki ?
+			continue-list = <
+        UNDERSCORE BACKSPACE DELETE 
+        CLEAR_AGAIN
+        DOT COMMA MINUS 
+        SPACE QMARK
+      >;
+		};
 
 		capsword_layer: capsword_layer {
 			compatible = "zmk,behavior-auto-layer";
@@ -81,6 +97,14 @@
 		/* 	&capsword_layer CAPS_WORD */
 		/* 	>; */
 		/* }; */
+
+		basecaps: base_then_capsword {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&to BASE>, <&capsword>;
+		};
 
 	};
 };

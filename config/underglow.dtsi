@@ -132,7 +132,7 @@
 			layer-id = <TYPING>;
 		};
 		
-		CapsWord {
+		CapsWordDot {
 			bindings = <
 			&ug ___ &ug ColLayer &ug ___   &ug ___   &ug ___                                                                  &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -141,7 +141,7 @@
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
-			layer-id = <CAPS_WORD>;
+			layer-id = <CAPS_WORD_DOT>;
 		};
 
 		UnderSpace {

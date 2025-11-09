@@ -899,8 +899,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1042)" class="layer-CapsWord">
-<text x="0" y="28" class="label" id="CapsWord">CapsWord</text>
+<g transform="translate(30, 1042)" class="layer-CapsWordDots">
+<text x="0" y="28" class="label" id="CapsWordDots">CapsWordDots</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
