@@ -61,12 +61,12 @@
 		Base {
 			bindings = <
 			
-			&sk LC(LSHIFT)  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &key_repeat                                                                                                           &key_repeat  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &sk LC(LSHIFT)
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &mpcaps                                                                                       &mpcaps   &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
-			&tog UNDER_SPACE      &sk LCTRL        &kp Y         &kp O           &kp U          &shift_repeat                                                                                   &rshift_repeat  &kp F        &kp D           &kp L         &kp RA(D)     &tog UNDER_SPACE
-			&kp RA(Z)       &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &thorn_eth     &kp X
-			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
-      &magic MAGIC 0  &to UNIC_LAYER   &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS         &kp DOWN     &kp UP    &kp AT        &to UNIC_LAYER     &kp PSCRN
+			&scrdn_warp      &scrup_warp     &scrdn_slow   &scrup_slow    &key_repeat                                                                                                                   &key_repeat  &scrdn_fast   &scrup_fast  &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
+			&tog UNDER_SPACE &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
+			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp ENTER                                                                                       &kp M          &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &thorn_eth     &kp X
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P          &kp W        &kp G         &kp B        &kp J          &kp RA(T)
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
@@ -74,12 +74,12 @@
 		Typing {
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
-			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &capsword                                                                                       &capsword   &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
-			&tog UNDER_SPACE      &sk LCTRL        &kp Y         &kp O           &kp U          &shift_repeat                                                                                   &rshift_repeat  &kp F        &kp D           &kp L         &kp RA(D)     &tog UNDER_SPACE
-			&kp RA(Z)       &adaptive        &kp I         &kp E           &kp A          &kp ENTER                                                                                       &kp M  &kp H        &kp T          &kp N   &thorn_eth     &kp X
-			&kp Z           &sl ICE          &kp RA(P)     &navigation     &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P  &kp W        &kp G           &kp B         &kp J     &kp RA(T)
-      &magic MAGIC 0  &to UNIC_LAYER   &kp CAPS      &kp LEFT        &kp RIGHT                    &kp SPACE   &kp C         &sl NUM_WORD     &sl NUM_WORD  &kp S         &sl NEXUS         &kp DOWN     &kp UP    &kp AT        &to UNIC_LAYER     &kp PSCRN
+			&scrdn_warp      &scrup_warp     &scrdn_slow   &scrup_slow    &key_repeat                                                                                                                   &key_repeat  &scrdn_fast   &scrup_fast  &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
+			&tog UNDER_SPACE &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
+			&kp RA(Z)        &adaptive       &kp I   &kp E  &kp A    &kp ENTER                                                                                       &kp M          &kp H  &kp T &kp N  &thorn_eth     &kp X
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P          &kp W        &kp G         &kp B        &kp J          &kp RA(T)
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &kp C  &sl NUM_WORD     &sl NUM_WORD  &kp S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
 		};
@@ -341,7 +341,7 @@
 			
 			&none        &none      &none       &none       &none                                                                                            &none      &none      &none       &none      &none
 			&none        &none      &none       &none       &none            &none                                                                &kp SEMI   &kp CARET  &kp STAR   &kp HASH    &none      &none
-			&none        &none      &kp STAR    &kp HASH    &kp CARET        &kp DELETE                                                           &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
+			&none        &none      &kp STAR    &kp HASH    &kp BSLH         &kp DELETE                                                           &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
 			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                             &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp GRAVE  &none
 			&none        &none      &none       &none       &kp DELETE       &to BASE       &none  &none  &none     &none      &none      &kp DOLLAR      &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
 			&none        &none      &none       &none       &none                           &combo_ckspace_macro  &none  &none     &kp PRCNT      &none  &space_caps             &kp LPAR   &kp RPAR   &kp AT      &none      &none

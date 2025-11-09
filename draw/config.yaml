@@ -15,9 +15,16 @@ parse_config:
     "&rshift_repeat": RShift Repeat
     "&to UNIC_LAYER": Unicode Layer
     "&thorn_eth": Þ / Ð
+    "&scrup_warp": Scroll ▲ (Warp)
+    "&scrdn_warp": Scroll ▼ (Warp)
+    "&scrup_fast": Scroll ▲ (Fast)
+    "&scrdn_fast": Scroll ▼ (Fast)
+    "&scrup_slow": Scroll ▲ (Slow)
+    "&scrdn_slow": Scroll ▼ (Slow)
     "&navigation": Nav Word
     "&nexus_auto": Nexus Auto
     "&tog UNDER_SPACE": _ space
+    "&mpcaps": "Strong Caps Word"
     "&basecaps": "Caps Word"
     "&skalt": "Alt Sticky"
     "&skshift": "Shift Sticky"
@@ -80,6 +87,8 @@ parse_config:
     "&kp C_MUTE": 🔇
     "&volume_down": 🔉
     "&volume_up": 🔊
+    "&kp C_VOL_DN": "🔈⬇"
+    "&kp C_VOL_UP": "🔊⬆"
 
     "&sys_reset": Reset
     "&bootloader": Boot
