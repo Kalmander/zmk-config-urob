@@ -61,7 +61,7 @@
 		Base {
 			bindings = <
 			
-			&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &key_repeat                                                                                                           &key_repeat  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT
+			&sk LC(LSHIFT)  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &key_repeat                                                                                                           &key_repeat  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &sk LC(LSHIFT)
 			&kp LBKT        &kp RBKT         &kp MINUS     &kp Q           &kp FSLH       &mpcaps                                                                                       &mpcaps   &kp BSLH        &kp V           &kp MINUS         &kp RIGHT     &_dot
 			&tog UNDER_SPACE      &sk LCTRL        &kp Y         &kp O           &kp U          &shift_repeat                                                                                   &rshift_repeat  &kp F        &kp D           &kp L         &kp RA(D)     &tog UNDER_SPACE
 			&kp RA(Z)       &adaptive        &hml LALT I   &hml LSHIFT E   &hml LGUI A    &kp ENTER                                                                                       &kp M  &hmr RGUI H  &hmr RSHIFT T   &hmr LALT N   &thorn_eth     &kp X
@@ -231,12 +231,12 @@
 		NumWord {
 			bindings = <
 			
-			&trans     &trans      &trans     &trans       &trans                                                                                     &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &trans       &trans  &kpcb LS(G)                                                                &kpcb LS(G)  &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &kp N1       &trans  &trans                                                                     &trans  &trans     &kp N0       &trans     &trans     &trans
-			&trans     &trans      &kp N2     &kp N3       &kp N4  &trans                                                                     &trans  &kp N7     &kp N8       &kp N9     &trans     &trans
-			&trans     &trans      &trans     &trans       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans
-			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &kp N5  &fsl_num      &fsl_num   &kp N6  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
+			&trans     &trans      &trans     &trans       &trans                                                                                 &trans     &trans       &trans     &trans     &trans
+			&trans     &trans      &trans     &trans       &trans  &kpcb LS(G)                                                        &kpcb LS(G) &trans     &trans       &trans     &trans     &trans
+			&trans     &trans      &trans     &kp N1       &trans  &trans                                                             &trans      &trans     &kp N0       &trans     &trans     &trans
+			&trans     &trans      &kp N2     &kp N3       &kp N4  &trans                                                             &trans      &kp N7     &kp N8       &kp N9     &trans     &trans
+			&trans     &trans      &trans     &trans       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans      &trans     &trans       &trans     &trans     &trans
+			&trans     &trans      &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &kp N5  &nsk LCTRL    &nsk LCTRL &kp N6  &trans              &nsk RGUI  &nsk RSHIFT  &nsk LALT  &trans &trans
 			
 			>;
 		};
@@ -245,12 +245,12 @@
 		NumWordModded {
 			bindings = <
 			
-			&trans     &trans      &trans     &trans      &trans                                                                                        &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &trans      &trans    &kpcb LS(G)                                                                 &kpcb LS(G)  &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &kpcb N1    &trans    &trans                                                                      &trans  &trans     &kpcb N0     &trans     &trans     &trans
-			&trans     &trans      &kpcb N2   &kpcb N3    &kpcb N4  &trans                                                                      &trans  &kpcb N7   &kpcb N8     &kpcb N9   &trans     &trans
-			&trans     &trans      &trans     &trans      &trans    &base_cancel   &trans  &trans    &fnumword     &fnumword  &trans    &trans  &trans  &trans     &trans       &trans     &trans     &trans
-			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI          &trans  &kpcb N5  &fsl_num      &fsl_num   &kpcb N6  &trans          &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk RCTRL &trans
+			&trans     &trans  &trans     &trans      &trans                                                                                            &trans     &trans       &trans     &trans  &trans
+			&trans     &trans  &trans     &trans      &trans    &kpcb LS(G)                                                                &kpcb LS(G)  &trans     &trans       &trans     &trans  &trans
+			&trans     &trans  &trans     &kpcb N1    &trans    &trans                                                                     &trans       &trans     &kpcb N0     &trans     &trans  &trans
+			&trans     &trans  &kpcb N2   &kpcb N3    &kpcb N4  &trans                                                                     &trans       &kpcb N7   &kpcb N8     &kpcb N9   &trans  &trans
+			&trans     &trans  &trans     &trans      &trans    &base_cancel  &trans  &trans    &fnumword     &fnumword  &trans    &trans  &trans       &trans     &trans       &trans     &trans  &trans
+			&trans     &trans  &nsk LALT  &nsk LSHIFT &nsk LGUI               &trans  &kpcb N5  &nsk LCTRL    &nsk LCTRL &kpcb N6  &trans               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &trans  &trans
 			
 			>;
 		};
