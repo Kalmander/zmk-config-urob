@@ -61,7 +61,7 @@
 		Base {
 			bindings = <
 			
-			&scrdn_warp      &scrup_warp     &scrdn_slow   &scrup_slow    &key_repeat                                                                                                                   &key_repeat  &scrdn_fast   &scrup_fast  &kp C_VOL_DN   &kp C_VOL_UP
+			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&tog UNDER_SPACE &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
 			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp ENTER                                                                                       &kp M          &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &thorn_eth     &kp X

@@ -52,7 +52,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_FAST>, <&msc SCRL_UP>, <&tog_off_layer MOUSE_FAST>;
-				ignored-key-positions = <6 7>;
+				ignored-key-positions = <0 1>;
 				ignored-layers = <BASE TYPING MOUSE_FAST>;
 		};
 
@@ -60,7 +60,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_FAST>, <&msc SCRL_DOWN>, <&tog_off_layer MOUSE_FAST>;
-				ignored-key-positions = <6 7>;
+				ignored-key-positions = <0 1>;
 				ignored-layers = <BASE TYPING MOUSE_FAST>;
 		};
 
