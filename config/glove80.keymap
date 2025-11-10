@@ -66,7 +66,7 @@
 			&tog UNDER_SPACE &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
 			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp ENTER                                                                                       &kp M          &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &thorn_eth     &kp X
 			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P          &kp W        &kp G         &kp B        &kp J          &kp RA(T)
-      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &ad_up        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
@@ -79,7 +79,7 @@
 			&tog UNDER_SPACE &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
 			&kp RA(Z)        &adaptive       &kp I   &kp E  &kp A    &kp ENTER                                                                                       &kp M          &kp H  &kp T &kp N  &thorn_eth     &kp X
 			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P          &kp W        &kp G         &kp B        &kp J          &kp RA(T)
-      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &kp C  &sl NUM_WORD     &sl NUM_WORD  &kp S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &kp C  &sl NUM_WORD     &sl NUM_WORD  &kp S  &sl NEXUS                 &kp DOWN     &ad_up        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
 		};

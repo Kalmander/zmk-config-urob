@@ -125,13 +125,13 @@
 			ak_razrad { trigger-keys = <RA(Z)>; max-prior-idle-ms = <2000>; bindings = <&kp RA(D)>; };
 		};
 
-		adaptive_up: adaptive_up {
+		ad_up: adaptive_up {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&kp UP>;
 
 			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; }; */
-			ak_gv { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp V>; };
+			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp L>; };
 		};
 
 		adaptive_down: adaptive_down {
@@ -161,7 +161,7 @@
 			ak_pr { trigger-keys = <P>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp R>; };
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp L>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp G>; };
-			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp L>; };
+			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp L>; }; */
 			ak_lg { trigger-keys = <L>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp G>; };
 			ak_td { trigger-keys = <T>; max-prior-idle-ms = <350>; strict-modifiers; bindings = <&kp D>; };
 

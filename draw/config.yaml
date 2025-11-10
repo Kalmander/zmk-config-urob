@@ -65,6 +65,7 @@ parse_config:
     "&numword_autolayer NUM_WORD": Num Word
     "&adaptive": Adapt
     "&adaptive_up": ↑ (ak)
+    "&ad_up": ↑ (ak)
     "&magic MAGIC BASE": Magic
     "&sl ICE": Ísl komma
     "&bspc_del": ⌫ ⌦
