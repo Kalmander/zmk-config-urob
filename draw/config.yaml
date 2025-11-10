@@ -11,6 +11,7 @@ parse_config:
   raw_binding_map:
     # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
     "&pcapsword": Dotted Caps Word
+    "&ctrl_lock": Ctrl Lock
     "&shift_repeat": Shift Repeat
     "&rshift_repeat": RShift Repeat
     "&to UNIC_LAYER": Unicode Layer
