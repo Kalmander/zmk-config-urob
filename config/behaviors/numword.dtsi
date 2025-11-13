@@ -95,6 +95,15 @@
 			bindings = <&kp ENTER>, <&to BASE>;
 		};
 
+
+		tabbase: tabbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp TAB>, <&to BASE>;
+		};
+
 		leftbase: leftbase {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
