@@ -7,11 +7,11 @@
 			bindings = <&kp SPACE>;
 
 			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; };
-			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
+			/* ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; }; */
 			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
-			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
+			/* ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; }; */
 			ak_au { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
-			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
+			/* ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; }; */
 				
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
