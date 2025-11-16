@@ -144,18 +144,6 @@
 			layer-id = <CAPS_WORD_DOT>;
 		};
 
-		UnderSpace {
-			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug WHITE                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug WHITE &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <UNDER_SPACE>;
-		};
-		
 		NavWord {
 			bindings = <
 			&ug ___  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
@@ -178,6 +166,18 @@
 			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___         &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			>;
 			layer-id = <NAV_WORD_GUI>;
+		};
+		
+		NavWordAlt {
+			bindings = <
+			&ug ColLayer &ug ColLayer &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug WHITE                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug WHITE &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NAV_WORD_ALT>;
 		};
 		
 		NavWordCtrl {
