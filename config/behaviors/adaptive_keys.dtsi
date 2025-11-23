@@ -67,6 +67,7 @@
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			ak_wf { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp F>; };
+			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 
       /* Varðandi NL: fyrir "fannðig" etc getur notað auka Ð takkann */
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
@@ -82,6 +83,35 @@
 
 
 			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+		};
+
+
+		thorn_err_eth1: thorn_err_eth1 {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp R>;
+
+			ak_thorn_eth1 { trigger-keys = <SPACE>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth2 { trigger-keys = <LSHIFT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth3 { trigger-keys = <RSHIFT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth4 { trigger-keys = <LPAR>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth5 { trigger-keys = <LBRC>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth6 { trigger-keys = <LBKT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth7 { trigger-keys = <LT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth8 { trigger-keys = <DQT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth9 { trigger-keys = <SQT>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth10 { trigger-keys = <ENTER>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth11 { trigger-keys = <K_CANCEL>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth12 { trigger-keys = <MINUS>; bindings = <&kp RA(T)>; };
+			ak_thorn_eth13 { trigger-keys = <UNDERSCORE>; bindings = <&kp RA(T)>; };
+		};
+
+		thorn_err_eth2: thorn_err_eth2 {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp RA(D)>;
+
+			ak_reth { trigger-keys = <RA(T)>; bindings = <&kp R>; };
 		};
 
 		n1_adapt: n1_adapt {
