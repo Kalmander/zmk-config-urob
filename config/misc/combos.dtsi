@@ -472,26 +472,26 @@
 			layers = <CAPS_WORD_DOT>;
 		};
 
-		combo_thorn_err_eth {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <RH1 RH2>;
-			bindings = <&thorn_err_eth>;
-			layers = <BASE TYPING>;
-		};
-
-		/* combo_rk { */
+		/* combo_thorn_err_eth { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RH1 RH2>; */
-		/* 	bindings = <&combo_rk_macro>; */
+		/* 	bindings = <&thorn_err_eth>; */
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 
-		/* combo_rk_cap { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* 	key-positions = <RH1 RH2>; */
-		/* 	bindings = <&two_kps LS(R) LS(K)>; */
-		/* 	layers = <CAPS_WORD_DOT>; */
-		/* }; */
+		combo_rk {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH2>;
+			bindings = <&combo_rk_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_rk_cap {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH2>;
+			bindings = <&two_kps LS(R) LS(K)>;
+			layers = <CAPS_WORD_DOT>;
+		};
 
 
 		combo_ckspace {
