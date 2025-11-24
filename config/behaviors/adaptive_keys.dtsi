@@ -43,7 +43,7 @@
 			ak_66 { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp N6>; };
 		};
 
-		thorn_eth: thorn_eth {
+		thorn_eth_ak: thorn_eth_ak {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&kp RA(D)>;
@@ -85,6 +85,13 @@
 			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 		};
 
+		thorn_eth: thorn_eth {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&thorn_eth_ak>, <&kp P>;
+			mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+			keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+		};
 
 		thorn_err_eth1: thorn_err_eth1 {
 			compatible = "zmk,behavior-adaptive-key";
