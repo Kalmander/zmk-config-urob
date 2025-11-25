@@ -196,7 +196,7 @@
 			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &nav_alt    &trans      &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &vimigation  &pagigaiton &trans      &fnumword  &trans       &nav_ctrlshift_macro  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &cskalt     &cskshift   &cskgui                 &nav_guictrl          &nav_ctrl  &cskctrl    &cskctrl &trans  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans       &cskalt     &cskshift   &cskgui                 &nav_guictrl          &nav_ctrl  &cskctrl    &cskctrl &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
