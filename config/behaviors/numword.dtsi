@@ -30,13 +30,30 @@
 		#define numword to NUM_WORD_PLUS
     #define nsk to_then_sk NUM_WORD_MODDED
 		#define numword_plus numwordplus_autolayer NUM_WORD_PLUS
-		
 
-		fsl_num: force_sl_num {
+
+		nums: nums {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&kp K_CANCEL>, <&sl NUM_WORD>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&sl NUM_WORD_PLUS>, <&sl NUM_WORD_STICKY>;
 		};
+
+		nums_plus: nums_plus {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp K_CANCEL>, <&numwordplus_autolayer NUM_WORD_PLUS>;
+		};
+		
+
+		/* fsl_num: force_sl_num { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = <&kp K_CANCEL>, <&sl NUM_WORD>; */
+		/* }; */
 
 		fnumword: force_numword {
 			compatible = "zmk,behavior-macro";

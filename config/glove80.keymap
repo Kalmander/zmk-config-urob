@@ -13,36 +13,35 @@
 
 #define BASE 0
 #define TYPING 1
-#define CAPS_WORD_DOT 2
-#define NAV_WORD 3
-#define NAV_WORD_GUI 4
-#define NAV_WORD_ALT 5
-#define NAV_WORD_CTRL 6
-#define NAV_WORD_SHIFT_CTRL 7
-#define NAV_WORD_SHIFT_GUI 8
-#define NAV_WORD_CTRL_GUI 9
-#define NAV_WORD_SWITCH 10
-#define VIM_WORD 11
-#define PAGE_WORD 12
-#define NUM_WORD 13
+#define NAV_WORD 2
+#define NAV_WORD_GUI 3
+#define NAV_WORD_ALT 4
+#define NAV_WORD_CTRL 5
+#define NAV_WORD_SHIFT_CTRL 6
+#define NAV_WORD_SHIFT_GUI 7
+#define NAV_WORD_CTRL_GUI 8
+#define NAV_WORD_SWITCH 9
+#define VIM_WORD 10
+#define PAGE_WORD 11
+#define NUM_WORD_PLUS 12
+#define NUM_WORD_STICKY 13
 #define NUM_WORD_MODDED 14
-#define NUM_WORD_PLUS 15
-#define NEXUS 16
-#define NEXUS_OVER 17
-#define TABBER 18
-#define OVERMODS 19
-#define SYMBOL 20
-#define FUNCTIONS 21
-#define ICE 22
-#define JOKER 23
-#define EDI 24
-#define MOUSE 25
-#define MOUSE_SLOW 26
-#define MOUSE_WARP 27
-#define MOUSE_FAST 28
-#define MOUSE_SWITCHER 29
-#define UNIC_LAYER 30
-#define MAGIC 31
+#define NEXUS 15
+#define NEXUS_OVER 16
+#define TABBER 17
+#define OVERMODS 18
+#define SYMBOL 19
+#define FUNCTIONS 20
+#define ICE 21
+#define JOKER 22
+#define EDI 23
+#define MOUSE 24
+#define MOUSE_SLOW 25
+#define MOUSE_WARP 26
+#define MOUSE_FAST 27
+#define MOUSE_SWITCHER 28
+#define UNIC_LAYER 29
+#define MAGIC 30
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -64,9 +63,9 @@
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&kp ESC          &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
-			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp ENTER                                                                                       &thorn_eth          &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp X
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K    &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp X
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp DOT        &kp K_CANCEL  &sl SYMBOL  &kp ENTER     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &nums            &nums         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
@@ -77,22 +76,9 @@
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&kp ESC          &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
-			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp ENTER                                                                                       &kp M          &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &thorn_eth     &kp X
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp P          &kp W        &kp G         &kp B        &kp J          &kp RA(T)
-      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &ad_up        &kp AT       &to UNIC_LAYER &kp PSCRN
-			
-			>;
-		};
-
-		CapsWordDots {
-			bindings = <
-			
-			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &_dot                                                   &_dot   &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp X
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp DOT        &kp K_CANCEL  &sl SYMBOL  &kp ENTER     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &nums            &nums         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
 		};
@@ -195,7 +181,7 @@
 			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &nav_alt    &trans      &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &vimigation  &pagigaiton &trans      &fnumword  &trans       &nav_ctrlshift_macro  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &vimigation  &pagigaiton &trans      &kp COMMA  &trans       &nav_ctrlshift_macro  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &cskalt     &cskshift   &cskgui                 &nav_guictrl          &nav_ctrl  &cskctrl    &cskctrl &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
@@ -228,15 +214,29 @@
 		};
 		
 
-		NumWord {
+		NumWordPlus {
 			bindings = <
 			
-			&trans     &trans      &trans     &trans       &trans                                                                                 &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &trans       &trans  &kpcb LS(G)                                                        &kpcb LS(G) &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &trans     &kp N1       &trans  &trans                                                             &trans      &trans     &kp N0       &trans     &trans     &trans
-			&trans     &trans      &kp N2     &kp N3       &kp N4  &trans                                                             &trans      &kp N7     &kp N8       &kp N9     &trans     &trans
-			&trans     &trans      &trans     &trans       &trans  &trans    &trans  &trans  &fnumword     &fnumword  &trans  &trans  &trans      &trans     &trans       &trans     &trans     &trans
-			&trans     &trans      &nsk LALT  &nsk LSHIFT  &nsk LGUI         &trans  &kp N5  &nsk LCTRL    &nsk LCTRL &kp N6  &trans              &nsk RGUI  &nsk RSHIFT  &nsk LALT  &trans &trans
+			&none  &none       &none      &none     &none                                                                                             &none        &none      &none     &none      &none 
+			&none  &none       &minusbase &kp HASH  &kp CARET      &kpcb LS(G)                                                                        &kpcb LS(G)  &kp BSLH   &kp STAR  &minusbase &none      &none 
+			&none  &kp LT      &kp DOT    &kp N1    &kp SPACE      &kp CARET                                                                          &kp PLUS     &kp SPACE  &kp N0    &kp DOT    &kp GT      &none 
+			&none  &spacebase  &kp N2     &kp N3    &kp N4         &enterbase                                                                         &kp LPAR     &kp N7     &kp N8    &kp N9     &kp RPAR  &none 
+			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol    &tabbase    &kp TAB      &kp ENTER      &sbase   &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS &kp COMMA  &kp COLON   &kp SEMI 
+			&none  &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI               &spacebase  &kp N5  &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL      &kp AT 
+			
+			>;
+		};
+
+
+		NumwordSticker {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &nums_plus  &nums_plus  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
@@ -250,20 +250,7 @@
 			&trans     &trans  &trans     &kpcb N1    &trans    &trans                                                                     &trans       &trans     &kpcb N0     &trans     &trans  &trans
 			&trans     &trans  &kpcb N2   &kpcb N3    &kpcb N4  &trans                                                                     &trans       &kpcb N7   &kpcb N8     &kpcb N9   &trans  &trans
 			&trans     &trans  &trans     &trans      &trans    &base_cancel  &trans  &trans    &fnumword     &fnumword  &trans    &trans  &trans       &trans     &trans       &trans     &trans  &trans
-			&trans     &trans  &nsk LALT  &nsk LSHIFT &nsk LGUI               &trans  &kpcb N5  &nsk LCTRL    &nsk LCTRL &kpcb N6  &trans               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &trans  &trans
-			
-			>;
-		};
-
-		NumWordPlus {
-			bindings = <
-			
-			&none  &none       &none      &none     &none                                                                                             &none        &none      &none     &none      &none 
-			&none  &none       &minusbase &kp HASH  &kp CARET      &kpcb LS(G)                                                                        &kpcb LS(G)  &kp BSLH   &kp STAR  &minusbase &none      &none 
-			&none  &kp LT      &kp DOT    &kp N1    &kp SPACE      &kp CARET                                                                          &kp PLUS     &kp SPACE  &kp N0    &kp DOT    &kp GT      &none 
-			&none  &spacebase  &kp N2     &kp N3    &kp N4         &enterbase                                                                         &kp LPAR     &kp N7     &kp N8    &kp N9     &kp RPAR  &none 
-			&none  &kp PRCNT   &kp COMMA  &bnav     &kp BACKSPACE  &to BASE  &bsymbol    &tabbase    &kp TAB      &kp ENTER      &sbase   &kp DOLLAR  &kp FSLH     &kp UNDER  &kp MINUS &kp COMMA  &kp COLON   &none 
-			&none  &none       &none      &leftbase &rightbase               &spacebase  &kp N5  &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &downbase  &upbase   &kp AT     &kp SEMI      &none 
+			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI               &trans  &kpcb N5  &trans    &trans &kpcb N6  &trans               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL  &trans
 			
 			>;
 		};
@@ -274,9 +261,9 @@
 			
 			&trans      &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
 			&trans      &trans     &trans     &q_hash    &kp CARET  &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &trans  &trans
-			&trans      &trans     &kp LPAR   &kp RPAR   &kp DQT    &basecaps                                                                                &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&sk LSHIFT  &kp AMPS   &kp QMARK  &_comma    &_dot      &kp SQT                                                                                  &kp HOME   &fnumword   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans      &kp PRCNT  &kp EXCL   &kp SEMI   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans   &trans          &trans     &kp FSLH   &kp ENTER   &kp DELETE  &mouse     &trans &trans
+			&trans      &trans     &kp LPAR   &kp RPAR   &kp SEMI    &basecaps                                                                                &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&sk LSHIFT  &kp AMPS   &kp QMARK  &kp DQT    &kp SQT      &kp BACKSPACE                                                                                  &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans      &kp PRCNT  &kp DQT    &kp EXCL   &kp COLON  &kp K_CANCEL  &sk LSHIFT   &to JOKER  &to TYPING     &trans   &trans          &trans     &kp FSLH   &kp TAB   &kp DELETE  &mouse     &trans &trans
 			&trans      &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &trans
 			
 			>;

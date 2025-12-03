@@ -132,18 +132,6 @@
 			layer-id = <TYPING>;
 		};
 		
-		CapsWordDot {
-			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ___   &ug ___                                                                  &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug WHITE                                                 &ug WHITE &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <CAPS_WORD_DOT>;
-		};
-
 		NavWord {
 			bindings = <
 			&ug ___  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
@@ -264,7 +252,19 @@
 			layer-id = <PAGE_WORD>;
 		};
 		
-		NumWord {
+		NumWordPlus {
+			bindings = <
+			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ColNumPlus1  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumPlus0  &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColNumPlus2  &ug ColNumPlus3  &ug ColNumPlus4  &ug ___                                                  &ug ___ &ug ColNumPlus7  &ug ColNumPlus8  &ug ColNumPlus9  &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumPlus5 &ug ___  &ug ___ &ug ColNumPlus6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NUM_WORD_PLUS>;
+		};
+		
+		NumWordSticky {
 			bindings = <
 			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -273,7 +273,7 @@
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum5 &ug ___  &ug ___ &ug ColNum6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
-			layer-id = <NUM_WORD>;
+			layer-id = <NUM_WORD_STICKY>;
 		};
 		
 		NumWordModded {
@@ -286,18 +286,6 @@
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumMod5 &ug ___  &ug ___ &ug ColNumMod6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_MODDED>;
-		};
-		
-		NumWordPlus {
-			bindings = <
-			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNumPlus1  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumPlus0  &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNumPlus2  &ug ColNumPlus3  &ug ColNumPlus4  &ug ___                                                  &ug ___ &ug ColNumPlus7  &ug ColNumPlus8  &ug ColNumPlus9  &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumPlus5 &ug ___  &ug ___ &ug ColNumPlus6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <NUM_WORD_PLUS>;
 		};
 		
 		Nexus {

@@ -45,7 +45,7 @@
 			#binding-cells = <0>;
 			bindings = <
 			&pcaps
-			&pcapsword_layer CAPS_WORD_DOT
+			/* &pcapsword_layer CAPS_WORD_DOT */
 			>;
 		};
 
