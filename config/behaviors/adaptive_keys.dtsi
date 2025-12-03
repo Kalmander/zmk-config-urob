@@ -172,6 +172,15 @@
 			ak_gl { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp L>; };
 		};
 
+		ad_at: adaptive_at {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp AT>;
+
+			/* ak_gl { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; }; */
+			ak_gl2 { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp L>; };
+		};
+
 		adaptive_down: adaptive_down {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
