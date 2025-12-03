@@ -65,8 +65,8 @@
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&kp ESC          &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
 			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp ENTER                                                                                       &thorn_eth          &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp X
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K    &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp RA(T)
-      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &ad_at       &to UNIC_LAYER &kp PSCRN
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp BACKSPACE  &kp K_CANCEL  &sl SYMBOL  &kp TAB       &sl FUNCTIONS    &nexus_auto   &kp K    &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &sl NUM_WORD     &sl NUM_WORD  &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
