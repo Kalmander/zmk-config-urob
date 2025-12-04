@@ -251,6 +251,7 @@
 			};
 
 			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; };
+			ak_dot { trigger-keys = <DOT>; max-prior-idle-ms = <600>; bindings = <&kp ENTER>; };
 		};
 
 		dot_shift: dot_shift {
