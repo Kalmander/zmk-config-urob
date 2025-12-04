@@ -21,6 +21,13 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_adot_macro: combo_adot_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps A DOT>, <&two_kps LS(A) DOT>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
 		combo_rk_macro: combo_rk_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
@@ -326,6 +333,14 @@
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 			key-positions = <RM2 RB2>;
 			bindings = <&combo_wh_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		combo_adot {
+			timeout-ms = <COMBO_TIMEOUT>;
+			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
+			key-positions = <LM2 LB2>;
+			bindings = <&combo_adot_macro>;
 			layers = <BASE TYPING>;
 		};
 
