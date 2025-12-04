@@ -65,7 +65,7 @@
 			&kp ESC          &sk LC(LSHIFT)  &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &sk LC(LSHIFT) &kp RA(D)
 			&kp RA(Z)        &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp X
 			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp DOT        &kp K_CANCEL  &kp ENTER  &sl SYMBOL     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &nums            &nums         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &to UNIC_LAYER  &kp CAPS      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
