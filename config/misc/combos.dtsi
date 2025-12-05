@@ -28,6 +28,14 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_edot_macro: combo_edot_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps E DOT>, <&two_kps LS(E) DOT>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+
 		combo_rk_macro: combo_rk_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
