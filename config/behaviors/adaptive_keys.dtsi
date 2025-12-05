@@ -67,7 +67,8 @@
 			ak_thorn_eth12 { trigger-keys = <MINUS>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth13 { trigger-keys = <UNDERSCORE>; bindings = <&kp RA(T)>; };
 
-			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			/* ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; er óþarft með auka L-inu*/
+			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
