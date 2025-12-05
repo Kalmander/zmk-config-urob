@@ -4,7 +4,7 @@
 		adaptive: adaptive {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
-			bindings = <&kp SPACE>;
+			bindings = <&kp RA(P)>;
 
 			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; };
 			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
@@ -12,20 +12,21 @@
 			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
 			ak_au { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
 			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
+
+			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 				
-			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
-			ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
-			ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; };
-			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
-			ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; };
-			ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; /* Virkar því miður ekki, registerar bara sem T */
+			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+			/* ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; }; */
+			/* ak_gd { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp D>; }; */
+			/* ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; }; */
+			/* ak_td { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp D>; }; */
+			/* ak_ratj { trigger-keys = <RA(T)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; Virkar því miður ekki, registerar bara sem T */ 
 
-			ak_kr { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
-			ak_sr { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
+			/* ak_kr { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
+			/* ak_sr { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
      
-			ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; };
-
-			ak_vt { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp T>; }; /* fyrir vt (velja til) í vim */
+			/* ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; }; */
+			/* ak_vt { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp T>; }; fyrir vt (velja til) í vim */ 
 		};
 
 
