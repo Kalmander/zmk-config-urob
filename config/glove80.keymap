@@ -64,7 +64,7 @@
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp Z           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
 			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp RA(Z)        &sl ICE         &kp COMMA     &navigation    &kp DOT        &kp K_CANCEL  &kp UNDER   &sl SYMBOL     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&kp RA(Z)        &sl ICE         &kp COMMA     &navigation    &kp DOT        &kp K_CANCEL  &sl SYMBOL   &kp UNDER     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
@@ -262,8 +262,8 @@
 			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
 			&trans  &trans     &trans     &q_hash    &kp CARET  &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &trans  &trans
 			&trans  &trans     &kp SQT    &kp DQT    &trans     &basecaps                                                                               &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&trans  &kp AMPS   &kp QMARK  &kp LPAR   &kp RPAR   &kp BACKSPACE                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &kp SEMI   &kp EXCL   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &kp LC(DELETE)     &mouse     &trans &trans
+			&trans  &kp AMPS   &kp QMARK  &kp EXCL   &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &kp LC(DELETE)     &mouse     &trans &trans
 			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &trans
 			
 			>;

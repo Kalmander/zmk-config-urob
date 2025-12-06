@@ -538,33 +538,33 @@
 			layers = <NEXUS>;
 		};
 
-		combo_quote_shift {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LT2 LT1>;
-			bindings = <&dqt_shift>;
-			layers = <NEXUS>;
-		};
-
-		combo_dot_quote_shift {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LT2 LM2>;
-			bindings = <&dot_dqt_space_shift>;
-			layers = <NEXUS>;
-		};
-
-		combo_squote_shift {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LT1 LM1>;
-			bindings = <&sqt_shift>;
-			layers = <NEXUS>;
-		};
-
-		combo_dot_squote_shift {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LM2 LM1>;
-			bindings = <&dot_sqt_space_shift>;
-			layers = <NEXUS>;
-		};
+		/* combo_quote_shift { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LT2 LT1>; */
+		/* 	bindings = <&dqt_shift>; */
+		/* 	layers = <NEXUS>; */
+		/* }; */
+		/**/
+		/* combo_dot_quote_shift { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LT2 LM2>; */
+		/* 	bindings = <&dot_dqt_space_shift>; */
+		/* 	layers = <NEXUS>; */
+		/* }; */
+		/**/
+		/* combo_squote_shift { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LT1 LM1>; */
+		/* 	bindings = <&sqt_shift>; */
+		/* 	layers = <NEXUS>; */
+		/* }; */
+		/**/
+		/* combo_dot_squote_shift { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LM2 LM1>; */
+		/* 	bindings = <&dot_sqt_space_shift>; */
+		/* 	layers = <NEXUS>; */
+		/* }; */
 
 	};
 };

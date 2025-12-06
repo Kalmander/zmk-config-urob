@@ -75,8 +75,7 @@
 			ak_wf { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp F>; };
 			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 
-      /* Varðandi NL: fyrir "fannðig" etc getur notað auka Ð takkann */
-			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; er óþarft með auka L-inu */
 
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
       /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ*/

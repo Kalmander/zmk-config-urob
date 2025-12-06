@@ -4525,15 +4525,15 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 196)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">(</text>
+<text x="0" y="0" class="key tap">:</text>
 </g>
 <g transform="translate(252, 196)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">)</text>
+<text x="0" y="0" class="key tap">(</text>
 </g>
 <g transform="translate(308, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<text x="0" y="0" class="key tap">)</text>
 </g>
 <g transform="translate(700, 196)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -9354,22 +9354,6 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
 <text x="728" y="140" class="combo tap">&amp;k_sqt</text>
-</g>
-<g class="combo combopos-16">
-<rect rx="6" ry="6" x="266" y="127" width="28" height="26" class="combo"/>
-<text x="280" y="140" class="combo tap"><tspan style="font-size: 70%">&amp;dqt_shift</tspan></text>
-</g>
-<g class="combo combopos-17">
-<rect rx="6" ry="6" x="238" y="155" width="28" height="26" class="combo"/>
-<text x="252" y="168" class="combo tap"><tspan style="font-size: 64%">&amp;dot_dqt_s…</tspan></text>
-</g>
-<g class="combo combopos-18">
-<rect rx="6" ry="6" x="294" y="155" width="28" height="26" class="combo"/>
-<text x="308" y="168" class="combo tap"><tspan style="font-size: 70%">&amp;sqt_shift</tspan></text>
-</g>
-<g class="combo combopos-19">
-<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
-<text x="280" y="196" class="combo tap"><tspan style="font-size: 64%">&amp;dot_sqt_s…</tspan></text>
 </g>
 </g>
 </g>
