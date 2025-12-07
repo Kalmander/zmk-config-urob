@@ -263,7 +263,7 @@
 			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
 			&trans  &trans     &kp SQT    &kp DQT    &trans     &basecaps                                                                               &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
 			&trans  &kp AMPS   &kp QMARK  &kp EXCL   &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &kp LC(DELETE)     &mouse     &trans &trans
+			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
 			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &trans
 			
 			>;
@@ -328,9 +328,9 @@
 			
 			&none        &none      &none       &none       &none                                                                                                &none      &none      &none       &none      &none
 			&none        &none      &none       &none       &none            &none                                                                    &kp SEMI   &kp CARET  &kp STAR   &kp HASH    &none      &none
-			&none        &none      &kp STAR    &kp HASH    &kp BSLH         &kp DELETE                                                               &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
+			&none        &none      &kp STAR    &kp HASH    &kp BSLH         &kp DELETE                                                               &kp PLUS   &kp LBRC   &kp RBRC   &kp LBKT    &kp RBKT   &none
 			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                                 &kp LT     &kp EQUAL  &kp PIPE  &kp GT      &kp GRAVE  &none
-			&none        &kp PRCNT  &none       &none       &kp DELETE       &to BASE    &none                &none &none     &none &none &kp DOLLAR  &kp TILDE  &kp UNDER  &kp MINUS   &none       &none      &none
+			&none        &kp PRCNT  &none       &none       &kp DELETE       &to BASE    &none                &none &none     &none &none &kp DOLLAR  &kp TILDE  &kp UNDER  &kp MINUS   &kp FSLH       &none      &none
 			&none        &none      &kp FSLH    &none       &none                        &none &none &none     &none &none &space_caps            &kp LPAR   &kp RPAR   &kp AT      &none      &none
 			
 			>;
