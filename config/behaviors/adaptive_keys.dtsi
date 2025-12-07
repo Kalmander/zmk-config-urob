@@ -18,6 +18,16 @@
 			/* ak_oa { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp A>; }; */
 
 			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_0space { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_1space { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_2space { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_3space { trigger-keys = <N3>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_4space { trigger-keys = <N4>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_5space { trigger-keys = <N5>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_6space { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_7space { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_8space { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_9space { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 				
 			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			/* ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; }; */
@@ -67,7 +77,7 @@
 			ak_thorn_eth12 { trigger-keys = <MINUS>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth13 { trigger-keys = <UNDERSCORE>; bindings = <&kp RA(T)>; };
 
-			/* ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; er óþarft með auka L-inu*/
+			 ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; 
 			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
@@ -75,7 +85,7 @@
 			ak_wf { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp F>; };
 			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 
-			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; er óþarft með auka L-inu */
+			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
       /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ*/
@@ -241,6 +251,8 @@
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
 			};
+
+			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
 		};
 
 
@@ -256,7 +268,6 @@
 			};
 
 			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; };
-			ak_dot { trigger-keys = <DOT>; max-prior-idle-ms = <600>; bindings = <&kp ENTER>; };
 		};
 
 		dot_shift: dot_shift {

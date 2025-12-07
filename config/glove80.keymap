@@ -63,8 +63,8 @@
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp Z           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
-			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp RA(Z)        &sl ICE         &kp COMMA     &navigation    &kp DOT        &kp K_CANCEL  &sl SYMBOL   &kp UNDER     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&kp RA(Z)          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
+			&kp DQT        &sl ICE         &kp DOT     &navigation    &kp COMMA        &kp K_CANCEL  &sl SYMBOL   &kp UNDER     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                    &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
@@ -217,12 +217,12 @@
 		NumWordPlus {
 			bindings = <
 			
-			&none  &none       &none      &none     &none                                                                                                    &none        &none      &none     &none      &none 
-			&none  &none       &minusbase &kp HASH  &kp CARET      &kpcb LS(G)                                                                               &kpcb LS(G)  &kp BSLH   &kp STAR  &minusbase &none     &none 
-			&none  &kp LT      &kp COLON  &kp N1    &kp SPACE      &kp CARET                                                                                 &kp PLUS     &kp SPACE  &kp N0    &kp SEMI   &kp GT    &none 
-			&none  &spacebase  &kp N2     &kp N3    &kp N4         &kp BACKSPACE                                                                             &kp LPAR     &kp N7     &kp N8    &kp N9     &kp RPAR  &none 
-			&none  &kp PRCNT   &_comma    &bnav     &_dot          &to BASE   &enterbase    &bsymbol    &kp ENTER        &kp TAB        &sbase   &kp DOLLAR  &kp FSLH     &tabbase   &kp MINUS &kp UNDER  &none     &none 
-			&none  &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI               &spacebase  &kp N5        &num_adaptive    &num_adaptive  &kp N6   &bnexus                  &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL      &kp AT 
+			&none     &none       &none      &none     &none                                                                                                 &none        &none      &none        &none      &none 
+			&kp LBKT  &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                               &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
+			&none     &none       &kp LT     &kp N1    &kp GT      &kp CARET                                                                                 &kp PLUS     &kp LPAR   &kp N0       &kp RPAR   &none      &none 
+			&kp SPACE &spacebase  &kp N2     &kp N3    &kp N4      &kp BACKSPACE                                                                             &kp FSLH     &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI 
+			&tabbase  &kp PRCNT   &_dot      &bnav     &_comma     &to BASE   &kp SPACE   &bsymbol   &kp ENTER      &kp TAB        &sbase   &kp DOLLAR       &kp LBRC     &kp EQUAL  &kp MINUS    &kp UNDER  &kp RBRC   &none 
+			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI            &spacebase  &kp N5  &num_adaptive   &num_adaptive  &kp N6   &bnexus                         &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
@@ -260,7 +260,7 @@
 			bindings = <
 			
 			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans  &trans     &trans     &q_hash    &kp CARET  &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &trans  &trans
+			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
 			&trans  &trans     &kp SQT    &kp DQT    &trans     &basecaps                                                                               &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
 			&trans  &kp AMPS   &kp QMARK  &kp EXCL   &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
 			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &kp LC(DELETE)     &mouse     &trans &trans
@@ -275,10 +275,10 @@
 			bindings = <
 			
 			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans  &trans     &trans     &q_hash    &kp CARET  &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &trans  &trans
+			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &trans  &trans
 			&trans  &trans     &kp SQT    &kp DQT    &trans     &basecaps                                                                               &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&trans  &kp AMPS   &kp QMARK  &kp LPAR   &kp RPAR   &kp BACKSPACE                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &kp SEMI   &kp EXCL   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &kp LC(DELETE)     &mouse     &trans &trans
+			&trans  &kp AMPS   &kp QMARK  &kp EXCL   &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp K_CANCEL  &kp ENTER    &to JOKER  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &kp LC(DELETE)     &mouse     &trans &trans
 			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &trans
 			
 			>;
@@ -326,12 +326,12 @@
 		Symbol {
 			bindings = <
 			
-			&none        &none      &none       &none       &none                                                                                            &none      &none      &none       &none      &none
-			&none        &none      &none       &none       &none            &none                                                                &kp SEMI   &kp CARET  &kp STAR   &kp HASH    &none      &none
-			&none        &none      &kp STAR    &kp HASH    &kp BSLH         &kp DELETE                                                           &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
-			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                             &kp LT     &kp MINUS  &kp EQUAL  &kp GT      &kp GRAVE  &none
-			&none        &none      &none       &none       &kp DELETE       &to BASE       &none  &none  &none     &none      &none      &kp DOLLAR      &kp FSLH   &kp UNDER  &kp PIPE   &kp TILDE   &none      &none
-			&none        &none      &none       &none       &none                           &combo_ckspace_macro  &none  &none     &kp PRCNT      &none  &space_caps             &kp LPAR   &kp RPAR   &kp AT      &none      &none
+			&none        &none      &none       &none       &none                                                                                                &none      &none      &none       &none      &none
+			&none        &none      &none       &none       &none            &none                                                                    &kp SEMI   &kp CARET  &kp STAR   &kp HASH    &none      &none
+			&none        &none      &kp STAR    &kp HASH    &kp BSLH         &kp DELETE                                                               &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &kp RBRC   &none
+			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                                 &kp LT     &kp EQUAL  &kp PIPE  &kp GT      &kp GRAVE  &none
+			&none        &kp PRCNT  &none       &none       &kp DELETE       &to BASE    &none                &none &none     &none &none &kp DOLLAR  &kp TILDE  &kp UNDER  &kp MINUS   &none       &none      &none
+			&none        &none      &kp FSLH    &none       &none                        &none &none &none     &none &none &space_caps            &kp LPAR   &kp RPAR   &kp AT      &none      &none
 			
 			>;
 		};
