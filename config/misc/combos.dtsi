@@ -364,19 +364,19 @@
 			layers = <BASE TYPING>;
 		};
 
-		combo_edot {
+		combo_adot {
 			timeout-ms = <COMBO_TIMEOUT>;
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 			key-positions = <LM1 LM2>;
-			bindings = <&combo_edot_macro>;
+			bindings = <&combo_adot_macro>;
 			layers = <BASE TYPING>;
 		};
 
-		combo_ecomma {
+		combo_acomma {
 			timeout-ms = <COMBO_TIMEOUT>;
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 			key-positions = <LM2 LB2>;
-			bindings = <&combo_ecomma_macro>;
+			bindings = <&combo_acomma_macro>;
 			layers = <BASE TYPING>;
 		};
 

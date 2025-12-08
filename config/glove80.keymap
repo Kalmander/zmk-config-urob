@@ -233,8 +233,8 @@
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &shiftctrl_num  &ctrl_num  &nums_plus                                              &nums_plus  &ctrl_num  &shiftctrl_num  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &nums_plus                                              &nums_plus  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &shiftctrl_num  &ctrl_num  &trans  &trans  &trans  &trans  &trans  &ctrl_num  &shiftctrl_num  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;

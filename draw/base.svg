@@ -3927,13 +3927,11 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(140, 196)" class="key trans keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(196, 196)" class="key keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;shiftctrl…</tspan></text>
+<g transform="translate(196, 196)" class="key trans keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(252, 196)" class="key keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;ctrl_num</tspan></text>
+<g transform="translate(252, 196)" class="key trans keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(308, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3943,13 +3941,11 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;nums_plus</tspan></text>
 </g>
-<g transform="translate(756, 196)" class="key keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;ctrl_num</tspan></text>
+<g transform="translate(756, 196)" class="key trans keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(812, 196)" class="key keypos-42">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;shiftctrl…</tspan></text>
+<g transform="translate(812, 196)" class="key trans keypos-42">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(868, 196)" class="key trans keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3972,11 +3968,13 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(196, 252)" class="key trans keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(252, 252)" class="key trans keypos-50">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(252, 252)" class="key keypos-50">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;shiftctrl…</tspan></text>
 </g>
-<g transform="translate(308, 252)" class="key trans keypos-51">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(308, 252)" class="key keypos-51">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;ctrl_num</tspan></text>
 </g>
 <g transform="translate(371, 312) rotate(30.0)" class="key trans keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3993,11 +3991,13 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(588, 350) rotate(-45.0)" class="key trans keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(637, 312) rotate(-30.0)" class="key trans keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(637, 312) rotate(-30.0)" class="key keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;ctrl_num</tspan></text>
 </g>
-<g transform="translate(700, 252)" class="key trans keypos-58">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(700, 252)" class="key keypos-58">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;shiftctrl…</tspan></text>
 </g>
 <g transform="translate(756, 252)" class="key trans keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
