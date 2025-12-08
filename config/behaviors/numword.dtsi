@@ -57,6 +57,23 @@
 		};
 		#define num num_hold_tap NUM_WORD_PLUS 0
 
+
+		ctrl_num: ctrl_num {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&nums_plus>, <&ctrl_lock_num>;
+		};
+
+		shiftctrl_num: shiftctrl_num {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&nums_plus>, <&ctrl_lock_num>, <&shift_lock_num>;
+		};
+
 		/* fsl_num: force_sl_num { */
 		/* 	compatible = "zmk,behavior-macro"; */
 		/* 	#binding-cells = <0>; */
@@ -170,13 +187,13 @@
 		  bindings = <&bmo>, <&bsk_nexus_sk>;
 		};
 
-		bsym_hold: bsym_hold {
-		  compatible = "zmk,behavior-hold-tap";
-		  #binding-cells = <2>;
-		  flavor = "balanced";
-		  tapping-term-ms = <200>;
-		  bindings = <&bmo>, <&bsk_symbol_sk>;
-		};
+		/* bsym_hold: bsym_hold { */
+		/*   compatible = "zmk,behavior-hold-tap"; */
+		/*   #binding-cells = <2>; */
+		/*   flavor = "balanced"; */
+		/*   tapping-term-ms = <200>; */
+		/*   bindings = <&bmo>, <&bsk_symbol_sk>; */
+		/* }; */
 
 		bsk_nexus_sk: bsk_nexus_sk {
 			compatible = "zmk,behavior-macro";
@@ -186,17 +203,17 @@
 			bindings = <&to BASE>, <&sl NEXUS>;
 		};
 
-		bsk_symbol_sk: bsk_symbol_sk {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&to BASE>, <&sl SYMBOL>;
-		};
+		/* bsk_symbol_sk: bsk_symbol_sk { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&to BASE>, <&sl SYMBOL>; */
+		/* }; */
 
 
 		#define bnexus bnexus_hold NEXUS 0
-		#define bsymbol bsym_hold SYMBOL 0
+		/* #define bsymbol bsym_hold SYMBOL 0 */
 
 		/* N1s: N1s { */
 		/* 	compatible = "zmk,behavior-macro"; */

@@ -324,18 +324,6 @@
 			layer-id = <TABBER>;
 		};
 		
-		Symbol {
-			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                           &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                              	&ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                              	&ug ___ &ug ColSym2   &ug ColSym3   &ug ColSym3 &ug ColSym2 &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                              	&ug ColSym1 &ug ___   &ug ___   &ug ColSym1 &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <SYMBOL>;
-		};
-		
 		Function {
 			bindings = <
 			&ug ColLayer &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___

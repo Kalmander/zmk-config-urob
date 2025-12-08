@@ -30,18 +30,17 @@
 #define NEXUS_OVER 16
 #define TABBER 17
 #define OVERMODS 18
-#define SYMBOL 19
-#define FUNCTIONS 20
-#define ICE 21
-#define JOKER 22
-#define EDI 23
-#define MOUSE 24
-#define MOUSE_SLOW 25
-#define MOUSE_WARP 26
-#define MOUSE_FAST 27
-#define MOUSE_SWITCHER 28
-#define UNIC_LAYER 29
-#define MAGIC 30
+#define FUNCTIONS 19
+#define ICE 20
+#define JOKER 21
+#define EDI 22
+#define MOUSE 23
+#define MOUSE_SLOW 24
+#define MOUSE_WARP 25
+#define MOUSE_FAST 26
+#define MOUSE_SWITCHER 27
+#define UNIC_LAYER 28
+#define MAGIC 29
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -62,9 +61,9 @@
 			
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
-			&sk LC(LSHIFT)   &kp Z           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &none           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
 			&adaptive        &kp DQT         &hml LALT I   &hml LSHIFT A  &hml LGUI E    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp RA(Z)        &sl ICE         &sl SYMBOL    &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
@@ -75,9 +74,9 @@
 			
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
-			&sk LC(LSHIFT)   &kp Z           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &none           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
 			&adaptive        &kp DQT         &hml LALT I   &hml LSHIFT A  &hml LGUI E    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp RA(Z)        &sl ICE         &sl SYMBOL    &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
@@ -182,7 +181,7 @@
 			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &nav_alt    &trans      &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
 			&vimigation  &pagigaiton  &kp TAB     &trans      &kp ENTER  &nav_guictrl       &trans  &nav_ctrlshift_macro     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &cskalt     &cskshift   &cskgui                 &sl SYMBOL          &nav_ctrl  &cskctrl    &cskctrl &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans       &cskalt     &cskshift   &cskgui                 &trans          &nav_ctrl  &cskctrl    &cskctrl &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
@@ -221,7 +220,7 @@
 			&kp LBKT   &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                               &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
 			&none      &none       &kp LT     &kp N1    &kp GT      &kp CARET                                                                                 &kp PLUS     &kp LPAR   &kp N0       &kp RPAR   &none      &none 
 			&spacebase &kp SPACE   &kp N2     &kp N3    &kp N4      &_dot                                                                             &kp FSLH     &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI 
-			&tabbase   &kp PRCNT   &bsymbol   &bnav     &_comma     &kp BACKSPACE   &kp SPACE   &to BASE   &kp ENTER      &kp TAB        &sbase   &kp DOLLAR       &kp LBRC     &kp EQUAL  &kp MINUS    &kp UNDER  &kp RBRC   &none 
+			&tabbase   &kp PRCNT   &none      &bnav     &_comma     &kp BACKSPACE   &kp SPACE   &to BASE   &kp ENTER      &kp TAB        &sbase   &kp DOLLAR       &kp LBRC     &kp EQUAL  &kp MINUS    &kp UNDER  &kp RBRC   &none 
 			&none      &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5  &num_adaptive   &num_adaptive  &kp N6   &bnexus                         &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -234,7 +233,7 @@
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &nums_plus                                              &nums_plus  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &shiftctrl_num  &ctrl_num  &nums_plus                                              &nums_plus  &ctrl_num  &shiftctrl_num  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
@@ -245,12 +244,12 @@
 		NumWordModded {
 			bindings = <
 			
-			&trans     &trans  &trans     &trans      &trans                                                                                            &trans     &trans       &trans     &trans  &trans
-			&trans     &trans  &trans     &trans      &trans    &kpcb LS(G)                                                                &kpcb LS(G)  &trans     &trans       &trans     &trans  &trans
-			&trans     &trans  &trans     &kpcb N1    &trans    &trans                                                                     &trans       &trans     &kpcb N0     &trans     &trans  &trans
-			&trans     &trans  &kpcb N2   &kpcb N3    &kpcb N4  &trans                                                                     &trans       &kpcb N7   &kpcb N8     &kpcb N9   &trans  &trans
-			&trans     &trans  &trans     &trans      &trans    &base_cancel  &trans  &trans    &fnumword     &fnumword  &trans    &trans  &trans       &trans     &trans       &trans     &trans  &trans
-			&trans     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI               &trans  &kpcb N5  &trans    &trans &kpcb N6  &trans               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL  &trans
+			&none      &none       &none      &none     &none                                                                                                 &none        &none      &none        &none      &none 
+			&kp LBKT   &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                               &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
+			&none      &none       &kp LT     &kpcb N1    &kp GT      &kp CARET                                                                                 &kp PLUS     &kp LPAR   &kpcb N0       &kp RPAR   &none      &none 
+			&spacebase &kp SPACE   &kpcb N2     &kpcb N3    &kpcb N4      &_dot                                                                             &kp FSLH     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
+			&tabbase   &kp PRCNT   &none      &bnav     &_comma     &kp BACKSPACE   &kp SPACE   &to BASE   &kp ENTER      &kp TAB        &sbase   &kp DOLLAR       &kp LBRC     &kp EQUAL  &kp MINUS    &kp UNDER  &kp RBRC   &none 
+			&none      &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5  &num_adaptive   &num_adaptive  &kpcb N6   &bnexus                         &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
@@ -259,12 +258,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
-			&trans  &trans     &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&trans  &kp AMPS   &kp SEMI   &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &kp EXCL   &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER    &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
-			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
+			&trans    &trans     &kp PIPE  &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans    &kp PRCNT  &kp EXCL  &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER  &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
+			&trans    &kp INSERT &cskalt   &cskshift  &cskgui                   &kp SPACE  &kp TILDE     &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
 			
 			>;
 		};
@@ -323,19 +322,6 @@
 			>;
 		};
 
-		Symbol {
-			bindings = <
-			
-			&none        &none      &none       &none       &none                                                                                                &none      &none      &none       &none      &none
-			&none        &none      &none       &none       &none            &none                                                                    &kp SEMI   &kp CARET  &kp STAR   &kp HASH    &none      &none
-			&none        &none      &kp STAR    &kp HASH    &kp BSLH         &kp DELETE                                                               &kp PLUS   &kp LBRC   &kp LBKT   &kp RBKT    &none   &none
-			&cto SYMBOL  &kp LALT   &fnumword   &sk LSHIFT  &hml LCTRL SPACE &kp LGUI                                                                 &kp LT     &kp EQUAL  &kp PIPE  &kp GT      &kp RBRC  &kp GRAVE
-			&none        &kp PRCNT  &none       &none       &kp DELETE       &kp BACKSPACE    &none                &to BASE &none     &none &none &kp DOLLAR  &kp TILDE  &kp UNDER  &kp MINUS   &kp FSLH       &none      &none
-			&none        &none      &kp FSLH    &none       &none                        &none &none &none     &none &none &space_caps            &kp LPAR   &kp RPAR   &kp AT      &none      &none
-			
-			>;
-		};
-		
 		Function {
 			bindings = <
 			
@@ -460,7 +446,7 @@
 			&uc clown_uc        &uc partying_face_uc &uc joy_uc             &uc star_struck_uc  &uc heart_eyes_uc   &uc exploding_head_uc                                                                                        &spacebase            &uc smirk_uc           &uc thinking_uc              &uc scream_uc           &uc boom_uc         &uc skull_uc 
 			&uc hear_no_evil_uc &uc ok_hand_uc       &uc brain_uc           &uc waving_hand_uc  &kp SPACE           &sk LSHIFT                                                                                                   &sk RSHIFT            &uc fire_combo_uc      &uc dagger_uc                &uc livelong_uc         &uc metal_uc        &uc turtle_uc 
 			&uc yinyang_uc      &spacebase           &uc pinched_fingers_uc &uc euro_uc         &uc palm_up_hand_uc &enterbase                                                                                                   &uc less_combo_uc     &uc saluting_face_uc   &uc tradecopy_uc             &uc greater_combo_uc    &uc impliesiff_uc   &uc index_pointing_at_the_viewer_uc 
-			&uc star_glow_uc    &uc 0x2764 0         &uc broken_heart_uc    &kp SPACE           &kp BACKSPACE       &to BASE     &bsymbol   &kp TAB          &kp ENTER     &kp ENTER       &kp TAB            &uc two_hearts_uc  &uc permille_uc       &uc sparkling_heart_uc &uc revolving_hearts_uc      &uc tada_uc             &uc brain_uc        &uc books_uc 
+			&uc star_glow_uc    &uc 0x2764 0         &uc broken_heart_uc    &kp SPACE           &kp BACKSPACE       &to BASE     &none   &kp TAB          &kp ENTER     &kp ENTER       &kp TAB            &uc two_hearts_uc  &uc permille_uc       &uc sparkling_heart_uc &uc revolving_hearts_uc      &uc tada_uc             &uc brain_uc        &uc books_uc 
 			&uc warning_uc      &uc exclamation_uc   &uc question_uc        &uc left_uc         &uc right_uc                     &spacebase &trans &uc dice_uc   &uc bullseye_uc &uc sob_skull_uc     &bnexus                                  &uc down_uc            &uc up_uc      &uc underage_uc              &uc no_mobile_phones_uc &uc peace_uc 
 			
 			>;

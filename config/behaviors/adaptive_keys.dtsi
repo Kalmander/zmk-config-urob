@@ -4,7 +4,7 @@
 		adaptive: adaptive {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
-			bindings = <&kp RA(P)>;
+			bindings = <&kp RA(Z)>;
 
 			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; };
 			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
