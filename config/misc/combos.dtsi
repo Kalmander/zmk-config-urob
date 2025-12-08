@@ -49,6 +49,12 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_ecomma_macro: combo_ecomma_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps E COMMA>, <&two_kps LS(E) COMMA>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
 
 		combo_rk_macro: combo_rk_macro {
 			compatible = "zmk,behavior-mod-morph";
@@ -358,19 +364,19 @@
 			layers = <BASE TYPING>;
 		};
 
-		combo_adot {
+		combo_edot {
 			timeout-ms = <COMBO_TIMEOUT>;
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 			key-positions = <LM1 LM2>;
-			bindings = <&combo_adot_macro>;
+			bindings = <&combo_edot_macro>;
 			layers = <BASE TYPING>;
 		};
 
-		combo_acomma {
+		combo_ecomma {
 			timeout-ms = <COMBO_TIMEOUT>;
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 			key-positions = <LM2 LB2>;
-			bindings = <&combo_acomma_macro>;
+			bindings = <&combo_ecomma_macro>;
 			layers = <BASE TYPING>;
 		};
 

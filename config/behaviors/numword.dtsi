@@ -12,7 +12,7 @@
 		numwordplus_autolayer: numwordplus_autolayer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <SPACE UNDER LEFT RIGHT UP DOWN BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN G>;
+			continue-list = <SPACE UNDER LEFT RIGHT UP DOWN BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN G COLON SEMI>;
 			ignore-numbers;
       ignore-modifiers;
 		};

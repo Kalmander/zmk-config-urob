@@ -8,14 +8,14 @@
 
 			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; };
 			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
-			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
-			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
-			ak_au { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
-			ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
-			/* ak_eu { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp U>; }; */
-			/* ak_ue { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp E>; }; */
-			/* ak_ao { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp O>; }; */
-			/* ak_oa { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp A>; }; */
+			/* ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; }; */
+			/* ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; }; */
+			/* ak_au { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp U>; }; */
+			/* ak_ua { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp A>; }; */
+			ak_eu { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp U>; };
+			ak_ue { trigger-keys = <U>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
+			ak_ao { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
+			ak_oa { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp A>; };
 
 			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 			ak_underspace { trigger-keys = <UNDER>; max-prior-idle-ms = <600>; bindings = <&kp SPACE>; };

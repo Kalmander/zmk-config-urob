@@ -63,8 +63,8 @@
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp Z           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
-			&adaptive        &kp DQT         &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp RA(Z)        &sl ICE         &sl SYMBOL    &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&adaptive        &kp DQT         &hml LALT I   &hml LSHIFT A  &hml LGUI E    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
+			&kp RA(Z)        &sl ICE         &sl SYMBOL    &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
@@ -76,8 +76,8 @@
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp Z           &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
-			&adaptive        &kp DQT         &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp RA(Z)        &sl ICE         &sl SYMBOL    &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL     &sl FUNCTIONS    &nexus_auto   &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&adaptive        &kp DQT         &hml LALT I   &hml LSHIFT A  &hml LGUI E    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
+			&kp RA(Z)        &sl ICE         &sl SYMBOL    &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
@@ -261,9 +261,9 @@
 			
 			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
 			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
-			&trans  &trans     &kp SQT    &kp DQT    &trans     &basecaps                                                                               &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&trans  &kp AMPS   &kp QMARK  &kp EXCL   &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp BACKSPACE  &kp ENTER    &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
+			&trans  &trans     &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&trans  &kp AMPS   &kp SEMI   &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans  &kp PRCNT  &kp EXCL   &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER    &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
 			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
 			
 			>;
@@ -276,9 +276,9 @@
 			
 			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
 			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
-			&trans  &trans     &kp SQT    &kp DQT    &trans     &basecaps                                                                               &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&trans  &kp AMPS   &kp QMARK  &kp EXCL   &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &trans     &kp SEMI   &kp COLON  &kp BACKSPACE  &kp ENTER    &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
+			&trans  &trans     &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&trans  &kp AMPS   &kp SEMI   &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans  &kp PRCNT  &kp EXCL   &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER    &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
 			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
 			
 			>;
