@@ -355,7 +355,7 @@
 			&trans    &trans  &trans       &trans       &trans                                                                        &trans  &trans  &trans     &trans  &trans
 			&degsign  &trans  &trans       &trans       &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &kp RA(I)    &kp RA(A)    &kp RA(E)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &pagigaiton  &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
 			&trans    &trans  &trans       &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
