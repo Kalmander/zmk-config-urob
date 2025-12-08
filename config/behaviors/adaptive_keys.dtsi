@@ -246,7 +246,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk LSHFT>;
 			repeat {
-				trigger-keys = <B G J Z AT>; /* Aaaahg held B virki ekki í vim */
+				trigger-keys = <B G J AT>; /* Aaaahg held B virki ekki í vim */
 				/* trigger-keys = <G J X AT>; */
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
@@ -262,7 +262,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk RSHFT>;
 			repeat {
-				trigger-keys = <D K P L X>;
+				trigger-keys = <D K P L X Z>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;

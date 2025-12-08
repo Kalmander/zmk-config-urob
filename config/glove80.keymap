@@ -259,7 +259,7 @@
 			bindings = <
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans    &trans     &kp PIPE  &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
+			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH   &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
 			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
 			&trans    &kp PRCNT  &kp EXCL  &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER  &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
@@ -273,12 +273,12 @@
 		NexusOverlay {
 			bindings = <
 			
-			&trans  &trans     &trans     &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans  &trans     &trans     &kp HASH   &trans     &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
-			&trans  &trans     &kp LBRC   &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&trans  &kp AMPS   &kp SEMI   &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans  &kp PRCNT  &kp EXCL   &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER    &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
-			&trans  &kp INSERT &cskalt    &cskshift  &cskgui                  &kp SPACE    &kp UNDER  &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
+			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH   &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
+			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
+			&trans    &kp PRCNT  &kp EXCL  &basecaps  &kp QMARK  &kp BACKSPACE  &kp ENTER  &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
+			&trans    &kp INSERT &cskalt   &cskshift  &cskgui                   &kp SPACE  &kp TILDE     &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
 			
 			>;
 		};
