@@ -358,11 +358,11 @@
 			layers = <BASE TYPING>;
 		};
 
-		combo_idot {
+		combo_adot {
 			timeout-ms = <COMBO_TIMEOUT>;
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
-			key-positions = <LM4 LB4>;
-			bindings = <&combo_idot_macro>;
+			key-positions = <LM1 LM2>;
+			bindings = <&combo_adot_macro>;
 			layers = <BASE TYPING>;
 		};
 
