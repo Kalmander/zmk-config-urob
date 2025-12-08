@@ -268,7 +268,7 @@
 				strict-modifiers;
 			};
 
-			/* ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; }; */
+			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; };
 		};
 
 		dot_shift: dot_shift {
