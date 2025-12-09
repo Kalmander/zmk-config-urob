@@ -63,7 +63,7 @@
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
 			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &kp K_CANCEL  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
@@ -75,9 +75,9 @@
 			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X &sk LC(LSHIFT)
-			&kp DQT          &adaptive       &kp I   &kp E  &kp A    &kp DOT                                                                                       &thorn_eth     &kp H  &kp T &kp N  &kp P          &kp SQT
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kp C  &num            &num         &kp S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                       &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &kp K_CANCEL  &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                 &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
 		};
@@ -139,8 +139,8 @@
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &cut_base
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &cut_base  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &trans
 			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &copy_base  &trans &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
@@ -154,7 +154,7 @@
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LG(LEFT))  &kp LS(LG(DOWN))   &kp LS(LG(UP))     &kp LS(LG(RIGHT))  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &kp ESC &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &sk LGUI            &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -180,8 +180,8 @@
 			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &nav_alt    &trans      &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&vimigation  &pagigaiton  &kp TAB     &trans      &kp ENTER  &nav_guictrl       &trans  &nav_ctrlshift_macro     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &cskalt     &cskshift   &cskgui                 &trans          &nav_ctrl  &cskctrl    &cskctrl &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&vimigation  &pagigaiton  &kp TAB     &trans      &kp ENTER  &nav_guictrl       &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &cskalt     &cskshift   &cskgui                 &trans          &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
@@ -218,7 +218,7 @@
 			
 			&none      &none       &none      &none     &none                                                                                                 &none        &none      &none        &none      &none 
 			&kp LBKT   &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                               &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
-			&none      &none       &kp LT     &kp N1    &kp GT      &kp CARET                                                                                 &kp PLUS     &kp LPAR   &kp N0       &kp RPAR   &none      &none 
+			&none      &to BASE       &kp LT     &kp N1    &kp GT      &kp CARET                                                                                 &kp PLUS     &kp LPAR   &kp N0       &kp RPAR   &none      &none 
 			&kp SPACE  &spacebase  &kp N2     &kp N3    &kp N4      &_dot                                                                             &kp FSLH     &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI 
 			&tabbase   &kp PRCNT   &to BASE      &bnav     &_comma     &kp BACKSPACE   &kp SPACE   &to BASE   &kp ENTER      &kp TAB        &sbase   &kp DOLLAR       &kp LBRC     &kp EQUAL  &kp MINUS    &kp UNDER  &kp RBRC   &none 
 			&none      &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5  &num_adaptive   &num_adaptive  &kp N6   &bnexus                         &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
