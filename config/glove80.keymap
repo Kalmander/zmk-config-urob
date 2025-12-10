@@ -176,12 +176,12 @@
 		NavWordSwitcher {
 			bindings = <
 			
-			&trans  &trans       &trans      &trans      &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans      &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &nav_alt    &trans      &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&vimigation  &pagigaiton  &kp TAB     &trans      &kp ENTER  &nav_guictrl       &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &cskalt     &cskshift   &cskgui                 &trans          &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &nav_alt    &trans  &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &vimigation  &pagigaiton &trans  &kp ENTER  &nav_guictrl    &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &trans      &trans  &cskgui                    &kp TAB &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
@@ -258,12 +258,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH   &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans    &kp PRCNT  &kp QMARK  &basecaps  &kp EXCL  &kp BACKSPACE  &kp UNDER  &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
-			&trans    &kp INSERT &cskalt   &cskshift  &cskgui                   &kp SPACE  &kp TILDE     &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                           &trans     &trans      &trans     &trans  &trans
+			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH  &trans                                                                                      &trans     &kp BSLH   &kp STAR    &trans     &f_lock  &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &kp RBKT                                                                                    &sqt_nex   &kp K      &kp S       &kp R      &trans  &trans
+			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR  &kp RPAR                                                                                    &kp HOME   &kp ENTER  &kp ESC     &kp END    &ctrl_lock &trans
+			&trans    &kp PRCNT  &kp QMARK &basecaps  &kp EXCL  &kp BACKSPACE  &kp UNDER  &kp K_CANCEL  &to TYPING     &trans    &trans          &trans     &kp DELETE &kp TAB    &basecaps   &mouse     &trans &trans
+			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI                 &kp SPACE  &kp TILDE     &kp LCTRL      &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT  &kp RALT   &trans  &to JOKER
 			
 			>;
 		};
@@ -273,12 +273,12 @@
 		NexusOverlay {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp LGUI    &kp LSHIFT  &kp LALT   &trans  &trans
-			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH   &trans                                                                                   &kp LCTRL  &kp BSLH    &kp STAR    &trans     &f_lock  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT                                                                                   &sqt_nex   &kp K       &kp S       &kp R      &trans  &trans
-			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR   &kp RPAR                                                                          &kp HOME   &kp ENTER   &kp ESC     &kp END    &ctrl_lock &trans
-			&trans    &kp PRCNT  &kp QMARK  &basecaps  &kp EXCL  &kp BACKSPACE  &kp ENTER  &kp K_CANCEL  &to TYPING     &trans   &trans          &trans     &kp DELETE   &kp TAB   &basecaps     &mouse     &trans &trans
-			&trans    &kp INSERT &cskalt   &cskshift  &cskgui                   &kp SPACE  &kp TILDE     &cskctrl       &cskctrl &combo_rs_macro &sl NEXUS             &cskgui     &cskshift   &cskalt    &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                           &trans     &trans      &trans     &trans  &trans
+			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH  &trans                                                                                      &trans     &kp BSLH   &kp STAR    &trans     &f_lock  &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &kp RBKT                                                                                    &sqt_nex   &kp K      &kp S       &kp R      &trans  &trans
+			&kp GRAVE &kp AMPS   &kp SEMI  &kp COLON  &kp LPAR  &kp RPAR                                                                                    &kp HOME   &kp ENTER  &kp ESC     &kp END    &ctrl_lock &trans
+			&trans    &kp PRCNT  &kp QMARK &basecaps  &kp EXCL  &kp BACKSPACE  &kp UNDER  &kp K_CANCEL  &to TYPING     &trans    &trans          &trans     &kp DELETE &kp TAB    &basecaps   &mouse     &trans &trans
+			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI                 &kp SPACE  &kp TILDE     &kp LCTRL      &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT  &kp RALT   &trans  &to JOKER
 			
 			>;
 		};
