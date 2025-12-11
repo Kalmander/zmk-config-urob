@@ -74,6 +74,22 @@
 			bindings = <&nums_plus>, <&ctrl_lock_num>, <&shift_lock_num>;
 		};
 
+		ctrl_numt: ctrl_num_timed {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&nums_plus>, <&ctrl_lock_num_timed>;
+		};
+
+		shiftctrl_numt: shiftctrl_num_timed {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&nums_plus>, <&ctrl_lock_num_timed>, <&shift_lock_num_timed>;
+		};
+
 		/* fsl_num: force_sl_num { */
 		/* 	compatible = "zmk,behavior-macro"; */
 		/* 	#binding-cells = <0>; */

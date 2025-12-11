@@ -43,6 +43,15 @@
 			bindings =  <&macro_param_1to1>, <&tog_off_kp MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&tog_off_layer MACRO_PLACEHOLDER>;
 		};
+    
+		tog_off_kp_and_fire_kp: tog_off_kp_and_fire_kp {
+			compatible = "zmk,behavior-macro-two-param";
+			#binding-cells = <2>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings =  <&macro_param_1to1>, <&tog_off_kp MACRO_PLACEHOLDER>,
+			<&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>;
+		};
 		
 		
 		gui_lock: gui_lock {
@@ -276,6 +285,62 @@
 			70        56 73    \
 			71 54      72
 			>;
+		};
+
+		ctrl_lock_num_timed: ctrl_lock_num_timed {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
+			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp_and_fire_kp LCTRL K_CANCEL>;
+			ignored-key-positions = <
+			/* left hand */
+			0  1  2  3  4      \
+			10 11 12 13 14 15  \
+			22    24 25 26 27  \
+			34 35 36 37 38 39  \
+			46 47    49 50 51  \
+			64 65 66 67 68     \
+			/* right hand */
+			5  6  7  8  9      \
+			16 17 18 19 20 21  \
+			28 29 30 31 32 33  \
+			40 41 42 43 44 45  \
+			58 59 60    62 63  \
+			75 76 77 78 79     \
+			/* thumbs */
+			69 52       57 74  \
+			70        56 73    \
+			71 54      72
+			>;
+			timeout-ms = <2000>;
+		};
+		
+		shift_lock_num_timed: shift_lock_num_timed {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
+			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
+			ignored-key-positions = <
+			/* left hand */
+			0  1  2  3  4      \
+			10 11 12 13 14 15  \
+			22    24 25 26 27  \
+			34 35 36 37 38 39  \
+			46 47    49 50 51  \
+			64 65 66 67 68     \
+			/* right hand */
+			5  6  7  8  9      \
+			16 17 18 19 20 21  \
+			28 29 30 31 32 33  \
+			40 41 42 43 44 45  \
+			58 59 60    62 63  \
+			75 76 77 78 79     \
+			/* thumbs */
+			69 52       57 74  \
+			70        56 73    \
+			71 54      72
+			>;
+			timeout-ms = <2000>;
 		};
 	};
 };
