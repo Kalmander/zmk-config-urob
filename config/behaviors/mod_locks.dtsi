@@ -312,7 +312,7 @@
 			70        56 73    \
 			71 54      72
 			>;
-			timeout-ms = <2000>;
+			timeout-ms = <1000>;
 		};
 		
 		shift_lock_num_timed: shift_lock_num_timed {
@@ -340,7 +340,7 @@
 			70        56 73    \
 			71 54      72
 			>;
-			timeout-ms = <2000>;
+			timeout-ms = <1000>;
 		};
 	};
 };
