@@ -24,23 +24,24 @@
 #define VIM_WORD 10
 #define PAGE_WORD 11
 #define NUM_WORD_PLUS 12
-#define NUM_WORD_STICKY 13
-#define NUM_WORD_MODDED 14
-#define NEXUS 15
-#define NEXUS_OVER 16
-#define TABBER 17
-#define OVERMODS 18
-#define FUNCTIONS 19
-#define ICE 20
-#define JOKER 21
-#define EDI 22
-#define MOUSE 23
-#define MOUSE_SLOW 24
-#define MOUSE_WARP 25
-#define MOUSE_FAST 26
-#define MOUSE_SWITCHER 27
-#define UNIC_LAYER 28
-#define MAGIC 29
+#define NUM_WORD_STICKY_L 13
+#define NUM_WORD_STICKY_R 14
+#define NUM_WORD_MODDED 15
+#define NEXUS 16
+#define NEXUS_OVER 17
+#define TABBER 18
+#define OVERMODS 19
+#define FUNCTIONS 20
+#define ICE 21
+#define JOKER 22
+#define EDI 23
+#define MOUSE 24
+#define MOUSE_SLOW 25
+#define MOUSE_WARP 26
+#define MOUSE_FAST 27
+#define MOUSE_SWITCHER 28
+#define UNIC_LAYER 29
+#define MAGIC 30
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -64,7 +65,7 @@
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X          &sk LC(LSHIFT)
 			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                         &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
 			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &kp K_CANCEL &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl            &numr         &hmr LCTRL S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
@@ -77,7 +78,7 @@
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X          &sk LC(LSHIFT)
 			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                         &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
 			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &none         &sl FUNCTIONS   &none        &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &num            &num         &hmr LCTRL S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl            &numr         &hmr LCTRL S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
 		};
@@ -227,19 +228,31 @@
 		};
 
 
-		NumwordSticker {
+		NumwordStickyLeft {
 			bindings = <
 			
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &nums_plus                                              &nums_plus  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &shiftctrl_numt  &ctrl_numt  &trans  &trans  &trans  &trans  &trans  &ctrl_num  &shiftctrl_num  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &nums_plus                                              &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &shiftctrl_numt  &trans  &ctrl_numt  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
 
+		NumwordStickyRight {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                              &nums_plus  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ctrl_num  &trans  &shiftctrl_num  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+			
+			>;
+		};
 
 		NumWordModded {
 			bindings = <

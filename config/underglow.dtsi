@@ -264,7 +264,7 @@
 			layer-id = <NUM_WORD_PLUS>;
 		};
 		
-		NumWordSticky {
+		NumWordStickyLeft {
 			bindings = <
 			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
@@ -273,7 +273,20 @@
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum5 &ug ___  &ug ___ &ug ColNum6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			>;
-			layer-id = <NUM_WORD_STICKY>;
+			layer-id = <NUM_WORD_STICKY_L>;
+		};
+
+
+		NumWordStickyRight {
+			bindings = <
+			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ColNum1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNum0 &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ColNum2 &ug ColNum3 &ug ColNum4 &ug ___                                                  &ug ___ &ug ColNum7 &ug ColNum8 &ug ColNum9 &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum5 &ug ___  &ug ___ &ug ColNum6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NUM_WORD_STICKY_R>;
 		};
 		
 		NumWordModded {
