@@ -79,7 +79,7 @@
 	#define ColMouseSwitchRow6  0x9c7bff
 	
 	// Icelandic rows 3/4 accent
-	#define ColIceRows34 0x8fdfff
+	#define ColIceRows34 0x679df5
 	
 	// Function row-3 accent (red, distinct from nav/num)
 	#define ColFunctionRow3 0xff4444
@@ -257,9 +257,9 @@
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordSwitchRow4  &ug ColNavWordSwitchRow4  &ug ColNavWordSwitchRow4    &ug ColNavWordSwitchRow4    &ug ColNavWordSwitchRow4   &ug ColNavWordSwitchRow4                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ColNavWordSwitchRow4  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___          &ug ___ &ug ColNavWordSwitchRow4 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_SWITCH>;
 		};
@@ -389,8 +389,8 @@
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ColIceRows34  &ug ColIceRows34  &ug ColIceRows34    &ug ColIceRows34   &ug ColIceRows34   &ug ColIceRows34                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ColIceRows34  &ug ColIceRows34  &ug ColIceRows34    &ug ColIceRows34   &ug ColIceRows34   &ug ColIceRows34                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ColIceRows34    &ug ColIceRows34   &ug ColIceRows34   &ug ___                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ColIceRows34    &ug ColIceRows34   &ug ColIceRows34   &ug ___                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
