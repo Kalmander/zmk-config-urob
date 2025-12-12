@@ -481,6 +481,18 @@
 			layer-id = <MOUSE_SWITCHER>;
 		};
 		
+		BaseDot {
+			bindings = <
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <BASE_DOT>;
+		};
+
 		MoergoMagic {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___

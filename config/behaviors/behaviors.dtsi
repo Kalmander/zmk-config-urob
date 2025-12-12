@@ -129,6 +129,43 @@
 			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp K_CANCEL>, <&to BASE>;
 		};
 
+		kpdot: kpdot {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&kp DOT>;
+		};
+
+		caps_dot: caps_dot {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <LSHIFT DOT BACKSPACE DELETE>;
+			ignore-alphas;
+			ignore-numbers;
+		};
+
+		caps_dot_caps: caps_dot_caps {
+			compatible = "zmk,behavior-caps-word";
+			#binding-cells = <0>;
+			mods = <(MOD_LSFT)>;
+      // Default: underscore, backspace, delete, alphanumerics
+      // verður að taka aftur fram undrescore, backspace og delete
+      // en alphanumerics koma sjálfkrafa
+			continue-list = <
+        BACKSPACE DELETE 
+        DOT 
+      >;
+		};
+
+    base_dot: base_dot {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&caps_dot_caps &caps_dot BASE_DOT>;
+		};
+
 		base_cancel: base_cancel {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;

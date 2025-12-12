@@ -41,7 +41,8 @@
 #define MOUSE_FAST 27
 #define MOUSE_SWITCHER 28
 #define UNIC_LAYER 29
-#define MAGIC 30
+#define BASE_DOT 30
+#define MAGIC 31
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -274,7 +275,7 @@
 			&trans    &trans     &trans    &trans     &trans                                                                                                           &trans     &trans      &trans     &trans  &trans
 			&trans    &trans     &kp PIPE  &kp HASH   &kp FSLH  &trans                                                                                      &trans     &kp BSLH   &kp STAR    &trans     &f_lock  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &kp RBKT                                                                                    &sqt_nex   &kp K      &kp S       &kp R      &trans  &trans
-			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON  &kp SEMI                                                                                    &kp HOME   &kp ENTER  &kp ESC     &kp END    &ctrl_lock &trans
+			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON  &kp SEMI                                                                                    &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &base_dot
 			&trans    &kp PRCNT  &kp QMARK &basecaps  &kp EXCL  &kp BACKSPACE  &kp UNDER  &kp K_CANCEL  &to TYPING     &trans    &trans          &trans     &kp DELETE &kp TAB    &basecaps   &mouse     &trans &trans
 			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI                 &kp SPACE  &kp TILDE     &kp LCTRL      &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT  &kp RALT   &trans  &to JOKER
 			
@@ -465,6 +466,18 @@
 			>;
 		};
 
+		BaseDot {
+			bindings = <
+			
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN  &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kp MINUS     &kpdot Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kpdot V         &kp MINUS    &kp RIGHT      &_dot
+			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                   &rshift_repeat &kpdot F        &kpdot D         &kpdot L        &kpdot X          &sk LC(LSHIFT)
+			&kp DQT          &adaptive       &kpdot I   &kpdot E  &kpdot A    &kp DOT                                                                                         &thorn_eth     &kpdot H  &kpdot T &kpdot N  &kpdot P          &kp SQT
+			&kpdot Z            &sl ICE         &kpdot RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &kp K_CANCEL &kpdot K         &kpdot R      &kpdot M          &kpdot W        &kpdot G         &kpdot B        &kpdot J          &kpdot L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl            &numr         &kpdot S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			
+      >;
+		};
 		
 		MoergoMagic {
 			bindings = <
