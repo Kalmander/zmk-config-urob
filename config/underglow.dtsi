@@ -48,6 +48,42 @@
 	#define ColNav     WHITE
 	#define ColLayer   WHITE// binary indicator bits (top-left)
 	
+	// Per-nav-layer row-4 accents
+	#define ColNavWordRow4       0x33ccff
+	#define ColNavWordGuiRow4    0xff9966
+	#define ColNavWordAltRow4    0xcc99ff
+	#define ColNavWordCtrlRow4   0x66ff99
+	#define ColNavWordShiftCtrl4 0xff66cc
+	#define ColNavWordGuiShift4  0xffcc66
+	#define ColNavWordGuiCtrl4   0x99ffcc
+	#define ColNavWordSwitchRow4 0x66ccff
+	#define ColVimWordRow4       0x5cffb8
+	#define ColPageWordRow4      0xff7f5c
+	
+	// Nexus row-1 accents
+	#define ColNexusRow1       0x5ad1ff
+	#define ColNexusOverlayRow1 0xffb347
+	#define ColBaseNexusRow1    0xb3a1ff
+	
+	// Num row-2 accents (distinct from Nexus palette)
+	#define ColNumPlusRow2     0xff4da6
+	#define ColNumStickyLRow2  0x3cff9a
+	#define ColNumStickyRRow2  0xffd166
+	#define ColNumModdedRow2   0x6f7bff
+	
+	// Mouse row-6 accents (distinct palette)
+	#define ColMouseBaseRow6    0x4de2ff
+	#define ColMouseSlowRow6    0x7dff4d
+	#define ColMouseWarpRow6    0xff6fe0
+	#define ColMouseFastRow6    0xffe14d
+	#define ColMouseSwitchRow6  0x9c7bff
+	
+	// Icelandic rows 3/4 accent
+	#define ColIceRows34 0x8fdfff
+	
+	// Function row-3 accent (red, distinct from nav/num)
+	#define ColFunctionRow3 0xff4444
+	
 	// Numeric layers
 	#define ColNum     WHITE
 	#define ColNumMod  GREEN
@@ -101,8 +137,8 @@
 	#define ColSym2 GOLD// symbol layer
 	#define ColSym3 CORAL// symbol layer
 	
-	/* &ug COLOR sets the underglow LED to the specified color.  */
-	/* &ug_cl COLOR_OFF COLOR_ON sets the underglow color according to the CAPSLOCK state.  */
+	/* &ug ___ sets the underglow LED to the specified color.  */
+	/* &ug ___ sets the underglow color according to the CAPSLOCK state.  */
 	/* &ug_nl and &ug_sl do the same for NumLock & ScrollLock respectively. */
 	
 	underglow-layer {
@@ -110,349 +146,349 @@
 		
 		Base {
 			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug_cl ___ WHITE   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug_cl ___ WHITE   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <BASE>;
 		};
 		
 		Typing {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug_cl ___ WHITE   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug_cl ___ WHITE   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <TYPING>;
 		};
 		
 		NavWord {
 			bindings = <
-			&ug ___  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColNav  &ug ColNav   &ug ColNav     &ug ColNav  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordRow4  &ug ColNavWordRow4  &ug ColNavWordRow4    &ug ColNavWordRow4  &ug ColNavWordRow4  &ug ColNavWordRow4                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD>;
 		};
 		
 		NavWordGui {
 			bindings = <
-			&ug ColLayer  &ug ___  &ug ColLayer    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ORANGE  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ColGui                                                       &ug ColGui  &ug ColGui   &ug ColGui     &ug ColGui  &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___   &ug ORANGE  &ug ___  &ug ___         &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &kp LG(M)     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___         &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordGuiRow4  &ug ColNavWordGuiRow4  &ug ColNavWordGuiRow4    &ug ColNavWordGuiRow4  &ug ColNavWordGuiRow4  &ug ColNavWordGuiRow4                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_GUI>;
 		};
 		
 		NavWordAlt {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug WHITE                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___    &ug ___  &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordAltRow4 &ug ColNavWordAltRow4  &ug ColNavWordAltRow4   &ug ColNavWordAltRow4   &ug ColNavWordAltRow4   &ug ColNavWordAltRow4                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug WHITE &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_ALT>;
 		};
 		
 		NavWordCtrl {
 			bindings = <
-			&ug ___  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColCtrl  &ug ColCtrl   &ug ColCtrl     &ug ColCtrl  &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___   &ug TEAL  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordCtrlRow4  &ug ColNavWordCtrlRow4  &ug ColNavWordCtrlRow4    &ug ColNavWordCtrlRow4  &ug ColNavWordCtrlRow4  &ug ColNavWordCtrlRow4                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_CTRL>;
 		};
 		
 		NavWordShiftCtrl {
 			bindings = <
-			&ug ColLayer  &ug ColLayer  &ug ColLayer    &ug ___  &ug ___                                                                                &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColAlt  &ug ColAlt   &ug ColAlt     &ug ColAlt  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordShiftCtrl4  &ug ColNavWordShiftCtrl4  &ug ColNavWordShiftCtrl4    &ug ColNavWordShiftCtrl4  &ug ColNavWordShiftCtrl4  &ug ColNavWordShiftCtrl4                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_SHIFT_CTRL>;
 		};
 		
 		NavWordGuiShift {
 			bindings = <
-			&ug ___  &ug ___  &ug ___    &ug ColLayer  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColShift  &ug ColShift   &ug ColShift     &ug ColShift  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordGuiShift4  &ug ColNavWordGuiShift4  &ug ColNavWordGuiShift4    &ug ColNavWordGuiShift4  &ug ColNavWordGuiShift4  &ug ColNavWordGuiShift4                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_SHIFT_GUI>;
 		};
 		
 		NavWordGuiCtrl {
 			bindings = <
-			&ug ___  &ug ___  &ug ___    &ug ColLayer  &ug ___                                                                         &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                       &ug ColShift  &ug ColShift   &ug ColShift     &ug ColShift  &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordGuiCtrl4  &ug ColNavWordGuiCtrl4  &ug ColNavWordGuiCtrl4    &ug ColNavWordGuiCtrl4  &ug ColNavWordGuiCtrl4  &ug ColNavWordGuiCtrl4                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___  &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_CTRL_GUI>;
 		};
-
+		
 		NavWordSwitcher {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ColNav  &ug ColNav   &ug ColNav     &ug ColNav  &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ColNav  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___          &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___              &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ColNavWordSwitchRow4  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_SWITCH>;
 		};
 		
 		VimWord {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ColVim &ug ColVim   &ug ColVim   &ug ColVim &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColVimWordRow4  &ug ColVimWordRow4 &ug ColVimWordRow4   &ug ColVimWordRow4     &ug ColVimWordRow4   &ug ColVimWordRow4                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___       &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___   &ug ___     &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <VIM_WORD>;
 		};
 		
 		PageWord {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ColPage &ug ColPage   &ug ColPage   &ug ColPage &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColPageWordRow4 &ug ColPageWordRow4  &ug ColPageWordRow4   &ug ColPageWordRow4     &ug ColPageWordRow4   &ug ColPageWordRow4                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___       &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___     &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <PAGE_WORD>;
 		};
 		
 		NumWordPlus {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNumPlus1  &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumPlus0  &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNumPlus2  &ug ColNumPlus3  &ug ColNumPlus4  &ug ___                                                  &ug ___ &ug ColNumPlus7  &ug ColNumPlus8  &ug ColNumPlus9  &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNumPlusRow2 &ug ColNumPlusRow2 &ug ColNumPlusRow2   &ug ColNumPlusRow2   &ug ColNumPlusRow2   &ug ColNumPlusRow2                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___  &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___  &ug ___  &ug ___  &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumPlus5 &ug ___  &ug ___ &ug ColNumPlus6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_PLUS>;
 		};
 		
 		NumWordStickyLeft {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNum1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNum0 &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNum2 &ug ColNum3 &ug ColNum4 &ug ___                                                  &ug ___ &ug ColNum7 &ug ColNum8 &ug ColNum9 &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNumStickyLRow2 &ug ColNumStickyLRow2 &ug ColNumStickyLRow2   &ug ColNumStickyLRow2   &ug ColNumStickyLRow2   &ug ColNumStickyLRow2                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum5 &ug ___  &ug ___ &ug ColNum6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_STICKY_L>;
 		};
-
-
+		
+		
 		NumWordStickyRight {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNum1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNum0 &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNum2 &ug ColNum3 &ug ColNum4 &ug ___                                                  &ug ___ &ug ColNum7 &ug ColNum8 &ug ColNum9 &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNumStickyRRow2 &ug ColNumStickyRRow2 &ug ColNumStickyRRow2   &ug ColNumStickyRRow2   &ug ColNumStickyRRow2   &ug ColNumStickyRRow2                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNum5 &ug ___  &ug ___ &ug ColNum6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_STICKY_R>;
 		};
 		
 		NumWordModded {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ColLayer   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColNumMod1 &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColNumMod0 &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColNumMod2 &ug ColNumMod3 &ug ColNumMod4 &ug ___                                                  &ug ___ &ug ColNumMod7 &ug ColNumMod8 &ug ColNumMod9 &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNumModdedRow2 &ug ColNumModdedRow2 &ug ColNumModdedRow2   &ug ColNumModdedRow2   &ug ColNumModdedRow2   &ug ColNumModdedRow2                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColNumMod5 &ug ___  &ug ___ &ug ColNumMod6 &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_MODDED>;
 		};
 		
 		Nexus {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ___                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColNexusRow1 &ug ColNexusRow1 &ug ColNexusRow1   &ug ColNexusRow1   &ug ColNexusRow1                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___     &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NEXUS>;
 		};
 		
 		NexusOverlay {
 			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ColLayer                                                                  &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColNexusRow1 &ug ColNexusRow1 &ug ColNexusRow1   &ug ColNexusRow1   &ug ColNexusRow1                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___       &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NEXUS_OVER>;
 		};
 		
 		BaseNexus {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ___   &ug ColLayer                                                           &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColBaseNexusRow1 &ug ColBaseNexusRow1 &ug ColBaseNexusRow1   &ug ColBaseNexusRow1   &ug ColBaseNexusRow1                                                           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <TABBER>;
 		};
 		
 		Function {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___   &ug ___   &ug ColLayer                                                        &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            		&ug ___ &ug ColFun   &ug ColFun   &ug ColFun &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ColFun &ug ColFun &ug ColFun &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ColFun &ug ColFun     	&ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColFunctionRow3 &ug ColFunctionRow3  &ug ColFunctionRow3   &ug ColFunctionRow3   &ug ColFunctionRow3   &ug ColFunctionRow3                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <FUNCTIONS>;
 		};
 		
 		IcelandicKeys {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ___   &ug ColLayer                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                        		  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ColIce    &ug ColIce   &ug ColIce   &ug ___                                        		  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ColIce    &ug ColIce   &ug ColIce   &ug ___                                        		  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColIceRows34  &ug ColIceRows34  &ug ColIceRows34    &ug ColIceRows34   &ug ColIceRows34   &ug ColIceRows34                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColIceRows34  &ug ColIceRows34  &ug ColIceRows34    &ug ColIceRows34   &ug ColIceRows34   &ug ColIceRows34                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <ICE>;
 		};
 		
 		Joker {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ColLayer   &ug ___   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <JOKER>;
 		};
 		
 		EDI {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ColLayer   &ug ___   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <EDI>;
 		};
 		
 		Mouse {
 			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ColLayer   &ug ColLayer                                                              &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ColMouse   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ColMouse     &ug ColMouse   &ug ColMouse   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ColMouse &ug ___ &ug ColMouse
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ColMouse &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ColMouse &ug ColMouse      &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColMouseBaseRow6  &ug ColMouseBaseRow6 &ug ColMouseBaseRow6     &ug ColMouseBaseRow6   &ug ColMouseBaseRow6           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <MOUSE>;
 		};
 		
 		MouseSlow {
 			bindings = <
-			&ug ColLayer &ug ___ &ug ___   &ug ColLayer   &ug ColLayer                                                            &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                             &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___    &ug ColSlow   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColSlow    &ug ColSlow   &ug ColSlow   &ug ___                                             &ug ___ &ug ___   &ug ___   &ug ColSlow &ug ___ &ug ColSlow
-			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ColSlow &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ColSlow &ug ColSlow      &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                             &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                             &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColMouseSlowRow6 &ug ColMouseSlowRow6 &ug ColMouseSlowRow6    &ug ColMouseSlowRow6   &ug ColMouseSlowRow6           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <MOUSE_SLOW>;
 		};
 		
 		MouseWarp {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ___   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___    &ug ColWarp   &ug ___   &ug ___                                         &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ColWarp    &ug ColWarp   &ug ColWarp   &ug ___                                         &ug ___ &ug ___   &ug ___   &ug ColWarp &ug ___ &ug ColWarp
-			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ColWarp &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ColWarp &ug ColWarp      &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___ &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColMouseWarpRow6  &ug ColMouseWarpRow6 &ug ColMouseWarpRow6    &ug ColMouseWarpRow6   &ug ColMouseWarpRow6           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <MOUSE_WARP>;
 		};
 		
 		MouseFast {
 			bindings = <
-			&ug ColLayer &ug ColLayer &ug ___   &ug ColLayer   &ug ___                                                                    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ColFast   &ug ___   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ColFast    &ug ColFast   &ug ColFast   &ug ___                                       &ug ___ &ug ___   &ug ___   &ug ColFast &ug ___ &ug ColFast
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ColFast &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ColFast &ug ColFast      &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColMouseFastRow6 &ug ColMouseFastRow6  &ug ColMouseFastRow6    &ug ColMouseFastRow6   &ug ColMouseFastRow6           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <MOUSE_FAST>;
 		};
 		
 		MouseSwitcher {
 			bindings = <
-			&ug ___ &ug ___ &ug ColLayer   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ColMouse &ug ___   &ug ___                                                  &ug ___ &ug ___   &ug ColMouse &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ColMouse &ug ColMouse &ug ColMouse &ug ___                                                  &ug ___ &ug ColMouse &ug ColMouse &ug ColMouse &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ColMouse &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug ___ &ug ColMouse &ug ___  &ug ___ &ug ColMouse &ug ___         &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ColMouseSwitchRow6 &ug ColMouseSwitchRow6 &ug ColMouseSwitchRow6   &ug ColMouseSwitchRow6   &ug ColMouseSwitchRow6           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <MOUSE_SWITCHER>;
 		};
 		
 		MoergoMagic {
 			bindings = <
-			&ug ___ &ug ColLayer &ug ColLayer   &ug ColLayer   &ug ColLayer                                                          &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___     &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___     &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <MAGIC>;
 		};
