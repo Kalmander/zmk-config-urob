@@ -394,8 +394,8 @@
 			&none     &none      &none           &kp LC(X)       &none            &none                                                                                                  &none      &kp LGUI        &kp LSHFT       &kp LALT           &none     &none
 			&none     &to BASE   &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &kp LC(TAB)                                                                                            &kp LCTRL  &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
 			&none     &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                                              &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
-			&none     &none      &to BASE        &none           &none            &to BASE  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none               &none              &none      &mkp MCLK &none      &none           &none           &to BASE        &none     &none
-			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP     &to MOUSE_SWITCHER  &to MOUSE_SWITCHER &mkp RCLK  &mkp LCLK            &none           &none           &none           &none     &none
+			&none     &none      &to BASE        &none           &none            &to BASE  &msc SCRL_LEFT  &to BASE  &msc SCRL_RIGHT &to BASE            &none      &mkp MCLK &none      &none           &none           &to BASE        &none     &none
+			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP              &to MOUSE_SWITCHER  &to MOUSE_SWITCHER &mkp RCLK  &mkp LCLK            &none           &none           &none           &none     &none
 			
 			>;
 		};
