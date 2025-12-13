@@ -376,13 +376,13 @@
 		};
 
 
-		sqt_nex: sqt_nex {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&kp SQT>, <&sl NEXUS_OVER>;
-		};
+		/* sqt_nex: sqt_nex { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&kp SQT>, <&sl NEXUS_OVER>; */
+		/* }; */
 		
 		/* sk_sh_o: sticky_shift_with_overlay { */
 			/* 	compatible = "zmk,behavior-macro"; */

@@ -349,18 +349,6 @@
 			layer-id = <NEXUS>;
 		};
 		
-		NexusOverlay {
-			bindings = <
-			&ug ColNexusRow1 &ug ColNexusRow1 &ug ColNexusRow1   &ug ColNexusRow1   &ug ColNexusRow1                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___  &ug ___      &ug ___     &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <NEXUS_OVER>;
-		};
-		
 		BaseNexus {
 			bindings = <
 			&ug ColBaseNexusRow1 &ug ColBaseNexusRow1 &ug ColBaseNexusRow1   &ug ColBaseNexusRow1   &ug ColBaseNexusRow1                                                           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
