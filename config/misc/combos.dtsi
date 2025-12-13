@@ -274,6 +274,7 @@
 	combos {
 		compatible = "zmk,combos";
 		
+		#define COMBO_TIMEOUT_BRIEF 20
 		#define COMBO_TIMEOUT 60
 		
 		/* combo_guiword { */
@@ -372,7 +373,7 @@
 		};
 
 		combo_adot {
-			timeout-ms = <COMBO_TIMEOUT>;
+      timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 			key-positions = <LM1 LM2>;
 			bindings = <&combo_adot_macro>;
