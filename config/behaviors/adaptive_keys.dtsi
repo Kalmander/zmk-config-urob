@@ -83,7 +83,6 @@
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
-			ak_wf { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp F>; };
 			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
 
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
@@ -94,12 +93,10 @@
       /* en er með nl, dg, gd uppi samt, vil ekki tvítaka þau */
       /* (og er með td og bn uppi líka svo t og b eru báðu megin) */
 
-      /* Held ég shit hugmynd en skoðum það */
-			/* ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
-
-
 			ak_ck { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 			ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			ak_wk { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
 		};
 
