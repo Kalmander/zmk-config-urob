@@ -98,7 +98,8 @@
 			/* ak_pr { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp R>; }; */
 
 
-			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_ck { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
 		};
 
