@@ -277,6 +277,13 @@
 		};
 
 
+		ater: a_or_enter {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&hml LGUI A>;
+			ak_knexus { trigger-keys = <DOT>; max-prior-idle-ms = <600>; bindings = <&kp ENTER>; };
+		};
+
 		dot_shift: dot_shift {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
