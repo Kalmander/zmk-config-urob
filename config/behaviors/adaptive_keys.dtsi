@@ -262,7 +262,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk RSHFT>;
 			repeat {
-				trigger-keys = <D K P L X Z>;
+				trigger-keys = <D P L X Z>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
@@ -270,6 +270,14 @@
 
 			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; };
 		};
+
+		cancel_or_nexus: cancel_or_nexus {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp K_CANCEL>;
+			ak_knexus { trigger-keys = <K>; max-prior-idle-ms = <800>; bindings = <&sl NEXUS>; };
+		};
+
 
 		dot_shift: dot_shift {
 			compatible = "zmk,behavior-adaptive-key";

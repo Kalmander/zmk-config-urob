@@ -531,12 +531,12 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 
-		combo_rk {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <RH1 RH2>;
-			bindings = <&combo_rk_macro>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_rk { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <RH1 RH2>; */
+		/* 	bindings = <&combo_rk_macro>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 
 		/* combo_rk_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
