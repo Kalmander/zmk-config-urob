@@ -98,7 +98,7 @@
 		nexus_autolayer: nexus_autolayer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <STAR HASH CARET AMPS PRCNT LPAR RPAR DQT BSLH QMARK COMMA DOT SQT EXCL SEMI COLON BACKSPACE UNDER>;
+			continue-list = <GRAVE TILDE PIPE STAR HASH CARET AMPS PRCNT LPAR RPAR LBRC RBRC LBKT RBKT DQT BSLH QMARK COMMA DOT SQT EXCL SEMI COLON BACKSPACE UNDER>;
 			ignore-modifiers;
 		};
 
