@@ -63,7 +63,7 @@
 	// Nexus row-1 accents
 	#define Nex       0x5ad1ff
 	#define ColNexusOverlayRow1 0xffb347
-	#define Tabber    0xb3a1ff
+	#define Tabber    0x1ec912
 	
 	// Num row-2 accents (distinct from Nexus palette)
 	/* #define Num     0xff4da6 */
