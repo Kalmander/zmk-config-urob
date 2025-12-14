@@ -262,7 +262,7 @@
 			&none     &to BASE    &kp LT     &kpcb N1    &kp GT      &kp CARET                                                                         &kp PLUS     &kp LPAR   &kpcb N0       &kp RPAR   &none      &none 
 			&tabbase  &spacebase  &kpcb N2     &kpcb N3    &kpcb N4      &_dot                                                                             &kp FSLH     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
 			&none     &kp PRCNT   &none      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp EQUAL  &kp MINUS    &none      &none      &none 
-			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kp kpcb   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
+			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
