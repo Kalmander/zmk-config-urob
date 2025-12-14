@@ -73,12 +73,12 @@
 		Typing {
 			bindings = <
 			
-			&scrup_fast      &scrdn_fast     &scrup_slow   &scrdn_slow    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN  &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &kp BSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kp V         &kp MINUS    &kp RIGHT      &_dot
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN  &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &sk LCTRL      &mpcaps                                                                                         &mpcaps        &kp K     &kp V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X          &sk LC(LSHIFT)
-			&kp DQT          &adaptive       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp DOT                                                                                         &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp SQT
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &none         &sl FUNCTIONS   &none        &kp K         &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl            &numr         &hmr LCTRL S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			&kp DQT          &adaptive       &kp I   &kp E  &kp A          &kp DOT                                                                                         &thorn_eth     &kp H  &kp T &kp N  &kp P          &kp SQT
+			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &cancel_or_nexus &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kp C  &numl           &numr         &kp S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
 			>;
 		};
@@ -221,7 +221,7 @@
 			&kp LBKT  &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                       &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
 			&none     &to BASE    &kp LT     &kp N1    &kp GT      &kp CARET                                                                         &kp PLUS     &kp LPAR   &kp N0       &kp RPAR   &none      &none 
 			&tabbase  &spacebase  &kp N2     &kp N3    &kp N4      &_dot                                                                             &kp FSLH     &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI 
-			&kp TAB   &kp PRCNT   &to BASE   &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &sbase   &to BASE   &kp DOLLAR   &kp LBRC     &kp EQUAL  &kp MINUS    &to BASE  &kp RBRC   &none 
+			&none     &kp PRCNT   &none      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp EQUAL  &kp MINUS    &none      &none      &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -261,8 +261,8 @@
 			&kp LBKT  &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                       &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
 			&none     &to BASE    &kp LT     &kpcb N1    &kp GT      &kp CARET                                                                         &kp PLUS     &kp LPAR   &kpcb N0       &kp RPAR   &none      &none 
 			&tabbase  &spacebase  &kpcb N2     &kpcb N3    &kpcb N4      &_dot                                                                             &kp FSLH     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
-			&kp TAB   &kp PRCNT   &to BASE   &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &sbase   &to BASE   &kp DOLLAR   &kp LBRC     &kp EQUAL  &kp MINUS    &to BASE  &kp RBRC   &none 
-			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
+			&none     &kp PRCNT   &none      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp EQUAL  &kp MINUS    &none      &none      &none 
+			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kp kpcb   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
@@ -271,12 +271,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                     &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                &trans     &kp FSLH   &kp STAR   &trans     &f_lock  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &basecaps                                                                             &basecaps  &kp RBKT   &kp S      &kp R      &trans  &trans
-			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                              &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
-			&kp PIPE  &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp DELETE &kp TAB    &base_dot  &mouse     &trans &trans
-			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI                 &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                  &trans     &trans     &trans     &trans  &trans
+			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                             &trans     &kp FSLH   &kp STAR   &trans     &f_lock  &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &basecaps                                                                          &basecaps  &kp RBKT   &kp S      &kp R      &trans  &trans
+			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
+			&kp PIPE  &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp TAB    &base_dot  &mouse     &trans &trans
+			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
 			
 			>;
 		};
@@ -325,11 +325,11 @@
 			bindings = <
 			
 			&none  &none  &none     &none      &none                                                                                            &kp F13  &kp F14  &kp F15  &none  &none
-			&none  &none  &none     &none      &none     &none                                                                      &none       &kp F10  &kp F11  &kp F12  &none  &none
+			&none  &none  &none     &none      &none     &none                                                                      &kp SLCK    &kp F10  &kp F11  &kp F12  &none  &none
 			&none  &to BASE &none   &none      &none     &none                                                                      &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
 			&none  &none  &kp LALT  &kp LSHIFT &kp LGUI  &none                                                                      &kp CAPS    &kp F4   &kp F5   &kp F6   &none  &none
-			&none  &none  &to BASE  &kp RSHIFT &kp LCTRL &none   &none  &to BASE &none   &kp C_BRI_DN  &to BASE      &kp C_BRI_UP  &kp SLCK    &kp F1   &kp F2   &kp F3   &none  &to TYPING
-			&none  &none  &none     &none      &none             &none  &none  &none     &kp C_MUTE    &volume_down  &volume_up                &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE    &none  &to JOKER
+			&none  &none  &none     &kp RSHIFT &kp LCTRL &none   &none  &to BASE &none   &kp C_BRI_DN  &to BASE      &kp C_BRI_UP   &to BASE    &kp F1   &kp F2   &kp F3   &none  &to TYPING
+			&none  &none  &none     &none      &none             &none  &none  &none     &kp C_MUTE    &volume_down  &volume_up                 &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE    &none  &to JOKER
 			
 			>;
 		};
@@ -380,7 +380,7 @@
 			&none     &none      &none           &kp LC(X)       &none            &none                                                                                                  &none      &kp LGUI        &kp LSHFT       &kp LALT           &none     &none
 			&none     &to BASE   &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &kp LC(TAB)                                                                                            &kp LCTRL  &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
 			&none     &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                                              &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
-			&none     &none      &to BASE        &none           &none            &none     &msc SCRL_LEFT  &to BASE  &msc SCRL_RIGHT &none               &to BASE      &mkp MCLK &none      &none           &none           &to BASE        &none     &none
+			&none     &none      &none           &none           &none            &none     &msc SCRL_LEFT  &to BASE  &msc SCRL_RIGHT &none               &to BASE      &mkp MCLK &none      &to BASE           &none           &none           &none     &none
 			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP              &to MOUSE_SWITCHER  &to MOUSE_SWITCHER &mkp RCLK  &mkp LCLK            &none           &none           &none           &none     &none
 			
 			>;
@@ -455,11 +455,11 @@
 			bindings = <
 			
 			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN  &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp MINUS     &kpdot Q          &kp FSLH       &mpcaps                                                                                         &mpcaps        &kp BSLH     &kpdot V         &kp MINUS    &kp RIGHT      &_dot
+			&kp LBKT         &kp RBKT        &kp MINUS     &kpdot Q          &sk LCTRL      &mpcaps                                                                                         &mpcaps        &kpdot K     &kpdot V         &kp MINUS    &kp RIGHT      &_dot
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                   &rshift_repeat &kpdot F        &kpdot D         &kpdot L        &kpdot X          &sk LC(LSHIFT)
-			&kp DQT          &adaptive       &kpdot I   &kpdot E  &kpdot A    &kp DOT                                                                                         &thorn_eth     &kpdot H  &kpdot T &kpdot N  &kpdot P          &kp SQT
-			&kpdot Z            &sl ICE         &kpdot RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &kp K_CANCEL &kpdot K         &kpdot R      &kpdot M          &kpdot W        &kpdot G         &kpdot B        &kpdot J          &kpdot L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl            &numr         &kpdot S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			&kp DQT          &adaptive       &kpdot I   &kpdot E  &kpdot A          &kp DOT                                                                                         &thorn_eth     &kpdot H  &kpdot T &kpdot N  &kpdot P          &kp SQT
+			&kpdot Z            &sl ICE         &kpdot RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &cancel_or_nexus &kpdot R      &kpdot M          &kpdot W        &kpdot G         &kpdot B        &kpdot J          &kpdot L
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
