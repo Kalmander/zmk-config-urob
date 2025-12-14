@@ -78,7 +78,7 @@
 			ak_thorn_eth12 { trigger-keys = <MINUS>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth13 { trigger-keys = <UNDERSCORE>; bindings = <&kp RA(T)>; };
 
-			 ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; 
+			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; 
 			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
@@ -88,14 +88,19 @@
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
-      /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ*/
+      /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ, HÐ */
       /* Þar með ætti að vera í lagi að hafa þau hér,  */
       /* en er með nl, dg, gd uppi samt, vil ekki tvítaka þau */
       /* (og er með td og bn uppi líka svo t og b eru báðu megin) */
 
 			ak_ck { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
-			ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
-			ak_wk { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			/* ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
+			/* ak_wk { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
+
+			ak_hj { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_sj { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			/* ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+
 
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
 		};
