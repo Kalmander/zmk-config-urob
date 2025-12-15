@@ -61,9 +61,9 @@
 			bindings = <
 			
 			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                  &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kp V          &kp Z        &none          &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
-			&kp SQT          &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &adaptive                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P          &kp DQT
+			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kp V          &kp Z        &none          &none
+			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &sk LC(LSHIFT)
+			&kp SQT          &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &adaptive                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
 			&kp RA(P)        &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
 			
@@ -181,7 +181,7 @@
 			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &nav_alt    &trans  &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&vimigation  &pagigaiton  &kp DQT &trans  &kp ENTER  &nav_guictrl    &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&vimigation  &pagigaiton  &kp ESC &trans  &kp ENTER  &nav_guictrl    &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &cskgui                    &kp TAB          &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
@@ -260,7 +260,7 @@
 			&none     &none       &none      &none     &none                                                                                         &none        &none      &none        &none      &none 
 			&kp LBKT  &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                       &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
 			&none     &to BASE    &kp LT     &kpcb N1    &kp GT      &kp CARET                                                                         &kp PLUS     &kp LPAR   &kpcb N0       &kp RPAR   &none      &none 
-			&none     &tabbase    &kpcb N2   &kpcb N3    &kpcb N4      &spacebase                                                                             &kp FSLH     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
+			&none     &tabbase    &kpcb N2   &kpcb N3    &kpcb N4      &kp FSLH                                                                             &spacebase     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
 			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp EQUAL  &kp MINUS    &none      &none      &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			

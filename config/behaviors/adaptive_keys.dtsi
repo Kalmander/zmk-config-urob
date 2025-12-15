@@ -6,7 +6,8 @@
 			#binding-cells = <0>;
 			bindings = <&kp RA(Z)>;
 
-			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; };
+			ak_idot { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+			/* ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; }; */
 			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
 			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
 			ak_oe { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp E>; };
