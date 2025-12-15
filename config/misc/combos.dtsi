@@ -6,7 +6,15 @@
 			bindings = <&two_kps SPACE C>, <&two_kps SPACE LS(C)>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
-		
+
+		combo_cspace_macro: combo_cspace_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps C SPACE>, <&two_kps LS(C) SPACE>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+
 		combo_au_macro: combo_au_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
@@ -78,6 +86,14 @@
 		/* 	tap-ms = <0>; */
 		/* 	bindings = <&kp K &sqt_nex>; */
 		/* }; */
+
+		combo_5spacebase_macro: combo_5spacebase_macro {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp N5 &spacebase>;
+		};
 
 		dqt_shift: dqt_shift {
 			compatible = "zmk,behavior-macro";
@@ -312,12 +328,26 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		/* combo_spacec { */
+		combo_cspace {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LH5 LH4>;
+			bindings = <&combo_cspace_macro>;
+			layers = <BASE TYPING>;
+		};
+
+		/* combo_5space { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <LH5 LH4>; */
-		/* 	bindings = <&combo_spacec_macro>; */
-		/* 	layers = <BASE TYPING>; */
+		/* 	bindings = <&two_kps N5 SPACE>; */
+		/* 	layers = <NUM_WORD_PLUS NUM_WORD_STICKY_R NUM_WORD_STICKY_L NUM_WORD_MODDED>; */
 		/* }; */
+
+		combo_5spacebase {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LH5 LH4>;
+			bindings = <&combo_5spacebase_macro>;
+			layers = <NUM_WORD_PLUS NUM_WORD_STICKY_R NUM_WORD_STICKY_L NUM_WORD_MODDED>;
+		};
 
 		combo_rs {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -492,12 +522,12 @@
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 
-		/* combo_ks { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* 	key-positions = <RH1 RH4>; */
-		/* 	bindings = <&combo_ks_macro>; */
-		/* 	layers = <BASE TYPING>; */
-		/* }; */
+		combo_ks {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH1 RH4>;
+			bindings = <&combo_ks_macro>;
+			layers = <BASE TYPING>;
+		};
 
 		/* combo_sk { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
