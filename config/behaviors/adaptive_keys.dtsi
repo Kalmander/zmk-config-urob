@@ -17,18 +17,20 @@
 			/* ak_ao { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp O>; }; */
 			/* ak_oa { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp A>; }; */
 
-			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_underspace { trigger-keys = <UNDER>; max-prior-idle-ms = <600>; bindings = <&kp SPACE>; };
-			ak_0space { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_1space { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_2space { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_3space { trigger-keys = <N3>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_4space { trigger-keys = <N4>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_5space { trigger-keys = <N5>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_6space { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_7space { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_8space { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
-			ak_9space { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_ww { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp W>; };
+
+			/* ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_underspace { trigger-keys = <UNDER>; max-prior-idle-ms = <600>; bindings = <&kp SPACE>; }; */
+			/* ak_0space { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_1space { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_2space { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_3space { trigger-keys = <N3>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_4space { trigger-keys = <N4>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_5space { trigger-keys = <N5>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_6space { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_7space { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_8space { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
+			/* ak_9space { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; }; */
 				
 			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			/* ak_dv { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp V>; }; */
@@ -96,7 +98,6 @@
 
 			/* ak_ck { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 			/* ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
-			/* ak_wk { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 
 			/* ak_hj { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
 			/* ak_sj { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
@@ -105,6 +106,7 @@
 
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
 
+			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; strict-modifiers; bindings = <&kp SPACE>; };
 			ak_n0space { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 			ak_n1space { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 			ak_n2space { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
@@ -262,7 +264,6 @@
 			bindings = <&sk LSHFT>;
 			repeat {
 				trigger-keys = <G B J AT>; /* Aaaahg held B virki ekki í vim */
-				/* trigger-keys = <G J X AT>; */
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
