@@ -60,12 +60,12 @@
 		Base {
 			bindings = <
 			
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN  &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &sk LCTRL      &key_repeat                                                                                         &key_repeat        &kp Z        &kp V         &kp MINUS    &kp RIGHT      &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &none          &none
-			&adaptive        &kp SQT       &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                        &thorn_eth     &hmr RGUI H  &hmr RSHIFT T &hmr LALT N  &kp P          &kp DQT
-			&kp RA(P)        &sl ICE         &kp DOT       &aunav         &kp COMMA      &kp W          &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL &kp R      &kp G          &kp M        &kp K         &kp B        &kp J          &kp X
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                        &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                          &key_repeat    &none        &kp V          &kp Z        &none          &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                        &rshift_repeat &kp F        &kp D          &lorshift    &none          &none
+			&adaptive        &kp SQT         &hml LALT I   &hml LSHIFT E  &hml LGUI A    &kp BACKSPACE                                                                                        &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P          &kp DQT
+			&kp RA(P)        &sl ICE         &kp DOT       &aunav         &kp COMMA      &kp W          &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R           &kp G          &kp M        &kp K          &kp B        &kp J          &kp X
+      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                      &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
 		};
