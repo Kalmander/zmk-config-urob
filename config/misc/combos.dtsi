@@ -456,12 +456,12 @@
 			layers = <BASE TYPING>;
 		};
 
-		/* combo_gt { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* 	key-positions = <RM3 RB3>; */
-		/* 	bindings = <&combo_gt_macro>; */
-		/* 	layers = <BASE TYPING>; */
-		/* }; */
+		combo_gt {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RM3 RB3>;
+			bindings = <&combo_gt_macro>;
+			layers = <BASE TYPING>;
+		};
 
 		/* combo_gt_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
