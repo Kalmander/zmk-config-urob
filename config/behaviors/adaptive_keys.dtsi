@@ -104,6 +104,17 @@
 
 
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
+
+			ak_n0space { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n1space { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n2space { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n3space { trigger-keys = <N3>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n4space { trigger-keys = <N4>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n5space { trigger-keys = <N5>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n6space { trigger-keys = <N6>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n7space { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n8space { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_n9space { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 		};
 
 		thorn_eth: thorn_eth {
