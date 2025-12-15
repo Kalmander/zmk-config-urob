@@ -402,13 +402,13 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		/* combo_wh { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */ 
-		/* 	key-positions = <RM2 RB2>; */
-		/* 	bindings = <&combo_wh_macro>; */
-		/* 	layers = <BASE TYPING>; */
-		/* }; */
+		combo_wh {
+			timeout-ms = <COMBO_TIMEOUT>;
+		key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
+			key-positions = <RM2 RB2>;
+			bindings = <&combo_wh_macro>;
+			layers = <BASE TYPING>;
+		};
 
 		/* combo_adot { */
 		/*     timeout-ms = <COMBO_TIMEOUT>; */
