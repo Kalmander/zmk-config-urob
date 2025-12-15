@@ -181,7 +181,7 @@
 			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &nav_alt    &trans  &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&vimigation  &pagigaiton  &kp ESC &trans  &kp ENTER  &nav_guictrl    &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&vimigation  &pagigaiton  &kp FSLH &trans  &kp ENTER  &nav_guictrl    &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &cskgui                    &kp TAB          &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
@@ -220,8 +220,8 @@
 			&none     &none       &none      &none     &none                                                                                         &none        &none      &none        &none      &none 
 			&kp LBKT  &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                       &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
 			&none     &to BASE    &kp LT     &kp N1    &kp GT      &kp CARET                                                                         &kp PLUS     &kp LPAR   &kp N0       &kp RPAR   &none      &none 
-			&none     &tabbase    &kp N2     &kp N3    &kp N4      &kp FSLH                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI 
-			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE   &kp EQUAL  &kp MINUS    &none      &none      &none 
+			&none     &tabbase    &kp N2     &kp N3    &kp N4      &spacebase                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI 
+			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE   &kp EQUAL  &kp MINUS    &kp FSLH      &none      &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -260,8 +260,8 @@
 			&none     &none       &none      &none     &none                                                                                         &none        &none      &none        &none      &none 
 			&kp LBKT  &kp RBKT    &minusbase &kp HASH  &none       &kpcb LS(G)                                                                       &kpcb LS(G)  &kp BSLH   &kp STAR     &minusbase &none      &none 
 			&none     &to BASE    &kp LT     &kpcb N1    &kp GT      &kp CARET                                                                         &kp PLUS     &kp LPAR   &kpcb N0       &kp RPAR   &none      &none 
-			&none     &tabbase    &kpcb N2   &kpcb N3    &kpcb N4      &kp FSLH                                                                             &spacebase     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
-			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp EQUAL  &kp MINUS    &none      &none      &none 
+			&none     &tabbase    &kpcb N2   &kpcb N3    &kpcb N4      &spacebase                                                                             &spacebase     &kpcb N7     &kpcb N8       &kpcb N9     &kp COLON  &kp SEMI 
+			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp EQUAL  &kp MINUS    &kp FSLH      &none      &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                   &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
