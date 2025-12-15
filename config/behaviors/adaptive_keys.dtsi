@@ -293,7 +293,7 @@
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&navigation>;
-			ak_knexus { trigger-keys = <A>; max-prior-idle-ms = <800>; bindings = <&kp U>; };
+			ak_knexus { trigger-keys = <A>; max-prior-idle-ms = <600>; bindings = <&kp U>; };
 		};
 
 		ater: a_or_enter {

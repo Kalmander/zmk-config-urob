@@ -12,6 +12,11 @@ parse_config:
     # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
     "&pcapsword": Dotted Caps Word
     "&ctrl_lock": Ctrl Lock
+    "&aunav": Nav Word (au)
+    "&lorshift": L (Shift)
+    "&jl": J (L)
+    "&eter": E LSHIFT (Enter)
+    "&shift_repeat": Shift Repeat
     "&jl": J (L)
     "&eter": E LSHIFT (Enter)
     "&shift_repeat": Shift Repeat

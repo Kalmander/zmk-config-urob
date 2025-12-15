@@ -291,7 +291,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(868, 140)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">K</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">L</tspan><tspan x="0" dy="1.2em">(Shift)</tspan>
+</text>
 </g>
 <g transform="translate(924, 168)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -374,7 +376,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(196, 252)" class="key keypos-49">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;aunav</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Nav</tspan><tspan x="0" dy="1.2em">Word</tspan><tspan x="0" dy="1.2em">(au)</tspan>
+</text>
 </g>
 <g transform="translate(252, 252)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -382,7 +386,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(308, 252)" class="key keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">W</text>
+<text x="0" y="0" class="key tap">K</text>
 </g>
 <g transform="translate(371, 312) rotate(30.0)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -418,7 +422,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(756, 252)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">L</text>
+<text x="0" y="0" class="key tap">W</text>
 </g>
 <g transform="translate(812, 252)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -430,11 +434,13 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(924, 280)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">J</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">J</tspan><tspan x="0" dy="1.2em">(L)</tspan>
+</text>
 </g>
 <g transform="translate(980, 280)" class="key keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">F</text>
+<text x="0" y="0" class="key tap">J</text>
 </g>
 <g transform="translate(28, 336)" class="key keypos-64">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -9359,13 +9365,27 @@ path.combo { stroke: #7f7f7f; }
 </text>
 </g>
 <g class="combo combopos-4">
+<rect rx="6" ry="6" x="742" y="211" width="28" height="26" class="combo"/>
+<text x="756" y="224" class="combo tap">
+<tspan x="756" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="756" dy="1.2em" style="font-size: 88%">…</tspan>
+</text>
+<text x="756" y="213" class="combo shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="714" y="239" width="28" height="26" class="combo"/>
+<text x="728" y="252" class="combo tap">
+<tspan x="728" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="728" dy="1.2em" style="font-size: 88%">…</tspan>
+</text>
+<text x="728" y="241" class="combo shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+</g>
+<g class="combo combopos-7">
 <rect rx="6" ry="6" x="798" y="99" width="28" height="26" class="combo"/>
 <text x="812" y="112" class="combo tap">
 <tspan x="812" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="812" dy="1.2em" style="font-size: 88%">…</tspan>
 </text>
 <text x="812" y="101" class="combo shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-8">
 <rect rx="6" ry="6" x="651" y="316" width="28" height="26" class="combo"/>
 <text x="665" y="329" class="combo tap">
 <tspan x="665" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="665" dy="1.2em" style="font-size: 88%">…</tspan>
