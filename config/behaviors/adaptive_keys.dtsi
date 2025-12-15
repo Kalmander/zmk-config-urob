@@ -85,7 +85,8 @@
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 
-			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+			ak_nk { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
 
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
       /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ, HÐ */
