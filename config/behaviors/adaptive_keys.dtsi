@@ -78,15 +78,15 @@
 			ak_thorn_eth12 { trigger-keys = <MINUS>; bindings = <&kp RA(T)>; };
 			ak_thorn_eth13 { trigger-keys = <UNDERSCORE>; bindings = <&kp RA(T)>; };
 
-			/* ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };  */
-			/* ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; }; */
+			ak_bl { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; 
+			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
 			/* ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 
-			/* ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
-			ak_nk { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
+			/* ak_nk { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 
       /* Skv BÍN koma eftirfarandi pör aldrei fyrir: */
       /* LÐ, BÐ, PÐ, TÐ, KÐ, SÐ, DÐ, NÐ, HÐ */
@@ -100,7 +100,7 @@
 
 			/* ak_hj { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
 			/* ak_sj { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
-			ak_kn { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
+			/* ak_kn { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp N>; }; */
 
 
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
