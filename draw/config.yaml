@@ -12,6 +12,8 @@ parse_config:
     # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
     "&pcapsword": Dotted Caps Word
     "&ctrl_lock": Ctrl Lock
+    "&jl": J (L)
+    "&eter": E LSHIFT (Enter)
     "&shift_repeat": Shift Repeat
     "&rshift_repeat": RShift Repeat
     "&to UNIC_LAYER": Unicode Layer
@@ -64,7 +66,9 @@ parse_config:
     "&kp RA(T)": Þ
     "&key_repeat": Repeat
     "&numword_autolayer NUM_WORD": Num Word
-    "&adaptive": Adapt
+    "&adaptive": Æ Adapt
+    "&numsl": Num
+    "&numsr": Num
     "&adaptive_up": ↑ (ak)
     "&ad_up": ↑ (ak)
     "&magic MAGIC BASE": Magic

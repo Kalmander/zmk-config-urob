@@ -83,7 +83,7 @@
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; };
-			ak_kj { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 
@@ -93,13 +93,13 @@
       /* en er með nl, dg, gd uppi samt, vil ekki tvítaka þau */
       /* (og er með td og bn uppi líka svo t og b eru báðu megin) */
 
-			ak_ck { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp K>; };
+			/* ak_ck { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 			/* ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 			/* ak_wk { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 
-			ak_hj { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
-			ak_sj { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
-			/* ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+			/* ak_hj { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
+			/* ak_sj { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
+			ak_kn { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 
 
 			ak_xp { trigger-keys = <X>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
@@ -265,13 +265,13 @@
 			#binding-cells = <0>;
 			bindings = <&sk RSHFT>;
 			repeat {
-				trigger-keys = <D P L X Z>;
+				trigger-keys = <D K P L X Z LS(Z)>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
 			};
 
-			ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; };
+			/* ak_eq { trigger-keys = <E>; max-prior-idle-ms = <600>; bindings = <&kp Q>; }; */
 		};
 
 		cancel_or_nexus: cancel_or_nexus {
@@ -281,12 +281,39 @@
 			ak_knexus { trigger-keys = <K>; max-prior-idle-ms = <800>; bindings = <&sl NEXUS>; };
 		};
 
+		aunav: navword_or_au {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&navigation>;
+			ak_knexus { trigger-keys = <A>; max-prior-idle-ms = <800>; bindings = <&kp U>; };
+		};
 
 		ater: a_or_enter {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&hml LGUI A>;
 			ak_knexus { trigger-keys = <DOT>; max-prior-idle-ms = <600>; bindings = <&kp ENTER>; };
+		};
+
+		eter: e_or_enter {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&hml LSHIFT E>;
+			ak_knexus { trigger-keys = <DOT>; max-prior-idle-ms = <600>; bindings = <&kp ENTER>; };
+		};
+
+		gx: g_or_x {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp X>;
+			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
+		};
+
+		jl: j_or_l {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp J>;
+			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
 		};
 
 		dot_shift: dot_shift {
