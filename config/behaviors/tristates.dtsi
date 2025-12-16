@@ -64,6 +64,7 @@
 				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <LB3 LB2>;
 				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+        timeout-ms = <1000>;
 		};
 
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
@@ -73,6 +74,7 @@
 				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <LB3 LB2>;
 				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+        timeout-ms = <1000>;
 		};
 		enters: enters {
 			compatible = "zmk,behavior-mod-morph";
