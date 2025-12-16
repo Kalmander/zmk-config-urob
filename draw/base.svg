@@ -2855,7 +2855,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(252, 252)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;enters</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;enters_no…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;shift_ent…</tspan></text>
 </g>
 <g transform="translate(308, 252)" class="key keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -2917,7 +2918,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(314, 347) rotate(20.0)" class="key keypos-69">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;tabs</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tabs_norm…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;shift_tabs</tspan></text>
 </g>
 <g transform="translate(369, 379) rotate(40.0)" class="key keypos-70">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5463,7 +5465,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(252, 252)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;enters</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;enters_no…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;shift_ent…</tspan></text>
 </g>
 <g transform="translate(308, 252)" class="key trans keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -5527,7 +5530,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(314, 347) rotate(20.0)" class="key keypos-69">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;tabs</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;tabs_norm…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;shift_tabs</tspan></text>
 </g>
 <g transform="translate(369, 379) rotate(40.0)" class="key trans keypos-70">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

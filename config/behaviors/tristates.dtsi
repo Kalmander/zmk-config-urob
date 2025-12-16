@@ -58,7 +58,7 @@
 		};
 
 
-		enters: enter_stick {
+		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
@@ -66,12 +66,41 @@
 				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
 		};
 
-		tabs: tab_stick {
+    /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
+		shift_enters: shift_enter_stick {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
+				ignored-key-positions = <LB3 LB2>;
+				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+		};
+		enters: enters {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&enters_normal>, <&shift_enters>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		tabs_normal: tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp TAB>, <&to BASE>;
 				ignored-key-positions = <LB3 LH1>;
 				ignored-layers = <TABBER>;
+		};
+
+		shift_tabs: shift_tab_stick {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>;
+				ignored-key-positions = <LB3 LH1>;
+				ignored-layers = <TABBER>;
+		};
+		tabs: tabs {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&tabs_normal>, <&shift_tabs>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		/* cskctrl: cskctrl { */
