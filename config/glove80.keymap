@@ -30,7 +30,7 @@
 #define NUM_WORD_MODDED 16
 #define NEXUS 17
 #define TABBER 18
-#define OVERMODS 19
+#define ENTERER 19
 #define FUNCTIONS 20
 #define ICE 21
 #define JOKER 22
@@ -178,12 +178,12 @@
 		NavWordSwitcher {
 			bindings = <
 			
-			&trans  &trans       &trans      &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &kp U    &trans  &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&vimigation  &pagigaiton  &kp FSLH &trans  &kp ENTER  &nav_guictrl    &nav_alt  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &trans      &trans  &cskgui                    &kp TAB          &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
+			&vim    &pag    &kp FSLH  &trans  &enters   &nav_guictrl    &nav_alt  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &sk LGUI                  &tabs     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
@@ -304,26 +304,13 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ctrl_w  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &cs_pgup  &cs_pgdn          &trans  &trans  &trans  &trans  &trans  &trans          &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &enters  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &ctrl_w  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &cs_pgup  &cs_pgdn          &tabs  &trans  &trans  &trans  &trans  &trans          &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
 
-		/* BaseNexus { */
-		/* 	bindings = < */
-		/**/
-		/* 	&mmv MOVE_LEFT  &mmv MOVE_DOWN   &mouse_slow   &msc SCRL_UP    &mouse_slow                                                                                                           &mouse_fast  &msc SCRL_DOWN  &mouse_fast   &mmv MOVE_UP  &mmv MOVE_RIGHT */
-		/* 	&kpn LBKT        &kpn RBKT         &kpn MINUS     &kpn Q           &kpn UNDER      &lh_repeat                                                                                      &rh_repeat  &kpn B  &kpn V           &kpn B         &kpn RIGHT     &kpn DELETE */
-		/* 	&pcapsword      &capsword        &kpn Y         &kpn O           &kpn U          &sk LSHIFT                                                                                      &kpn F  &kpn K        &kpn D           &kpn L         &capsword     &pcapsword */
-		/* 	&kpn Z           &adaptive        &kpn I   &kpn E   &kpn A    &kpn ENTER                                                                                       &kpn W  &kpn H  &kpn T   &kpn N   &kpn RA(D)     &kpn X */
-		/* 	&kpn RA(Z)       &sl ICE          &kpn RA(P)     &navigation     &kpn BACKSPACE  &kpn K_CANCEL  &sl SYMBOL  &kpn TAB       &_dot            &kpn RIGHT      &kpn TAB       &kpn R      &kpn P  &kpn M        &kpn G           &kpn J         &kpn RA(T)     &sk RSHIFT */
-		/*     &magic MAGIC 0  &capsword        &kpn CAPS      &kpn LEFT        &kpn RIGHT                    &kpn SPACE   &kpn C  &sl NUM_WORD     &sl NUM_WORD  &kpn S  &sl NEXUS         &kpn DOWN     &adaptive_up    &kpn AT        &capsword     &kpn PSCRN */
-		/**/
-		/*     >; */
-		/* }; */
-		
-		OverMods {
+		Enterer {
 			bindings = <
 			
 			&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
@@ -331,7 +318,7 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &skalt  &skshift  &skgui        &trans  &trans  &skctrl   &skctrl  &trans  &trans         &skgui  &skshift  &skalt  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans   &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
@@ -356,7 +343,7 @@
 			&degsign  &trans  &trans       &trans       &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
 			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &pagigaiton  &vimigation  &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
+			&trans    &trans  &trans       &trans       &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
 			&trans    &trans  &trans       &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
