@@ -60,8 +60,8 @@
 		
 		Base {
 			bindings = <
-			
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                  &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                  &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kp V          &kp Z        &none          &none
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &sk LC(LSHIFT)
 			&kp RA(P)        &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &adaptive                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
@@ -258,7 +258,7 @@
 		NumWordPlus {
 			bindings = <
 			
-			&none     &none       &none      &none     &none                                                                                                        &none      &none        &none      &none      &none 
+			&trans    &trans      &trans     &trans    &trans                                                                                                       &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &none      &minusbase  &none     &kpcb LS(G)                                                                         &kpcb LS(G)  &kp BSLH   &kp HASH     &none      &none      &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp STAR    &kp PLUS                                                                            &kp CARET    &kp LT     &kp N0       &kp GT     &none      &none 
 			&none     &tabbase    &kp N2     &kp N3    &kp N4      &spacebase                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI
@@ -472,8 +472,8 @@
 			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                  &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
 			&kp LBKT         &kp RBKT        &kpdot Q         &kpdot MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kpdot V          &kpdot Z        &none          &sk LC(LSHIFT)
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                  &rshift_repeat &kpdot F        &kp D          &kpdot L    &kpdot X          &none
-			&kp SQT          &kpdot W           &kpdot I   &kpdot E  &kpdot A    &adaptive                                                                                          &kpdot RA(T)     &kpdot H  &kpdot T  &kpdot N  &kpdot P          &kp DQT
-			&kpdot RA(P)        &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kpdot R     &kpdot M          &kpdot K        &kpdot G          &kpdot B        &kpdot J            &kpdot J
+			&kpdot RA(P)     &kpdot W           &kpdot I   &kpdot E  &kpdot A    &adaptive                                                                                          &kpdot RA(T)     &kpdot H  &kpdot T  &kpdot N  &kpdot P          &kp DQT
+			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kpdot R     &kpdot M          &kpdot K        &kpdot G          &kpdot B        &kpdot J            &kpdot J
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
