@@ -3,14 +3,14 @@
 };
 
 &sk {// sticky-key
-	release-after-ms = <5000>;
+	/* release-after-ms = <5000>; */
 	quick-release;// no double capitalization when rolling keys
 };
 
-&sl {// sticky-key
-	release-after-ms = <5000>;
-  /* /delete-property/ quick-release; */
-};
+/* &sl {// sticky-key */
+/* 	release-after-ms = <5000>; */
+/*    /delete-property/ quick-release; */
+/* }; */
 
 /* &sl {// sticky-layer  */
 	/*     ignore-modifiers;// allow chording sticky mods & layers */
