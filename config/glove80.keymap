@@ -272,7 +272,7 @@
 			bindings = <
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                  &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans     &trans     &kp FSLH   &trans     &f_lock  &j_lock
+			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans     &trans     &kp BSLH   &trans     &f_lock  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &basecaps                                                                          &basecaps  &kp RBKT   &kp S      &kp R      &trans  &trans
 			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
 			&kp PIPE  &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp TAB    &base_dot  &mouse     &trans &trans
