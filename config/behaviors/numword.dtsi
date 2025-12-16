@@ -37,7 +37,7 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&sl NUM_WORD_PLUS>, <&sl NUM_WORD_STICKY_L>;
+			bindings = <&sl NUM_WORD>, <&sl NUM_WORD_STICKY_L>;
 		};
 
 		numsr: nums_right {
@@ -45,7 +45,7 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&sl NUM_WORD_PLUS>, <&sl NUM_WORD_STICKY_R>;
+			bindings = <&sl NUM_WORD>, <&sl NUM_WORD_STICKY_R>;
 		};
 
 		nums_plus: nums_plus {

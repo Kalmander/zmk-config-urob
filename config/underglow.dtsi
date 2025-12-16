@@ -288,7 +288,7 @@
 			layer-id = <PAGE_WORD>;
 		};
 		
-		NumWordPlus {
+		NumWord {
 			bindings = <
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
@@ -297,7 +297,7 @@
 			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
-			layer-id = <NUM_WORD_PLUS>;
+			layer-id = <NUM_WORD>;
 		};
 		
 		NumWordStickyLeft {
@@ -323,6 +323,18 @@
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_STICKY_R>;
+		};
+
+		NumWordPlus {
+			bindings = <
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug ___ &ug ___ &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug ___ &ug ___ &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NUM_WORD_PLUS>;
 		};
 		
 		NumWordModded {

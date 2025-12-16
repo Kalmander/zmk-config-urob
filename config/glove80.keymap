@@ -23,25 +23,26 @@
 #define NAV_WORD_SWITCH 9
 #define VIM_WORD 10
 #define PAGE_WORD 11
-#define NUM_WORD_PLUS 12
+#define NUM_WORD 12
 #define NUM_WORD_STICKY_L 13
 #define NUM_WORD_STICKY_R 14
-#define NUM_WORD_MODDED 15
-#define NEXUS 16
-#define TABBER 17
-#define OVERMODS 18
-#define FUNCTIONS 19
-#define ICE 20
-#define JOKER 21
-#define EDI 22
-#define MOUSE 23
-#define MOUSE_SLOW 24
-#define MOUSE_WARP 25
-#define MOUSE_FAST 26
-#define MOUSE_SWITCHER 27
-#define UNIC_LAYER 28
-#define BASE_DOT 29
-#define MAGIC 30
+#define NUM_WORD_PLUS 15
+#define NUM_WORD_MODDED 16
+#define NEXUS 17
+#define TABBER 18
+#define OVERMODS 19
+#define FUNCTIONS 20
+#define ICE 21
+#define JOKER 22
+#define EDI 23
+#define MOUSE 24
+#define MOUSE_SLOW 25
+#define MOUSE_WARP 26
+#define MOUSE_FAST 27
+#define MOUSE_SWITCHER 28
+#define UNIC_LAYER 29
+#define BASE_DOT 30
+#define MAGIC 31
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -214,7 +215,7 @@
 		};
 		
 
-		NumWordPlus {
+		NumWord {
 			bindings = <
 			
 			&none     &none       &none      &none     &none                                                                                                        &none      &none        &none      &none      &none 
@@ -254,6 +255,19 @@
 			>;
 		};
 
+		NumWordPlus {
+			bindings = <
+			
+			&none     &none       &none      &none     &none                                                                                                        &none      &none        &none      &none      &none 
+			&kp LBKT  &kp RBKT    &none      &minusbase  &none     &kpcb LS(G)                                                                         &kpcb LS(G)  &kp BSLH   &kp HASH     &none      &none      &none 
+			&none     &to BASE    &kp EQUAL  &kp N1    &kp STAR    &kp PLUS                                                                            &kp CARET    &kp LT     &kp N0       &kp GT     &none      &none 
+			&none     &tabbase    &kp N2     &kp N3    &kp N4      &spacebase                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI
+			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp FSLH   &kp MINUS    &kp LPAR   &kp RPAR   &none 
+			&none     &none       &none      &kp LEFT     &kp RIGHT                     &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &bnexus                &downbase      &upbase      &kp AT      &none     &none 
+			
+			>;
+		};
+
 		NumWordModded {
 			bindings = <
 			
@@ -266,6 +280,7 @@
 			
 			>;
 		};
+
 
 
 		Nexus {
