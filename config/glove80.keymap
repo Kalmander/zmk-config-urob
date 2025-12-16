@@ -181,8 +181,8 @@
 			&trans  &trans       &trans      &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &trans     &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans       &nav_alt    &trans  &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&vimigation  &pagigaiton  &kp FSLH &trans  &kp ENTER  &nav_guictrl    &trans  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans       &kp U    &trans  &nav_gui   &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
+			&vimigation  &pagigaiton  &kp FSLH &trans  &kp ENTER  &nav_guictrl    &nav_alt  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans       &trans      &trans  &cskgui                    &kp TAB          &nav_ctrl  &nav_ctrlshift_macro    &trans &cskctrl  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
