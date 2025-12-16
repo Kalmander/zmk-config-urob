@@ -12,7 +12,10 @@
 		numwordplus_autolayer: numwordplus_autolayer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <SPACE UNDER LEFT RIGHT UP DOWN BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN G COLON SEMI>;
+			continue-list = <
+        SPACE UNDER LEFT RIGHT UP DOWN BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN G COLON SEMI
+        C_PREV C_NEXT C_VOL_DN C_VOL_UP
+      >;
 			ignore-numbers;
       ignore-modifiers;
 		};
@@ -53,7 +56,8 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>;
+			/* bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>; aah verður að nota autolayer til að ctrl lock dótið virki */
+			bindings = <&kp K_CANCEL>, <&numwordplus_autolayer NUM_WORD_PLUS>;
 		};
 		
 		num_hold_tap_l: num_hold_tap_left {
