@@ -183,7 +183,7 @@
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
 			&vim    &pag    &kp FSLH  &trans  &enters   &nav_guictrl    &nav_alt  &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans  &trans    &trans  &sk LGUI                  &tabs     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &sk LGUI                  &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;
 		};
