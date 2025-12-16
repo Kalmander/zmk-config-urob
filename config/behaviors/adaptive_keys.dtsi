@@ -6,7 +6,7 @@
 			#binding-cells = <0>;
 			bindings = <&kp RA(Z)>;
 
-			ak_idot { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+			ak_idot { trigger-keys = <I>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
 			/* ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; }; */
 			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
 			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
@@ -45,6 +45,14 @@
      
 			/* ak_spacec { trigger-keys = <SPACE>; max-prior-idle-ms = <2000>; bindings = <&kp C>; }; */
 			/* ak_vt { trigger-keys = <V>; max-prior-idle-ms = <2000>; bindings = <&kp T>; }; fyrir vt (velja til) í vim */ 
+		};
+
+		ae_ak: ae_ak {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&adaptive>, <&kp W>;
+			mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+			keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
 		};
 
 
