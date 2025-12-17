@@ -63,7 +63,7 @@
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2>;
-				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+				ignored-layers = <BASE PULSE TABBER>;
         timeout-ms = <1000>;
 		};
 
@@ -73,7 +73,7 @@
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2>;
-				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+				ignored-layers = <BASE PULSE TABBER>;
         timeout-ms = <1000>;
 		};
 		enters: enters {
@@ -110,7 +110,7 @@
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp FSLH>, <&to BASE>;
 				ignored-key-positions = <LB3 RT3>;
-				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+				ignored-layers = <BASE PULSE TABBER>;
         timeout-ms = <1000>;
 		};
 

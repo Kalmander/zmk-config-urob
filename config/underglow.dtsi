@@ -252,7 +252,7 @@
 			layer-id = <NAV_WORD_CTRL_GUI>;
 		};
 		
-		NavWordSwitcher {
+		Pulse {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
@@ -261,7 +261,7 @@
 			&ug ___  &ug ___  &ug ___    &ug ColNavWordSwitchRow4  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
 			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___          &ug ___ &ug ColNavWordSwitchRow4 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
-			layer-id = <NAV_WORD_SWITCH>;
+			layer-id = <PULSE>;
 		};
 		
 		VimWord {

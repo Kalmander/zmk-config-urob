@@ -20,7 +20,7 @@
 #define NAV_WORD_SHIFT_CTRL 6
 #define NAV_WORD_SHIFT_GUI 7
 #define NAV_WORD_CTRL_GUI 8
-#define NAV_WORD_SWITCH 9
+#define PULSE 9
 #define VIM_WORD 10
 #define PAGE_WORD 11
 #define NUM_WORD 12
@@ -175,12 +175,12 @@
 			>;
 		};
 
-		NavWordSwitcher {
+		Pulse {
 			bindings = <
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &slash &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &slash &kp BSLH  &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans  &trans    &trans  &sk LGUI                  &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
