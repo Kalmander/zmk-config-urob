@@ -272,7 +272,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk LSHFT>;
 			repeat {
-				trigger-keys = <G B J AT>; /* Aaaahg held B virki ekki í vim */
+				trigger-keys = <G B AT>; /* Aaaahg held B virki ekki í vim */
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
