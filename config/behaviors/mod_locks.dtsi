@@ -60,24 +60,26 @@
 			/* bindings = <&tog_on_kp_and_layer LGUI KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LGUI KCAN_OVER>; */
 			bindings = <&tog_on_kp LGUI>, <&none>, <&tog_off_kp LGUI>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
-			22 23 24 25 26 27  \
+			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47 48 49 50     \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
 			58 59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
-			70 53     56 73    \
+			70           73    \
 			71 54   55 72
+
 			>;
 			/* ignored-layers = <BASE CAPS_WORD_DOT NAV_WORD NUM_WORD NEXUS  FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>; */
 			ignored-layers = <BASE NAV_WORD NUM_WORD_PLUS NEXUS  FUNCTIONS ICE MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
@@ -90,24 +92,26 @@
 			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
 			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp LCTRL>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
-			22 23 24 25 26 27  \
+			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47 48 49 50     \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
 			58 59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
-			70 53     56 73    \
+			70           73    \
 			71 54   55 72
+
 			>;
 			/* ignored-layers = <BASE CAPS_WORD_DOT NAV_WORD NUM_WORD NEXUS  FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>; */
 			ignored-layers = <BASE NAV_WORD NUM_WORD_PLUS NEXUS  FUNCTIONS ICE MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
@@ -120,24 +124,26 @@
 			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
 			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
-			22 23 24 25 26 27  \
+			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47 48 49 50     \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
 			58 59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
-			70 53     56 73    \
+			70           73    \
 			71 54   55 72
+
 			>;
 			/* ignored-layers = <BASE CAPS_WORD_DOT NAV_WORD NUM_WORD NEXUS  FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>; */
 			ignored-layers = <BASE NAV_WORD NUM_WORD_PLUS NEXUS  FUNCTIONS ICE MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
@@ -150,24 +156,26 @@
 			/* bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>; */
 			bindings = <&tog_on_kp LALT>, <&none>, <&tog_off_kp LALT>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
-			22 23 24 25 26 27  \
+			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47 48 49 50     \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
 			58 59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
-			70 53     56 73    \
+			70           73    \
 			71 54   55 72
+
 			>;
 			/* ignored-layers = <BASE CAPS_WORD_DOT NAV_WORD NUM_WORD NEXUS  FUNCTIONS ICE MOD_LOCKS MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>; */
 			ignored-layers = <BASE NAV_WORD NUM_WORD_PLUS NEXUS  FUNCTIONS ICE MOUSE MOUSE_SLOW MOUSE_FAST MOUSE_WARP>;
@@ -180,24 +188,26 @@
 			/* bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>; */
 			bindings = <&tog_on_kp J>, <&none>, <&tog_off_kp J>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
-			22 23 24 25 26 27  \
+			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47 48 49 50     \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
 			58 59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
-			70 53     56 73    \
+			70           73    \
 			71 54   55 72
+
 			>;
 			ignored-layers = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31>;
 			timeout-ms = <10000>;
@@ -212,20 +222,20 @@
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
-			22 23 24 25 26 27  \
+			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47 48 49 50     \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
 			58 59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
-			70 53     56 73    \
+			70           73    \
 			71 54   55 72
 			>;
 			ignored-layers = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31>;
@@ -239,24 +249,26 @@
 			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
 			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp LCTRL>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
 			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47    49 50 51  \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
-			   59 60    62 63  \
+			   59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
 			70           73    \
 			71 54   55 72
+
 			>;
 		};
 		
@@ -266,24 +278,26 @@
 			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
 			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
 			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47    49 50 51  \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
-			   59 60    62 63  \
+			   59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
 			70           73    \
 			71 54   55 72
+
 			>;
 		};
 
@@ -293,24 +307,26 @@
 			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
 			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp_and_fire_kp LCTRL K_CANCEL>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
 			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47    49 50 51  \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
-			   59 60    62 63  \
+			   59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
 			70           73    \
 			71 54   55 72
+
 			>;
 			timeout-ms = <1000>;
 		};
@@ -321,24 +337,26 @@
 			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
 			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
 			ignored-key-positions = <
+			
 			/* left hand */
 			0  1  2  3  4      \
 			10 11 12 13 14 15  \
 			22    24 25 26 27  \
 			34 35 36 37 38 39  \
-			46 47    49 50 51  \
+			46 47 48 49 50 51  \
 			64 65 66 67 68     \
 			/* right hand */
 			5  6  7  8  9      \
-			16 17 18 19 20 21  \
+			16 17 18 19    21  \
 			28 29 30 31 32 33  \
 			40 41 42 43 44 45  \
-			   59 60    62 63  \
+			   59 60 61 62 63  \
 			75 76 77 78 79     \
 			/* thumbs */
 			69 52       57 74  \
 			70           73    \
 			71 54   55 72
+
 			>;
 			timeout-ms = <1000>;
 		};
