@@ -62,7 +62,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <LB3 LB2>;
+				ignored-key-positions = <LB4 LB3 LB2>;
 				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
         timeout-ms = <1000>;
 		};
@@ -72,7 +72,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <LB3 LB2>;
+				ignored-key-positions = <LB4 LB3 LB2>;
 				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
         timeout-ms = <1000>;
 		};
