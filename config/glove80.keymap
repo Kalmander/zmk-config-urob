@@ -261,7 +261,7 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                       &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &none      &minusbase  &none     &kpcb LS(G)                                                                         &kpcb LS(G)  &kp BSLH   &kp HASH     &none      &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &kp STAR                                                                            &kp CARET    &kp LT     &kp N0       &kp GT     &none      &none 
-			&none     &tabbase    &kp N2     &kp N3    &kp N4      &spacebase                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI
+			&none     &tabbase    &kp N2     &kp N3    &kp N4      &spacebasedot                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI
 			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp FSLH   &kp MINUS    &kp LPAR   &kp RPAR   &none 
 			&none     &none       &none      &kp LEFT     &kp RIGHT                     &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &bnexus                &downbase      &upbase      &kp AT      &none     &none 
 			

@@ -345,6 +345,13 @@
 			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
 		};
 
+    spacebasedot: spacebase_or_dot {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&spacebase>;
+			ak_idot { trigger-keys = <N2>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
+		};
+
 		dot_shift: dot_shift {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
