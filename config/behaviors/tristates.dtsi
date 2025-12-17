@@ -105,6 +105,15 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		slash: slash {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp FSLH>, <&to BASE>;
+				ignored-key-positions = <LB3 RT3>;
+				ignored-layers = <BASE NAV_WORD_SWITCH TABBER>;
+        timeout-ms = <1000>;
+		};
+
 		/* cskctrl: cskctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
 		/* 		#binding-cells = <0>; */

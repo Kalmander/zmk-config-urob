@@ -30,7 +30,7 @@
 #define NUM_WORD_MODDED 16
 #define NEXUS 17
 #define TABBER 18
-#define ENTERER 19
+#define TRILAYER 19
 #define FUNCTIONS 20
 #define ICE 21
 #define JOKER 22
@@ -180,7 +180,7 @@
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &kp FSLH &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &slash &trans  &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans      &trans   &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans
 			&trans  &trans  &trans    &trans  &sk LGUI                  &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
@@ -302,7 +302,7 @@
 			
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &slash  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &ctrl_w                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &enters  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &cs_pgup  &cs_pgdn          &tabs  &trans  &trans  &trans  &trans  &trans          &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
@@ -310,7 +310,7 @@
 			>;
 		};
 
-		Enterer {
+		TriLayer {
 			bindings = <
 			
 			&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
