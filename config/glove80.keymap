@@ -62,8 +62,8 @@
 			bindings = <
 
 			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                  &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kp V          &kp Z        &none          &none
-			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &sk LC(LSHIFT)
+			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
 			&kp RA(P)        &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
 			&kp SQT          &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
@@ -259,7 +259,7 @@
 			bindings = <
 			
 			&trans    &trans      &trans     &trans    &trans                                                                                                       &trans     &trans       &trans     &trans     &trans
-			&kp LBKT  &kp RBKT    &none      &minusbase  &none     &kpcb LS(G)                                                                         &kpcb LS(G)  &kp BSLH   &kp HASH     &none      &none      &none 
+			&kp LBKT  &kp RBKT    &none      &minusbase  &none     &kpcb LS(G)                                                                         &kpcb LS(G)  &kp BSLH   &kp HASH     &none      &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &kp STAR                                                                            &kp CARET    &kp LT     &kp N0       &kp GT     &none      &none 
 			&none     &tabbase    &kp N2     &kp N3    &kp N4      &spacebase                                                                          &spacebase   &kp N7     &kp N8       &kp N9     &kp COLON  &kp SEMI
 			&none     &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &kp ENTER   &kp TAB    &to BASE   &kp DOLLAR   &to BASE     &kp FSLH   &kp MINUS    &kp LPAR   &kp RPAR   &none 
@@ -379,7 +379,7 @@
 			bindings = <
 			
 			&none     &none      &none           &none           &none                                                                                                                              &none           &none           &none           &none     &none
-			&none     &none      &none           &kp LC(X)       &none            &none                                                                                                  &none      &kp LGUI        &kp LSHFT       &kp LALT           &none     &none
+			&none     &none      &none           &kp LC(X)       &none            &none                                                                                                  &none      &kp LGUI        &kp LSHFT       &kp LALT           &to BASE     &none
 			&none     &to BASE   &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &kp LC(TAB)                                                                                            &kp LCTRL  &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
 			&none     &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                                              &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
 			&none     &none      &none           &none           &none            &none     &msc SCRL_LEFT  &to BASE  &msc SCRL_RIGHT &none               &to BASE      &mkp MCLK &to BASE      &none           &none           &none           &none     &none
