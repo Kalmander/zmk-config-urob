@@ -62,7 +62,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <LB4 LB3 LB2>;
+				ignored-key-positions = <LB4 LB3 LB2 LH4>;
 				ignored-layers = <BASE PULSE TABBER>;
         timeout-ms = <1000>;
 		};
@@ -72,7 +72,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <LB4 LB3 LB2>;
+				ignored-key-positions = <LB4 LB3 LB2 LH4>;
 				ignored-layers = <BASE PULSE TABBER>;
         timeout-ms = <1000>;
 		};
@@ -83,27 +83,28 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
-		tabs_normal: tab_stick {
+		tabs: tabs {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <LB3 LH1>;
-				ignored-layers = <TABBER>;
+				ignored-key-positions = <LB3 LH4>;
+				ignored-layers = <BASE PULSE TABBER>;
+        timeout-ms = <1000>;
 		};
 
-		shift_tabs: shift_tab_stick {
-				compatible = "zmk,behavior-tri-state";
-				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>;
-				ignored-key-positions = <LB3 LH1>;
-				ignored-layers = <TABBER>;
-		};
-		tabs: tabs {
-			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <0>;
-			bindings = <&tabs_normal>, <&shift_tabs>;
-			mods = <(MOD_LSFT|MOD_RSFT)>;
-		};
+		/* shift_tabs: shift_tab_stick { */
+		/* 		compatible = "zmk,behavior-tri-state"; */
+		/* 		#binding-cells = <0>; */
+		/* 		bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>; */
+		/* 		ignored-key-positions = <LB3 LH1>; */
+		/* 		ignored-layers = <TABBER>; */
+		/* }; */
+		/* tabs: tabs { */
+		/* 	compatible = "zmk,behavior-mod-morph"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = <&tabs_normal>, <&shift_tabs>; */
+		/* 	mods = <(MOD_LSFT|MOD_RSFT)>; */
+		/* }; */
 
 		slash: slash {
 				compatible = "zmk,behavior-tri-state";

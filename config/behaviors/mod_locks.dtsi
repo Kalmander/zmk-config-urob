@@ -15,14 +15,14 @@
 			toggle-mode = "off";
 		};
 		
-		tog_on_kp: tog_on_kp {
+		kp_on: tog_on_kp {
 			compatible = "zmk,behavior-key-toggle";
 			#binding-cells = <1>;
 			display-name = "Toggle kp On";
 			toggle-mode = "on";
 		};
 		
-		tog_off_kp: tog_off_kp {
+		kp_off: tog_off_kp {
 			compatible = "zmk,behavior-key-toggle";
 			#binding-cells = <1>;
 			display-name = "Toggle kp off";
@@ -30,26 +30,26 @@
 		};
 		
 		
-		tog_on_kp_and_layer: tog_on_kp_and_layer {
+		kp_on_and_layer: kp_on_and_layer {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
-			bindings =  <&macro_param_1to1>, <&tog_on_kp MACRO_PLACEHOLDER>,
+			bindings =  <&macro_param_1to1>, <&kp_on MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&tog_on_layer MACRO_PLACEHOLDER>;
 		};
 		
-		tog_off_kp_and_layer: tog_off_kp_and_layer {
+		kp_off_and_layer: kp_off_and_layer {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
-			bindings =  <&macro_param_1to1>, <&tog_off_kp MACRO_PLACEHOLDER>,
+			bindings =  <&macro_param_1to1>, <&kp_off MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&tog_off_layer MACRO_PLACEHOLDER>;
 		};
     
-		tog_off_kp_and_fire_kp: tog_off_kp_and_fire_kp {
+		kp_off_and_fire_kp: kp_off_and_fire_kp {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings =  <&macro_param_1to1>, <&tog_off_kp MACRO_PLACEHOLDER>,
+			bindings =  <&macro_param_1to1>, <&kp_off MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>;
 		};
 		
@@ -57,8 +57,8 @@
 		gui_lock: gui_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LGUI KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LGUI KCAN_OVER>; */
-			bindings = <&tog_on_kp LGUI>, <&none>, <&tog_off_kp LGUI>;
+			/* bindings = <&kp_on_and_layer LGUI KCAN_OVER>, <&none>, <&kp_off_and_layer LGUI KCAN_OVER>; */
+			bindings = <&kp_on LGUI>, <&none>, <&kp_off LGUI>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -89,8 +89,8 @@
 		ctrl_lock: ctrl_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
-			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp LCTRL>;
+			/* bindings = <&kp_on_and_layer LCTRL KCAN_OVER>, <&none>, <&kp_off_and_layer LCTRL KCAN_OVER>; */
+			bindings = <&kp_on LCTRL>, <&none>, <&kp_off LCTRL>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -121,8 +121,8 @@
 		shift_lock: shift_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
-			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
+			/* bindings = <&kp_on_and_layer LSHIFT KCAN_OVER>, <&none>, <&kp_off_and_layer LSHIFT KCAN_OVER>; */
+			bindings = <&kp_on LSHIFT>, <&none>, <&kp_off LSHIFT>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -153,8 +153,8 @@
 		alt_lock: alt_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>; */
-			bindings = <&tog_on_kp LALT>, <&none>, <&tog_off_kp LALT>;
+			/* bindings = <&kp_on_and_layer LALT KCAN_OVER>, <&none>, <&kp_off_and_layer LALT KCAN_OVER>; */
+			bindings = <&kp_on LALT>, <&none>, <&kp_off LALT>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -185,8 +185,8 @@
 		j_lock: j_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>; */
-			bindings = <&tog_on_kp J>, <&none>, <&tog_off_kp J>;
+			/* bindings = <&kp_on_and_layer LALT KCAN_OVER>, <&none>, <&kp_off_and_layer LALT KCAN_OVER>; */
+			bindings = <&kp_on J>, <&none>, <&kp_off J>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -216,8 +216,8 @@
 		f_lock: f_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LALT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LALT KCAN_OVER>; */
-			bindings = <&tog_on_kp F>, <&none>, <&tog_off_kp F>;
+			/* bindings = <&kp_on_and_layer LALT KCAN_OVER>, <&none>, <&kp_off_and_layer LALT KCAN_OVER>; */
+			bindings = <&kp_on F>, <&none>, <&kp_off F>;
 			ignored-key-positions = <
 			/* left hand */
 			0  1  2  3  4      \
@@ -246,8 +246,8 @@
 		ctrl_lock_num: ctrl_lock_num {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
-			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp LCTRL>;
+			/* bindings = <&kp_on_and_layer LCTRL KCAN_OVER>, <&none>, <&kp_off_and_layer LCTRL KCAN_OVER>; */
+			bindings = <&kp_on LCTRL>, <&none>, <&kp_off LCTRL>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -275,8 +275,8 @@
 		shift_lock_num: shift_lock_num {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
-			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
+			/* bindings = <&kp_on_and_layer LSHIFT KCAN_OVER>, <&none>, <&kp_off_and_layer LSHIFT KCAN_OVER>; */
+			bindings = <&kp_on LSHIFT>, <&none>, <&kp_off LSHIFT>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -304,8 +304,8 @@
 		ctrl_lock_num_timed: ctrl_lock_num_timed {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LCTRL KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LCTRL KCAN_OVER>; */
-			bindings = <&tog_on_kp LCTRL>, <&none>, <&tog_off_kp_and_fire_kp LCTRL K_CANCEL>;
+			/* bindings = <&kp_on_and_layer LCTRL KCAN_OVER>, <&none>, <&kp_off_and_layer LCTRL KCAN_OVER>; */
+			bindings = <&kp_on LCTRL>, <&none>, <&kp_off_and_fire_kp LCTRL K_CANCEL>;
 			ignored-key-positions = <
 			
 			/* left hand */
@@ -334,8 +334,8 @@
 		shift_lock_num_timed: shift_lock_num_timed {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			/* bindings = <&tog_on_kp_and_layer LSHIFT KCAN_OVER>, <&none>, <&tog_off_kp_and_layer LSHIFT KCAN_OVER>; */
-			bindings = <&tog_on_kp LSHIFT>, <&none>, <&tog_off_kp LSHIFT>;
+			/* bindings = <&kp_on_and_layer LSHIFT KCAN_OVER>, <&none>, <&kp_off_and_layer LSHIFT KCAN_OVER>; */
+			bindings = <&kp_on LSHIFT>, <&none>, <&kp_off LSHIFT>;
 			ignored-key-positions = <
 			
 			/* left hand */

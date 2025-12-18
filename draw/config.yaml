@@ -9,6 +9,10 @@ parse_config:
     #include "misc/unicodes.dtsi"
 
   raw_binding_map:
+    "&hold_navauto LEFT NAV_WORD": ← Auto
+    "&hold_navauto RIGHT NAV_WORD": → Auto
+    "&hold_navauto DOWN NAV_WORD": ↓ Auto
+    "&hold_navauto UP NAV_WORD": ↑ Auto
     "&nav_gui": Nav Gui
     "&nav_guishift_macro": Nav Gui Shift
     "&nav_guictrl": Nav Gui Ctrl
