@@ -55,6 +55,14 @@
 			keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
 		};
 
+		oo_ak: oo_ak {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp RA(P)>;
+
+			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
+		};
+
 
 		num_adaptive: num_adaptive {
 			compatible = "zmk,behavior-adaptive-key";
