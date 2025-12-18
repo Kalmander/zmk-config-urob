@@ -60,7 +60,7 @@
 			#binding-cells = <0>;
 			bindings = <&kp RA(P)>;
 
-			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
+			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
 		};
 
 
