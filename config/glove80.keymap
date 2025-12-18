@@ -290,7 +290,7 @@
 			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans     &trans     &kp BSLH   &trans     &f_lock  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &basecaps                                                                          &basecaps  &kp RBKT   &kp S      &kp R      &trans  &trans
 			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
-			&kp PIPE  &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp TAB  &kp Q      &mouse     &trans &trans
+			&kp PIPE  &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp Q    &kp TAB    &mouse     &trans &trans
 			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
 			
 			>;
