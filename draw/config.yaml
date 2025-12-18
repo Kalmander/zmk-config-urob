@@ -9,7 +9,16 @@ parse_config:
     #include "misc/unicodes.dtsi"
 
   raw_binding_map:
-    # "&navigation_hold_tap NAV_WORD NAV_WORD": Nav Word
+    "&nav_gui": Nav Gui
+    "&nav_guishift_macro": Nav Gui Shift
+    "&nav_guictrl": Nav Gui Ctrl
+    "&nav_alt": Nav Alt
+    "&nav_ctrl": Nav Ctrl
+    "&nav_ctrlshift_macro": Nav Ctrl Shift
+    "&pag": Page Nav
+    "&vim": Vim Nav
+    "&enters": Enter (auto)
+    "&slash": / (auto)
     "&pcapsword": Dotted Caps Word
     "&ctrl_lock": Ctrl Lock
     "&aunav": Nav Word (au)

@@ -20,14 +20,14 @@
 #define NAV_WORD_SHIFT_CTRL 6
 #define NAV_WORD_SHIFT_GUI 7
 #define NAV_WORD_CTRL_GUI 8
-#define PULSE 9
-#define VIM_WORD 10
-#define PAGE_WORD 11
-#define NUM_WORD 12
-#define NUM_WORD_STICKY_L 13
-#define NUM_WORD_STICKY_R 14
-#define NUM_WORD_PLUS 15
-#define NUM_WORD_MODDED 16
+#define VIM_WORD 9
+#define PAGE_WORD 10
+#define NUM_WORD 11
+#define NUM_WORD_STICKY_L 12
+#define NUM_WORD_STICKY_R 13
+#define NUM_WORD_PLUS 14
+#define NUM_WORD_MODDED 15
+#define PULSE 16
 #define NEXUS 17
 #define TABBER 18
 #define TRILAYER 19
@@ -175,19 +175,6 @@
 			>;
 		};
 
-		Pulse {
-			bindings = <
-			
-			&trans  &trans  &trans    &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &slash &trans  &trans  &trans
-			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &trans  &kp BSLH   &trans  &trans  &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
-			
-			>;
-		};
-
 		VimWord {
 			bindings = <
 			
@@ -282,6 +269,19 @@
 		};
 
 
+		Pulse {
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &slash &trans  &trans  &trans
+			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans  &trans   &trans  &trans  &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &trans  &kp BSLH   &kp AMPS  &trans  &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
+			
+			>;
+		};
+
 
 		Nexus {
 			bindings = <
@@ -289,8 +289,8 @@
 			&trans    &trans     &trans    &trans     &trans                                                                                                  &trans     &trans     &trans     &trans  &trans
 			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans     &trans     &kp BSLH   &trans     &trans  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &basecaps                                                                          &basecaps  &kp RBKT   &kp S      &kp R      &trans  &f_lock
-			&kp GRAVE &kp AMPS   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
-			&kp PIPE  &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp Q    &kp TAB    &mouse     &trans &trans
+			&kp GRAVE &kp PIPE   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME   &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
+			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp Q    &kp TAB    &mouse     &trans &trans
 			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS             &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
 			
 			>;
