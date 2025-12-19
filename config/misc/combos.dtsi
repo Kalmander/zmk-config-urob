@@ -201,6 +201,30 @@
 			bindings = <&thorn_err_eth1 &thorn_err_eth2>;
 		};
 
+
+		epulse_lower: epulse_lower {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp E &sl PULSE>;
+		};
+
+		epulse_upper: epulse_upper {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp LS(E) &sl PULSE>;
+		};
+
+		epulse: epulse {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&epulse_lower>, <&epulse_upper>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
 		/* wh_and_kp: wh_and_kp { */
 		/* 	compatible = "zmk,behavior-macro-one-param"; */
 		/* 	#binding-cells = <1>; */
@@ -469,6 +493,12 @@
 			layers = <BASE TYPING>;
 		};
 
+		combo_epulse {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LM3 LB3>;
+			bindings = <&epulse>;
+			layers = <BASE TYPING>;
+		};
 		/* combo_gt_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RM3 RB3>; */

@@ -63,7 +63,7 @@
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2 LH4>;
-				ignored-layers = <BASE PULSE TABBER>;
+				ignored-layers = <TABBER>;
         timeout-ms = <1000>;
 		};
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
@@ -72,7 +72,7 @@
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2 LH4>;
-				ignored-layers = <BASE PULSE TABBER>;
+				ignored-layers = <TABBER>;
         timeout-ms = <1000>;
 		};
 		gui_enters: gui_enter_stick {
@@ -80,7 +80,7 @@
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LG(ENTER)>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2 LH4>;
-				ignored-layers = <BASE PULSE TABBER>;
+				ignored-layers = <TABBER>;
         timeout-ms = <1000>;
 		};
 		ns_enters: normal_shift_enters {
@@ -127,6 +127,7 @@
 				ignored-layers = <BASE PULSE TABBER>;
         timeout-ms = <1000>;
 		};
+
 
 		/* cskctrl: cskctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
