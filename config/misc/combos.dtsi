@@ -3,77 +3,77 @@
 		combo_spacec_macro: combo_spacec_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps SPACE C>, <&two_kps SPACE LS(C)>;
+			bindings = <&kps SPACE C>, <&kps SPACE LS(C)>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_cspace_macro: combo_cspace_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps C SPACE>, <&two_kps LS(C) SPACE>;
+			bindings = <&kps C SPACE>, <&kps LS(C) SPACE>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_au_macro: combo_au_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps A U>, <&two_kps LS(A) U>;
+			bindings = <&kps A U>, <&kps LS(A) U>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_lm_macro: combo_lm_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps L M>, <&two_kps LS(L) M>;
+			bindings = <&kps L M>, <&kps LS(L) M>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_wh_macro: combo_wh_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps W H>, <&two_kps LS(W) H>;
+			bindings = <&kps W H>, <&kps LS(W) H>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_adot_macro: combo_adot_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps A DOT>, <&two_kps LS(A) DOT>;
+			bindings = <&kps A DOT>, <&kps LS(A) DOT>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_acomma_macro: combo_acomma_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps A COMMA>, <&two_kps LS(A) COMMA>;
+			bindings = <&kps A COMMA>, <&kps LS(A) COMMA>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_idot_macro: combo_idot_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps I DOT>, <&two_kps LS(I) DOT>;
+			bindings = <&kps I DOT>, <&kps LS(I) DOT>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_edot_macro: combo_edot_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps E DOT>, <&two_kps LS(E) DOT>;
+			bindings = <&kps E DOT>, <&kps LS(E) DOT>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_ecomma_macro: combo_ecomma_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps E COMMA>, <&two_kps LS(E) COMMA>;
+			bindings = <&kps E COMMA>, <&kps LS(E) COMMA>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_rk_macro: combo_rk_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps R K>, <&two_kps LS(R) K>;
+			bindings = <&kps R K>, <&kps LS(R) K>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
@@ -144,21 +144,21 @@
 		combo_ck_macro: combo_ck_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps C K>, <&two_kps LS(C) K>;
+			bindings = <&kps C K>, <&kps LS(C) K>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_sk_macro: combo_sk_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps S K>, <&two_kps LS(S) K>;
+			bindings = <&kps S K>, <&kps LS(S) K>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
 		combo_ks_macro: combo_ks_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps K S>, <&two_kps LS(K) S>;
+			bindings = <&kps K S>, <&kps LS(K) S>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
     
@@ -229,14 +229,14 @@
 		/* 	compatible = "zmk,behavior-macro-one-param"; */
 		/* 	#binding-cells = <1>; */
 		/* 	bindings =  <&kp W>, */
-		/* 	<&macro_param_1to2>, <&two_kps H MACRO_PLACEHOLDER>; */
+		/* 	<&macro_param_1to2>, <&kps H MACRO_PLACEHOLDER>; */
 		/* }; */
 		/**/
 		/* cwh_and_kp: cwh_and_kp { */
 		/* 	compatible = "zmk,behavior-macro-one-param"; */
 		/* 	#binding-cells = <1>; */
 		/* 	bindings =  <&kp LS(W)>, */
-		/* 	<&macro_param_1to2>, <&two_kps H MACRO_PLACEHOLDER>; */
+		/* 	<&macro_param_1to2>, <&kps H MACRO_PLACEHOLDER>; */
 		/* }; */
 		/**/
 		/* combo_wha_macro: combo_wha_macro { */
@@ -249,49 +249,49 @@
 		combo_ph_macro: combo_ph_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps P H>, <&two_kps LS(P) H>;
+			bindings = <&kps P H>, <&kps LS(P) H>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_sw_macro: combo_sw_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps S W>, <&two_kps LS(S) W>;
+			bindings = <&kps S W>, <&kps LS(S) W>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_rv_macro: combo_rv_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps R V>, <&two_kps LS(R) V>;
+			bindings = <&kps R V>, <&kps LS(R) V>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_rs_macro: combo_rs_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps R S>, <&two_kps LS(R) S>;
+			bindings = <&kps R S>, <&kps LS(R) S>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_mp_macro: combo_mp_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps M P>, <&two_kps LS(M) P>;
+			bindings = <&kps M P>, <&kps LS(M) P>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_gt_macro: combo_gt_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps G T>, <&two_kps LS(G) T>;
+			bindings = <&kps G T>, <&kps LS(G) T>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
 		combo_dv_macro: combo_dv_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps D V>, <&two_kps LS(D) V>;
+			bindings = <&kps D V>, <&kps LS(D) V>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		
@@ -368,7 +368,7 @@
 		/* combo_5space { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <LH5 LH4>; */
-		/* 	bindings = <&two_kps N5 SPACE>; */
+		/* 	bindings = <&kps N5 SPACE>; */
 		/* 	layers = <NUM_WORD_PLUS NUM_WORD_STICKY_R NUM_WORD_STICKY_L NUM_WORD_MODDED>; */
 		/* }; */
 
@@ -389,7 +389,7 @@
 		/* combo_rs_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RH5 RH4>; */
-		/* 	bindings = <&two_kps LS(R) LS(S)>; */
+		/* 	bindings = <&kps LS(R) LS(S)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 
@@ -461,7 +461,7 @@
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 /* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
 		/* 	key-positions = <RM2 RB2>; */
-		/* 	bindings = <&two_kps LS(W) LS(H)>; */
+		/* 	bindings = <&kps LS(W) LS(H)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
     
@@ -502,7 +502,7 @@
 		/* combo_gt_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RM3 RB3>; */
-		/* 	bindings = <&two_kps LS(G) LS(T)>; */
+		/* 	bindings = <&kps LS(G) LS(T)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 		
@@ -567,7 +567,7 @@
 		/* combo_ck_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <LH2 LH5>; */
-		/* 	bindings = <&two_kps LS(C) LS(K)>; */
+		/* 	bindings = <&kps LS(C) LS(K)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 
@@ -588,7 +588,7 @@
 		/* combo_sk_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RH2 RH5>; */
-		/* 	bindings = <&two_kps LS(S) LS(K)>; */
+		/* 	bindings = <&kps LS(S) LS(K)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 
@@ -602,7 +602,7 @@
 		/* combo_sk_cap2 { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RH1 RH4>; */
-		/* 	bindings = <&two_kps LS(S) LS(K)>; */
+		/* 	bindings = <&kps LS(S) LS(K)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 
@@ -616,7 +616,7 @@
 		/* combo_ck_cap2 { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <LH1 LH4>; */
-		/* 	bindings = <&two_kps LS(C) LS(K)>; */
+		/* 	bindings = <&kps LS(C) LS(K)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 
@@ -637,7 +637,7 @@
 		/* combo_rk_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RH1 RH2>; */
-		/* 	bindings = <&two_kps LS(R) LS(K)>; */
+		/* 	bindings = <&kps LS(R) LS(K)>; */
 		/* 	layers = <CAPS_WORD_DOT>; */
 		/* }; */
 

@@ -4939,8 +4939,10 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(812, 252)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">QU</text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">&amp;kps</tspan><tspan x="0" dy="1.2em">Q</tspan><tspan x="0" dy="1.2em">U</tspan>
+</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;kps LS(Q)…</tspan></text>
 </g>
 <g transform="translate(868, 252)" class="key trans keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -5293,9 +5295,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(639, 379) rotate(-40.0)" class="key keypos-73">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">R</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">S</tspan>
+<tspan x="0" dy="-1.2em">&amp;kps</tspan><tspan x="0" dy="1.2em">R</tspan><tspan x="0" dy="1.2em">S</tspan>
 </text>
-<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;kps LS(R)…</tspan></text>
 </g>
 <g transform="translate(694, 347) rotate(-20.0)" class="key keypos-74">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -6189,8 +6191,11 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(756, 84)" class="key trans keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(812, 84)" class="key trans keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(812, 84)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">V</tspan>
+</text>
 </g>
 <g transform="translate(868, 84)" class="key trans keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6229,11 +6234,17 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(756, 140)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(812, 140)" class="key trans keypos-30">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(812, 140)" class="key keypos-30">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">D</tspan>
+</text>
 </g>
-<g transform="translate(868, 140)" class="key trans keypos-31">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(868, 140)" class="key keypos-31">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">L</tspan>
+</text>
 </g>
 <g transform="translate(924, 168)" class="key trans keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6268,11 +6279,17 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(756, 196)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(812, 196)" class="key trans keypos-42">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(812, 196)" class="key keypos-42">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">T</tspan>
+</text>
 </g>
-<g transform="translate(868, 196)" class="key trans keypos-43">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(868, 196)" class="key keypos-43">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">N</tspan>
+</text>
 </g>
 <g transform="translate(924, 224)" class="key trans keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6313,11 +6330,17 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(588, 350) rotate(-45.0)" class="key trans keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(637, 312) rotate(-30.0)" class="key trans keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(637, 312) rotate(-30.0)" class="key keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">R</tspan>
+</text>
 </g>
-<g transform="translate(700, 252)" class="key trans keypos-58">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(700, 252)" class="key keypos-58">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">M</tspan>
+</text>
 </g>
 <g transform="translate(756, 252)" class="key trans keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6325,9 +6348,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(812, 252)" class="key trans keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(868, 252)" class="key keypos-61">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;polish_l</tspan></text>
+<g transform="translate(868, 252)" class="key trans keypos-61">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(924, 280)" class="key trans keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6353,8 +6375,11 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(314, 347) rotate(20.0)" class="key trans keypos-69">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(369, 379) rotate(40.0)" class="key trans keypos-70">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(369, 379) rotate(40.0)" class="key keypos-70">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">C</tspan>
+</text>
 </g>
 <g transform="translate(410, 427) rotate(60.0)" class="key trans keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6362,8 +6387,11 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(598, 427) rotate(-60.0)" class="key trans keypos-72">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
-<g transform="translate(639, 379) rotate(-40.0)" class="key trans keypos-73">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<g transform="translate(639, 379) rotate(-40.0)" class="key keypos-73">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;skp</tspan><tspan x="0" dy="1.2em">S</tspan>
+</text>
 </g>
 <g transform="translate(694, 347) rotate(-20.0)" class="key trans keypos-74">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -9659,9 +9687,9 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="328" y="350" width="28" height="26" class="combo"/>
 <text x="342" y="363" class="combo tap">
-<tspan x="342" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="342" dy="1.2em" style="font-size: 88%">…</tspan>
+<tspan x="342" dy="-0.6em">&amp;kps</tspan><tspan x="342" dy="1.2em">…</tspan>
 </text>
-<text x="342" y="352" class="combo shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+<text x="342" y="352" class="combo shifted"><tspan style="font-size: 64%">&amp;kps LS(C)…</tspan></text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="328" y="350" width="28" height="26" class="combo"/>
@@ -9670,9 +9698,9 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="652" y="350" width="28" height="26" class="combo"/>
 <text x="666" y="363" class="combo tap">
-<tspan x="666" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="666" dy="1.2em" style="font-size: 88%">…</tspan>
+<tspan x="666" dy="-0.6em">&amp;kps</tspan><tspan x="666" dy="1.2em">…</tspan>
 </text>
-<text x="666" y="352" class="combo shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+<text x="666" y="352" class="combo shifted"><tspan style="font-size: 64%">&amp;kps LS(R)…</tspan></text>
 </g>
 <g class="combo combopos-3">
 <path d="M504,427 l-76,0" class="combo"/>
@@ -9696,9 +9724,9 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="798" y="99" width="28" height="26" class="combo"/>
 <text x="812" y="112" class="combo tap">
-<tspan x="812" dy="-0.6em" style="font-size: 88%">&amp;two_kps</tspan><tspan x="812" dy="1.2em" style="font-size: 88%">…</tspan>
+<tspan x="812" dy="-0.6em">&amp;kps</tspan><tspan x="812" dy="1.2em">…</tspan>
 </text>
-<text x="812" y="101" class="combo shifted"><tspan style="font-size: 64%">&amp;two_kps L…</tspan></text>
+<text x="812" y="101" class="combo shifted"><tspan style="font-size: 64%">&amp;kps LS(D)…</tspan></text>
 </g>
 </g>
 </g>

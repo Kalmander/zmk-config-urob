@@ -113,7 +113,7 @@
 		qu: qu_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&two_kps Q U>, <&two_kps LS(Q) U>;
+			bindings = <&kps Q U>, <&kps LS(Q) U>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
@@ -338,7 +338,7 @@
 		)
 		
 		
-		two_kps: two_kps {
+		kps: two_kps {
 			compatible = "zmk,behavior-macro-two-param";
 			#binding-cells = <2>;
 			/* wait-ms = <40>; */
@@ -348,6 +348,15 @@
 			bindings =  <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>,
 			<&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>;
 		};
+
+		skp: sqt_then_kp {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings =  <&kp SQT>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+		};
+		
 		
 		kp_then_layer: kp_then_layer {
 			compatible = "zmk,behavior-macro-two-param";

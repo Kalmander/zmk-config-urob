@@ -340,11 +340,11 @@
 			bindings = <
 			
 			&trans    &trans  &trans       &trans       &trans                                                                        &trans  &trans  &trans     &trans  &trans
-			&degsign  &trans  &trans       &trans       &trans     &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &trans       &trans       &trans     &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &polish_l  &trans  &trans
-			&trans    &trans  &trans       &trans       &trans             &trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans     &trans  &trans
+			&degsign  &trans  &trans       &trans       &trans     &trans                                                     &trans  &trans  &skp V  &trans     &trans  &trans
+			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &skp D  &skp L     &trans  &trans
+			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &skp T  &skp N     &trans  &trans
+			&trans    &trans  &trans       &trans       &trans     &trans  &trans  &trans  &trans     &trans  &trans  &skp R  &skp M  &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans       &trans       &trans             &trans  &skp C  &trans     &trans  &skp S  &trans          &trans  &trans  &trans     &trans  &trans
 			
 			>;
 		};
