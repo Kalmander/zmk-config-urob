@@ -251,6 +251,15 @@
 
     #define pulse pulse_activation PULSE 0
 
+		bpulse: to_base_then_pulse {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&to NAV_WORD>, <&pulse>;
+      /* hugmyndin er augljóslega ekki að fara á nav word, þarf bara að brjóta tristate */
+		};
+
 		cnav: cancel_then_navword {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
