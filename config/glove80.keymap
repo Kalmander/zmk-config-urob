@@ -274,9 +274,9 @@
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                                     &trans   &trans  &trans  &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans  &trans   &trans  &trans  &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &kp FSLH &trans  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &basecaps  &trans   &kp FSLH &qu  &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &leftnav  &downnav   &upnav  &rightnav  &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &trans  &kp BSLH   &kp AMPS  &trans  &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH  &kp SQT   &kp AMPS  &trans  &trans  &trans
 			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans          &ctrl_tab   &sctrl_tab  &trans  &trans  &trans
 			
 			>;

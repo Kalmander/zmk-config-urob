@@ -110,6 +110,13 @@
 			bindings = <&kp K_CANCEL>, <&nexus_autolayer NEXUS>;
 		};
 
+		qu: qu_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&two_kps Q U>, <&two_kps LS(Q) U>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
 		dot_assist: dot_assist { 
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
