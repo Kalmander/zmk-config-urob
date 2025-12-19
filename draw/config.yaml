@@ -9,6 +9,7 @@ parse_config:
     #include "misc/unicodes.dtsi"
 
   raw_binding_map:
+    "&two_kps Q U": QU
     "&hold_navauto LEFT NAV_WORD": ← Auto
     "&hold_navauto RIGHT NAV_WORD": → Auto
     "&hold_navauto DOWN NAV_WORD": ↓ Auto
