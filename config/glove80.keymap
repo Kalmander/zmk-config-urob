@@ -27,20 +27,21 @@
 #define NUM_WORD_STICKY_R 13
 #define NUM_WORD_PLUS 14
 #define NUM_WORD_MODDED 15
-#define PULSE 16
-#define NEXUS 17
-#define DNEXUS 18
+#define NEXUS 16
+#define DNEXUS 17
+#define PULSE 18
 #define TABBER 19
-#define FUNCTIONS 20
-#define ICE 21
-#define JOKER 22
-#define EDI 23
-#define MOUSE 24
-#define MOUSE_SLOW 25
-#define MOUSE_WARP 26
-#define MOUSE_FAST 27
-#define MOUSE_SWITCHER 28
-#define UNIC_LAYER 29
+#define TRICODER 20
+#define FUNCTIONS 21
+#define ICE 22
+#define JOKER 23
+#define EDI 24
+#define MOUSE 25
+#define MOUSE_SLOW 26
+#define MOUSE_WARP 27
+#define MOUSE_FAST 28
+#define MOUSE_SWITCHER 29
+/* #define UNIC_LAYER 29 */
 #define BASE_DOT 30
 #define MAGIC 31
 
@@ -66,7 +67,7 @@
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
 			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
 			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &none           &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none         &kp PSCRN
 			
       >;
 		};
@@ -74,12 +75,12 @@
 		Typing {
 			bindings = <
 			
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                   &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN  &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp MINUS     &kp Q          &sk LCTRL      &mpcaps                                                                                         &mpcaps        &kp K     &kp V         &kp MINUS    &kp RIGHT      &_dot
-			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D         &kp L        &kp X          &sk LC(LSHIFT)
-			&kp DQT          &adaptive       &kp I   &kp E  &kp A          &kp DOT                                                                                         &thorn_eth     &kp H  &kp T &kp N  &kp P          &kp SQT
-			&kp Z            &sl ICE         &kp RA(P)     &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &cancel_or_nexus &kp R      &kp M          &kp W        &kp G         &kp B        &kp J          &kp L
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kp C  &numl           &numr         &kp S  &sl NEXUS                  &kp DOWN     &kp UP        &kp AT       &to UNIC_LAYER &kp PSCRN
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                  &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp AT        &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
+			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
+			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
+      &magic MAGIC 0   &none           &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none         &kp PSCRN
 			
 			>;
 		};
@@ -269,20 +270,6 @@
 		};
 
 
-		Pulse {
-			bindings = <
-			
-			&trans  &trans  &trans    &trans  &trans                                                                                                       &trans     &trans      &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp HASH    &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &kp FSLH    &kp GT     &trans  &trans
-			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans   &trans   &trans      &trans  &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &kp COLON  &kp SEMI   &kp AMPS     &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans   &kp Q  &basecaps            &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
-			
-			>;
-		};
-
-
 		Nexus {
 			bindings = <
 			
@@ -310,15 +297,42 @@
 			>;
 		};
 
+		Pulse {
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                                                       &trans     &trans      &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp HASH    &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &kp FSLH    &kp GT     &trans  &trans
+			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &kp COLON  &kp SEMI    &kp AMPS   &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &trans   &kp Q  &basecaps           &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			
+			>;
+		};
+
+
 		Tabber {
 			bindings = <
 			
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp FSLH  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &kp LC(W)                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse  &kp ENTER  &kp LC(BACKSPACE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &kp LC(W)                                               &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bpulse  &trans  &kp LC(BACKSPACE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))          &kp TAB  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
+			
+			>;
+		};
+
+		Tricoder {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bpulse &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &kp TAB          &kp ESCAPE  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
@@ -441,18 +455,18 @@
 			>;
 		};
 
-		UnicodeLayer {
-			bindings = <
-			
-			&uc alien_uc        &uc ufo_uc           &uc rocket_uc          &uc magic_wand_uc   &uc wizard_uc                                                                                                                                          &uc elf_uc             &uc vampire_uc               &uc zombie_uc           &uc crystal_ball_uc &uc sparkle_uc 
-			&uc clown_uc        &uc partying_face_uc &uc joy_uc             &uc star_struck_uc  &uc heart_eyes_uc   &uc exploding_head_uc                                                                                        &spacebase            &uc smirk_uc           &uc thinking_uc              &uc scream_uc           &uc boom_uc         &uc skull_uc 
-			&uc hear_no_evil_uc &to BASE             &uc brain_uc           &uc waving_hand_uc  &kp SPACE           &sk LSHIFT                                                                                                   &sk RSHIFT            &uc fire_combo_uc      &uc dagger_uc                &uc livelong_uc         &uc metal_uc        &uc turtle_uc 
-			&uc yinyang_uc      &spacebase           &uc pinched_fingers_uc &uc euro_uc         &uc palm_up_hand_uc &enterbase                                                                                                   &uc less_combo_uc     &uc saluting_face_uc   &uc tradecopy_uc             &uc greater_combo_uc    &uc impliesiff_uc   &uc index_pointing_at_the_viewer_uc 
-			&uc star_glow_uc    &uc 0x2764 0         &uc broken_heart_uc    &kp SPACE           &uc ok_hand_uc      &kp BACKSPACE  &none   &to BASE  &kp ENTER     &kp ENTER       &to BASE         &uc two_hearts_uc  &uc permille_uc       &uc sparkling_heart_uc &uc revolving_hearts_uc      &uc tada_uc             &uc brain_uc        &uc books_uc 
-			&uc warning_uc      &uc exclamation_uc   &uc question_uc        &uc left_uc         &uc right_uc                       &spacebase &trans &uc dice_uc   &uc bullseye_uc &uc sob_skull_uc &bnexus                                  &uc down_uc            &uc up_uc      &uc underage_uc              &uc no_mobile_phones_uc &uc peace_uc 
-			
-			>;
-		};
+		/* UnicodeLayer { */
+		/* 	bindings = < */
+		/**/
+		/* 	&uc alien_uc        &uc ufo_uc           &uc rocket_uc          &uc magic_wand_uc   &uc wizard_uc                                                                                                                                          &uc elf_uc             &uc vampire_uc               &uc zombie_uc           &uc crystal_ball_uc &uc sparkle_uc  */
+		/* 	&uc clown_uc        &uc partying_face_uc &uc joy_uc             &uc star_struck_uc  &uc heart_eyes_uc   &uc exploding_head_uc                                                                                        &spacebase            &uc smirk_uc           &uc thinking_uc              &uc scream_uc           &uc boom_uc         &uc skull_uc  */
+		/* 	&uc hear_no_evil_uc &to BASE             &uc brain_uc           &uc waving_hand_uc  &kp SPACE           &sk LSHIFT                                                                                                   &sk RSHIFT            &uc fire_combo_uc      &uc dagger_uc                &uc livelong_uc         &uc metal_uc        &uc turtle_uc  */
+		/* 	&uc yinyang_uc      &spacebase           &uc pinched_fingers_uc &uc euro_uc         &uc palm_up_hand_uc &enterbase                                                                                                   &uc less_combo_uc     &uc saluting_face_uc   &uc tradecopy_uc             &uc greater_combo_uc    &uc impliesiff_uc   &uc index_pointing_at_the_viewer_uc  */
+		/* 	&uc star_glow_uc    &uc 0x2764 0         &uc broken_heart_uc    &kp SPACE           &uc ok_hand_uc      &kp BACKSPACE  &none   &to BASE  &kp ENTER     &kp ENTER       &to BASE         &uc two_hearts_uc  &uc permille_uc       &uc sparkling_heart_uc &uc revolving_hearts_uc      &uc tada_uc             &uc brain_uc        &uc books_uc  */
+		/* 	&uc warning_uc      &uc exclamation_uc   &uc question_uc        &uc left_uc         &uc right_uc                       &spacebase &trans &uc dice_uc   &uc bullseye_uc &uc sob_skull_uc &bnexus                                  &uc down_uc            &uc up_uc      &uc underage_uc              &uc no_mobile_phones_uc &uc peace_uc  */
+		/**/
+		/* 	>; */
+		/* }; */
 
 		BaseDot {
 			bindings = <
@@ -462,7 +476,7 @@
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                  &rshift_repeat &kpdot F        &kp D          &kpdot L    &kpdot X          &none
 			&kpdot RA(P)     &kpdot W           &kpdot I   &kpdot E  &kpdot A    &adaptive                                                                                          &kpdot RA(T)     &kpdot H  &kpdot T  &kpdot N  &kpdot P          &kp DQT
 			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kpdot R     &kpdot M          &kpdot K        &kpdot G          &kpdot B        &kpdot J            &kpdot J
-      &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
+      &magic MAGIC 0   &none  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none  &kp PSCRN
 			
       >;
 		};

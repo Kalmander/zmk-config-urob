@@ -61,26 +61,26 @@
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <LB4 LB3 LB2 LH4>;
-				ignored-layers = <TABBER>;
+				bindings = <&cto TRICODER>, <&kp ENTER>, <&to BASE>;
+				ignored-key-positions = <LB4 LB3 LB2 LF2>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <1000>;
 		};
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
 		shift_enters: shift_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <LB4 LB3 LB2 LH4>;
-				ignored-layers = <TABBER>;
+				bindings = <&cto TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
+				ignored-key-positions = <LB4 LB3 LB2 LF2>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <1000>;
 		};
 		gui_enters: gui_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <LB4 LB3 LB2 LH4>;
-				ignored-layers = <TABBER>;
+				bindings = <&cto TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
+				ignored-key-positions = <LB4 LB3 LB2 LF2>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <1000>;
 		};
 		ns_enters: normal_shift_enters {
@@ -96,36 +96,34 @@
 			mods = <(MOD_LGUI|MOD_RGUI)>;
 		};
 
-		tabs: tabs {
+		tabs_normal: tabs_normal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <LB3 LH4>;
-				ignored-layers = <BASE PULSE TABBER>;
+				bindings = <&cto TRICODER>, <&kp TAB>, <&to BASE>;
+				ignored-key-positions = <LB3 LB2 LF2>;
+				ignored-layers = <BASE PULSE TRICODER>;
         timeout-ms = <1000>;
 		};
-
-		/* shift_tabs: shift_tab_stick { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>; */
-		/* 		ignored-key-positions = <LB3 LH1>; */
-		/* 		ignored-layers = <TABBER>; */
-		/* }; */
-		/* tabs: tabs { */
-		/* 	compatible = "zmk,behavior-mod-morph"; */
-		/* 	#binding-cells = <0>; */
-		/* 	bindings = <&tabs_normal>, <&shift_tabs>; */
-		/* 	mods = <(MOD_LSFT|MOD_RSFT)>; */
-		/* }; */
-
-		slash: slash {
+		shift_tabs: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp FSLH>, <&to BASE>;
-				ignored-key-positions = <LB3 RT3>;
-				ignored-layers = <BASE PULSE TABBER>;
-        timeout-ms = <1000>;
+				bindings = <&cto TRICODER>, <&kp LS(TAB)>, <&to BASE>;
+				ignored-key-positions = <LB3 LB2 LF2>;
+				ignored-layers = <TRICODER>;
+		};
+		tabs: tabs {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&tabs_normal>, <&shift_tabs>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		escaper: escaper {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp ESCAPE>, <&to BASE>;
+				ignored-key-positions = <LH4>;
+				ignored-layers = <TRICODER>;
 		};
 
 
@@ -136,6 +134,16 @@
 				ignored-key-positions = <RT1 LB1>;
 				ignored-layers = <TABBER>;
 		};
+
+		slash: slash {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp FSLH>, <&to BASE>;
+				ignored-key-positions = <LB3 RT3>;
+				ignored-layers = <BASE PULSE TABBER>;
+        timeout-ms = <1000>;
+		};
+
 
 
 		/* cskctrl: cskctrl { */
