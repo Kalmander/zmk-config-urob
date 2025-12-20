@@ -103,6 +103,7 @@
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; strict-modifiers; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; strict-modifiers; };
 			/* ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
+			ak_zb { trigger-keys = <Z>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 
 			ak_nl { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp L>; };
 			/* ak_nk { trigger-keys = <N>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
@@ -358,6 +359,14 @@
 			#binding-cells = <0>;
 			bindings = <&spacebase>;
 			ak_idot { trigger-keys = <N2>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
+		};
+
+    /* fyrir ZQ ofc */
+    smart_q: smart_q {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp Q>;
+			ak_idot { trigger-keys = <LS(Z)>; max-prior-idle-ms = <800>; bindings = <&kp LS(Q)>; strict-modifiers; };
 		};
 
 		dot_shift: dot_shift {

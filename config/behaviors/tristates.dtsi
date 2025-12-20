@@ -64,7 +64,7 @@
 				bindings = <&cto TRICODER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2 LF2>;
 				ignored-layers = <TRICODER>;
-        timeout-ms = <1000>;
+        timeout-ms = <2000>;
 		};
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
 		shift_enters: shift_enter_stick {
@@ -73,7 +73,7 @@
 				bindings = <&cto TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2 LF2>;
 				ignored-layers = <TRICODER>;
-        timeout-ms = <1000>;
+        timeout-ms = <2000>;
 		};
 		gui_enters: gui_enter_stick {
 				compatible = "zmk,behavior-tri-state";
@@ -81,7 +81,7 @@
 				bindings = <&cto TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
 				ignored-key-positions = <LB4 LB3 LB2 LF2>;
 				ignored-layers = <TRICODER>;
-        timeout-ms = <1000>;
+        timeout-ms = <2000>;
 		};
 		ns_enters: normal_shift_enters {
 			compatible = "zmk,behavior-mod-morph";
@@ -102,7 +102,7 @@
 				bindings = <&cto TRICODER>, <&kp TAB>, <&to BASE>;
 				ignored-key-positions = <LB3 LB2 LF2>;
 				ignored-layers = <BASE PULSE TRICODER>;
-        timeout-ms = <1000>;
+        timeout-ms = <2000>;
 		};
 		shift_tabs: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
@@ -110,6 +110,7 @@
 				bindings = <&cto TRICODER>, <&kp LS(TAB)>, <&to BASE>;
 				ignored-key-positions = <LB3 LB2 LF2>;
 				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
 		};
 		tabs: tabs {
 			compatible = "zmk,behavior-mod-morph";
@@ -124,15 +125,17 @@
 				bindings = <&cto TRICODER>, <&kp ESCAPE>, <&to BASE>;
 				ignored-key-positions = <LH4>;
 				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
 		};
 
 
 		ctrl_bs: ctrl_backspace {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LC(BACKSPACE)>, <&to BASE>;
+				bindings = <&cto TRICODER>, <&kp LC(BACKSPACE)>, <&to BASE>;
 				ignored-key-positions = <RT1 LB1>;
-				ignored-layers = <TABBER>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <6000>;
 		};
 
 		slash: slash {
