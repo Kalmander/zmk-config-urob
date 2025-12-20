@@ -302,7 +302,7 @@
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                                       &trans     &trans      &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp HASH    &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &kp FSLH    &kp GT     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &slash      &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
 			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &kp AMPS   &trans  &trans
 			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &trans   &kp Q  &basecaps           &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
