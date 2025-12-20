@@ -194,7 +194,7 @@
     kpn: capital_kp_then_nexus_sl {
 			compatible = "zmk,behavior-macro-one-param";
 			#binding-cells = <1>;
-			bindings = <&sk LSHIFT>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&to BASE>, <&sl NEXUS>;
+			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&sl NEXUS>;
     };
 		
 		layer_with_mod: layer_with_mod {

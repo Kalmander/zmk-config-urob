@@ -29,8 +29,8 @@
 #define NUM_WORD_MODDED 15
 #define PULSE 16
 #define NEXUS 17
-#define TABBER 18
-#define TRILAYER 19
+#define DNEXUS 18
+#define TABBER 19
 #define FUNCTIONS 20
 #define ICE 21
 #define JOKER 22
@@ -275,9 +275,9 @@
 			&trans  &trans  &trans    &trans  &trans                                                                                                       &trans     &trans      &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp HASH    &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &kp FSLH    &kp GT     &trans  &trans
-			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp Q      &kp BSLH   &basecaps   &kp AMPS     &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans   &kp LBKT  &kp RBKT            &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans   &trans   &trans      &trans  &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &kp COLON  &kp SEMI   &kp AMPS     &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans   &kp Q  &basecaps            &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 			
 			>;
 		};
@@ -286,16 +286,29 @@
 		Nexus {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                    &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans       &trans     &kp PRCNT  &trans     &trans  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &basecaps &trans                                                                             &trans       &basecaps   &kp S      &kp R      &trans  &f_lock
-			&kp GRAVE &kp PIPE   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME     &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
-			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp BSLH   &kp TAB    &mouse     &trans &trans
-			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS               &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
+			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans    &trans     &kp PRCNT  &trans     &trans  &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &trans    &basecaps                                                                          &trans    &trans     &kp S      &kp R      &trans  &f_lock
+			&kp GRAVE &kp PIPE   &kp LPAR  &kp RPAR   &kp LBKT  &kp RBKT                                                                           &kp HOME  &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
+			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp BSLH  &sl DNEXUS &kp TAB    &mouse     &trans &trans
+			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS            &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
 			
 			>;
 		};
+
     
+		DoubleNexus {
+			bindings = <
+			
+			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
+			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans    &trans     &kpn PRCNT  &trans     &trans  &j_lock
+			&trans    &trans     &kpn LBRC  &kpn RBRC   &trans    &basecaps                                                                          &trans    &trans     &kpn S      &kpn R      &trans  &f_lock
+			&kpn GRAVE &kpn PIPE   &kpn LPAR  &kpn RPAR   &kpn LBKT  &kpn RBKT                                                                           &kpn HOME  &kpn ENTER  &kpn ESC    &kpn END    &ctrl_lock &trans
+			&trans    &kpn PRCNT  &kpn QMARK &kpn TILDE  &kpn EXCL  &kpn DELETE  &kpn UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kpn BSLH  &sl DNEXUS   &kpn TAB    &mouse     &trans &trans
+			&trans    &kpn INSERT &kpn LALT  &kpn LSHIFT &kpn LGUI              &kpn SPACE  &kpn BSLH  &kpn LCTRL    &kpn RCTRL &combo_rs_macro &sl NEXUS            &kpn RGUI   &kpn RSHIFT &kpn RALT   &trans  &to JOKER
+			
+			>;
+		};
 
 		Tabber {
 			bindings = <
@@ -310,18 +323,6 @@
 			>;
 		};
 
-		TriLayer {
-			bindings = <
-			
-			&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans   &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
-			
-			>;
-		};
 
 		Function {
 			bindings = <
