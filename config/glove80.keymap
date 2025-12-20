@@ -277,7 +277,7 @@
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &kp FSLH    &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &trans  &trans
 			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp Q      &kp BSLH   &basecaps   &kp AMPS     &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans &sk LCTRL  &trans            &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &kp ESC                   &kp TAB     &nav_ctrl  &nav_ctrlshift_macro    &trans   &kp LBKT  &kp RBKT            &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 			
 			>;
 		};
@@ -288,7 +288,7 @@
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                    &trans     &trans     &trans     &trans  &trans
 			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans       &trans     &kp PRCNT  &trans     &trans  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp LBKT  &basecaps                                                                          &basecaps    &kp RBKT   &kp S      &kp R      &trans  &f_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &basecaps &trans                                                                             &trans       &basecaps   &kp S      &kp R      &trans  &f_lock
 			&kp GRAVE &kp PIPE   &kp LPAR  &kp RPAR   &kp COLON &kp SEMI                                                                           &kp HOME     &kp ENTER  &kp ESC    &kp END    &ctrl_lock &trans
 			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp K_CANCEL &kp BSLH   &kp TAB    &mouse     &trans &trans
 			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &kp BSLH  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS               &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
