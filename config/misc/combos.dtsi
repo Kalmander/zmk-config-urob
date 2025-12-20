@@ -225,6 +225,14 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		rparpulse: rparpulse {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp RPAR &sl PULSE>;
+		};
+
 		/* wh_and_kp: wh_and_kp { */
 		/* 	compatible = "zmk,behavior-macro-one-param"; */
 		/* 	#binding-cells = <1>; */
@@ -499,6 +507,14 @@
 			bindings = <&epulse>;
 			layers = <BASE TYPING>;
 		};
+
+		/* combo_rparpulse { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LM3 LB3>; */
+		/* 	bindings = <&rparpulse>; */
+		/* 	layers = <NEXUS DNEXUS>; */
+		/* }; */
+
 		/* combo_gt_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RM3 RB3>; */
