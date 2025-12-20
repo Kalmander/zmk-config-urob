@@ -129,6 +129,15 @@
 		};
 
 
+		ctrl_bs: ctrl_backspace {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&kp LC(BACKSPACE)>, <&to BASE>;
+				ignored-key-positions = <RT1 LB1>;
+				ignored-layers = <TABBER>;
+		};
+
+
 		/* cskctrl: cskctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
 		/* 		#binding-cells = <0>; */

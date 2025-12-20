@@ -65,7 +65,7 @@
 			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp AT        &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
 			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
-			&kp SQT          &sl ICE         &kp DOT       &pulse    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
+			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
       &magic MAGIC 0   &to UNIC_LAYER  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &to UNIC_LAYER &kp PSCRN
 			
       >;
@@ -317,7 +317,7 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &kp FSLH  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &kp LC(W)                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bpulse  &kp ENTER  &kp LC(BACKSPACE)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))          &kp TAB  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
 			
 			>;
