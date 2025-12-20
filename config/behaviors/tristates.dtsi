@@ -112,11 +112,25 @@
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
-		tabs: tabs {
+		gui_tabs: gui_tab_stick {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp LG(TAB)>, <&to BASE>;
+				ignored-key-positions = <LB3 LB2 LF2>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+		ns_tabs: ns_tabs {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
 			bindings = <&tabs_normal>, <&shift_tabs>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		tabs: tabs {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&ns_tabs>, <&gui_tabs>;
+			mods = <(MOD_LGUI|MOD_RGUI)>;
 		};
 
 		escaper: escaper {
