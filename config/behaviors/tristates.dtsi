@@ -132,6 +132,24 @@
 			bindings = <&ns_tabs>, <&gui_tabs>;
 			mods = <(MOD_LGUI|MOD_RGUI)>;
 		};
+    
+		colon: colon {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp COLON>, <&to BASE>;
+				ignored-key-positions = <LB2 LF2>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
+		semi: semi {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp SEMI>, <&to BASE>;
+				ignored-key-positions = <LB2 LF2>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
 
 		escaper: escaper {
 				compatible = "zmk,behavior-tri-state";
