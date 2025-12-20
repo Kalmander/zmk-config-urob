@@ -340,12 +340,12 @@
 		IcelandicKeys {
 			bindings = <
 			
-			&trans    &trans  &trans       &trans       &trans                                                                        &trans  &trans  &trans     &trans  &trans
-			&degsign  &trans  &trans       &trans       &trans     &trans                                                     &trans  &trans  &skp V  &trans     &trans  &trans
-			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)  &trans                                                     &trans  &trans  &skp D  &skp L     &trans  &trans
-			&trans    &trans  &kp RA(I)    &kp RA(E)    &kp RA(A)  &trans                                                     &trans  &trans  &skp T  &skp N     &trans  &trans
-			&trans    &trans  &trans       &trans       &trans     &trans  &trans  &trans  &trans     &trans  &trans  &skp R  &skp M  &trans  &trans  &trans     &trans  &trans
-			&trans    &trans  &trans       &trans       &trans             &trans  &skp C  &trans     &trans  &skp S  &trans          &trans  &trans  &trans     &trans  &trans
+			&trans    &trans  &trans       &trans       &trans                                                                                  &trans  &trans  &trans  &trans  &trans
+			&degsign  &trans  &skp Q       &trans       &trans       &trans                                                     &trans          &trans  &skp V  &skp Z  &trans  &trans
+			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)    &trans                                                     &trans          &skp F  &skp D  &skp L  &skp X  &trans
+			&trans    &skp W  &kp RA(I)    &kp RA(E)    &kp RA(A)    &trans                                                     &kps SQT RA(T)  &skp H  &skp T  &skp N  &skp P  &trans
+			&trans    &trans  &trans       &trans       &kps SQT SQT &trans  &trans  &trans  &trans     &trans  &trans  &skp R  &skp M          &skp K  &skp G  &skp B  &skp J  &skp J
+			&trans    &trans  &trans       &trans       &trans               &kps SQT SPACE  &skp C  &trans     &trans  &skp S  &trans                  &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
