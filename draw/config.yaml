@@ -15,6 +15,9 @@ parse_config:
     "&hold_navauto DOWN NAV_WORD": ↓ Auto
     "&hold_navauto UP NAV_WORD": ↑ Auto
     "&nav_gui": Nav Gui
+    "&kp C_PLAY_PAUSE": ⏯
+    "&kp C_NEXT": ⏭
+    "&kp C_PREV": ⏮
     "&colon": ":"
     "&semi": ";"
     "&nav_guishift_macro": Nav Gui Shift
