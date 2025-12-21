@@ -361,6 +361,18 @@
 			layer-id = <DNEXUS>;
 		};
 
+		NumNexus {
+			bindings = <
+			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NUMNEXUS>;
+		};
+
 		Pulse {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
