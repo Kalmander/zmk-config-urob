@@ -101,6 +101,8 @@
 			ak_bn { trigger-keys = <B>; max-prior-idle-ms = <2000>; bindings = <&kp N>; };
 			ak_lb { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp B>; };
 			ak_tv { trigger-keys = <T>; max-prior-idle-ms = <2000>; bindings = <&kp V>; strict-modifiers; };
+			ak_lstv { trigger-keys = <LS(T)>; max-prior-idle-ms = <2000>; bindings = <&kp V>; strict-modifiers; };
+			ak_rstv { trigger-keys = <RS(T)>; max-prior-idle-ms = <2000>; bindings = <&kp V>; strict-modifiers; };
 			ak_dg { trigger-keys = <D>; max-prior-idle-ms = <2000>; bindings = <&kp G>; strict-modifiers; };
 			/* ak_kl { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp L>; }; */
 			ak_zb { trigger-keys = <Z>; max-prior-idle-ms = <2000>; bindings = <&kp B>; strict-modifiers; }; /* strict fyrir æð */
