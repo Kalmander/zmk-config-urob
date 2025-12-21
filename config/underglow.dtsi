@@ -494,17 +494,17 @@
 			layer-id = <MOUSE_FAST>;
 		};
 		
-		MouseSwitcher {
-			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug MouSw &ug MouSw &ug MouSw  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug MouSw &ug MouSw &ug MouSw &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <MOUSE_SWITCHER>;
-		};
+		/* MouseSwitcher { */
+		/* 	bindings = < */
+		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug MouSw &ug MouSw &ug MouSw  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ */
+		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug MouSw &ug MouSw &ug MouSw &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	>; */
+		/* 	layer-id = <MOUSE_SWITCHER>; */
+		/* }; */
 		
 		BaseDot {
 			bindings = <
