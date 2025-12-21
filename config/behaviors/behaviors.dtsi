@@ -194,8 +194,17 @@
     kpn: capital_kp_then_nexus_sl {
 			compatible = "zmk,behavior-macro-one-param";
 			#binding-cells = <1>;
+			wait-ms = <0>;
+			tap-ms = <0>;
 			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&sl NEXUS>;
+      /* bindings =  */
+      /*        <&to BASE>            // Ensure clean slate */
+      /*        ,<&macro_param_1to1> */
+      /*        , <&kp MACRO_PLACEHOLDER> */
+              /* , <&macro_wait_time 10> // Let the old layers die */ 
+      /*        , <&sl NEXUS>;          // Add the new layer */
     };
+
 		
 		layer_with_mod: layer_with_mod {
 			compatible = "zmk,behavior-macro-two-param";
