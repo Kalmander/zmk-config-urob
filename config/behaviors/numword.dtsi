@@ -15,6 +15,7 @@
 			continue-list = <
         SPACE UNDER LEFT RIGHT UP DOWN BACKSPACE DELETE DOT COMMA PLUS MINUS STAR FSLH EQUAL CLEAR_AGAIN G COLON SEMI
         C_PREV C_NEXT C_VOL_DN C_VOL_UP
+        DQT SQT
       >;
 			ignore-numbers;
       ignore-modifiers;
