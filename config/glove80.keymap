@@ -274,7 +274,7 @@
 			bindings = <
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &kp AT     &trans    &trans                                                                             &trans    &trans     &kp PRCNT  &trans     &trans  &j_lock
+			&trans    &trans     &trans    &kp AT     &trans    &trans                                                                             &trans    &trans     &basecaps  &trans     &trans  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &trans    &basecaps                                                                          &trans    &trans     &kp S      &kp R      &trans  &f_lock
 			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                           &kp HOME  &kp ENTER  &kp ESC    &kp END    &trans  &trans
 			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp BSLH  &sl DNEXUS &kp TAB    &mouse     &trans &trans
@@ -305,7 +305,7 @@
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &slash      &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
 			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &kp AMPS   &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &basecaps           &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &trans           &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 		
 			>;
 		};
