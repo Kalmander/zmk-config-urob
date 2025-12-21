@@ -63,7 +63,7 @@
 			bindings = <
 
 			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                  &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&none            &none           &smart_q      &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp AT        &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
+			&none            &none           &smart_q      &kp MINUS      &kp AT         &key_repeat                                                                                    &key_repeat    &kp UNDER    &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
 			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
 			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
@@ -274,9 +274,9 @@
 			bindings = <
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans    &trans     &kp PRCNT  &trans     &trans  &j_lock
+			&trans    &trans     &trans    &kp AT     &trans    &trans                                                                             &trans    &trans     &kp PRCNT  &trans     &trans  &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &trans    &basecaps                                                                          &trans    &trans     &kp S      &kp R      &trans  &f_lock
-			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                           &kp HOME  &kp ENTER  &kp ESC    &kp END    &kp UNDER  &trans
+			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                           &kp HOME  &kp ENTER  &kp ESC    &kp END    &trans  &trans
 			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp BSLH  &sl DNEXUS &kp TAB    &mouse     &trans &trans
 			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &sl FUNCTIONS  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS            &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
 			
