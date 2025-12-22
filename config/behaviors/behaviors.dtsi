@@ -191,7 +191,7 @@
 			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&sl MACRO_PLACEHOLDER>;
 		};
 
-    kpn: capital_kp_then_nexus_sl {
+    kpn: kp_then_nexus_sl {
 			compatible = "zmk,behavior-macro-one-param";
 			#binding-cells = <1>;
 			wait-ms = <0>;
@@ -203,6 +203,14 @@
       /*        , <&kp MACRO_PLACEHOLDER> */
               /* , <&macro_wait_time 10> // Let the old layers die */ 
       /*        , <&sl NEXUS>;          // Add the new layer */
+    };
+
+    kpnum: kp_then_nexus_numplus {
+			compatible = "zmk,behavior-macro-one-param";
+			#binding-cells = <1>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&nums_plus>;
     };
 
 		

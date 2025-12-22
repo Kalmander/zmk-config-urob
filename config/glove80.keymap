@@ -315,11 +315,11 @@
 			bindings = <
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &kp AT     &trans    &trans                                                                             &trans    &trans     &basecaps  &trans     &trans  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &trans    &basecaps                                                                          &trans    &trans     &kp S      &kp R      &trans  &f_lock
-			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                           &kp HOME  &kp ENTER  &kp ESC    &kp END    &nexus_auto  &trans
-			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp BSLH  &sl NUMNEXUS &kp TAB    &mouse     &trans &trans
-			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &sl FUNCTIONS  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS            &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
+			&trans    &trans     &trans    &kpnum AT     &trans    &trans                                                                             &trans    &trans     &basecaps  &trans     &trans  &j_lock
+			&trans    &trans     &kpnum LBRC  &kpnum RBRC   &trans    &basecaps                                                                          &trans    &trans     &kpnum S      &kpnum R      &trans  &f_lock
+			&kpnum GRAVE &kpnum PIPE   &kpnum LBKT  &kpnum LPAR   &kpnum RPAR  &kpnum RBKT                                                                           &kpnum HOME  &kpnum ENTER  &kpnum ESC    &kpnum END    &nexus_auto  &trans
+			&trans    &kpnum PRCNT  &kpnum QMARK &kpnum TILDE  &kpnum EXCL  &kpnum DELETE  &kpnum UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kpnum BSLH  &sl NUMNEXUS &kpnum TAB    &mouse     &trans &trans
+			&trans    &kpnum INSERT &kpnum LALT  &kpnum LSHIFT &kpnum LGUI              &kpnum SPACE  &sl FUNCTIONS  &kpnum LCTRL    &kpnum RCTRL &combo_rs_macro &sl NEXUS            &kpnum RGUI   &kpnum RSHIFT &kpnum RALT   &trans  &to JOKER
 			
 			>;
 		};
