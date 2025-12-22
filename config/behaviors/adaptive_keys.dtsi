@@ -7,6 +7,7 @@
 			bindings = <&kp RA(Z)>;
 
 			ak_idot { trigger-keys = <I>; max-prior-idle-ms = <1000>; bindings = <&kp DOT>; };
+			ak_doti { trigger-keys = <DOT>; max-prior-idle-ms = <1000>; bindings = <&kp I>; };
 			/* ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp Y>; }; */
 			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
 			ak_eo { trigger-keys = <E>; max-prior-idle-ms = <2000>; bindings = <&kp O>; };
