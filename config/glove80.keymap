@@ -277,8 +277,8 @@
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp AT      &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &slash      &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &kp AMPS   &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &nexus_auto    &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &camps      &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &sl NUMNEXUS    &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 		
 			>;
 		};
@@ -291,25 +291,11 @@
 			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                &trans    &trans       &basecaps      &trans    &trans     &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                             &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
 			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                              &kp HOME  &kp ENTER    &kp ESC        &kp END   &kp INSERT &trans
-			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans    &trans          &trans    &kp BSLH  &sl NUMNEXUS &kp TAB        &mouse    &trans     &trans
-			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl FUNCTIONS &numl        &numr     &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
+			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans    &trans          &trans    &kp BSLH  &nexus_autolayer NEXUS &kp TAB        &mouse    &trans     &trans
+			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl FUNCTIONS &bnums_plus  &bnums_plus &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
 			
 			>;
 		};
-
-    
-		/* DoubleNexus { */
-		/* 	bindings = < */
-		/**/
-		/* 	&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans */
-		/* 	&trans    &trans     &trans    &kpn AT     &trans    &trans                                                                             &trans    &trans     &kpn PRCNT  &trans     &trans  &j_lock */
-		/* 	&trans    &trans     &kpn LBRC  &kpn RBRC   &trans    &basecaps                                                                          &trans    &trans     &kpn S      &kpn R      &trans  &f_lock */
-		/* 	&kpn GRAVE &kpn PIPE   &kpn LBKT  &kpn LPAR   &kpn RPAR  &kpn RBKT                                                                           &kpn HOME  &kpn ENTER  &kpn ESC    &kpn END    &trans &trans */
-		/* 	&trans    &kpn PRCNT  &kpn QMARK &kpn TILDE  &kpn EXCL  &kpn DELETE  &kpn UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kpn BSLH  &sl NUMNEXUS   &kpn TAB    &mouse     &trans &trans */
-		/* 	&trans    &kpn INSERT &kpn LALT  &kpn LSHIFT &kpn LGUI              &kpn SPACE  &sl FUNCTIONS  &kpn LCTRL    &kpn RCTRL &combo_rs_macro &sl NEXUS            &kpn RGUI   &kpn RSHIFT &kpn RALT   &trans  &to JOKER */
-		/**/
-		/* 	>; */
-		/* }; */
 
 		NumNexus {
 			bindings = <
