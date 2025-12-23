@@ -277,8 +277,8 @@
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp AT      &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &slash      &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &camps      &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &sl FUNCTIONS  &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl      &tabs    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &camps      &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &nav_alt                    &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &sl FUNCTIONS  &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 		
 			>;
 		};
@@ -344,8 +344,8 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &trans      &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &kp TAB                       &kp ESCAPE  &trans  &trans   &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &kp TAB     &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                        &kp ESCAPE  &trans  &trans   &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
