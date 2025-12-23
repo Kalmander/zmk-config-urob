@@ -20,6 +20,7 @@ parse_config:
     "&kp C_PREV": ⏮
     "&colon": ":"
     "&semi": ";"
+    "&camps": "&"
     "&nav_guishift_macro": Nav Gui Shift
     "&nav_guictrl": Nav Gui Ctrl
     "&nav_alt": Nav Alt
@@ -28,6 +29,7 @@ parse_config:
     "&pag": Page Nav
     "&vim": Vim Nav
     "&enters": Enter (auto)
+    "&escaper": Esc (auto)
     "&slash": /
     "&pcapsword": Dotted Caps Word
     "&ctrl_lock": Ctrl Lock

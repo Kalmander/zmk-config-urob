@@ -273,12 +273,12 @@
 		Pulse {
 			bindings = <
 			
-			&trans  &trans  &trans    &trans  &trans                                                                                                       &trans     &trans      &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp AT      &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &slash      &kp GT     &trans  &trans
-			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl      &tabs    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &camps      &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &nav_alt                    &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &sl FUNCTIONS  &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans                                                                                                            &trans     &trans      &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                       &trans     &trans     &kp AT      &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                       &qu        &kp LT     &slash      &kp GT     &trans  &trans
+			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                          &trans     &trans     &trans      &trans     &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl      &tabs    &trans     &trans                     &trans  &trans     &camps   &kp BSLH   &colon     &semi       &kp Q      &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &nav_alt                    &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q   &ctrl_lock &sl FUNCTIONS       &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 		
 			>;
 		};
@@ -297,7 +297,7 @@
 			>;
 		};
 
-    /* hreint afrit af Nexus, þurfti það (af illskiljanlegum ástæðum) til að láta nexus_auto virka */
+    /* (næstum) hreint afrit af Nexus, þurfti það (af illskiljanlegum ástæðum) til að láta nexus_auto virka */
 		NexusLock {
 			bindings = <
 			
