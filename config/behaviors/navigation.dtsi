@@ -244,7 +244,7 @@
 		  compatible = "zmk,behavior-hold-tap";
 		  #binding-cells = <2>;
       flavor = "tap-preferred";
-		  tapping-term-ms = <300>; /* Mjög langt því vil næstum alltaf tap */
+		  tapping-term-ms = <200>;
 		  bindings = <&mo>, <&navigation>;
       retro-tap;
 		};
