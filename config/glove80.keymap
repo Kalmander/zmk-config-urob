@@ -277,7 +277,7 @@
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                       &trans     &trans     &kp AT      &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                       &qu        &kp LT     &slash      &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                          &trans     &trans     &trans      &trans     &trans  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl      &tabs    &trans     &trans                     &trans  &trans     &camps   &kp BSLH   &colon     &semi       &kp Q      &trans  &trans
+			&trans  &vim    &pag      &trans  &enters   &nav_guictrl      &tabs    &trans     &trans                     &trans  &trans     &pipe    &kp BSLH   &colon     &semi       &amp       &trans  &trans
 			&trans  &trans  &sk LGUI  &trans  &nav_alt                    &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q   &ctrl_lock &sl FUNCTIONS       &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 		
 			>;
@@ -290,8 +290,8 @@
 			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
 			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                     &trans    &trans       &basecaps      &trans    &trans     &j_lock
 			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
-			&kp FSLH  &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                                   &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
-			&kp GRAVE &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans          &trans    &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
+			&kp FSLH  &kp GRAVE  &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                                   &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
+			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans          &trans    &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
 			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl NUMNEXUS  &bnums_plus  &bnums_plus &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
 			
 			>;
@@ -343,7 +343,7 @@
 			&trans  &trans  &trans  &trans  &trans                                                                                    &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &key_repeat &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &kp TAB     &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans                        &kp ESCAPE  &trans  &trans   &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
