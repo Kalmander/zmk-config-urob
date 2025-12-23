@@ -349,17 +349,17 @@
 			layer-id = <NEXUS>;
 		};
 
-		DoubleNexus {
-			bindings = <
-			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <DNEXUS>;
-		};
+		/* DoubleNexus { */
+		/* 	bindings = < */
+		/* 	&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
+		/* 	>; */
+		/* 	layer-id = <DNEXUS>; */
+		/* }; */
 
 		NumNexus {
 			bindings = <
