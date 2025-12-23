@@ -394,6 +394,13 @@
 			layers = <BASE TYPING>;
 		};
 
+		combo_nexusauto {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RH4 RB2>;
+			bindings = <&nexus_auto>;
+			layers = <BASE TYPING NEXUS>;
+		};
+
 		/* combo_rs_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <RH5 RH4>; */

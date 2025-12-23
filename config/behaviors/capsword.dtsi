@@ -63,6 +63,8 @@
         CLEAR_AGAIN
         DOT COMMA MINUS 
         SPACE QMARK
+        DQT SQT
+        LEFT RIGHT DOWN UP
       >;
 		};
 
@@ -84,6 +86,7 @@
 			continue-list = <
         UNDERSCORE BACKSPACE DELETE 
         CLEAR_AGAIN
+        SQT
 			>;
 		};
 
