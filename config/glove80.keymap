@@ -29,22 +29,22 @@
 #define NUM_WORD_MODDED 15
 #define PULSE 16
 #define NEXUS 17
-/* #define DNEXUS 18 */
-#define NUMNEXUS 18
-#define TABBER 19
-#define TRICODER 20
-#define FUNCTIONS 21
-#define ICE 22
-#define JOKER 23
-#define EDI 24
-#define MOUSE 25
-#define MOUSE_SLOW 26
-#define MOUSE_WARP 27
-#define MOUSE_FAST 28
+#define NEXUS_LOCK 18
+#define NUMNEXUS 19
+#define TABBER 20
+#define TRICODER 21
+#define FUNCTIONS 22
+#define ICE 23
+#define JOKER 24
+#define EDI 25
+#define MOUSE 26
+#define MOUSE_SLOW 27
+#define MOUSE_WARP 28
+#define MOUSE_FAST 29
 /* #define MOUSE_SWITCHER 29 */
 /* #define UNIC_LAYER 29 */
-#define BASE_DOT 29
-#define MAGIC 30
+#define BASE_DOT 30
+#define MAGIC 31
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -287,11 +287,25 @@
 		Nexus {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                    &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
-			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                &trans    &trans       &basecaps      &trans    &trans     &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                             &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
-			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                              &kp HOME  &kp ENTER    &kp ESC        &kp END   &kp INSERT &trans
-			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans    &trans          &trans    &kp BSLH  &nexus_auto &kp TAB        &mouse    &trans     &trans
+			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
+			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                     &trans    &trans       &basecaps      &trans    &trans     &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
+			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                                   &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
+			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans          &trans    &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
+			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl NUMNEXUS  &bnums_plus  &bnums_plus &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
+			
+			>;
+		};
+
+    /* hreint afrit af Nexus, þurfti það (af illskiljanlegum ástæðum) til að láta nexus_auto virka */
+		NexusLock {
+			bindings = <
+			
+			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
+			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                     &trans    &trans       &basecaps      &trans    &trans     &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
+			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                                   &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
+			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans          &trans    &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
 			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl NUMNEXUS  &bnums_plus  &bnums_plus &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
 			
 			>;

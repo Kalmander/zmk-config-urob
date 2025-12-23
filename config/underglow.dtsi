@@ -349,6 +349,18 @@
 			layer-id = <NEXUS>;
 		};
 
+		NexusLock {
+			bindings = <
+			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NEXUS_LOCK>;
+		};
+
 		/* DoubleNexus { */
 		/* 	bindings = < */
 		/* 	&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */

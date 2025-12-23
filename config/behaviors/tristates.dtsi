@@ -213,9 +213,46 @@
 				ignored-layers = <TABBER>;
 		};
 
+    lock_nexus_on: lock_nexus_on {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&macro_tap &tog NEXUS_LOCK>; // Uses Toggle, which survives the roll
+    };
+    lock_nexus_off: lock_nexus_off {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&macro_tap &tog NEXUS_LOCK>;
+    };
+		nexus_auto: nexus_auto {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			bindings = <&lock_nexus_on>, <&none>, <&lock_nexus_off>;
+			ignored-key-positions = <
+			
+			/* left hand */
+			
+			         13        \
+			      24 25 26 27  \
+			34 35 36 37 38 39  \
+			   47 48 49 50 51  \
+			/* right hand */
 
+            18       21  \
+			   29 30 31    33  \
+         41              \
+			58                 \
+			/* thumbs */
+			   52          74  \
+			             73    \
+			   71      72
 
-
+			>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+		};
 
 
 		/* cskctrl: cskctrl { */
