@@ -4995,8 +4995,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(694, 347) rotate(-20.0)" class="key keypos-74">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#NumNexus">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">NumNexus</tspan></text>
+<a href="#Function">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(756, 308)" class="key keypos-75">
@@ -5285,8 +5285,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(369, 379) rotate(40.0)" class="key keypos-70">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Function">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+<a href="#NumNexus">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">NumNexus</tspan></text>
 </a><text x="0" y="24" class="key hold">sticky</text>
 </g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
@@ -5540,9 +5540,9 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="0" dy="-0.6em">&amp;kpnum</tspan><tspan x="0" dy="1.2em">QMARK</tspan>
 </text>
 </g>
-<g transform="translate(196, 252)" class="key held keypos-49">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">
+<g transform="translate(196, 252)" class="key keypos-49">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.6em">&amp;kpnum</tspan><tspan x="0" dy="1.2em">TILDE</tspan>
 </text>
 </g>
@@ -5644,11 +5644,11 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="0" dy="-0.6em">&amp;kpnum</tspan><tspan x="0" dy="1.2em">SPACE</tspan>
 </text>
 </g>
-<g transform="translate(369, 379) rotate(40.0)" class="key keypos-70">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(369, 379) rotate(40.0)" class="key held keypos-70">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <a href="#Function">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
-</a><text x="0" y="24" class="key hold">sticky</text>
+<text x="0" y="0" class="key held tap layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
+</a><text x="0" y="24" class="key held hold">sticky</text>
 </g>
 <g transform="translate(410, 427) rotate(60.0)" class="key keypos-71">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5669,10 +5669,10 @@ path.combo { stroke: #7f7f7f; }
 </text>
 <text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">&amp;kps LS(R)…</tspan></text>
 </g>
-<g transform="translate(694, 347) rotate(-20.0)" class="key held keypos-74">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(694, 347) rotate(-20.0)" class="key keypos-74">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#Nexus">
-<text x="0" y="0" class="key held tap layer-activator">Nexus</text>
+<text x="0" y="0" class="key tap layer-activator">Nexus</text>
 </a></g>
 <g transform="translate(756, 308)" class="key keypos-75">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
