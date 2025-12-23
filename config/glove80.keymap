@@ -68,7 +68,7 @@
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &kp C_PLAY_PAUSE
 			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
 			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
-      &magic MAGIC 0   &none           &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none         &kp PSCRN
+      &magic MAGIC 0   &none           &cdeleter      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &deleter     &none         &kp PSCRN
 			
       >;
 		};
@@ -274,11 +274,11 @@
 			bindings = <
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                                       &trans     &trans      &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp HASH    &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &trans     &trans     &kp AT      &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans    &trans                                                                                  &qu        &kp LT     &slash      &kp GT     &trans  &trans
 			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                     &trans     &trans     &trans      &trans     &trans  &trans
 			&trans  &vim    &pag      &trans  &enters   &nav_guictrl    &nav_alt    &trans     &trans                  &trans   &trans  &trans  &kp BSLH   &colon     &semi       &kp AMPS   &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &sl DNEXUS           &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &tabs                     &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q    &ctrl_lock  &nexus_auto    &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
 		
 			>;
 		};
@@ -287,12 +287,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &kp AT     &trans    &trans                                                                             &trans    &trans     &basecaps  &trans     &trans  &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &trans    &basecaps                                                                          &trans    &trans     &kp S      &kp R      &trans  &f_lock
-			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                           &kp HOME  &kp ENTER  &kp ESC    &kp END    &nexus_auto  &trans
-			&trans    &kp PRCNT  &kp QMARK &kp TILDE  &kp EXCL  &kp DELETE  &kp UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kp BSLH  &sl NUMNEXUS &kp TAB    &mouse     &trans &trans
-			&trans    &kp INSERT &kp LALT  &kp LSHIFT &kp LGUI              &kp SPACE  &sl FUNCTIONS  &kp LCTRL    &kp RCTRL &combo_rs_macro &sl NEXUS            &kp RGUI   &kp RSHIFT &kp RALT   &trans  &to JOKER
+			&trans    &trans     &trans    &trans     &trans                                                                                                    &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
+			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                &trans    &trans       &basecaps      &trans    &trans     &j_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                             &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
+			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                              &kp HOME  &kp ENTER    &kp ESC        &kp END   &kp INSERT &trans
+			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans    &trans          &trans    &kp BSLH  &sl NUMNEXUS &kp TAB        &mouse    &trans     &trans
+			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl FUNCTIONS &numl        &numr     &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
 			
 			>;
 		};
@@ -331,8 +331,8 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &kp LC(W)                                               &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))          &trans  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
+			&trans  &trans  &trans  &bpulse &trans  &kp DELETE             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))   &trans  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
 			
 			>;
 		};

@@ -1,59 +1,6 @@
 / {
 	behaviors {
 		
-		tog_on_layer: tog_on_layer {
-			compatible = "zmk,behavior-toggle-layer";
-			#binding-cells = <1>;
-			display-name = "Toggle layer On";
-			toggle-mode = "on";
-		};
-		
-		tog_off_layer: tog_off_layer {
-			compatible = "zmk,behavior-toggle-layer";
-			#binding-cells = <1>;
-			display-name = "Toggle layer off";
-			toggle-mode = "off";
-		};
-		
-		kp_on: tog_on_kp {
-			compatible = "zmk,behavior-key-toggle";
-			#binding-cells = <1>;
-			display-name = "Toggle kp On";
-			toggle-mode = "on";
-		};
-		
-		kp_off: tog_off_kp {
-			compatible = "zmk,behavior-key-toggle";
-			#binding-cells = <1>;
-			display-name = "Toggle kp off";
-			toggle-mode = "off";
-		};
-		
-		
-		kp_on_and_layer: kp_on_and_layer {
-			compatible = "zmk,behavior-macro-two-param";
-			#binding-cells = <2>;
-			bindings =  <&macro_param_1to1>, <&kp_on MACRO_PLACEHOLDER>,
-			<&macro_param_2to1>, <&tog_on_layer MACRO_PLACEHOLDER>;
-		};
-		
-		kp_off_and_layer: kp_off_and_layer {
-			compatible = "zmk,behavior-macro-two-param";
-			#binding-cells = <2>;
-			bindings =  <&macro_param_1to1>, <&kp_off MACRO_PLACEHOLDER>,
-			<&macro_param_2to1>, <&tog_off_layer MACRO_PLACEHOLDER>;
-		};
-    
-		kp_off_and_fire_kp: kp_off_and_fire_kp {
-			compatible = "zmk,behavior-macro-two-param";
-			#binding-cells = <2>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings =  <&macro_param_1to1>, <&kp_off MACRO_PLACEHOLDER>,
-			<&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>;
-		};
-		
-		
 		gui_lock: gui_lock {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;

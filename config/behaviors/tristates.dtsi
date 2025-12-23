@@ -180,6 +180,43 @@
 		};
 
 
+		deleter: deleter {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TABBER>, <&none>, <&to BASE>;
+				ignored-key-positions = <LB1>;
+				ignored-layers = <TABBER>;
+		};
+
+
+		to_tabber_and_ctrl_on: to_tabber_and_ctrl_on {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&cto TABBER>, <&kp_on LCTRL>;
+		};
+
+		ctrl_off_and_base: ctrl_off_and_base {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp_off LCTRL>, <&to BASE>;
+		};
+
+		cdeleter: ctrl_deleter {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to_tabber_and_ctrl_on>, <&none>, <&ctrl_off_and_base>;
+				ignored-key-positions = <LB1>;
+				ignored-layers = <TABBER>;
+		};
+
+
+
+
+
 
 		/* cskctrl: cskctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
