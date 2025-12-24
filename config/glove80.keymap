@@ -345,7 +345,7 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &key_repeat &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &kp TAB     &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans                        &kp ESCAPE  &trans  &trans   &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                        &kp ESCAPE  &trans  &bnums_plus  &bnums_plus  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
