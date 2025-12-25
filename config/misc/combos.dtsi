@@ -387,10 +387,17 @@
 			layers = <NUM_WORD_PLUS NUM_WORD_STICKY_R NUM_WORD_STICKY_L NUM_WORD_MODDED>;
 		};
 
-		combo_rs {
+		/* combo_rs { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <RH5 RH4>; */
+		/* 	bindings = <&combo_rs_macro>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
+
+		combo_rk {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <RH5 RH4>;
-			bindings = <&combo_rs_macro>;
+			bindings = <&combo_rk_macro>;
 			layers = <BASE TYPING>;
 		};
 

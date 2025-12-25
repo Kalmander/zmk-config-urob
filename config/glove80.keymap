@@ -67,8 +67,8 @@
 			&kp LBKT         &kp RBKT        &smart_q      &kp MINUS      &kp AT         &key_repeat                                                                                    &key_repeat    &kp UNDER    &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &kp C_PLAY_PAUSE
 			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
-			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
-      &magic MAGIC 0   &none           &cdeleter      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &deleter     &none         &kp PSCRN
+			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp S        &kp G          &kp B        &jl            &kp J
+      &magic MAGIC 0   &none           &cdeleter      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL K  &sl NEXUS                &kp DOWN     &kp UP         &deleter     &none         &kp PSCRN
 			
       >;
 		};
@@ -289,7 +289,7 @@
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
 			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                     &trans    &trans       &basecaps      &trans    &trans     &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp K          &kp R     &trans     &f_lock
 			&kp FSLH  &kp GRAVE  &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                                   &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
 			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans          &trans    &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
 			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl NUMNEXUS  &bnums_plus  &bnums_plus &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
@@ -303,7 +303,7 @@
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                         &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
 			&trans    &trans     &trans    &kp HASH   &trans    &trans                                                                                     &trans    &trans       &basecaps      &trans    &trans     &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp S          &kp R     &trans     &f_lock
+			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                                  &trans    &kp RCTRL    &kp K          &kp R     &trans     &f_lock
 			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                                   &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
 			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans          &trans    &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
 			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &kp SPACE     &bnums_plus  &bnums_plus &combo_rs_macro &sl NEXUS           &kp DOWN     &kp UP         &trans    &trans     &trans
@@ -316,7 +316,7 @@
 			
 			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
 			&trans    &trans     &trans    &kpnum AT     &trans    &trans                                                                             &trans    &trans     &basecaps  &trans     &trans  &j_lock
-			&trans    &trans     &kpnum LBRC  &kpnum RBRC   &trans    &basecaps                                                                          &trans    &trans     &kpnum S      &kpnum R      &trans  &f_lock
+			&trans    &trans     &kpnum LBRC  &kpnum RBRC   &trans    &basecaps                                                                          &trans    &trans     &kpnum K      &kpnum R      &trans  &f_lock
 			&kpnum GRAVE &kpnum PIPE   &kpnum LBKT  &kpnum LPAR   &kpnum RPAR  &kpnum RBKT                                                                           &kpnum HOME  &kpnum ENTER  &kpnum ESC    &kpnum END    &nexus_auto  &trans
 			&trans    &kpnum PRCNT  &kpnum QMARK &kpnum TILDE  &kpnum EXCL  &kpnum DELETE  &kpnum UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kpnum BSLH  &sl NUMNEXUS &kpnum TAB    &mouse     &trans &trans
 			&trans    &kpnum INSERT &kpnum LALT  &kpnum LSHIFT &kpnum LGUI              &kpnum SPACE  &sl FUNCTIONS  &kpnum LCTRL    &kpnum RCTRL &combo_rs_macro &sl NEXUS            &kpnum RGUI   &kpnum RSHIFT &kpnum RALT   &trans  &to JOKER
@@ -488,7 +488,7 @@
 			&kp LBKT         &kp RBKT        &kpdot Q         &kpdot MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kpdot V          &kpdot Z        &none          &sk LC(LSHIFT)
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                  &rshift_repeat &kpdot F        &kp D          &kpdot L    &kpdot X          &none
 			&kpdot RA(P)     &kpdot W           &kpdot I   &kpdot E  &kpdot A    &adaptive                                                                                          &kpdot RA(T)     &kpdot H  &kpdot T  &kpdot N  &kpdot P          &kp DQT
-			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kpdot R     &kpdot M          &kpdot K        &kpdot G          &kpdot B        &kpdot J            &kpdot J
+			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kpdot R     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
       &magic MAGIC 0   &none  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none  &kp PSCRN
 			
       >;
