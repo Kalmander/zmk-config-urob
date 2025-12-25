@@ -64,6 +64,13 @@
 			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
 		};
 
+		cancel_dot: cancel_dot {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp K_CANCEL>;
+
+			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <1000>; bindings = <&kp DOT>; };
+		};
 
 		num_adaptive: num_adaptive {
 			compatible = "zmk,behavior-adaptive-key";

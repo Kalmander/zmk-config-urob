@@ -10,6 +10,7 @@ parse_config:
 
     
   raw_binding_map:
+    "&cancel_dot": "Cancel (Dot)"
     "&att": "@"
     "&hash": "#"
     "&bslash": "\\"
