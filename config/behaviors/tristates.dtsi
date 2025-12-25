@@ -204,7 +204,15 @@
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
-
+    
+	  bslash: backslash {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp BSLH>, <&to BASE>;
+				ignored-key-positions = <LB2 LH1 RM1>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
 
 		deleter: deleter {
 				compatible = "zmk,behavior-tri-state";
@@ -272,7 +280,7 @@
          41              \
 			58                 \
 			/* thumbs */
-			   52          74  \
+			   52          57  \
 			 70            73    \
 			   71      72
 

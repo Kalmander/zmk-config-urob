@@ -388,7 +388,49 @@
 				max-prior-idle-ms = <600>;
 				strict-modifiers;
 			};
+    };
+
+
+		cancelctrl: cancelctrl {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp K_CANCEL>, <&sk LCTRL>;
 		};
 
-        };
+		und_ctrl: under_ctrl {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&cancelctrl>;
+			und {
+				trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+				bindings = <&kp UNDER>;
+				max-prior-idle-ms = <800>;
+				strict-modifiers;
+			};
+      
+			und_ls {
+				trigger-keys = <LS(A) LS(B) LS(C) LS(D) LS(E) LS(F) LS(G) LS(H) LS(I) LS(J) LS(K) LS(L) LS(M) LS(N) LS(O) LS(P) LS(Q) LS(R) LS(S) LS(T) LS(U) LS(V) LS(W) LS(X) LS(Y) LS(Z)>;
+				bindings = <&kp UNDER>;
+				max-prior-idle-ms = <800>;
+				strict-modifiers;
+			};
+
+			und_rs {
+				trigger-keys = <RS(A) RS(B) RS(C) RS(D) RS(E) RS(F) RS(G) RS(H) RS(I) RS(J) RS(K) RS(L) RS(M) RS(N) RS(O) RS(P) RS(Q) RS(R) RS(S) RS(T) RS(U) RS(V) RS(W) RS(X) RS(Y) RS(Z)>;
+				bindings = <&kp UNDER>;
+				max-prior-idle-ms = <800>;
+				strict-modifiers;
+			};
+
+			und_num {
+				trigger-keys = <N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+				bindings = <&kp UNDER>;
+				max-prior-idle-ms = <800>;
+				strict-modifiers;
+			};
+		};
+
+  };
 };

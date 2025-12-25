@@ -15,16 +15,13 @@
 / {
 	behaviors {
 		
-		// Gerði þetta því vildi sl numword -> halda gui til að skipta um workspaces
-		// en virkar auðvitað ekki því vil ekki tölurnar á numword séu hold taps
-		// en kannski vil ég þetta seinna í eitthvað annað
-		sli: sticky_layer_ignoremods {
+		ski: sticky_key_ignoremods {
 			compatible = "zmk,behavior-sticky-key";
 			#binding-cells = <1>;
-			bindings = <&sl>;
+			bindings = <&sk>;
 			release-after-ms = <2000>;
-      /delete-property/ quick-release;
-			ignore-modifiers;
+      quick-release;
+			/delete-property/ ignore-modifiers;
 		};
     
     // eeeh virkaði ekki
