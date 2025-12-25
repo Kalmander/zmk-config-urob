@@ -159,6 +159,24 @@
 			bindings = <&kp CLEAR_AGAIN>, <&to BASE>;
 		};
 
+		hash: hash {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp HASH>, <&clear_again_base>;
+				ignored-key-positions = <RM1 LH6 RH6>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
+		att: att {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp AT>, <&clear_again_base>;
+				ignored-key-positions = <RM1 LH6 RH6>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
 		amp: amp {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;

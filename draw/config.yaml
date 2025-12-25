@@ -10,6 +10,9 @@ parse_config:
 
     
   raw_binding_map:
+    "&att": "@"
+    "&hash": "#"
+    "&bslash": "\\"
     "&undctrl": "CTRL _"
     "&amp": "&"
     "&amp": "&"
