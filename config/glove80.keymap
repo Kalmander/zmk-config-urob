@@ -371,8 +371,8 @@
 			&degsign  &trans  &skp Q       &trans       &trans       &trans                                                     &trans          &trans  &skp V  &skp Z  &trans  &trans
 			&trans    &trans  &isl_y       &kp RA(O)    &kp RA(U)    &trans                                                     &trans          &skp F  &skp D  &skp L  &skp X  &trans
 			&trans    &skp W  &kp RA(I)    &kp RA(E)    &kp RA(A)    &trans                                                     &kps SQT RA(T)  &skp H  &skp T  &skp N  &skp P  &trans
-			&trans    &trans  &kps SQT SQT &trans       &kps SQT SPACE &trans &trans &trans  &trans     &trans  &trans  &skp R  &skp M          &skp K  &skp G  &skp B  &skp J  &skp J
-			&trans    &trans  &trans       &trans       &trans               &trans  &skp C  &trans     &trans  &skp S  &trans                  &trans  &trans  &trans  &trans  &trans
+			&trans    &trans  &kps SQT SQT &trans       &kps SQT SPACE &trans &trans &trans  &trans     &trans  &trans  &trans  &skp M          &skp S  &skp G  &skp B  &skp J  &skp J
+			&trans    &trans  &trans       &trans       &trans               &trans  &skp C  &trans     &trans  &skp K  &skp R                  &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
@@ -488,8 +488,8 @@
 			&kp LBKT         &kp RBKT        &kpdot Q         &kpdot MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kpdot V          &kpdot Z        &none          &sk LC(LSHIFT)
 			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                  &rshift_repeat &kpdot F        &kp D          &kpdot L    &kpdot X          &none
 			&kpdot RA(P)     &kpdot W           &kpdot I   &kpdot E  &kpdot A    &adaptive                                                                                          &kpdot RA(T)     &kpdot H  &kpdot T  &kpdot N  &kpdot P          &kp DQT
-			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kpdot R     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
-      &magic MAGIC 0   &none  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none  &kp PSCRN
+			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sl NEXUS     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
+      &magic MAGIC 0   &none  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &kpdot R                &kp DOWN     &kp UP         &kp AT       &none  &kp PSCRN
 			
       >;
 		};
