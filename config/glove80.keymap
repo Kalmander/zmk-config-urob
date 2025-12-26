@@ -208,8 +208,8 @@
 			bindings = <
 			
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
-			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp HASH     &kp RPAR   &to BASE   &none 
-			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &kp STAR                                                                         &kp CARET    &kp LT     &kp N0       &kp GT     &none      &trans 
+			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
+			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kp N0       &kp GT     &none      &trans 
 			&kp DOLLAR &kp ENTER  &kp N2     &kp N3    &kp N4      &spacebasedot                                                                    &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
 			&kp SQT   &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp MINUS               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
@@ -248,8 +248,8 @@
 			bindings = <
 			
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
-			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp HASH     &kp RPAR   &to BASE   &none 
-			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &kp STAR                                                                         &kp CARET    &kp LT     &kp N0       &kp GT     &none      &trans 
+			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
+			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kp N0       &kp GT     &none      &trans 
 			&kp DOLLAR &kp ENTER  &kp N2     &kp N3    &kp N4      &spacebasedot                                                                    &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
 			&kp SQT   &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
 			&none     &none       &none      &kp LEFT     &kp RIGHT                     &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp MINUS           &downbase      &upbase      &kp AT      &none     &none 
@@ -261,8 +261,8 @@
 			bindings = <
 			
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
-			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp HASH     &kp RPAR   &to BASE   &none 
-			&none     &to BASE    &kp EQUAL  &kpcb N1    &kp PLUS    &kp STAR                                                                         &kp CARET    &kp LT     &kpcb N0       &kp GT     &none      &trans 
+			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
+			&none     &to BASE    &kp EQUAL  &kpcb N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kpcb N0       &kp GT     &none      &trans 
 			&kp DOLLAR &kp ENTER  &kpcb N2     &kpcb N3    &kpcb N4      &spacebasedot                                                                    &spacebase   &kpcb N7     &kpcb N8       &kpcb N9     &kp FSLH   &kp DQT
 			&kp SQT   &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI      &kp HASH  &kp BSLH   &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                     &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
@@ -406,12 +406,12 @@
 		Mouse {
 			bindings = <
 			
-			&none     &none      &none           &none           &none                                                                                                                              &none           &none           &none           &none     &none
-			&none     &none      &none           &kp LC(X)       &none            &none                                                                                                  &none      &kp LGUI        &kp LSHFT       &kp LALT           &to BASE     &none
-			&none     &to BASE   &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &kp LC(TAB)                                                                                            &kp LCTRL  &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
-			&none     &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                                              &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
-			&none     &none      &none           &none           &none            &none     &msc SCRL_LEFT  &to BASE  &msc SCRL_RIGHT &none               &to BASE      &mkp MCLK &to BASE      &none           &none           &none           &none     &none
-			&none     &none      &none           &none           &none                      &msc SCRL_DOWN  &msc SCRL_UP              &none               &none         &mkp RCLK  &mkp LCLK            &none           &none           &none           &none     &none
+			&none  &none      &none           &none           &none                                                                                                                      &none           &none           &none           &none     &none
+			&none  &none      &none           &kp LC(X)       &none            &none                                                                                          &none      &kp LGUI        &kp LSHFT       &kp LALT           &to BASE     &none
+			&none  &to BASE   &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &to BASE                                                                                       &kp LCTRL  &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
+			&none  &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                                      &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
+			&none  &none      &none           &none           &none            &none      &msc SCRL_LEFT  &to BASE      &msc SCRL_RIGHT    &none      &to BASE   &mkp MCLK    &to BASE   &none           &none           &none           &none     &none
+			&none  &none      &none           &none           &none                       &msc SCRL_DOWN  &msc SCRL_UP  &none              &none      &mkp RCLK  &mkp LCLK               &kp LC(TAB)     &kp LC(LS(TAB)) &none           &none     &none
 			
 			>;
 		};
