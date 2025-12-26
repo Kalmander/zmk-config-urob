@@ -375,7 +375,8 @@
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&spacebase>;
-			ak_idot { trigger-keys = <N2>; max-prior-idle-ms = <600>; bindings = <&kp DOT>; };
+			ak_n2dot { trigger-keys = <N2>; max-prior-idle-ms = <1000>; bindings = <&kp DOT>; };
+			ak_dotn2 { trigger-keys = <DOT>; max-prior-idle-ms = <1000>; bindings = <&kp N2>; };
 		};
 
     /* fyrir ZQ ofc */
