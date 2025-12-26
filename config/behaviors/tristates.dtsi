@@ -235,7 +235,7 @@
 		deleter: deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&none>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp DELETE>, <&to BASE>;
 				ignored-key-positions = <LB1>;
 				ignored-layers = <TABBER>;
 		};
@@ -260,7 +260,7 @@
 		cdeleter: ctrl_deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to_tabber_and_ctrl_on>, <&none>, <&ctrl_off_and_base>;
+				bindings = <&to_tabber_and_ctrl_on>, <&kp DELETE>, <&ctrl_off_and_base>;
 				ignored-key-positions = <LB1>;
 				ignored-layers = <TABBER>;
 		};
