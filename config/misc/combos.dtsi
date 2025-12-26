@@ -239,6 +239,14 @@
 			tap-ms = <0>;
 			bindings = <&kp RPAR &sl PULSE>;
 		};
+    
+		rparcomma: rparcomma {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp RPAR &kp COMMA>;
+		};
 
 		/* wh_and_kp: wh_and_kp { */
 		/* 	compatible = "zmk,behavior-macro-one-param"; */
@@ -485,14 +493,21 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 
-		/* combo_acomma { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */ 
-		/* 	key-positions = <LM2 LB2>; */
-		/* 	bindings = <&combo_acomma_macro>; */
-		/* 	layers = <BASE TYPING>; */
-		/* }; */
+		combo_acomma {
+			timeout-ms = <COMBO_TIMEOUT>;
+      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
+			key-positions = <LM2 LB2>;
+			bindings = <&combo_acomma_macro>;
+			layers = <BASE TYPING>;
+		};
 
+    combo_rparcomma {
+			timeout-ms = <COMBO_TIMEOUT>;
+      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
+			key-positions = <LM2 LB2>;
+			bindings = <&rparcomma>;
+			layers = <NEXUS NEXUS_LOCK NUMNEXUS>;
+		};
 
 		/* combo_wh_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */

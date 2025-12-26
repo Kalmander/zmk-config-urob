@@ -9835,12 +9835,23 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="490" y="337" width="28" height="26" class="combo"/>
 <text x="504" y="350" class="combo tap"><tspan style="font-size: 78%">&amp;base_dot</tspan></text>
 </g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="238" y="211" width="28" height="26" class="combo"/>
+<text x="252" y="224" class="combo tap">
+<tspan x="252" dy="-0.6em">&amp;kps</tspan><tspan x="252" dy="1.2em">…</tspan>
+</text>
+<text x="252" y="213" class="combo shifted"><tspan style="font-size: 64%">&amp;kps LS(A)…</tspan></text>
+</g>
 <g class="combo combopos-7">
+<rect rx="6" ry="6" x="238" y="211" width="28" height="26" class="combo"/>
+<text x="252" y="224" class="combo tap"><tspan style="font-size: 70%">&amp;rparcomma</tspan></text>
+</g>
+<g class="combo combopos-9">
 <rect rx="6" ry="6" x="182" y="211" width="28" height="26" class="combo"/>
 <text x="196" y="224" class="combo tap"><tspan style="font-size: 64%">&amp;epulse_lo…</tspan></text>
 <text x="196" y="213" class="combo shifted"><tspan style="font-size: 64%">&amp;epulse_up…</tspan></text>
 </g>
-<g class="combo combopos-8">
+<g class="combo combopos-10">
 <rect rx="6" ry="6" x="798" y="99" width="28" height="26" class="combo"/>
 <text x="812" y="112" class="combo tap">
 <tspan x="812" dy="-0.6em">&amp;kps</tspan><tspan x="812" dy="1.2em">…</tspan>
