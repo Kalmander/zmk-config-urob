@@ -58,11 +58,16 @@
       // verður að taka aftur fram undrescore, backspace og delete
       // en alphanumerics koma sjálfkrafa
       // ókei WEIRD ! virðist vera continue by default en ekki ?
+      // bro, common, augljóslega af því það er LS(N1)
+      // held það sé engin native leið til að sleppa !
+      // þyrfti að fórna layer og nota autolayer urobs ef ég vildi það
 			continue-list = <
         UNDERSCORE BACKSPACE DELETE 
         CLEAR_AGAIN
-        DOT COMMA MINUS 
-        SPACE QMARK
+        /* DOT  */
+        /* QMARK */
+        COMMA MINUS 
+        SPACE 
         DQT SQT
         LEFT RIGHT DOWN UP
       >;
