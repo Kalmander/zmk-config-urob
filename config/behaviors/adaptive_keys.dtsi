@@ -371,6 +371,13 @@
 			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
 		};
 
+		borl: b_or_l {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp B>;
+			ak_borl { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
+		};
+
     spacebasedot: spacebase_or_dot {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
