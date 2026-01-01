@@ -88,8 +88,8 @@
 		  bindings = <&mo>, <&numsr>;
 		};
 
-		#define numl num_hold_tap_l NUM_WORD_PLUS 0
-		#define numr num_hold_tap_r NUM_WORD_PLUS 0
+		#define numl num_hold_tap_l NUM_WORD_MODDED 0
+		#define numr num_hold_tap_r NUM_WORD_MODDED 0
 
 
 		ctrl_num: ctrl_num {
