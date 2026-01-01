@@ -313,7 +313,7 @@
 			#binding-cells = <0>;
 			bindings = <&sk RSHFT>;
 			repeat {
-				trigger-keys = <P L X Z LS(Z) GT LT>;
+				trigger-keys = <P L X Z LS(Z) GT LT K>;
 				bindings = <&key_repeat>;
 				max-prior-idle-ms = <600>;
 				strict-modifiers;

@@ -509,6 +509,14 @@
 			layers = <NEXUS NEXUS_LOCK NUMNEXUS>;
 		};
 
+		combo_ae {
+			timeout-ms = <COMBO_TIMEOUT>;
+      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
+			key-positions = <LM2 LM3>;
+			bindings = <&kp RA(Z)>;
+			layers = <BASE TYPING>;
+		};
+
 		/* combo_wh_cap { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 /* key-positions = <POS_RH_C2R4 POS_RH_C1R4>; */
