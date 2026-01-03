@@ -168,13 +168,21 @@
 		};
 
 		/* sticky_w_normal: sticky_w_normal { */
-		sticky_w: sticky_w {
+		sticky_w_normal: sticky_w_normal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp W>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _KEYREPEAT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <4000>;
+		};
+		sticky_w_shift: sticky_w_shift {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto NEXUS_LOCK>, <&kp LS(W)>, <&to BASE>;
+				ignored-key-positions = <_NEXUS LM2>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+		      timeout-ms = <2000>;
 		};
 		/* sticky_w_ctrl: sticky_w_ctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
@@ -184,12 +192,12 @@
 		/* 		ignored-layers = <BASE NEXUS NEXUS_LOCK>; */
 		/*       timeout-ms = <2000>; */
 		/* }; */
-		/* sticky_w: sticky_w { */
-		/* 	compatible = "zmk,behavior-mod-morph"; */
-		/* 	#binding-cells = <0>; */
-		/* 	bindings = <&sticky_w_normal>, <&ctrl_w>; */
-		/* 	mods = <(MOD_LCTL|MOD_RCTL)>; */
-		/* }; */
+		sticky_w: sticky_w {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&sticky_w_normal>, <&sticky_w_shift>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
 
 		colon: colon {
 				compatible = "zmk,behavior-tri-state";

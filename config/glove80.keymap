@@ -302,8 +302,8 @@
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
 			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
-			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &amp     &kp FSLH &trans
-			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &qmark     &escaper  &exclaim &trans   &trans
+			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &kp RPAR   &kp SEMI &trans
+			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &qmark     &escaper  &exclaim &kp FSLH &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
 			>;
@@ -344,7 +344,7 @@
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &kp ESCAPE  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &bpulse                                                                   &key_repeat &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bnexus &kp ENTER  &kp LC(BACKSPACE)  &trans  &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bnexus &kp ENTER  &kp DELETE  &trans  &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &bnums_plus  &bnums_plus  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
 			>;
