@@ -19,7 +19,8 @@
 			/* ak_ao { trigger-keys = <A>; max-prior-idle-ms = <2000>; bindings = <&kp O>; }; */
 			/* ak_oa { trigger-keys = <O>; max-prior-idle-ms = <2000>; bindings = <&kp A>; }; */
 
-			ak_ww { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp W>; };
+			/* ak_ww { trigger-keys = <W>; max-prior-idle-ms = <2000>; bindings = <&kp W>; }; */
+			ak_ls { trigger-keys = <L>; max-prior-idle-ms = <2000>; bindings = <&kp S>; };
 
 			ak_cspace { trigger-keys = <C>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
 			/* ak_underspace { trigger-keys = <UNDER>; max-prior-idle-ms = <600>; bindings = <&kp SPACE>; }; */
