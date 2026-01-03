@@ -13,36 +13,36 @@
 
 #define BASE 0
 #define TYPING 1
-#define NAV_WORD 2
-#define NAV_WORD_GUI 3
-#define NAV_WORD_ALT 4
-#define NAV_WORD_CTRL 5
-#define NAV_WORD_SHIFT_CTRL 6
-#define NAV_WORD_SHIFT_GUI 7
-#define NAV_WORD_CTRL_GUI 8
-#define VIM_WORD 9
-#define PAGE_WORD 10
-#define NUM_WORD 11
-#define NUM_WORD_STICKY_L 12
-#define NUM_WORD_STICKY_R 13
-#define NUM_WORD_PLUS 14
-#define NUM_WORD_MODDED 15
-#define PULSE 16
-#define NEXUS 17
-#define NEXUS_LOCK 18
-#define TABBER 19
-#define TRICODER 20
-#define FUNCTIONS 21
-#define ICE 22
-#define JOKER 23
-#define EDI 24
-#define MOUSE 25
-#define MOUSE_SLOW 26
-#define MOUSE_WARP 27
-#define MOUSE_FAST 28
+#define BASE_DOT 2
+#define NAV_WORD 3
+#define NAV_WORD_GUI 4
+#define NAV_WORD_ALT 5
+#define NAV_WORD_CTRL 6
+#define NAV_WORD_SHIFT_CTRL 7
+#define NAV_WORD_SHIFT_GUI 8
+#define NAV_WORD_CTRL_GUI 9
+#define VIM_WORD 10
+#define PAGE_WORD 11
+#define NUM_WORD 12
+#define NUM_WORD_STICKY_L 13
+#define NUM_WORD_STICKY_R 14
+#define NUM_WORD_PLUS 15
+#define NUM_WORD_MODDED 16
+#define PULSE 17
+#define NEXUS 18
+#define NEXUS_LOCK 19
+#define TABBER 20
+#define TRICODER 21
+#define FUNCTIONS 22
+#define ICE 23
+#define JOKER 24
+#define EDI 25
+#define MOUSE 26
+#define MOUSE_SLOW 27
+#define MOUSE_WARP 28
+#define MOUSE_FAST 29
 /* #define MOUSE_SWITCHER 29 */
 /* #define UNIC_LAYER 29 */
-#define BASE_DOT 29
 #define MAGIC 30
 
 #include "misc/glove80keys.dtsi"
@@ -85,6 +85,19 @@
 			>;
 		};
 
+		BaseDot {
+			bindings = <
+			
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                    &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kpdot Q      &kp MINUS      &kp AT         &key_repeat                                                                                     &key_repeat    &kp UNDER    &kpdot V          &kpdot Z        &kp K_CANCEL   &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &cancel_dot     &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                   &rshift_repeat &kpdot F        &kpdot D          &kpdot L    &kpdot X          &kp C_PLAY_PAUSE
+			&kpdot RA(P)        &kpdot W           &kpdot I   &kpdot E  &kpdot A    &pulse                                                                                          &thorn_eth     &kpdot H  &kpdot T  &kpdot N  &kpdot P      &kp DQT
+			&kp SQT          &sl ICE         &kp DOT       &sl NEXUS      &kp COMMA      &backspace     &kp UNDER    &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sk RCTRL     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
+      &magic MAGIC 0   &kp HOME        &cdeleter     &kp LEFT      &kp RIGHT                      &kp SPACE   &kpdot C  &numl           &numr         &kpdot K  &kpdot R                &kp DOWN     &kp UP         &deleter     &kp END         &kp PSCRN
+			
+      >;
+		};
+		
 		NavWord {
 			bindings = <
 			
@@ -468,19 +481,6 @@
 		/* 	>; */
 		/* }; */
 
-		BaseDot {
-			bindings = <
-			
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                    &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kpdot Q      &kp MINUS      &kp AT         &key_repeat                                                                                     &key_repeat    &kp UNDER    &kpdot V          &kpdot Z        &kp K_CANCEL   &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &cancel_dot     &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                   &rshift_repeat &kpdot F        &kpdot D          &kpdot L    &kpdot X          &kp C_PLAY_PAUSE
-			&kpdot RA(P)        &kpdot W           &kpdot I   &kpdot E  &kpdot A    &pulse                                                                                          &thorn_eth     &kpdot H  &kpdot T  &kpdot N  &kpdot P      &kp DQT
-			&kp SQT          &sl ICE         &kp DOT       &sl NEXUS      &kp COMMA      &backspace     &kp UNDER    &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sk RCTRL     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
-      &magic MAGIC 0   &kp HOME        &cdeleter     &kp LEFT      &kp RIGHT                      &kp SPACE   &kpdot C  &numl           &numr         &kpdot K  &kpdot R                &kp DOWN     &kp UP         &deleter     &kp END         &kp PSCRN
-			
-      >;
-		};
-		
 		MoergoMagic {
 			bindings = <
 			
