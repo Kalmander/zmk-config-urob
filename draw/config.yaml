@@ -12,6 +12,9 @@ parse_config:
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
     "&att": "@"
+    "&qmark": "? (Enter)"
+    "&exclaim": "! (Enter)"
+    "&tabber": "⭾"
     "&hash": "#"
     "&bslash": "\\"
     "&undctrl": "CTRL _"

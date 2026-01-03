@@ -285,12 +285,12 @@
 		Pulse {
 			bindings = <
 			
-			&trans  &trans  &trans    &trans        &trans                                                                                                &trans     &trans      &trans  &trans  &trans
-			&trans  &trans  &trans    &trans        &trans    &trans                                                                             &trans   &trans     &att        &trans  &trans  &trans
-			&trans  &trans  &trans    &kp DOT       &nav_guishift_macro &trans                                                                   &basecaps  &kp LT     &slash      &kp GT  &trans  &trans
-			&trans  &nav_alt &basecaps &adaptive &nav_gui  &trans                                                                            &trans   &trans     &trans      &trans  &qu     &trans
-			&trans  &vim    &pag      &bnexus       &trans    &trans   &trans &nav_ctrlshift_macro &trans    &trans   &trans     &pipe           &bslash  &colon     &semi       &hash   &trans  &trans
-			&trans  &trans  &sk LGUI  &trans        &trans             &nav_guictrl &nav_ctrl &bnums_plus &bnums_plus &ctrl_lock &sl FUNCTIONS           &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans   &trans    &trans     &trans                                                                                                  &trans     &trans      &trans  &trans  &trans
+			&trans  &trans   &trans    &trans     &trans    &trans                                                                             &trans     &trans     &att        &trans  &trans  &trans
+			&trans  &trans   &trans    &kp DOT    &nav_guishift_macro &trans                                                                   &basecaps  &kp LT     &slash      &kp GT  &trans  &trans
+			&trans  &nav_alt &basecaps &adaptive  &nav_gui  &trans                                                                             &trans     &trans     &trans      &trans  &qu     &trans
+			&trans  &vim     &pag      &bnexus    &trans    &trans   &trans &nav_ctrlshift_macro &trans    &trans   &trans     &pipe           &bslash    &colon     &semi       &hash   &trans  &trans
+			&trans  &trans   &sk LGUI  &trans     &trans             &nav_guictrl &nav_ctrl &bnums_plus &bnums_plus &ctrl_lock &sl FUNCTIONS              &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
 		
 			>;
 		};
@@ -302,7 +302,7 @@
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
 			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
-			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &kp RPAR   &kp SEMI &trans
+			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &amp   &kp SEMI &trans
 			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &qmark     &escaper  &exclaim &kp FSLH &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
