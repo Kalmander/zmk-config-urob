@@ -195,7 +195,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp COLON>, <&to BASE>;
-				ignored-key-positions = <_ENTER _TAB _KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -204,7 +204,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp SEMI>, <&to BASE>;
-				ignored-key-positions = <_ENTER _TAB _KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -266,7 +266,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp FSLH>, <&to BASE>;
-				ignored-key-positions = <_ENTER _TAB _KEYREPEAT>;
+				ignored-key-positions = <_KEYREPEAT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -275,7 +275,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp BSLH>, <&to BASE>;
-				ignored-key-positions = <_ENTER _TAB _KEYREPEAT>;
+				ignored-key-positions = <_KEYREPEAT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
