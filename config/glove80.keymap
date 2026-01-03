@@ -63,11 +63,11 @@
 		Base {
 			bindings = <
 
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                  &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &smart_q      &kp MINUS      &kp AT         &key_repeat                                                                                    &key_repeat    &kp UNDER    &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &cancel_dot     &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &kp C_PLAY_PAUSE
-			&kp RA(P)        &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
-			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &undctrl    &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sl NEXUS     &kp M          &kp S        &kp G          &kp B        &jl            &kp J
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                    &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &smart_q      &kp MINUS      &kp AT         &key_repeat                                                                                     &key_repeat    &kp UNDER    &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &cancel_dot     &kp Y         &kp O          &kp U          &shift_repeat                                                                                   &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &kp C_PLAY_PAUSE
+			&kp RA(P)        &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &pulse                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
+			&kp SQT          &sl ICE         &kp DOT       &sl NEXUS      &kp COMMA      &backspace     &kp UNDER    &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sk RCTRL     &kp M          &kp S        &kp G          &kp B        &jl            &kp J
       &magic MAGIC 0   &capsword       &cdeleter     &kp LEFT      &kp RIGHT                      &kp SPACE   &hml LCTRL C  &numl           &numr         &hmr LCTRL K  &kp R                &kp DOWN     &kp UP         &deleter     &capsword         &kp PSCRN
 			
       >;
@@ -273,12 +273,12 @@
 		Pulse {
 			bindings = <
 			
-			&trans  &trans  &trans    &trans  &trans                                                                                                            &trans     &trans      &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                       &kp Q     &trans      &att        &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans    &trans                                                                                       &qu        &kp LT     &slash      &kp GT     &trans  &trans
-			&trans  &trans  &kp U     &trans  &nav_gui  &nav_guishift_macro                                                                          &trans     &trans     &trans      &trans     &amp  &trans
-			&trans  &vim    &pag      &trans  &enters   &nav_guictrl      &tabs    &trans     &trans                     &trans  &trans     &pipe    &bslash    &colon     &semi       &hash       &trans  &trans
-			&trans  &trans  &sk LGUI  &trans  &nav_alt                    &escaper    &nav_ctrl  &nav_ctrlshift_macro    &kp Q   &ctrl_lock &sl FUNCTIONS       &ctrl_tab  &sctrl_tab  &trans     &trans  &trans
+			&trans  &trans  &trans    &trans         &trans                                                                                                &trans     &trans      &trans  &trans  &trans
+			&trans  &trans  &trans    &trans         &trans    &trans                                                                             &trans   &trans     &att        &trans  &trans  &trans
+			&trans  &trans  &trans    &kp DOT        &nav_guishift_macro &trans                                                                   &trans   &kp LT     &slash      &kp GT  &trans  &trans
+			&trans  &trans  &sl PAGE_WORD &adaptive  &nav_gui  &trans                                                                             &trans   &trans     &trans      &trans  &amp    &trans
+			&trans  &vim    &pag      &bnexus  &trans    &trans   &tabber  &nav_ctrlshift_macro &trans    &trans  &trans     &pipe          &bslash  &colon     &semi       &hash   &trans  &trans
+			&trans  &trans  &sk LGUI  &trans         &nav_alt           &escaper &nav_ctrl      &nav_guictrl    &kp Q   &ctrl_lock &sl FUNCTIONS           &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
 		
 			>;
 		};
@@ -287,12 +287,12 @@
 		Nexus {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                  &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
-			&trans    &trans     &trans    &trans     &trans    &trans                                                                              &trans    &trans       &basecaps      &trans    &trans     &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                           &mouse    &kp RCTRL    &kp K          &kp R     &trans     &f_lock
-			&kp FSLH  &kp GRAVE  &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                            &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
-			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans  &sl NEXUS  &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
-			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sl NUMNEXUS  &bnums_plus  &bnums_plus &trans  &trans               &kp DOWN     &kp UP         &trans    &trans     &trans
+			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
+			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
+			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
+			&trans  &trans     &kp U       &trans     &trans    &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &kp TILDE &kp FSLH &trans
+			&trans  &kp INSERT &nexus_auto &bsk_nexus_sk    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp QMARK  &kp QMARK  &escaper  &kp EXCL &trans   &trans
+			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
 			>;
 		};
@@ -301,12 +301,12 @@
 		NexusLock {
 			bindings = <
 			
-			&trans    &trans     &trans    &trans     &trans                                                                                                  &kp RGUI     &kp RSHIFT     &kp RALT  &trans     &trans
-			&trans    &trans     &trans    &trans     &trans    &trans                                                                              &trans    &trans       &basecaps      &trans    &trans     &j_lock
-			&trans    &trans     &kp LBRC  &kp RBRC   &kp TILDE &basecaps                                                                           &mouse    &kp RCTRL    &kp K          &kp R     &trans     &f_lock
-			&kp GRAVE &kp PIPE   &kp LBKT  &kp LPAR   &kp RPAR  &kp RBKT                                                                            &kp HOME  &nexus_auto  &kp ESC        &kp END   &kp INSERT &trans
-			&trans    &kp PRCNT  &kp QMARK &bnav      &kp EXCL  &kp BACKSPACE  &kp UNDER  &trans        &to TYPING   &trans      &trans  &sl NEXUS  &kp BSLH  &kp ENTER    &kp TAB        &mouse    &trans     &trans
-			&trans    &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &kp SPACE     &bnums_plus  &bnums_plus &trans  &trans               &kp DOWN     &kp UP         &trans    &trans     &trans
+			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
+			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
+			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
+			&trans  &trans     &kp U       &trans     &trans    &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &kp TILDE &kp FSLH &trans
+			&trans  &kp INSERT &nexus_auto &bsk_nexus_sk    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp QMARK  &kp QMARK  &escaper  &kp EXCL &trans   &trans
+			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
 			>;
 		};
@@ -342,10 +342,10 @@
 			
 			&trans  &trans  &trans  &trans  &trans                                                                                    &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &key_repeat &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &kp TAB     &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans                        &kp ESCAPE  &trans  &bnums_plus  &bnums_plus  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &kp ESCAPE  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &kp TAB &trans                                                                    &key_repeat &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &trans  &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &bnums_plus  &bnums_plus  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
 			>;
 		};
