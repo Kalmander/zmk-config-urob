@@ -30,21 +30,20 @@
 #define PULSE 16
 #define NEXUS 17
 #define NEXUS_LOCK 18
-#define NUMNEXUS 19
-#define TABBER 20
-#define TRICODER 21
-#define FUNCTIONS 22
-#define ICE 23
-#define JOKER 24
-#define EDI 25
-#define MOUSE 26
-#define MOUSE_SLOW 27
-#define MOUSE_WARP 28
-#define MOUSE_FAST 29
+#define TABBER 19
+#define TRICODER 20
+#define FUNCTIONS 21
+#define ICE 22
+#define JOKER 23
+#define EDI 24
+#define MOUSE 25
+#define MOUSE_SLOW 26
+#define MOUSE_WARP 27
+#define MOUSE_FAST 28
 /* #define MOUSE_SWITCHER 29 */
 /* #define UNIC_LAYER 29 */
-#define BASE_DOT 30
-#define MAGIC 31
+#define BASE_DOT 29
+#define MAGIC 30
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -92,8 +91,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -105,8 +104,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                             &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                           &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                           &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                           &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
-			&trans  &trans  &sk LGUI  &cnav   &sk LGUI  &trans        &trans  &trans  &trans     &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                            &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP)     &kp LG(RIGHT)  &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &sk LGUI  &trans        &trans  &trans  &trans     &trans  &trans  &trans  &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans                &trans  &trans  &trans     &trans  &trans  &trans          &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -118,8 +117,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP)     &kp LA(RIGHT)  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                        &kp LA(LEFT)  &kp LA(DOWN)   &kp LA(UP)     &kp LA(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -131,8 +130,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &kp LC(BACKSPACE)             &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LC(LEFT)  &kp LC(DOWN)   &kp LC(UP)     &kp LC(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &kp LC(BACKSPACE)             &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans                     &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -144,8 +143,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &cut_base  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &copy_base  &trans &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -157,8 +156,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LS(LG(LEFT))  &kp LS(LG(DOWN))   &kp LS(LG(UP))     &kp LS(LG(RIGHT))  &trans  &trans
-			&trans  &trans  &sk LGUI  &cnav   &sk LGUI  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LS(LG(LEFT))  &kp LS(LG(DOWN))   &kp LS(LG(UP))     &kp LS(LG(RIGHT))  &trans  &trans
+			&trans  &trans  &sk LGUI  &trans  &sk LGUI  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -170,8 +169,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &kp LC(LG(LEFT))  &kp LC(LG(DOWN))   &kp LC(LG(UP))     &kp LC(LG(RIGHT))  &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LC(LG(LEFT))  &kp LC(LG(DOWN))   &kp LC(LG(UP))     &kp LC(LG(RIGHT))  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -183,8 +182,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp H     &kp J      &kp K      &kp L      &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                        &kp H     &kp J      &kp K      &kp L      &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -196,8 +195,8 @@
 			&trans  &trans  &trans    &trans  &trans                                                                         &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                       &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
-			&trans  &trans  &trans    &cnav   &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
 			>;
@@ -210,8 +209,8 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kp N0       &kp GT     &none      &trans 
-			&kp DOLLAR &kp ENTER  &kp N2     &kp N3    &kp N4      &spacebasedot                                                                    &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
-			&kp SQT   &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
+			&kp DOLLAR &kp ENTER  &kp N2     &kp N3    &kp N4      &bnav                                                                            &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
+			&kp SQT   &kp PRCNT   &_dot      &bnexus   &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp MINUS               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -250,8 +249,8 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kp N0       &kp GT     &none      &trans 
-			&kp DOLLAR &kp ENTER  &kp N2     &kp N3    &kp N4      &spacebasedot                                                                    &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
-			&kp SQT   &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
+			&kp DOLLAR &kp ENTER  &kp N2     &kp N3    &kp N4      &bnav                                                                            &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
+			&kp SQT   &kp PRCNT   &_dot      &bnexus     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
 			&none     &none       &none      &kp LEFT     &kp RIGHT                     &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp MINUS           &downbase      &upbase      &kp AT      &none     &none 
 			
 			>;
@@ -263,8 +262,8 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kpcb N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kpcb N0       &kp GT     &none      &trans 
-			&kp DOLLAR &kp ENTER  &kpcb N2     &kpcb N3    &kpcb N4      &spacebasedot                                                                    &spacebase   &kpcb N7     &kpcb N8       &kpcb N9     &kp FSLH   &kp DQT
-			&kp SQT   &kp PRCNT   &_dot      &bnav     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI      &kp HASH  &kp BSLH   &none 
+			&kp DOLLAR &kp ENTER  &kpcb N2     &kpcb N3    &kpcb N4      &bnav                                                                    &spacebase   &kpcb N7     &kpcb N8       &kpcb N9     &kp FSLH   &kp DQT
+			&kp SQT   &kp PRCNT   &_dot      &bnexus     &_comma     &kp BACKSPACE   &kp TAB     &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI      &kp HASH  &kp BSLH   &none 
 			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                     &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -273,12 +272,12 @@
 		Pulse {
 			bindings = <
 			
-			&trans  &trans  &trans    &trans         &trans                                                                                                &trans     &trans      &trans  &trans  &trans
-			&trans  &trans  &trans    &trans         &trans    &trans                                                                             &trans   &trans     &att        &trans  &trans  &trans
-			&trans  &trans  &trans    &kp DOT        &nav_guishift_macro &trans                                                                   &trans   &kp LT     &slash      &kp GT  &trans  &trans
-			&trans  &trans  &sl PAGE_WORD &adaptive  &nav_gui  &trans                                                                             &trans   &trans     &trans      &trans  &amp    &trans
-			&trans  &vim    &pag      &bnexus  &trans    &trans   &tabber  &nav_ctrlshift_macro &trans    &trans  &trans     &pipe          &bslash  &colon     &semi       &hash   &trans  &trans
-			&trans  &trans  &sk LGUI  &trans         &nav_alt           &escaper &nav_ctrl      &nav_guictrl    &kp Q   &ctrl_lock &sl FUNCTIONS           &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
+			&trans  &trans  &trans    &trans        &trans                                                                                                &trans     &trans      &trans  &trans  &trans
+			&trans  &trans  &trans    &trans        &trans    &trans                                                                             &trans   &trans     &att        &trans  &trans  &trans
+			&trans  &trans  &trans    &kp DOT       &nav_guishift_macro &trans                                                                   &kp STAR  &kp LT     &slash      &kp GT  &trans  &trans
+			&trans  &nav_alt &sl PAGE_WORD &adaptive &nav_gui  &trans                                                                            &trans   &trans     &trans      &trans  &qu     &trans
+			&trans  &vim    &pag      &bnexus       &trans    &trans   &trans &nav_ctrlshift_macro &trans    &trans   &trans     &pipe           &bslash  &colon     &semi       &hash   &trans  &trans
+			&trans  &trans  &sk LGUI  &trans        &trans             &nav_guictrl &nav_ctrl &bnums_plus &bnums_plus &ctrl_lock &sl FUNCTIONS           &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
 		
 			>;
 		};
@@ -290,36 +289,24 @@
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
 			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
-			&trans  &trans     &kp U       &trans     &trans    &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &kp TILDE &kp FSLH &trans
-			&trans  &kp INSERT &nexus_auto &bsk_nexus_sk    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp QMARK  &kp QMARK  &escaper  &kp EXCL &trans   &trans
+			&trans  &trans     &kp U       &trans     &trans    &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &amp     &kp FSLH &trans
+			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &qmark     &escaper  &exclaim &trans   &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
 			>;
 		};
 
     /* (næstum) hreint afrit af Nexus, þurfti það (af illskiljanlegum ástæðum) til að láta nexus_auto virka */
+    /* nema ókei leysum upp úr tristates, annað veldur veseni í vissum aðstæðum td ? -> enter -> nexus */
 		NexusLock {
 			bindings = <
 			
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
 			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
-			&trans  &trans     &kp U       &trans     &trans    &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &kp TILDE &kp FSLH &trans
-			&trans  &kp INSERT &nexus_auto &bsk_nexus_sk    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp QMARK  &kp QMARK  &escaper  &kp EXCL &trans   &trans
+			&trans  &trans     &kp U       &trans     &trans    &bpulse                                                                         &kp TAB    &kp LPAR   &kp RPAR  &kp AMPS &kp FSLH &trans
+			&trans  &kp INSERT &nexus_auto &bnexus    &kp ENTER &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &kp QMARK  &escaper  &kp EXCL  &trans   &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
-			
-			>;
-		};
-
-		NumNexus {
-			bindings = <
-			
-			&trans    &trans     &trans    &trans     &trans                                                                                                 &trans     &trans     &trans     &trans  &trans
-			&trans    &trans     &trans    &trans     &trans    &trans                                                                             &trans    &trans     &basecaps  &trans     &trans  &j_lock
-			&trans    &trans     &kpnum LBRC  &kpnum RBRC   &trans    &basecaps                                                                          &mouse   &trans     &kpnum K      &kpnum R      &trans  &f_lock
-			&kpnum GRAVE &kpnum PIPE   &kpnum LBKT  &kpnum LPAR   &kpnum RPAR  &kpnum RBKT                                                                           &kpnum HOME  &kpnum ENTER  &kpnum ESC    &kpnum END    &nexus_auto  &trans
-			&trans    &kpnum PRCNT  &kpnum QMARK &kpnum TILDE  &kpnum EXCL  &kpnum DELETE  &kpnum UNDER  &trans    &to TYPING   &trans    &trans          &trans     &kpnum BSLH  &sl NUMNEXUS &kpnum TAB    &mouse     &trans &trans
-			&trans    &kpnum INSERT &kpnum LALT  &kpnum LSHIFT &kpnum LGUI              &kpnum SPACE  &sl FUNCTIONS  &kpnum LCTRL    &kpnum RCTRL &combo_rs_macro &sl NEXUS            &kpnum RGUI   &kpnum RSHIFT &kpnum RALT   &trans  &to JOKER
 			
 			>;
 		};

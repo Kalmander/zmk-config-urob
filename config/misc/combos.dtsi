@@ -381,10 +381,10 @@
 		/* 	layers = <BASE TYPING>; */
 		/* }; */
 		
-		combo_cspace {
+		combo_spacec {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH5 LH4>;
-			bindings = <&combo_cspace_macro>;
+			bindings = <&combo_spacec_macro>;
 			layers = <BASE TYPING>;
 		};
 
@@ -501,16 +501,16 @@
 			layers = <BASE TYPING>;
 		};
 
-    combo_rparcomma {
-			timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
-			key-positions = <LM2 LB2>;
-			bindings = <&rparcomma>;
-			layers = <NEXUS NEXUS_LOCK NUMNEXUS>;
-		};
+		/*   combo_rparcomma { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/*     key-positions = <POS_RH_C2R4 POS_RH_C1R4>;  */
+		/* 	key-positions = <LM2 LB2>; */
+		/* 	bindings = <&rparcomma>; */
+		/* 	layers = <NEXUS NEXUS_LOCK>; */
+		/* }; */
 
 		combo_ae {
-			timeout-ms = <COMBO_TIMEOUT>;
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
       key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
 			key-positions = <LM2 LM3>;
 			bindings = <&kp RA(Z)>;

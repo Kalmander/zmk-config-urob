@@ -229,14 +229,14 @@
 			bindings = <&kp UP>, <&to BASE>;
 		};
 
-		bnexus_hold: bnexus_hold {
-		  compatible = "zmk,behavior-hold-tap";
-		  #binding-cells = <2>;
-		  flavor = "balanced";
-		  tapping-term-ms = <200>;
-		  /* bindings = <&bmo>, <&bsk_nexus_sk>; */
-		  bindings = <&mo>, <&nexus_sl>;
-		};
+		/* bnexus_hold: bnexus_hold { */
+		/*   compatible = "zmk,behavior-hold-tap"; */
+		/*   #binding-cells = <2>; */
+		/*   flavor = "balanced"; */
+		/*   tapping-term-ms = <200>; */
+		/* bindings = <&bmo>, <&bsk_nexus_sk>; */ 
+		/*   bindings = <&mo>, <&nexus_sl>; */
+		/* }; */
 
 		/* bsym_hold: bsym_hold { */
 		/*   compatible = "zmk,behavior-hold-tap"; */
@@ -246,15 +246,15 @@
 		/*   bindings = <&bmo>, <&bsk_symbol_sk>; */
 		/* }; */
 
-		nexus_sl: nexus_sl {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&sl NEXUS>;
-		};
+		/* nexus_sl: nexus_sl { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&sl NEXUS>; */
+		/* }; */
 
-		bsk_nexus_sk: bsk_nexus_sk {
+		bnexus: break_then_nexus {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
@@ -271,7 +271,7 @@
 		/* }; */
 
 
-		#define bnexus bnexus_hold NEXUS 0
+		/* #define bnexus bnexus_hold NEXUS 0 */
 		/* #define bsymbol bsym_hold SYMBOL 0 */
 
 		/* N1s: N1s { */
