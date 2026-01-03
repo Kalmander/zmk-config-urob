@@ -317,8 +317,8 @@
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                               &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse &trans  &kp LC(W)             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bnexus &trans  &kp LC(W)             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))   &trans  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
 			
 			>;
@@ -330,8 +330,8 @@
 			&trans  &trans  &trans  &trans  &trans                                                                                    &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &kp ESCAPE  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                                    &key_repeat &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bpulse &kp ENTER  &kp LC(BACKSPACE)  &trans  &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &bpulse                                                                   &key_repeat &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bnexus &kp ENTER  &kp LC(BACKSPACE)  &trans  &trans  &trans   &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans                        &trans  &trans  &bnums_plus  &bnums_plus  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 			
 			>;
