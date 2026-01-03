@@ -471,12 +471,12 @@
 		BaseDot {
 			bindings = <
 			
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &key_repeat                                                                                                                  &key_repeat  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kpdot Q         &kpdot MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp DOT      &kpdot V          &kpdot Z        &none          &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &kp K_CANCEL    &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                  &rshift_repeat &kpdot F        &kpdot D          &kpdot L    &kpdot X          &none
-			&kpdot RA(P)     &kpdot W           &kpdot I   &kpdot E  &kpdot A    &adaptive                                                                                          &kpdot RA(T)     &kpdot H  &kpdot T  &kpdot N  &kpdot P          &kp DQT
-			&kp SQT             &sl ICE         &kp DOT       &navigation    &kp COMMA      &kp BACKSPACE  &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sl NEXUS     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
-      &magic MAGIC 0   &none  &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &kpdot C  &numl           &numr         &kpdot S  &kpdot R                &kp DOWN     &kp UP         &kp AT       &none  &kp PSCRN
+			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                    &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+			&kp LBKT         &kp RBKT        &kpdot Q      &kp MINUS      &kp AT         &key_repeat                                                                                     &key_repeat    &kp UNDER    &kpdot V          &kpdot Z        &kp K_CANCEL   &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &cancel_dot     &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                   &rshift_repeat &kpdot F        &kpdot D          &kpdot L    &kpdot X          &kp C_PLAY_PAUSE
+			&kpdot RA(P)        &kpdot W           &kpdot I   &kpdot E  &kpdot A    &pulse                                                                                          &thorn_eth     &kpdot H  &kpdot T  &kpdot N  &kpdot P      &kp DQT
+			&kp SQT          &sl ICE         &kp DOT       &sl NEXUS      &kp COMMA      &backspace     &kp UNDER    &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sk RCTRL     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
+      &magic MAGIC 0   &kp HOME        &cdeleter     &kp LEFT      &kp RIGHT                      &kp SPACE   &kpdot C  &numl           &numr         &kpdot K  &kpdot R                &kp DOWN     &kp UP         &deleter     &kp END         &kp PSCRN
 			
       >;
 		};
