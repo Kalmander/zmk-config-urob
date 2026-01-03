@@ -1,6 +1,14 @@
 / {
 	behaviors {
 
+    #define _DOT LB4
+    #define _NEXUS LB3
+    #define _ENTER LB2
+    #define _TAB RM1
+    #define _KEYREPEAT RM1
+    #define _NUMLEFT LH6
+    #define _NUMRIGHT RH6
+
 		volume_up: volume_up {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
@@ -21,7 +29,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(TAB)>, <&to BASE>;
-				ignored-key-positions = <LB3 LF2 LF3 LM1 RF2 RF3>;
+				ignored-key-positions = <LB3 LF2 LF3 LB1 RF2 RF3>;
 				ignored-layers = <TABBER>;
 		};
 
@@ -29,7 +37,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(LS(TAB))>, <&to BASE>;
-				ignored-key-positions = <LB3 LF2 LF3 LM1 RF2 RF3>;
+				ignored-key-positions = <LB3 LF2 LF3 LB1 RF2 RF3>;
 				ignored-layers = <TABBER>;
 		};
 
@@ -37,15 +45,15 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(W)>, <&to BASE>;
-				ignored-key-positions = <LF2 LF3 LM1 RF2 RF3>;
-				ignored-layers = <TABBER>;
+				ignored-key-positions = <LF2 LF3 _NEXUS LB1 RF2 RF3>;
+				ignored-layers = <NEXUS TABBER>;
 		};
 
 		cs_pgdn: cs_pgdn {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(LS(PG_DN))>, <&to BASE>;
-				ignored-key-positions = <LF2 LF3 LM1 RF2 RF3>;
+				ignored-key-positions = <LF2 LF3 LB1 RF2 RF3>;
 				ignored-layers = <TABBER>;
 		};
 
@@ -53,17 +61,9 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(LS(PG_UP))>, <&to BASE>;
-				ignored-key-positions = <LF2 LF3 LM1 RF2 RF3>;
+				ignored-key-positions = <LF2 LF3 LB1 RF2 RF3>;
 				ignored-layers = <TABBER>;
 		};
-
-    #define _DOT LB4
-    #define _NEXUS LB3
-    #define _ENTER LB2
-    #define _TAB RM1
-    #define _KEYREPEAT RM1
-    #define _NUMLEFT LH6
-    #define _NUMRIGHT RH6
 
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
@@ -167,6 +167,30 @@
         timeout-ms = <2000>;
 		};
 
+		/* sticky_w_normal: sticky_w_normal { */
+		sticky_w: sticky_w {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp W>, <&to BASE>;
+				ignored-key-positions = <_NEXUS _KEYREPEAT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <4000>;
+		};
+		/* sticky_w_ctrl: sticky_w_ctrl { */
+		/* 		compatible = "zmk,behavior-tri-state"; */
+		/* 		#binding-cells = <0>; */
+		/* 		bindings = <&cto NEXUS_LOCK>, <&kp LC(W)>, <&to BASE>; */
+		/* 		ignored-key-positions = <_NEXUS LM2>; */
+		/* 		ignored-layers = <BASE NEXUS NEXUS_LOCK>; */
+		/*       timeout-ms = <2000>; */
+		/* }; */
+		/* sticky_w: sticky_w { */
+		/* 	compatible = "zmk,behavior-mod-morph"; */
+		/* 	#binding-cells = <0>; */
+		/* 	bindings = <&sticky_w_normal>, <&ctrl_w>; */
+		/* 	mods = <(MOD_LCTL|MOD_RCTL)>; */
+		/* }; */
+
 		colon: colon {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
@@ -232,9 +256,9 @@
 		ctrl_bs: ctrl_backspace {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp LC(BACKSPACE)>, <&to BASE>;
+				bindings = <&kp_on LCTRL>, <&kp LC(BACKSPACE)>, <&kp_off LCTRL>;
 				ignored-key-positions = <RT1 LB1>;
-				ignored-layers = <TRICODER>;
+				/* ignored-layers = <TRICODER>; */
         timeout-ms = <6000>;
 		};
 
@@ -259,18 +283,18 @@
 		deleter: deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp DELETE>, <&to BASE>;
+				bindings = <&cto TRICODER>, <&kp DELETE>, <&to BASE>;
 				ignored-key-positions = <LB1>;
-				ignored-layers = <TABBER>;
+				ignored-layers = <TRICODER>;
 		};
 
 
-		to_tabber_and_ctrl_on: to_tabber_and_ctrl_on {
+		to_tricoder_and_ctrl_on: to_tricoder_and_ctrl_on {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&cto TABBER>, <&kp_on LCTRL>;
+			bindings = <&cto TRICODER>, <&kp_on LCTRL>;
 		};
 
 		ctrl_off_and_base: ctrl_off_and_base {
@@ -284,9 +308,9 @@
 		cdeleter: ctrl_deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to_tabber_and_ctrl_on>, <&kp DELETE>, <&ctrl_off_and_base>;
+				bindings = <&to_tricoder_and_ctrl_on>, <&kp DELETE>, <&ctrl_off_and_base>;
 				ignored-key-positions = <LB1>;
-				ignored-layers = <TABBER>;
+				ignored-layers = <TRICODER>;
 		};
 
     lock_nexus_on: lock_nexus_on {
