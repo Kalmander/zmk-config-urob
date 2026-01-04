@@ -47,7 +47,15 @@
 		vimigation_autolayer: vimigation_autolayer {
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
-			continue-list = <H J K L HOME END PG_UP PG_DN CLEAR_AGAIN>;
+			continue-list = <H J K L LEFT DOWN UP RIGHT HOME END>;
+			ignore-numbers;
+			ignore-modifiers;
+		};
+
+		capital_vimigation_autolayer: capital_vimigation_autolayer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+			continue-list = <B LC(D) LC(U) W LEFT DOWN UP RIGHT HOME END>;
 			ignore-numbers;
 			ignore-modifiers;
 		};
@@ -104,6 +112,50 @@
     #define vim vimigation_hold_tap VIM_WORD VIM_WORD
     #define pag navigation_hold_page_tap PAGE_WORD PAGE_WORD
 
+
+		vleft: vim_left {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp H>, <&kp B>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		vdown: vim_down {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp J>, <&kp LC(D)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		vup: vim_up {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp K>, <&kp LC(U)>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		vright: vim_right {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kp L>, <&kp W>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+		to_tricoder_and_ctrl_on: to_tricoder_and_ctrl_on {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&cto TRICODER>, <&kp_on LCTRL>;
+		};
+
+		capvim: upper_vimword {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&kp_on LSHIFT>, <&capital_vimigation_autolayer VIM_WORD>, <&kp_off LSHIFT>;
+				ignored-key-positions = <LM5 RM1 RM2 RM3 RM4 LF2 LF3 LF5 RF2 RF3 RF5>;
+				ignored-layers = <VIM_WORD>;
+		};
 
     /* #define nav_gui navigation_autolayer_gui NAV_WORD_GUI */
     /* #define nav_ctrl navigation_autolayer_bs NAV_WORD_CTRL */
