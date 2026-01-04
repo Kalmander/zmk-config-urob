@@ -287,7 +287,7 @@
 			
 			&trans  &trans   &trans    &trans     &trans                                                                                                  &trans     &trans      &trans  &trans  &trans
 			&trans  &trans   &trans    &trans     &trans    &trans                                                                             &trans     &trans     &att        &trans  &trans  &trans
-			&trans  &trans   &trans    &kp DOT    &nav_guishift_macro &trans                                                                   &basecaps  &kp LT     &slash      &kp GT  &trans  &trans
+			&trans  &trans   &sk LGUI  &kp DOT    &nav_guishift_macro &trans                                                                   &basecaps  &kp LT     &slash      &kp GT  &trans  &trans
 			&nav_alt &capvim &basecaps &adaptive  &nav_gui  &trans                                                                             &trans     &trans     &trans      &trans  &qu     &trans
 			&trans  &vim     &pag      &bnexus    &trans    &trans   &trans &nav_ctrlshift_macro &trans    &trans   &trans     &pipe           &bslash    &colon     &semi       &hash   &trans  &trans
 			&trans  &trans   &sk LGUI  &trans     &trans             &nav_guictrl &nav_ctrl &bnums_plus &bnums_plus &ctrl_lock &sl FUNCTIONS              &ctrl_tab  &sctrl_tab  &trans  &trans  &trans
