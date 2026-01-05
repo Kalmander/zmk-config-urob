@@ -68,26 +68,26 @@
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp ENTER>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
 		};
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
 		shift_enters: shift_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp LS(ENTER)>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
 		};
 		gui_enters: gui_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp LG(ENTER)>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp LG(ENTER)>, <&to BASE>;
 				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
 		};
 		ns_enters: normal_shift_enters {
@@ -106,25 +106,25 @@
 		tabber_normal: tabber_normal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp TAB>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp TAB>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp LS(TAB)>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp LG(TAB)>, <&to BASE>;
+				bindings = <&cto TABBER>, <&kp LG(TAB)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
 		};
 		ns_tabber: ns_tabber {
@@ -212,6 +212,15 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp SEMI>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
+		quoter: quoter {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp DQT>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
