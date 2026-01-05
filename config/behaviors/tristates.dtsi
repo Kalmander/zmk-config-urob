@@ -217,6 +217,24 @@
         timeout-ms = <2000>;
 		};
 
+		less: less {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp LT>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
+		greater: greater {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp GT>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
 		quoter: quoter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
