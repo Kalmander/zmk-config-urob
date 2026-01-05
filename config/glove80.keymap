@@ -317,8 +317,8 @@
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
 			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
-			&trans  &trans     &kp U       &kp SPACE  &kp W     &bpulse                                                                         &key_repeat    &kp LPAR   &kp RPAR  &kp AMPS &kp SEMI &trans
-			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &kp QMARK  &kp ESC   &kp EXCL &kp FSLH &trans
+			&trans  &trans     &kp U       &kp SPACE  &kp COMMA &bpulse                                                                         &key_repeat    &kp LPAR   &kp RPAR  &kp AMPS &kp SEMI &trans
+			&trans  &kp INSERT &kp DOT     &bnexus    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &kp QMARK  &kp ESC   &kp EXCL &kp FSLH &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &trans              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
 			>;

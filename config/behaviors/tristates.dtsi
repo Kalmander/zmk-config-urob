@@ -179,10 +179,10 @@
 		sticky_w_shift: sticky_w_shift {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp LS(W)>, <&to BASE>;
-				ignored-key-positions = <_NEXUS LM2>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
-		      timeout-ms = <2000>;
+				bindings = <&cto TRICODER>, <&kp LS(W)>, <&to BASE>;
+				ignored-key-positions = <_NEXUS _KEYREPEAT>;
+				ignored-layers = <TRICODER>;
+		      timeout-ms = <4000>;
 		};
 		/* sticky_w_ctrl: sticky_w_ctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
@@ -352,7 +352,7 @@
 			
 		  /* left */
 		      24 25 26 27    \
-		         37          \
+		         37 38       \
 		      48 49 50 51    \
 		         67 68
 		  /* right */
