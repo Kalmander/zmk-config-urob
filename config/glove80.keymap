@@ -222,9 +222,9 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kp N0       &kp GT     &none      &trans 
-			&kp DOLLAR &kp TAB    &kp N2     &kp N3    &kp N4      &bnav                                                                            &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
-			&kp SQT   &kp PRCNT   &_dot      &bnexus   &_comma     &kp BACKSPACE   &kp ENTER   &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
-			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp MINUS               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
+			&kp DOLLAR &kp TAB    &kp N2     &kp N3    &kp N4      &bnav                                                                            &spacebase   &kp N7     &kp N8       &kp N9     &kp SEMI   &kp DQT
+			&kp SQT   &kp PRCNT   &_dot      &bnexus   &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &none       &none      &to BASE  &kp ENTER    &to BASE     &kp MINUS  &kp FSLH     &kp HASH  &kp BSLH   &none 
+			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp COLON               &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
@@ -262,9 +262,9 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kp N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kp N0       &kp GT     &none      &trans 
-			&kp DOLLAR &kp TAB    &kp N2     &kp N3    &kp N4      &bnav                                                                            &spacebase   &kp N7     &kp N8       &kp N9     &kp FSLH   &kp DQT
-			&kp SQT   &kp PRCNT   &_dot      &bnexus     &_comma     &kp BACKSPACE   &kp ENTER   &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI     &kp HASH  &kp BSLH   &none 
-			&none     &none       &none      &kp LEFT     &kp RIGHT                     &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp MINUS           &downbase      &upbase      &kp AT      &none     &none 
+			&kp DOLLAR &kp TAB    &kp N2     &kp N3    &kp N4      &bnav                                                                            &spacebase   &kp N7     &kp N8       &kp N9     &kp SEMI   &kp DQT
+			&kp SQT   &kp PRCNT   &_dot      &bnexus     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &none       &none      &to BASE  &kp ENTER    &to BASE     &kp MINUS  &kp FSLH     &kp HASH  &kp BSLH   &none 
+			&none     &none       &none      &kp LEFT     &kp RIGHT                     &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp COLON           &downbase      &upbase      &kp AT      &none     &none 
 			
 			>;
 		};
@@ -275,9 +275,9 @@
 			&trans    &trans      &trans     &trans    &trans                                                                                                    &trans     &trans       &trans     &trans     &trans
 			&kp LBKT  &kp RBKT    &kp LPAR   &minusbase &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
 			&none     &to BASE    &kp EQUAL  &kpcb N1    &kp PLUS    &to BASE                                                                         &kp STAR     &kp LT     &kpcb N0       &kp GT     &none      &trans 
-			&kp DOLLAR &kp TAB    &kpcb N2     &kpcb N3    &kpcb N4      &bnav                                                                    &spacebase   &kpcb N7     &kpcb N8       &kpcb N9     &kp FSLH   &kp DQT
-			&kp SQT   &kp PRCNT   &_dot      &bnexus     &_comma     &kp BACKSPACE   &kp ENTER   &to BASE &none       &none      &to BASE  &bnexus    &to BASE     &kp COLON  &kp SEMI      &kp HASH  &kp BSLH   &none 
-			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &bnexus                     &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
+			&kp DOLLAR &kp TAB    &kpcb N2     &kpcb N3    &kpcb N4      &bnav                                                                    &spacebase   &kpcb N7     &kpcb N8       &kpcb N9     &kp SEMI   &kp DQT
+			&kp SQT   &kp PRCNT   &_dot      &bnexus     &_comma     &kp BACKSPACE   &kp UNDER   &to BASE &none       &none      &to BASE  &kp ENTER    &to BASE     &kp MINUS  &kp FSLH      &kp HASH  &kp BSLH   &none 
+			&none     &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5   &kp SPACE   &kp SPACE  &kpcb N6   &kp COLON                     &nsk RGUI  &nsk RSHIFT  &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
