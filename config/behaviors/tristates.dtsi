@@ -212,7 +212,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp SEMI>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
