@@ -160,7 +160,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TRICODER>, <&kp ESCAPE>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _KEYREPEAT>;
+				ignored-key-positions = <_NEXUS RB1>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -390,9 +390,9 @@
 		   47 48 49 50 51    \
 		         67 68
 		  /* right */
-		16                \
+		16    18          \
 		28 29 30 31       \
-		40 41 42 43 44    \
+		40 41 42 43 44 45 \
 		58 59 60 61 62    \
 		75 76         
 		  /* thumbs, 69 er space og 74 er R */

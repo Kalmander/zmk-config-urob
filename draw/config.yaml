@@ -12,6 +12,10 @@ parse_config:
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
     "&att": "@"
+    "&bnums_plus": "Num Plus"
+    "&quoter": '"'
+    "&less": "<"
+    "&greater": ">"
     "&qmark": "? (Enter)"
     "&exclaim": "! (Enter)"
     "&tabber": "⭾"
@@ -44,8 +48,8 @@ parse_config:
     "&nav_ctrlshift_macro": Nav Ctrl Shift
     "&pag": Page Nav
     "&vim": Vim Nav
-    "&enters": Enter (auto)
-    "&escaper": Esc (auto)
+    "&enters": Enter
+    "&escaper": Esc
     "&slash": /
     "&pcapsword": Dotted Caps Word
     "&ctrl_lock": Ctrl Lock
@@ -82,6 +86,8 @@ parse_config:
     "&cs_pgup": "CtSh Page Up"
     "&cs_pgdn": "CtSh Page Down"
     "&ctrl_w": "Ctrl W"
+    "&gui_tab": "Gui Tab"
+    "&sgui_tab": "GuiSh Tab"
     "&ctrl_tab": "Ctrl Tab"
     "&sctrl_tab": "CtSh Tab"
     "&sqt_nex": "' Nexus"
@@ -100,7 +106,7 @@ parse_config:
     "&bnexus": Base Nexus
     "&bsymbol": Base Symbol
     "&kp TAB": Tab
-    "&tabs": Tab (auto)
+    "&tabs": Tab
     "&kp ENTER": Enter
     "&fnumwordp": Num Plus
     "&kp RA(Z)": Æ
