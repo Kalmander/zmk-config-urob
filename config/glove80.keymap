@@ -315,7 +315,7 @@
 			bindings = <
 			
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
-			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &kp TAB    &trans     &kp HASH   &trans   &trans   &trans
+			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &kp TAB    &trans     &kp HASH   &kp AT   &trans   &trans
 			&trans  &trans     &sk LALT    &sk LSHIFT &sk LGUI  &kp BSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
 			&trans  &trans     &kp U       &kp SPACE  &kp COMMA &bpulse                                                                         &key_repeat    &kp LPAR   &kp RPAR  &kp AMPS &kp SEMI &trans
 			&trans  &kp BSLH   &kp DOT     &bnexus    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &to BASE  &kp QMARK  &kp EXCL   &kp TILDE &kp FSLH &trans
