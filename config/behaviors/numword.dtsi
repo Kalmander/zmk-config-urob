@@ -17,6 +17,7 @@
         C_PREV C_NEXT C_VOL_DN C_VOL_UP C_PLAY_PAUSE
         DQT SQT
         ENTER TAB
+        LBKT RBKT
       >;
 			ignore-numbers;
       ignore-modifiers;
