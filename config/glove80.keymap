@@ -301,7 +301,7 @@
 			
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &trans     &trans     &trans    &trans   &trans   &trans
-			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
+			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp BSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
 			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                         &tabber    &kp LPAR   &kp RPAR  &amp     &semi    &trans
 			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &qmark     &escaper  &exclaim &kp FSLH &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &sl FUNCTIONS       &gui_tab   &sgui_tab  &trans   &trans   &trans
@@ -316,9 +316,9 @@
 			
 			&trans  &trans     &trans      &trans     &trans                                                                                               &trans     &trans    &trans   &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                          &kp TAB    &trans     &trans    &trans   &trans   &trans
-			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp FSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
+			&trans  &trans     &kp LALT    &kp LSHIFT &kp LGUI  &kp BSLH                                                                        &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC &trans   &trans
 			&trans  &trans     &kp U       &kp SPACE  &kp COMMA &bpulse                                                                         &key_repeat    &kp LPAR   &kp RPAR  &kp AMPS &kp SEMI &trans
-			&trans  &kp INSERT &kp DOT     &bnexus    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &kp QMARK  &kp ESC   &kp EXCL &kp FSLH &trans
+			&trans  &kp BSLH   &kp DOT     &bnexus    &enters   &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &kp TILDE  &kp QMARK  &kp ESC   &kp EXCL &kp FSLH &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &kp LCTRL  &bnums_plus   &bnums_plus &mouse  &kp COLON              &kp DOWN   &kp UP    &trans   &trans   &trans
 			
 			>;
