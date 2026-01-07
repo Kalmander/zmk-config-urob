@@ -12,6 +12,9 @@ parse_config:
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
     "&att": "@"
+    "&plus": "+"
+    "&equal": "="
+    "&percent": "%"
     "&bnums_plus": "Num Plus"
     "&quoter": '"'
     "&less": "<"
