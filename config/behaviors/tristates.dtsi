@@ -65,6 +65,22 @@
 				ignored-layers = <TABBER>;
 		};
 
+		gui_tab: gui_tab {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto NEXUS>, <&kp LG(TAB)>, <&to BASE>;
+				ignored-key-positions = <RF2 RF3>;
+				ignored-layers = <NEXUS>;
+		};
+
+		sgui_tab: sgui_tab {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto NEXUS>, <&kp LG(LS(TAB))>, <&to BASE>;
+				ignored-key-positions = <RF2 RF3>;
+				ignored-layers = <NEXUS>;
+		};
+
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
@@ -374,6 +390,7 @@
 		      48 49 50 51    \
 		         67 68
 		  /* right */
+		16                \
 		28 29 30 31       \
 		40 41 42 43 44    \
 		58 59 60 61 62    \
