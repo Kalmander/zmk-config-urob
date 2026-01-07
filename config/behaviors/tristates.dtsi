@@ -125,7 +125,6 @@
 				bindings = <&cto TABBER>, <&kp TAB>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
-        timeout-ms = <2000>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
@@ -133,7 +132,6 @@
 				bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
-        timeout-ms = <2000>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
@@ -141,7 +139,6 @@
 				bindings = <&cto TABBER>, <&kp LG(TAB)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
-        timeout-ms = <2000>;
 		};
 		ns_tabber: ns_tabber {
 			compatible = "zmk,behavior-mod-morph";
@@ -230,7 +227,6 @@
 				bindings = <&cto TRICODER>, <&kp SEMI>, <&to BASE>;
 				ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
-        timeout-ms = <2000>;
 		};
 
 		less: less {
