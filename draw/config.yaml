@@ -11,6 +11,8 @@ parse_config:
     
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
+    "&bpulse": "Base Pulse"
+    "&sticky_w": "Sticky W"
     "&att": "@"
     "&plus": "+"
     "&equal": "="
