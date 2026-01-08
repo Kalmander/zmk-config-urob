@@ -220,10 +220,10 @@
 			bindings = <
 			
 			&trans   &trans      &trans     &trans      &trans                                                                                                  &trans     &trans      &trans     &trans     &trans
-			&trans   &kp RBKT    &kp LPAR   &kp MINUS   &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G) &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
-			&trans   &to BASE    &kp LT     &kp N1      &kp GT     &to BASE                                                                         &kp STAR    &kp PLUS   &kp N0      &kp EQUAL  &kp SEMI   &trans 
-			&kp TAB  &kp LBKT    &kp N2     &kp N3      &kp N4     &bnav                                                                            &spacebase  &kp N7     &kp N8      &kp N9     &kp RBKT   &kp DQT
-			&kp SQT  &kp PRCNT   &_dot      &bnexus     &_comma    &kp BACKSPACE  &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER   &to BASE    &minusbase  &kp FSLH    &kp HASH  &kp BSLH   &none 
+			&trans   &trans      &trans     &kp MINUS   &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G) &kp UNDER  &kp CARET    &trans     &to BASE   &none 
+			&trans   &to BASE    &kp LT     &kp N1      &kp GT     &to BASE                                                                         &kp STAR    &kp PLUS   &kp N0      &kp EQUAL  &trans   &trans 
+			&trans   &kp TAB     &kp N2     &kp N3      &kp N4     &bnav                                                                            &spacebase  &kp N7     &kp N8      &kp N9     &kp SEMI   &kp DQT
+			&kp SQT  &kp PRCNT   &_dot      &sl NEXUS   &_comma    &kp BACKSPACE  &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER   &to BASE    &minusbase  &kp FSLH    &kp HASH  &kp BSLH   &none 
 			&none    &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp COLON               &nsk RGUI  &nsk RSHIFT &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -247,10 +247,10 @@
 			bindings = <
 			
 			&trans   &trans     &trans     &trans     &trans                                                                                                   &trans     &trans    &trans     &trans    &trans
-			&trans   &trans     &kp LPAR   &kp MINUS  &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET  &kp RPAR   &to BASE  &none 
-			&trans   &to BASE   &kp LT     &kp N1     &kp GT     &to BASE                                                                         &kp STAR     &kp PLUS   &kp N0    &kp EQUAL  &kp SEMI  &trans 
-			&kp TAB  &kp LBKT   &kp N2     &kp N3     &kp N4     &bnav                                                                            &spacebase   &kp N7     &kp N8    &kp N9     &kp RBKT  &kp DQT
-			&kp SQT  &kp PRCNT  &_dot      &bnexus    &_comma    &kp BACKSPACE   &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &minusbase  &kp FSLH  &kp HASH &kp BSLH  &none 
+			&trans   &trans     &trans     &kp MINUS  &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET  &trans     &to BASE  &none 
+			&trans   &to BASE   &kp LT     &kp N1     &kp GT     &to BASE                                                                         &kp STAR     &kp PLUS   &kp N0    &kp EQUAL  &trans    &trans 
+			&trans   &kp TAB    &kp N2     &kp N3     &kp N4     &bnav                                                                            &spacebase   &kp N7     &kp N8    &kp N9     &kp SEMI  &kp DQT
+			&kp SQT  &kp PRCNT  &_dot      &sl NEXUS  &_comma    &kp BACKSPACE   &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &minusbase  &kp FSLH  &kp HASH &kp BSLH  &none 
 			&none    &none      &none      &kp LEFT   &kp RIGHT                  &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp COLON                &downbase  &upbase   &kp AT     &none     &none 
 			
 			>;
@@ -260,10 +260,10 @@
 			bindings = <
 			
 			&trans   &trans      &trans     &trans      &trans                                                                                                  &trans     &trans      &trans     &trans     &trans
-			&trans   &trans      &kp LPAR   &kp MINUS   &kp UNDER &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &kp RPAR   &to BASE   &none 
-			&trans   &to BASE    &kp LT     &kpcb N1    &kp GT    &to BASE                                                                         &kp STAR     &kp PLUS   &kpcb N0    &kp EQUAL  &kp SEMI   &trans 
-			&kp TAB  &kp LBKT    &kpcb N2   &kpcb N3    &kpcb N4  &bnav                                                                            &spacebase   &kpcb N7   &kpcb N8    &kpcb N9   &kp RBKT   &kp DQT
-			&kp SQT  &kp PRCNT   &_dot      &bnexus     &_comma   &kp BACKSPACE   &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &minusbase  &kp FSLH    &kp HASH &kp BSLH   &none 
+			&trans   &trans      &trans     &kp MINUS   &kp UNDER &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &trans     &to BASE   &none 
+			&trans   &to BASE    &kp LT     &kpcb N1    &kp GT    &to BASE                                                                         &kp STAR     &kp PLUS   &kpcb N0    &kp EQUAL  &trans     &trans 
+			&trans   &kp TAB    &kpcb N2   &kpcb N3    &kpcb N4  &bnav                                                                            &spacebase   &kpcb N7   &kpcb N8    &kpcb N9   &kp SEMI   &kp DQT
+			&kp SQT  &kp PRCNT   &_dot      &sl NEXUS   &_comma   &kp BACKSPACE   &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &minusbase  &kp FSLH    &kp HASH &kp BSLH   &none 
 			&none    &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5 &kp SPACE   &kp SPACE  &kpcb N6  &kp COLON               &nsk RGUI  &nsk RSHIFT &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
