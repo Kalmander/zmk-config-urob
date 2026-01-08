@@ -256,6 +256,25 @@
         timeout-ms = <2000>;
 		};
 
+		star: star {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp STAR>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
+		caret: caret {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&cto TRICODER>, <&kp CARET>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
+
 		equal: equal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
