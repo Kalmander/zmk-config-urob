@@ -8,11 +8,15 @@ parse_config:
     #define CONFIG_WIRELESS
     #include "misc/unicodes.dtsi"
 
-    
+  
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
+    "&pulse_auto": "Pulse Auto"
+    "&tilder": "~"
+    "&caret": "^"
     "&bpulse": "Base Pulse"
     "&sticky_w": "Sticky W"
+    "&star": "*"
     "&att": "@"
     "&plus": "+"
     "&equal": "="

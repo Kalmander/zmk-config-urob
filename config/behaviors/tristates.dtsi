@@ -274,6 +274,14 @@
         timeout-ms = <2000>;
 		};
 
+		tilder: tilder {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp TILDE>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+		};
+
 
 		equal: equal {
 				compatible = "zmk,behavior-tri-state";
@@ -496,7 +504,7 @@
 		      18       21 \
 		28 29 30 31       \
 		40 41 42 43 44    \
-		58 59 60 61 62    \
+		58 59 60 61       \
 		75 76         
 		/*   thumbs, 69 er space og 74 er R */
 		               74                \
