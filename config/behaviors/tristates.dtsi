@@ -420,6 +420,20 @@
         tap-ms = <0>;
         bindings = <&macro_tap &tog_off_layer NEXUS_LOCK>;
     };
+    lock_pulse_on: lock_pulse_on {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&macro_tap &tog_on_layer PULSE_LOCK>; // Uses Toggle, which survives the roll
+    };
+    lock_pulse_off: lock_pulse_off {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&macro_tap &tog_off_layer PULSE_LOCK>;
+    };
 		nexus_auto: nexus_auto {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
@@ -466,6 +480,34 @@
 		/*  70 53     56 73                 \ */
 		/*   71 54   55 72 */
 
+		pulse_auto: pulse_auto {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			bindings = <&lock_pulse_on>, <&none>, <&lock_pulse_off>;
+			ignored-key-positions = <
+			
+		/*   left */
+		         13          \
+		      24    26       \
+		      36       39    \
+		            50       \
+		         67 68       \
+		/*   right */
+		      18          \
+		28 29 30 31       \
+		40 41 42 43 44    \
+		58 59 60 61 62    \
+		75 76         
+		/*   thumbs, 69 er space og 74 er R */
+		/* 69 52       57 74                \ */
+		/*  70 53     56 73                 \ */
+		/*   71 54   55 72 */
+
+			>;
+				ignored-layers = <BASE PULSE PULSE_LOCK>;
+		};
+
+
 		/* cskctrl: cskctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
 		/* 		#binding-cells = <0>; */
@@ -474,6 +516,7 @@
 		/* 		ignored-layers = <OVERMODS>; */
 		/* }; */
 		/**/
+
 		/* cskgui: cskgui { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
 		/* 		#binding-cells = <0>; */
