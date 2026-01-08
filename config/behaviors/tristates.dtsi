@@ -488,91 +488,24 @@
 			
 		/*   left */
 		         13          \
-		      24    26       \
-		      36       39    \
+		22    24 25 26       \
+		      36 37 38 39    \
 		            50       \
 		         67 68       \
 		/*   right */
-		      18          \
+		      18       21 \
 		28 29 30 31       \
 		40 41 42 43 44    \
 		58 59 60 61 62    \
 		75 76         
 		/*   thumbs, 69 er space og 74 er R */
-		/* 69 52       57 74                \ */
-		/*  70 53     56 73                 \ */
-		/*   71 54   55 72 */
+		               74                \
+		 70                              \
+		  71         72
 
 			>;
 				ignored-layers = <BASE PULSE PULSE_LOCK>;
 		};
-
-
-		/* cskctrl: cskctrl { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&cto OVERMODS>, <&sk LCTRL>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-
-		/* cskgui: cskgui { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&cto OVERMODS>, <&sk LGUI>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-		/* cskalt: cskalt { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&cto OVERMODS>, <&sk LALT>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-		/* cskshift: cskshift { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&cto OVERMODS>, <&sk LSHIFT>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-		/* skctrl: skctrl { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&to OVERMODS>, <&sk LCTRL>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-		/* skgui: skgui { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&to OVERMODS>, <&sk LGUI>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-		/* skalt: skalt { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&to OVERMODS>, <&sk LALT>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-		/**/
-		/* skshift: skshift { */
-		/* 		compatible = "zmk,behavior-tri-state"; */
-		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&to OVERMODS>, <&sk LSHIFT>, <&to BASE>; */
-		/* 		ignored-key-positions = <LF2 LF3 LF4 RF2 RF3 RF4 LH6 RH6>; */
-		/* 		ignored-layers = <OVERMODS>; */
-		/* }; */
-
 
 	};
 };
