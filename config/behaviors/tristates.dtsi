@@ -84,7 +84,7 @@
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp ENTER>, <&to BASE>;
+				bindings = <&to TABBER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
@@ -93,7 +93,7 @@
 		shift_enters: shift_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LS(ENTER)>, <&to BASE>;
+				bindings = <&to TABBER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
@@ -101,7 +101,7 @@
 		gui_enters: gui_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LG(ENTER)>, <&to BASE>;
+				bindings = <&to TABBER>, <&kp LG(ENTER)>, <&to BASE>;
 				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
         timeout-ms = <2000>;
@@ -122,21 +122,21 @@
 		tabber_normal: tabber_normal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp TAB>, <&to BASE>;
+				bindings = <&to TABBER>, <&kp TAB>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LS(TAB)>, <&to BASE>;
+				bindings = <&to TABBER>, <&kp LS(TAB)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TABBER>, <&kp LG(TAB)>, <&to BASE>;
+				bindings = <&to TABBER>, <&kp LG(TAB)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
 		};
@@ -156,7 +156,7 @@
 		escaper: escaper {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp ESCAPE>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp ESCAPE>, <&to BASE>;
 				ignored-key-positions = <_NEXUS RB1>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -165,7 +165,7 @@
 		qmark: qmark {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp QMARK>, <&to BASE>;
+				bindings = <&to NEXUS_LOCK>, <&kp QMARK>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
         timeout-ms = <2000>;
@@ -174,7 +174,7 @@
 		exclaim: exclaim {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto NEXUS_LOCK>, <&kp EXCL>, <&to BASE>;
+				bindings = <&to NEXUS_LOCK>, <&kp EXCL>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _ENTER _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
         timeout-ms = <2000>;
@@ -184,7 +184,7 @@
 		sticky_w_normal: sticky_w_normal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp W>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp W>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _KEYREPEAT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <4000>;
@@ -192,7 +192,7 @@
 		sticky_w_shift: sticky_w_shift {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp LS(W)>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp LS(W)>, <&to BASE>;
 				ignored-key-positions = <_NEXUS _KEYREPEAT>;
 				ignored-layers = <TRICODER>;
 		      timeout-ms = <4000>;
@@ -200,7 +200,7 @@
 		/* sticky_w_ctrl: sticky_w_ctrl { */
 		/* 		compatible = "zmk,behavior-tri-state"; */
 		/* 		#binding-cells = <0>; */
-		/* 		bindings = <&cto NEXUS_LOCK>, <&kp LC(W)>, <&to BASE>; */
+		/* 		bindings = <&to NEXUS_LOCK>, <&kp LC(W)>, <&to BASE>; */
 		/* 		ignored-key-positions = <_NEXUS LM2>; */
 		/* 		ignored-layers = <BASE NEXUS NEXUS_LOCK>; */
 		/*       timeout-ms = <2000>; */
@@ -215,7 +215,7 @@
 		colon: colon {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp COLON>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp COLON>, <&to BASE>;
 				ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -224,7 +224,7 @@
 		semi: semi {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp SEMI>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp SEMI>, <&to BASE>;
 				ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
 		};
@@ -232,7 +232,7 @@
 		less: less {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp LT>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp LT>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -241,7 +241,7 @@
 		greater: greater {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp GT>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp GT>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -250,7 +250,7 @@
 		plus: plus {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp PLUS>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp PLUS>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -259,7 +259,7 @@
 		star: star {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp STAR>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp STAR>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -268,7 +268,7 @@
 		caret: caret {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp CARET>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp CARET>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -278,7 +278,7 @@
 		equal: equal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp EQUAL>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp EQUAL>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -287,7 +287,7 @@
 		percent: percent {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp PRCNT>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp PRCNT>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -296,7 +296,7 @@
 		quoter: quoter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp DQT>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp DQT>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -313,7 +313,7 @@
 		hash: hash {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp HASH>, <&clear_again_base>;
+				bindings = <&to TRICODER>, <&kp HASH>, <&clear_again_base>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -322,7 +322,7 @@
 		att: att {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp AT>, <&clear_again_base>;
+				bindings = <&to TRICODER>, <&kp AT>, <&clear_again_base>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -331,7 +331,7 @@
 		amp: amp {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp AMPS>, <&clear_again_base>;
+				bindings = <&to TRICODER>, <&kp AMPS>, <&clear_again_base>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -340,7 +340,7 @@
 		pipe: pipe {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp PIPE>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp PIPE>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -358,7 +358,7 @@
 		slash: slash {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp FSLH>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp FSLH>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -367,7 +367,7 @@
 	  bslash: backslash {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp BSLH>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp BSLH>, <&to BASE>;
 				ignored-key-positions = <_KEYREPEAT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -376,7 +376,7 @@
 		deleter: deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&cto TRICODER>, <&kp DELETE>, <&to BASE>;
+				bindings = <&to TRICODER>, <&kp DELETE>, <&to BASE>;
 				ignored-key-positions = <LB1>;
 				ignored-layers = <TRICODER>;
 		};
@@ -387,7 +387,7 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&cto TRICODER>, <&kp_on LCTRL>;
+			bindings = <&to TRICODER>, <&kp_on LCTRL>;
 		};
 
 		ctrl_off_and_base: ctrl_off_and_base {
