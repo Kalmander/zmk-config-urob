@@ -61,8 +61,10 @@
 			wait-ms = <0>;
 			tap-ms = <0>;
 			/* bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>; aah verður að nota autolayer til að ctrl lock dótið virki */
+      /* aah en erum hætt með það svo held ég aftur tími á to */
       /* to NAV_WORD er bara til að brjóta tristate */
-			bindings = <&to NAV_WORD>, <&to BASE>, <&kp K_CANCEL>, <&numwordplus_autolayer NUM_WORD_PLUS>;
+			/* bindings = <&to NAV_WORD>, <&to BASE>, <&kp K_CANCEL>, <&numwordplus_autolayer NUM_WORD_PLUS>; */
+			bindings = <&to NAV_WORD>, <&to BASE>, <&kp K_CANCEL>, <&to NUM_WORD_PLUS>;
 		};
 		
 		num_plus_nexus: num_plus_nexus {
@@ -70,7 +72,7 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&kp K_CANCEL>, <&numwordplus_autolayer NUM_WORD_PLUS>, <&sl NEXUS>;
+			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>, <&sl NEXUS_LOCK>; /* verður að nota lock til að dodgea tristates */
 		};
 
 		/* num_hold_tap: num_hold_tap { */
