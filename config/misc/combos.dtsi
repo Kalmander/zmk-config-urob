@@ -399,7 +399,7 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH5 LH4>;
 			bindings = <&combo_5spacebase_macro>;
-			layers = <NUM_WORD_PLUS NUM_WORD_STICKY NUM_WORD_MODDED>;
+			layers = <NUM_WORD_PLUS NUM_WORD_MODDED>;
 		};
 
 		/* combo_rs { */

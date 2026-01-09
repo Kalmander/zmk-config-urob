@@ -38,13 +38,13 @@
 		#define numword_plus numwordplus_autolayer NUM_WORD_PLUS
 
 
-		nums: nums {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&sl NUM_WORD>, <&sl NUM_WORD_STICKY>;
-		};
+		/* nums: nums { */
+		/* 	compatible = "zmk,behavior-macro"; */
+		/* 	#binding-cells = <0>; */
+		/* 	wait-ms = <0>; */
+		/* 	tap-ms = <0>; */
+		/* 	bindings = <&sl NUM_WORD>, <&sl NUM_WORD_STICKY>; */
+		/* }; */
 
 		nums_plus: nums_plus {
 			compatible = "zmk,behavior-macro";
@@ -65,15 +65,15 @@
 			bindings = <&to NAV_WORD>, <&to BASE>, <&kp K_CANCEL>, <&numwordplus_autolayer NUM_WORD_PLUS>;
 		};
 		
-		num_hold_tap: num_hold_tap {
-		  compatible = "zmk,behavior-hold-tap";
-		  #binding-cells = <2>;
-		  flavor = "balanced";
-		  tapping-term-ms = <200>;
-		  bindings = <&mo>, <&nums>;
-		};
+		/* num_hold_tap: num_hold_tap { */
+		/*   compatible = "zmk,behavior-hold-tap"; */
+		/*   #binding-cells = <2>; */
+		/*   flavor = "balanced"; */
+		/*   tapping-term-ms = <200>; */
+		/*   bindings = <&mo>, <&nums>; */
+		/* }; */
 
-		#define num num_hold_tap NUM_WORD_MODDED 0
+		/* #define num num_hold_tap NUM_WORD_MODDED 0 */
 
 
 		ctrl_num: ctrl_num {

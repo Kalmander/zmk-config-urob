@@ -300,19 +300,6 @@
 			layer-id = <NUM_WORD>;
 		};
 		
-		NumWordSticky {
-			bindings = <
-			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug NumSti &ug NumSti &ug NumSti &ug NumSti &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug NumSti &ug ___ &ug ___ &ug NumSti &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug NumSti &ug ___ &ug ___ &ug NumSti &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug NumSti &ug NumSti &ug NumSti &ug NumSti &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <NUM_WORD_STICKY>;
-		};
-		
-		
 		NumWordPlus {
 			bindings = <
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
