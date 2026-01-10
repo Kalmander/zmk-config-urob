@@ -464,6 +464,20 @@
 			bindings = <&base_dot>;
 		};
 		
+		combo_nexus_lt {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RM2 RB2>;
+			bindings = <&kp LT>;
+			layers = <NEXUS NEXUS_LOCK>;
+		};
+		
+		combo_nexus_gt {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RM3 RB3>;
+			bindings = <&kp GT>;
+			layers = <NEXUS NEXUS_LOCK>;
+		};
+		
 		/* combo_cx { */
 		/* 	timeout-ms = <COMBO_TIMEOUT>; */
 		/* 	key-positions = <POS_LH_T2 POS_LH_T5>; */
