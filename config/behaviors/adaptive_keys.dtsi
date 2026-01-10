@@ -1,6 +1,23 @@
 / {
 	behaviors {
 
+		base_adapt: base_adapt {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp SPACE>;
+			ak_doti { trigger-keys = <DOT>; max-prior-idle-ms = <1000>; bindings = <&kp I>; };
+			ak_iy { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+			ak_yi { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+		};
+
+		num_adapt: num_adapt {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp SPACE>;
+			ak_doti { trigger-keys = <DOT>; max-prior-idle-ms = <1000>; bindings = <&kp N2>; };
+			ak_iy { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+		};
+
 		adaptive: adaptive {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;

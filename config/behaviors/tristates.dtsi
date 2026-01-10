@@ -529,7 +529,7 @@
 		cool_caps: cool_caps {
 			compatible = "zmk,behavior-tri-state";
 			#binding-cells = <0>;
-			bindings = <&kp CAPS>, <&none>, <&kp CAPS>;
+			bindings = <&kp CAPS>, <&none>, <&caps_and_test>;
 			ignored-key-positions = <
 			
 		/*   left */
@@ -552,7 +552,7 @@
 		  71 54   55 72
 
 			>;
-				ignored-layers = <BASE NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NAV_WORD NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK TRICODER>;
 		};
 
 		coolword: cool_caps_word {
@@ -581,7 +581,7 @@
 		  71 54   55 72
 
 			>;
-				ignored-layers = <BASE NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK>;
+				ignored-layers = <BASE NAV_WORD NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK TRICODER>;
 		};
 
 	};

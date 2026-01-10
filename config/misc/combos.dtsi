@@ -441,7 +441,7 @@
 		
 		combo_sqt {
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LM1 LM2>;
+			key-positions = <LM3 LB3>;
 			bindings = <&kp SQT>;
 			layers = <BASE TYPING>;
 		};
@@ -449,7 +449,6 @@
 		combo_dqt {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RM2 RM3>;
-			/* key-positions = <LM3 LB3>; */
 			bindings = <&kp DQT>;
 			layers = <BASE TYPING>;
 		};
@@ -480,6 +479,27 @@
 			key-positions = <RM1 RT1>;
 			bindings = <&capsword>;
 			layers = <BASE TYPING>;
+		};
+		
+		combo_i {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LT2 LT3>;
+			bindings = <&kp I>;
+			layers = <BASE TYPING>;
+		};
+		
+		combo_dotonbase {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LM1 LM2>;
+			bindings = <&base_adapt>;
+			layers = <BASE TYPING>;
+		};
+		
+		combo_dotonnum {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LM1 LM2>;
+			bindings = <&num_adapt>;
+			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
 		};
 		
 	};
