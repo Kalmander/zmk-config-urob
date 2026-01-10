@@ -454,7 +454,8 @@
 		combo_mcaps {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH6 RH6>;
-			bindings = <&mpcaps>;
+			/* bindings = <&mpcaps>; */
+			bindings = <&cool_caps>;
 		};
 		
 		combo_capsdot {

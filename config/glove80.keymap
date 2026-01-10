@@ -263,7 +263,7 @@
 			&trans  &trans   &trans    &kp DOT    &trans    &trans                                                                       &trans   &trans     &caret      &trans    &trans  &trans
 			&trans  &trans   &sk LGUI  &nav_guishift_macro &pulse_auto &trans                                                            &star    &plus      &slash      &equal    &trans  &trans
 			&nav_alt &capvim &basecaps &adaptive  &nav_gui  &trans                                                                       &trans   &trans     &trans      &trans    &qu     &trans
-			&trans  &percent &pag      &bnexus    &vim      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &escaper &bslash    &quoter     &att      &mouse  &trans
+			&coolword &percent &pag    &bnexus    &vim      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &escaper &bslash    &quoter     &att      &mouse  &trans
 			&trans  &trans   &sk LGUI  &trans     &trans             &nav_guictrl &nav_ctrl &bnums_plus    &bnums_plus &basecaps &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
 			>;

@@ -516,5 +516,73 @@
 				ignored-layers = <BASE PULSE PULSE_LOCK>;
 		};
 
+
+		caps_and_test: caps_and_test {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp CAPS>, <&kp T>;
+		};
+
+
+		cool_caps: cool_caps {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			bindings = <&kp CAPS>, <&none>, <&kp CAPS>;
+			ignored-key-positions = <
+			
+		/*   left */
+		0  1  2  3  4       \
+		10 11 12 13 14 15    \
+		22    24 25 26 27    \
+		34 35 36 37 38 39    \
+		46 47 48 49 50 51    \
+		64 65 66 67 68
+		/*   right */
+		5  6  7  8  9 \
+		16 17 18 19    21 \
+		28 29 30 31 32 33 \
+		40 41 42 43 44 45 \
+		58 59 60 61 62 63 \
+		75 76 77 78 79
+		/*   thumbs, 69 er space og 74 er R */
+		69 52       57 74                \
+		 70           73                 \
+		  71 54   55 72
+
+			>;
+				ignored-layers = <BASE NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK>;
+		};
+
+		coolword: cool_caps_word {
+			compatible = "zmk,behavior-tri-state";
+			#binding-cells = <0>;
+			bindings = <&kp CAPS>, <&none>, <&kp CAPS>;
+			ignored-key-positions = <
+			
+		/*   left */
+		0  1  2  3  4       \
+		10 11 12 13 14 15    \
+		22    24 25 26 27    \
+		34 35 36 37 38 39    \
+		46 47 48 49 50 51    \
+		64 65 66 67 68
+		/*   right */
+		5  6  7  8  9 \
+		16 17 18 19    21 \
+		28 29 30 31 32 33 \
+		40 41 42 43 44 45 \
+		58 59 60 61 62 63 \
+		75 76 77 78 79
+		/*   thumbs, 69 er space og 74 er R */
+		   52       57 74                \
+		 70           73                 \
+		  71 54   55 72
+
+			>;
+				ignored-layers = <BASE NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK>;
+		};
+
 	};
 };
