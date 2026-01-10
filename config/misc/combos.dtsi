@@ -467,6 +467,20 @@
 			bindings = <&combo_eo_macro>;
 			layers = <BASE TYPING>;
 		};
+
+		combo_caps_left {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LM1 LT1>;
+			bindings = <&capsword>;
+			layers = <BASE TYPING>;
+		};
+		
+		combo_caps_right {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <RM1 RT1>;
+			bindings = <&capsword>;
+			layers = <BASE TYPING>;
+		};
 		
 	};
 };
