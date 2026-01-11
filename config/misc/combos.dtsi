@@ -450,7 +450,7 @@
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RM3 RT3>;
 			bindings = <&kp DQT>;
-			layers = <BASE TYPING>;
+			layers = <BASE TYPING NEXUS NEXUS_LOCK PULSE_LOCK TRICODER>;
 		};
 
 		combo_au {
@@ -493,6 +493,20 @@
 			key-positions = <LM1 LB1>;
 			bindings = <&base_adapt>;
 			layers = <BASE TYPING>;
+		};
+		
+		combo_80 {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <RM3 RT3>;
+			bindings = <&kps N8 N0>;
+			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
+		};
+		
+		combo_31 {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LM3 LT3>;
+			bindings = <&kps N3 N1>;
+			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
 		};
 		
 		combo_dotonnum {
