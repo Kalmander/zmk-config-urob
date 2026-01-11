@@ -403,13 +403,13 @@
 			layers = <BASE TYPING>;
 		};
 
-		combo_ae {
-			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
-			key-positions = <LM2 LM3>;
-			bindings = <&kp RA(Z)>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_ae { */
+		/* 	timeout-ms = <COMBO_TIMEOUT_BRIEF>; */
+		/*     key-positions = <POS_RH_C2R4 POS_RH_C1R4>;  */
+		/* 	key-positions = <LM2 LM3>; */
+		/* 	bindings = <&kp RA(Z)>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 
 		combo_gt {
 			timeout-ms = <COMBO_TIMEOUT>;
@@ -448,7 +448,7 @@
 		
 		combo_dqt {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <RM2 RM3>;
+			key-positions = <RM3 RT3>;
 			bindings = <&kp DQT>;
 			layers = <BASE TYPING>;
 		};
@@ -490,16 +490,38 @@
 		
 		combo_dotonbase {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <LM1 LM2>;
+			key-positions = <LM1 LB1>;
 			bindings = <&base_adapt>;
 			layers = <BASE TYPING>;
 		};
 		
 		combo_dotonnum {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <LM1 LM2>;
+			key-positions = <LM1 LB1>;
 			bindings = <&num_adapt>;
 			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
+		};
+		
+		combo_numplusleft {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
+			key-positions = <LM2 LM3>;
+			bindings = <&nums_plus>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+
+		combo_numplusright {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <RM2 RM3>;
+			bindings = <&nums_plus>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+
+		combo_esc {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <RM1 RB1>;
+			bindings = <&kp ESC>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
 	};
