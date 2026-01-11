@@ -363,11 +363,20 @@
         timeout-ms = <6000>;
 		};
 
+		doller: doller {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp DOLLAR>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+    
 		slash: slash {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp FSLH>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -376,7 +385,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp BSLH>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
