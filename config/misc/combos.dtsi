@@ -395,13 +395,13 @@
 			bindings = <&base_dot>;
 		};
 		
-		combo_acomma {
-			timeout-ms = <COMBO_TIMEOUT>;
-      key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
-			key-positions = <LM2 LB2>;
-			bindings = <&combo_acomma_macro>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_acomma { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/*     key-positions = <POS_RH_C2R4 POS_RH_C1R4>;  */
+		/* 	key-positions = <LM2 LB2>; */
+		/* 	bindings = <&combo_acomma_macro>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 
 		/* combo_ae { */
 		/* 	timeout-ms = <COMBO_TIMEOUT_BRIEF>; */
@@ -545,10 +545,18 @@
 			bindings = <&kp SPACE>;
 			layers = <NUM_WORD_PLUS>; 
 		};
+
 		combo_esc {
-			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <RM1 RB1>;
-			bindings = <&kp ESC>;
+			bindings = <&escaper>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+		
+		combo_tab {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LM2 LB2>;
+			bindings = <&tabber2>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		

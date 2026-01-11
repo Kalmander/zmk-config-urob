@@ -123,21 +123,21 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TABBER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _TAB>;
+				ignored-key-positions = <_NEXUS _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TABBER>, <&kp LS(TAB)>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _TAB>;
+				ignored-key-positions = <_NEXUS _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TABBER>, <&kp LG(TAB)>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _TAB>;
+				ignored-key-positions = <_NEXUS _TAB>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
 		};
 		ns_tabber: ns_tabber {
@@ -152,12 +152,19 @@
 			bindings = <&ns_tabber>, <&gui_tabber>;
 			mods = <(MOD_LGUI|MOD_RGUI)>;
 		};
+		tabber2: tabber2 {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TABBER>, <&kp TAB>, <&to BASE>;
+				ignored-key-positions = <_TAB LM2 LB2>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
+		};
 
 		escaper: escaper {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp ESCAPE>, <&to BASE>;
-				ignored-key-positions = <_NEXUS RB1>;
+				ignored-key-positions = <_KEYREPEAT RB1>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};

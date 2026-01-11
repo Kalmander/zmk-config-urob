@@ -219,12 +219,12 @@
 		NumWord {
 			bindings = <
 			
-			&trans   &trans      &trans     &trans      &trans                                                                                                  &trans     &trans      &trans     &trans     &trans
-			&trans   &trans      &trans     &kp MINUS   &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G) &kp UNDER  &kp CARET    &trans     &to BASE   &none 
-			&trans   &to BASE    &kp LT     &kp N1      &kp GT     &to BASE                                                                         &kp STAR    &kp PLUS   &kp N0      &kp EQUAL  &trans   &trans 
-			&trans   &kp TAB     &kp N2     &kp N3      &kp N4     &nums_plus                                                                       &nums_plus  &kp N7     &kp N8      &kp N9     &kp SEMI   &kp DQT
-			&kp SQT  &kp PRCNT   &_dot      &num_plus_nexus  &_comma    &kp BACKSPACE  &kp TAB  &to BASE &none       &none      &to BASE  &kp ENTER   &to BASE    &kp FSLH  &kp DOLLAR    &kp HASH  &kp BSLH   &none 
-			&none    &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp COLON               &nsk RGUI  &nsk RSHIFT &nsk LALT  &nsk LCTRL &kp AT 
+			&trans   &trans      &trans     &trans           &trans                                                                                                  &trans     &trans      &trans     &trans     &trans
+			&trans   &trans      &trans     &kp MINUS        &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G) &kp UNDER  &kp CARET   &trans     &to BASE   &none 
+			&trans   &to BASE    &kp FSLH   &kp N1           &kp BSLH   &to BASE                                                                         &kp STAR    &kp PLUS   &kp N0      &kp EQUAL  &trans   &trans 
+			&trans   &kp TAB     &kp N2     &kp N3           &kp N4     &nums_plus                                                                       &nums_plus  &kp N7     &kp N8      &kp N9     &kp SEMI   &kp DQT
+			&kp SQT  &kp PRCNT   &_dot      &num_plus_nexus  &_comma    &kp BACKSPACE  &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER   &to BASE    &kp LT     &kp GT      &kp HASH   &minusbase   &none 
+			&none    &nsk LCTRL  &nsk LALT  &nsk LSHIFT      &nsk LGUI                 &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6    &kp COLON               &nsk RGUI  &nsk RSHIFT &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
 		};
@@ -233,12 +233,12 @@
 		NumWordPlus {
 			bindings = <
 			
-			&trans   &trans     &trans     &trans     &trans                                                                                                   &trans     &trans    &trans     &trans    &trans
+			&trans   &trans     &trans     &trans     &trans                                                                                                   &trans     &trans     &trans     &trans    &trans
 			&trans   &trans     &trans     &kp MINUS  &kp UNDER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET  &trans     &to BASE  &none 
-			&trans   &to BASE   &kp LT     &kp N1     &kp GT     &to BASE                                                                         &kp STAR     &kp PLUS   &kp N0    &kp EQUAL  &trans    &trans 
-			&trans   &kp TAB    &kp N2     &kp N3     &kp N4     &bnav                                                                            &spacebase   &kp N7     &kp N8    &kp N9     &kp SEMI  &kp DQT
-			&kp SQT  &kp PRCNT  &_dot      &sl NEXUS  &_comma    &kp BACKSPACE   &kp TAB  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &kp FSLH  &kp DOLLAR  &kp HASH &kp BSLH  &none 
-			&none    &none      &none      &kp LEFT   &kp RIGHT                  &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp COLON                &downbase  &upbase   &kp AT     &none     &none 
+			&trans   &to BASE   &kp FSLH   &kp N1     &kp BSLH   &to BASE                                                                         &kp STAR     &kp PLUS   &kp N0     &kp EQUAL  &trans    &trans 
+			&trans   &kp TAB    &kp N2     &kp N3     &kp N4     &bnav                                                                            &spacebase   &kp N7     &kp N8     &kp N9     &kp SEMI  &kp DQT
+			&kp SQT  &kp PRCNT  &_dot      &sl NEXUS  &_comma    &kp BACKSPACE   &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &kp LT     &kp GT     &kp HASH   &minusbase &none 
+			&none    &none      &none      &kp LEFT   &kp RIGHT                  &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp COLON                &downbase  &upbase    &kp AT     &none     &none 
 			
 			>;
 		};
@@ -247,10 +247,10 @@
 			bindings = <
 			
 			&trans   &trans      &trans     &trans      &trans                                                                                                  &trans     &trans      &trans     &trans     &trans
-			&trans   &trans      &trans     &kp MINUS   &kp UNDER &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &trans     &to BASE   &none 
-			&trans   &to BASE    &kp LT     &kpcb N1    &kp GT    &to BASE                                                                         &kp STAR     &kp PLUS   &kpcb N0    &kp EQUAL  &trans     &trans 
-			&trans   &kp TAB    &kpcb N2   &kpcb N3    &kpcb N4  &bnav                                                                            &spacebase   &kpcb N7   &kpcb N8    &kpcb N9   &kp SEMI   &kp DQT
-			&kp SQT  &kp PRCNT   &_dot      &sl NEXUS   &_comma   &kp BACKSPACE   &kp TAB  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &kp FSLH  &kp DOLLAR    &kp HASH &kp BSLH   &none 
+			&trans   &trans      &trans     &kp MINUS   &kp UNDER &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET    &trans    &to BASE   &none 
+			&trans   &to BASE    &kp FSLH   &kpcb N1    &kp BSLH  &to BASE                                                                         &kp STAR     &kp PLUS   &kpcb N0    &kp EQUAL  &trans     &trans 
+			&trans   &kp TAB     &kpcb N2   &kpcb N3    &kpcb N4  &bnav                                                                            &spacebase   &kpcb N7   &kpcb N8    &kpcb N9   &kp SEMI   &kp DQT
+			&kp SQT  &kp PRCNT   &_dot      &sl NEXUS   &_comma   &kp BACKSPACE   &kp DOLLAR  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &kp LT     &kp GT      &kp HASH   &minusbase   &none 
 			&none    &nsk LCTRL  &nsk LALT  &nsk LSHIFT &nsk LGUI                 &spacebase  &kpcb N5 &kp SPACE   &kp SPACE  &kpcb N6  &kp COLON               &nsk RGUI  &nsk RSHIFT &nsk LALT  &nsk LCTRL &kp AT 
 			
 			>;
@@ -259,12 +259,12 @@
 		Pulse {
 			bindings = <
 			
-			&trans  &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
-			&trans  &trans   &trans    &kp DOT    &trans    &trans                                                                       &trans   &trans     &caret      &trans    &trans  &trans
-			&trans  &trans   &sk LGUI  &nav_guishift_macro &pulse_auto &trans                                                            &star    &plus      &slash      &equal    &trans  &trans
-			&nav_alt &capvim &pipe &adaptive  &nav_gui  &trans                                                                       &trans   &trans     &trans      &trans    &qu     &trans
-			&coolword &percent &pag    &bnexus    &vim      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &escaper &bslash    &doller     &att      &mouse  &trans
-			&trans  &trans   &sk LGUI  &trans     &trans             &nav_guictrl &nav_ctrl &bnums_plus    &bnums_plus &basecaps &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
+			&trans    &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
+			&trans    &trans   &trans    &kp DOT    &trans    &trans                                                                       &trans   &trans     &caret      &trans    &trans  &trans
+			&trans    &trans   &sk LGUI  &nav_guishift_macro &pulse_auto &trans                                                            &star    &plus      &slash      &equal    &trans  &trans
+			&nav_alt  &capvim  &att     &pipe       &nav_gui  &trans                                                                       &trans   &trans     &trans      &trans    &qu     &trans
+			&trans    &percent &pag      &bnexus    &vim      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &escaper &less      &greater    &bslash   &mouse  &trans
+			&trans    &trans   &sk LGUI  &trans     &trans             &nav_guictrl &nav_ctrl &bnums_plus    &bnums_plus &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
 			>;
 		};
@@ -285,12 +285,12 @@
 		PulseLock {
 			bindings = <
 			
-			&trans         &trans  &trans     &trans     &trans                                                                                                    &trans     &trans    &trans     &trans  &trans
-			&trans         &trans  &sk LALT   &kp MINUS  &sk LGUI  &trans                                                                             &trans       &trans     &kp CARET  &trans    &trans  &kp RC(RSHIFT)
-			&sk LC(LSHIFT) &trans  &kp LT     &sk LC(LSHIFT) &kp GT    &to BASE                                                                           &kp STAR     &kp PLUS   &kp FSLH   &kp EQUAL &trans  &trans
-			&trans         &trans  &kp PIPE   &kp SPACE &sk LSHIFT  &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &trans
-			&trans         &kp PRCNT &kp DOT  &bnexus    &kp COMMA &kp BACKSPACE &trans &nav_ctrlshift_macro &trans  &trans      &trans    &trans     &to BASE     &kp BSLH   &kp DOLLAR &kp AT    &mouse  &trans
-			&trans         &trans  &sk LGUI   &kp LEFT     &kp RIGHT                  &kp SPACE &sk LCTRL    &bnums_plus  &bnums_plus &basecaps &kp COLON               &kp DOWN   &kp UP     &trans    &trans  &trans
+			&trans         &trans    &trans    &trans     &trans                                                                                                      &trans     &trans    &trans     &trans  &trans
+			&trans         &trans    &sk LALT  &kp MINUS  &sk LGUI    &trans                                                                             &trans       &trans     &kp CARET  &trans    &trans  &kp RC(RSHIFT)
+			&sk LC(LSHIFT) &trans    &sk LC(LSHIFT) &sk LSHIFT &none  &to BASE                                                                           &kp STAR     &kp PLUS   &kp FSLH   &kp EQUAL &trans  &trans
+			&trans         &trans    &kp AT  &kp PIPE     &kp SPACE   &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &trans
+			&trans         &kp PRCNT &kp DOT   &bnexus    &kp COMMA   &kp BACKSPACE  &trans &nav_ctrlshift_macro &trans  &trans      &trans    &trans    &to BASE     &kp LT     &kp GT     &kp BSLH  &mouse  &trans
+			&trans         &trans    &sk LGUI  &kp LEFT   &kp RIGHT                  &kp SPACE &sk LCTRL    &bnums_plus  &bnums_plus &basecaps &kp COLON              &kp DOWN   &kp UP     &trans    &trans  &trans
 		
 			>;
 		};
