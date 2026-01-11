@@ -1,6 +1,27 @@
 / {
 	behaviors {
 
+		base_adapt: base_adapt {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp RA(Z)>;
+			ak_doti { trigger-keys = <DOT>; max-prior-idle-ms = <2000>; bindings = <&kp I>; };
+			ak_idot { trigger-keys = <I>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+			ak_ydot { trigger-keys = <Y>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+			ak_7sp { trigger-keys = <N7>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_8sp { trigger-keys = <N8>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_9sp { trigger-keys = <N9>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+			ak_0sp { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp SPACE>; };
+		};
+
+		num_adapt: num_adapt {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp SPACE>;
+			ak_dot2 { trigger-keys = <DOT>; max-prior-idle-ms = <2000>; bindings = <&kp N2>; };
+			ak_2dot { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
+		};
+
 		adaptive: adaptive {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
