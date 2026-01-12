@@ -393,6 +393,22 @@
 			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
 		};
 
+		mouse_eq: mouse_or_equal {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&mouse>;
+			ak_knexus { trigger-keys = <GT>; max-prior-idle-ms = <600>; bindings = <&kp EQUAL>; };
+		};
+
+		minusbase_eq: minusbase_or_equal {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&minusbase>;
+			ak_knexus { trigger-keys = <GT>; max-prior-idle-ms = <600>; bindings = <&kp EQUAL>; };
+		};
+
+
+
     spacebasedot: spacebase_or_dot {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
