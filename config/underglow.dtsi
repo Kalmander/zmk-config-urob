@@ -324,42 +324,6 @@
 			layer-id = <NUM_WORD_MODDED>;
 		};
 		
-		Nexus {
-			bindings = <
-			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <NEXUS>;
-		};
-
-		NexusLock {
-			bindings = <
-			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <NEXUS_LOCK>;
-		};
-
-		/* DoubleNexus { */
-		/* 	bindings = < */
-		/* 	&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	>; */
-		/* 	layer-id = <DNEXUS>; */
-		/* }; */
-
 		Pulse {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
@@ -372,7 +336,42 @@
 			layer-id = <PULSE>;
 		};
 		
+		Nexus {
+			bindings = <
+			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NEXUS>;
+		};
+
+		PulseLock {
+			bindings = <
+			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ColNavWordSwitchRow4    &ug ___  &ug ___                                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordSwitchRow4  &ug ColNavWordSwitchRow4  &ug ColNavWordSwitchRow4    &ug ColNavWordSwitchRow4    &ug ColNavWordSwitchRow4   &ug ColNavWordSwitchRow4                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ColNavWordSwitchRow4  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___     &ug ___  &ug ___  &ug ___    &ug ___    &ug ___     &ug ___     &ug ___     &ug ___  &ug ___
+			&ug ___  &ug ___  &ug ___    &ug ___    &ug ___          &ug ___ &ug ColNavWordSwitchRow4 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <PULSE_LOCK>;
+		};
 		
+		NexusLock {
+			bindings = <
+			&ug Nex &ug Nex &ug Nex   &ug Nex   &ug Nex                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug ___   &ug Nex                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug ___  &ug ___     &ug ___     &ug Nex   &ug Nex &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug Nex &ug Nex  &ug Nex     &ug Nex     &ug Nex           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NEXUS_LOCK>;
+		};
+
 		Tabber {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
@@ -492,18 +491,6 @@
 			>;
 			layer-id = <MOUSE_FAST>;
 		};
-		
-		/* MouseSwitcher { */
-		/* 	bindings = < */
-		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug ___ &ug ___ &ug ___   &ug ___ &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug MouSw &ug MouSw &ug MouSw  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ */
-		/* 	&ug ___ &ug ___ &ug ___   &ug ___   &ug ___           &ug MouSw &ug MouSw &ug MouSw &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ */
-		/* 	>; */
-		/* 	layer-id = <MOUSE_SWITCHER>; */
-		/* }; */
 		
 		MoergoMagic {
 			bindings = <
