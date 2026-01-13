@@ -276,7 +276,7 @@
 			&trans  &trans     &trans      &trans     &kp ENTER  &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
 			&trans  &trans     &kp LT      &none      &kp GT    &kp BSLH                                                                                 &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &trans   &trans
 			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &tabber    &kp LPAR   &kp RPAR  &amp      &semi    &grave
-			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &trans          &escaper   &qmark     &exclaim  &pipe     &att     &trans
+			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &trans          &escaper   &qmark     &exclaim  &pipe     &doller     &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &sk LCTRL  &bnums_plus   &bnums_plus &sk LCTRL  &sl FUNCTIONS             &gui_tab   &sgui_tab  &trans   &trans   &trans
 
 			>;
@@ -302,9 +302,9 @@
 			
 			&trans  &trans     &sk LALT  &sk LSHIFT &sk LGUI                                                                                                 &trans     &trans     &trans   &j_lock  &f_lock
 			&trans  &trans     &trans    &trans     &kp ENTER    &trans                                                                          &kp TAB      &trans     &kp TILDE  &kp FSLH &trans   &trans
-			&trans  &trans     &trans    &trans     &kp BSLH   &to BASE                                                                        &kp LBKT     &kp RBKT   &kp LBRC   &kp RBRC &trans   &trans
+			&trans  &trans     &trans    &kp AT     &kp BSLH   &to BASE                                                                        &kp LBKT     &kp RBKT   &kp LBRC   &kp RBRC &trans   &trans
 			&trans  &trans     &kp U     &kp COMMA  &kp SPACE  &bpulse                                                                         &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS &kp SEMI &kp GRAVE
-			&trans  &trans     &kp DOT   &bnexus    &enters    &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &to BASE     &kp QMARK  &kp EXCL   &kp PIPE &kp AT  &trans
+			&trans  &trans     &kp DOT   &bnexus    &enters    &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &to BASE     &kp QMARK  &kp EXCL   &kp PIPE &kp DOLLAR  &trans
 			&trans  &trans     &trans    &kp LEFT   &kp RIGHT                &kp SPACE  &sk LCTRL  &bnums_plus   &bnums_plus &sk LCTRL  &kp COLON          &kp DOWN   &kp UP     &trans   &trans   &trans
 			
 			>;

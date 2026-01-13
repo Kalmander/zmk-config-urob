@@ -17,7 +17,7 @@
 		num_adapt: num_adapt {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
-			bindings = <&kp SPACE>;
+			bindings = <&spacebase>;
 			ak_dot2 { trigger-keys = <DOT>; max-prior-idle-ms = <2000>; bindings = <&kp N2>; };
 			ak_2dot { trigger-keys = <N2>; max-prior-idle-ms = <2000>; bindings = <&kp DOT>; };
 		};

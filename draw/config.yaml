@@ -114,6 +114,7 @@ parse_config:
     "&upbase": ↑ Base
     "&sbase": S Base
     "&minusbase": "- Base"
+    "&minusbase_eq": "- Base (=)"
     "&num_adaptive": Num Adapt
     "&bnav": Nav
     "&cnav": Nav
