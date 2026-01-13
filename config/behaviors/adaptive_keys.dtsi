@@ -393,6 +393,13 @@
 			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
 		};
 
+		dqt_l: dqt_or_l {
+			compatible = "zmk,behavior-adaptive-key";
+			#binding-cells = <0>;
+			bindings = <&kp DQT>;
+			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
+		};
+
 		mouse_eq: mouse_or_equal {
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
