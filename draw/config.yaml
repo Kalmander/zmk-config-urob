@@ -113,6 +113,7 @@ parse_config:
     "&downbase": ↓ Base
     "&upbase": ↑ Base
     "&sbase": S Base
+    "&doller": "$"
     "&minusbase": "- Base"
     "&minusbase_eq": "- Base (=)"
     "&num_adaptive": Num Adapt
