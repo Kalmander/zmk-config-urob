@@ -260,7 +260,7 @@
 			bindings = <
 			
 			&trans    &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
-			&trans    &trans   &trans    &kp DOT    &kp ENTER    &trans                                                                       &trans   &trans     &caret      &trans    &trans  &trans
+			&trans    &trans   &trans    &kp DOT    &kp ENTER    &trans                                                                    &trans   &trans     &caret      &trans    &trans  &trans
 			&trans    &trans   &sk LGUI  &nav_guishift_macro &pulse_auto &trans                                                            &star    &plus      &slash      &equal    &trans  &trans
 			&nav_alt  &capvim  &bslash   &att       &nav_gui  &trans                                                                       &trans   &trans     &trans      &trans    &qu     &grave
 			&trans    &percent &pag      &bnexus    &vim      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &escaper &less      &greater    &hash   &mouse  &trans
@@ -285,7 +285,7 @@
 		PulseLock {
 			bindings = <
 			
-			&trans         &trans    &sk LALT  &sk LSHIFT &sk LGUI                                                                                                      &trans     &trans    &trans     &trans  &trans
+			&trans         &trans    &sk LALT  &sk LSHIFT &sk LGUI                                                                                                     &trans     &trans    &trans     &trans  &trans
 			&trans         &trans    &trans    &kp MINUS  &kp ENTER    &trans                                                                             &trans       &trans     &kp CARET  &trans    &trans  &kp RC(RSHIFT)
 			&sk LC(LSHIFT) &trans    &sk LC(LSHIFT) &trans &kp BSLH &to BASE                                                                         &kp STAR     &kp PLUS   &kp FSLH   &kp EQUAL &trans  &trans
 			&trans         &trans    &kp BSLH  &kp AT     &kp SPACE   &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &kp GRAVE
@@ -326,12 +326,12 @@
 		Tricoder {
 			bindings = <
 			
-			&trans  &trans  &trans  &trans  &trans                                                                                    &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                                 &trans     &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                                 &kp ESCAPE &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &bpulse                                                                &key_repeat &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bnexus &kp ENTER  &kp DELETE  &trans  &trans  &trans       &trans      &trans  &trans &kp ESC     &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans                 &trans  &trans  &bnums_plus  &bnums_plus &trans  &trans            &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                                                                                        &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &trans       &key_repeat  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &trans       &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans    &bpulse                                                                &key_repeat  &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bnexus &kp ENTER &kp DELETE  &trans  &trans  &trans       &trans      &trans  &trans    &kp ESC      &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                &trans  &trans  &bnums_plus  &bnums_plus &trans  &trans                 &trans       &trans  &trans  &trans  &trans
 			
 			>;
 		};

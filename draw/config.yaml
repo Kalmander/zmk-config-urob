@@ -12,6 +12,7 @@ parse_config:
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
     "&pulse_auto": "Pulse Auto"
+    "&grave": "`"
     "&tilder": "~"
     "&coolword": "Cool Caps Word"
     "&capvim": "2nd Vim Word"
