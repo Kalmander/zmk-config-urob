@@ -397,7 +397,7 @@
 			compatible = "zmk,behavior-adaptive-key";
 			#binding-cells = <0>;
 			bindings = <&kp DQT>;
-			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <600>; bindings = <&kp L>; };
+			ak_knexus { trigger-keys = <G>; max-prior-idle-ms = <1500>; bindings = <&kp L>; };
 		};
 
 		mouse_eq: mouse_or_equal {
