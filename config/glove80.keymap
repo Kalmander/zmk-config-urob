@@ -262,9 +262,9 @@
 			&trans    &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
 			&trans    &trans   &trans    &kp DOT    &kp ENTER    &trans                                                                    &trans   &trans     &caret      &trans    &trans  &trans
 			&trans    &trans   &sk LGUI  &nav_guishift_macro &pulse_auto &trans                                                            &star    &plus      &slash      &equal    &trans  &trans
-			&nav_alt  &capvim  &bslash   &att       &nav_gui  &trans                                                                       &trans   &trans     &trans      &trans    &qu     &grave
-			&trans    &percent &pag      &bnexus    &vim      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &escaper &less      &greater    &hash   &mouse  &trans
-			&trans    &trans   &sk LGUI  &trans     &trans             &nav_guictrl &nav_ctrl &bnums_plus    &bnums_plus &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
+			&nav_alt  &capvim  &att      &nav_gui   &vim     &trans                                                                        &trans   &trans     &trans      &trans    &qu     &grave
+			&trans    &percent &pag      &bnexus    &trans      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &bslash  &less      &greater    &hash     &trans  &trans
+			&trans    &trans   &sk LGUI  &trans     &trans               &nav_guictrl &nav_ctrl &bnums_plus    &bnums_plus &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
 			>;
 		};
@@ -273,10 +273,10 @@
 			bindings = <
 			
 			&trans  &trans     &sk LALT    &sk LSHIFT &sk LGUI                                                                                                        &trans     &trans    &trans    &j_lock  &f_lock
-			&trans  &trans     &trans      &trans     &kp ENTER  &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
-			&trans  &trans     &kp LT      &none      &kp GT    &kp BSLH                                                                                 &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &trans   &trans
-			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &tabber    &kp LPAR   &kp RPAR  &amp      &semi    &grave
-			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &trans          &escaper   &qmark     &exclaim  &pipe     &doller     &trans
+			&trans  &trans     &trans      &trans     &kp ENTER &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
+			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &trans   &trans
+			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &pipe      &kp LPAR   &kp RPAR  &amp      &semi    &grave
+			&trans  &kp INSERT &nexus_auto &bnexus    &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &trans         &mouse     &qmark     &exclaim  &doller     &trans     &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &sk LCTRL  &bnums_plus   &bnums_plus &sk LCTRL  &sl FUNCTIONS             &gui_tab   &sgui_tab  &trans   &trans   &trans
 
 			>;
@@ -286,11 +286,11 @@
 			bindings = <
 			
 			&trans         &trans    &sk LALT  &sk LSHIFT &sk LGUI                                                                                                     &trans    &trans     &trans    &trans  &trans
-			&trans         &trans    &trans    &kp MINUS  &kp ENTER    &trans                                                                             &trans      &kp EXCL   &kp CARET  &trans    &trans  &kp RC(RSHIFT)
-			&sk LC(LSHIFT) &trans    &sk LC(LSHIFT) &trans &kp BSLH &to BASE                                                                             &kp STAR     &kp PLUS   &kp FSLH   &kp EQUAL &trans  &trans
-			&trans         &trans    &kp BSLH  &kp AT     &kp SPACE   &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &kp GRAVE
-			&trans         &kp PRCNT &kp DOT   &bnexus    &kp COMMA   &kp BACKSPACE  &trans &nav_ctrlshift_macro &trans  &trans      &trans    &trans    &to BASE     &kp LT     &kp GT     &kp HASH  &mouse_eq  &trans
-			&trans         &trans    &sk LGUI  &leftbase  &rightbase                 &kp SPACE &sk LCTRL    &bnums_plus  &bnums_plus &basecaps &kp COLON              &kp DOWN   &kp UP     &trans    &trans  &trans
+			&trans         &trans    &trans    &kp MINUS  &kp ENTER  &trans                                                                             &trans      &kp EXCL   &kp CARET  &trans    &trans  &kp RC(RSHIFT)
+			&sk LC(LSHIFT) &trans    &sk LC(LSHIFT) &trans &kp BSLH  &to BASE                                                                           &kp STAR     &kp PLUS   &kp FSLH   &kp EQUAL &trans  &trans
+			&trans         &trans    &kp AT    &kp SPACE  &trans     &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &kp GRAVE
+			&trans         &kp PRCNT &kp DOT   &bnexus    &kp COMMA  &kp BACKSPACE  &trans &nav_ctrlshift_macro &trans  &trans      &trans    &trans    &to BASE     &kp LT     &kp GT     &kp HASH  &kp EQUAL  &trans
+			&trans         &trans    &sk LGUI  &leftbase  &rightbase                &kp SPACE &sk LCTRL    &bnums_plus  &bnums_plus &basecaps &kp COLON              &kp DOWN   &kp UP     &trans    &trans  &trans
 		
 			>;
 		};
@@ -301,10 +301,10 @@
 			bindings = <
 			
 			&trans  &trans     &sk LALT  &sk LSHIFT &sk LGUI                                                                                                 &trans     &trans     &trans   &j_lock  &f_lock
-			&trans  &trans     &trans    &trans     &kp ENTER    &trans                                                                          &kp TAB      &trans     &kp TILDE  &kp FSLH &trans   &trans
-			&trans  &trans     &trans    &kp AT     &kp BSLH   &to BASE                                                                        &kp LBKT     &kp RBKT   &kp LBRC   &kp RBRC &trans   &trans
-			&trans  &trans     &kp U     &kp COMMA  &kp SPACE  &bpulse                                                                         &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS &kp SEMI &kp GRAVE
-			&trans  &trans     &kp DOT   &bnexus    &enters    &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &to BASE     &kp QMARK  &kp EXCL   &kp PIPE &kp DOLLAR  &trans
+			&trans  &trans     &trans    &trans     &kp ENTER  &trans                                                                          &kp TAB      &trans     &kp TILDE  &kp FSLH &trans   &trans
+			&trans  &trans     &trans    &trans     &kp BSLH   &to BASE                                                                        &kp LBKT     &kp RBKT   &kp LBRC   &kp RBRC &trans   &trans
+			&trans  &trans     &kp U     &kp SPACE  &kp COMMA  &bpulse                                                                         &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS &kp SEMI &kp GRAVE
+			&trans  &kp AT     &kp DOT   &bnexus    &enters    &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans      &trans  &trans   &to BASE     &kp QMARK  &kp EXCL   &kp DOLLAR &kp PIPE  &trans
 			&trans  &trans     &trans    &leftbase  &rightbase               &kp SPACE  &sk LCTRL  &bnums_plus   &bnums_plus &sk LCTRL  &kp COLON          &kp DOWN   &kp UP     &trans   &trans   &trans
 			
 			>;
