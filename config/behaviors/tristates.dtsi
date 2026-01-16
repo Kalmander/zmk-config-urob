@@ -494,7 +494,7 @@
 		  71         72
 
 			>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-layers = <NEXUS NEXUS_LOCK>;
 		};
 
 
@@ -542,7 +542,7 @@
 		  71         72
 
 			>;
-				ignored-layers = <BASE PULSE PULSE_LOCK>;
+				ignored-layers = <PULSE PULSE_LOCK>;
 		};
 
 
