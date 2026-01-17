@@ -172,18 +172,18 @@
 		qmark: qmark {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to NEXUS_LOCK>, <&kp QMARK>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				bindings = <&to TRICODER>, <&kp QMARK>, <&to BASE>;
+				ignored-key-positions = <_NEXUS _ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
 
 		exclaim: exclaim {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to NEXUS_LOCK>, <&kp EXCL>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				bindings = <&to TRICODER>, <&kp EXCL>, <&to BASE>;
+				ignored-key-positions = <_NEXUS _ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
 
