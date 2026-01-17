@@ -312,6 +312,18 @@
 			layer-id = <NUM_WORD_PLUS>;
 		};
 		
+		NumWordPerm {
+			bindings = <
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug ___ &ug ___ &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug ___ &ug ___ &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NUM_WORD_PERMA>;
+		};
+		
 		NumWordModded {
 			bindings = <
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
