@@ -56,6 +56,22 @@
 			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PLUS>;
 		};
 
+		nums_perma: nums_perma {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp K_CANCEL>, <&to NUM_WORD_PERMA>;
+		};
+
+		num_plus_or_perma: num_plus_or_perma {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&nums_plus>, <&nums_perma>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
+
 		bnums_plus: base_nums_plus {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;

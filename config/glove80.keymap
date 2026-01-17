@@ -24,26 +24,24 @@
 #define VIM_WORD 10
 #define PAGE_WORD 11
 #define NUM_WORD 12
-/* #define NUM_WORD_STICKY 13 */
 #define NUM_WORD_PLUS 13
-#define NUM_WORD_MODDED 14
-#define PULSE 15
-#define NEXUS 16
-#define PULSE_LOCK 17
-#define NEXUS_LOCK 18
-#define TABBER 19
-#define TRICODER 20
-#define FUNCTIONS 21
-#define ICE 22
-#define JOKER 23
-#define EDI 24
-#define MOUSE 25
-#define MOUSE_SLOW 26
-#define MOUSE_WARP 27
-#define MOUSE_FAST 28
-/* #define MOUSE_SWITCHER 29 */
-/* #define UNIC_LAYER 29 */
-#define MAGIC 29
+#define NUM_WORD_PERMA 14
+#define NUM_WORD_MODDED 15
+#define PULSE 16
+#define NEXUS 17
+#define PULSE_LOCK 18
+#define NEXUS_LOCK 19
+#define TABBER 20
+#define TRICODER 21
+#define FUNCTIONS 22
+#define ICE 23
+#define JOKER 24
+#define EDI 25
+#define MOUSE 26
+#define MOUSE_SLOW 27
+#define MOUSE_WARP 28
+#define MOUSE_FAST 29
+#define MAGIC 30
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -236,9 +234,22 @@
 			&trans   &trans     &trans     &trans     &trans                                                                                                   &trans     &trans     &trans     &trans    &trans
 			&trans   &trans     &kp DOLLAR &kp MINUS  &kp ENTER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET  &kp DOLLAR &to BASE  &none 
 			&trans   &to BASE   &kp FSLH   &kp N1     &kp BSLH   &to BASE                                                                         &kp STAR     &kp PLUS   &kp N0     &kp EQUAL  &trans    &trans 
-			&kp J    &kp TAB    &kp N2     &kp N3     &kp N4     &bnav                                                                            &kp SPACE    &kp N7     &kp N8     &kp N9     &kp SEMI  &kp K
+			&kp J    &kp TAB    &kp N2     &kp N3     &kp N4     &bnav                                                                            &spacebase   &kp N7     &kp N8     &kp N9     &kp SEMI  &kp K
 			&kp SQT  &kp PRCNT  &_dot      &sl NEXUS  &_comma    &kp BACKSPACE   &minusbase  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &kp LT     &kp GT     &kp HASH   &kp EQUAL &kp DQT 
 			&none    &none      &none      &kp LEFT   &kp RIGHT                  &spacebase  &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp COLON                &downbase  &upbase    &kp AT     &none     &none 
+			
+			>;
+		};
+
+		NumWordPerma {
+			bindings = <
+			
+			&trans   &trans     &trans     &trans     &trans                                                                                                   &trans     &trans     &trans     &trans    &trans
+			&trans   &trans     &kp DOLLAR &kp MINUS  &kp ENTER  &kpcb LS(G)                                                                      &kpcb LS(G)  &kp UNDER  &kp CARET  &kp DOLLAR &to BASE  &none 
+			&trans   &to BASE   &kp FSLH   &kp N1     &kp BSLH   &to BASE                                                                         &kp STAR     &kp PLUS   &kp N0     &kp EQUAL  &trans    &trans 
+			&kp J    &kp TAB    &kp N2     &kp N3     &kp N4     &bnav                                                                            &kp SPACE    &kp N7     &kp N8     &kp N9     &kp SEMI  &kp K
+			&kp SQT  &kp PRCNT  &_dot      &sl NEXUS  &_comma    &kp BACKSPACE   &minusbase  &to BASE &none       &none      &to BASE  &kp ENTER  &to BASE     &kp LT     &kp GT     &kp HASH   &kp EQUAL &kp DQT 
+			&none    &none      &none      &kp LEFT   &kp RIGHT                  &kp SPACE   &kp N5   &kp SPACE   &kp SPACE  &kp N6   &kp COLON                &downbase  &upbase    &kp AT     &none     &none 
 			
 			>;
 		};

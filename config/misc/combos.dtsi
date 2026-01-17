@@ -520,14 +520,14 @@
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
       key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
 			key-positions = <LM2 LM3>;
-			bindings = <&nums_plus>;
+			bindings = <&num_plus_or_perma>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 
 		combo_numplusright {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RM2 RM3>;
-			bindings = <&nums_plus>;
+			bindings = <&num_plus_or_perma>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 
