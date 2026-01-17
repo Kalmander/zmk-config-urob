@@ -263,7 +263,7 @@
 			&trans    &trans   &trans    &kp DOT    &kp ENTER    &trans                                                                    &trans   &trans     &caret      &trans    &trans  &trans
 			&trans    &trans   &sk LGUI  &nav_guishift_macro &pulse_auto &trans                                                            &star    &plus      &slash      &equal    &trans  &trans
 			&nav_alt  &capvim  &att      &nav_gui   &vim     &trans                                                                        &trans   &trans     &trans      &trans    &qu     &grave
-			&trans    &percent &pag      &bnexus    &trans      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &bslash  &less      &greater    &hash     &trans  &trans
+			&trans    &percent &pag      &bnexus    &enters      &trans   &trans &nav_ctrlshift_macro &trans    &trans      &trans    &trans  &bslash  &less      &greater    &hash     &trans  &trans
 			&trans    &trans   &sk LGUI  &trans     &trans               &nav_guictrl &nav_ctrl &bnums_plus    &bnums_plus &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
 			>;
@@ -288,8 +288,8 @@
 			&trans         &trans    &sk LALT  &sk LSHIFT &sk LGUI                                                                                                     &trans    &trans     &trans    &trans  &trans
 			&trans         &trans    &trans    &kp MINUS  &kp ENTER  &trans                                                                             &trans      &kp EXCL   &kp CARET  &trans    &trans  &kp RC(RSHIFT)
 			&sk LC(LSHIFT) &trans    &sk LC(LSHIFT) &trans &kp BSLH  &to BASE                                                                           &kp STAR     &kp PLUS   &kp FSLH   &kp EQUAL &trans  &trans
-			&trans         &trans    &kp AT    &kp SPACE  &trans     &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &kp GRAVE
-			&trans         &kp PRCNT &kp DOT   &bnexus    &kp COMMA  &kp BACKSPACE  &trans &nav_ctrlshift_macro &trans  &trans      &trans    &trans    &to BASE     &kp LT     &kp GT     &kp HASH  &kp EQUAL  &trans
+			&trans         &trans    &kp AT    &kp SPACE  &kp COMMA  &bpulse                                                                            &key_repeat  &kp LPAR   &kp RPAR   &kp AMPS  &kp SEMI  &kp GRAVE
+			&trans         &kp PRCNT &kp DOT   &bnexus    &enters    &kp BACKSPACE  &trans &nav_ctrlshift_macro &trans  &trans      &trans    &trans    &to BASE     &kp LT     &kp GT     &kp HASH  &kp EQUAL  &trans
 			&trans         &trans    &sk LGUI  &leftbase  &rightbase                &kp SPACE &sk LCTRL    &bnums_plus  &bnums_plus &basecaps &kp COLON              &kp DOWN   &kp UP     &trans    &trans  &trans
 		
 			>;
