@@ -12,6 +12,8 @@ parse_config:
   raw_binding_map:
     "&cancel_dot": "Cancel (Dot)"
     "&pulse_auto": "Pulse Auto"
+    "&num_plus_nexus": "Num + Nexus"
+    "&bnums_perma": "Num Perma"
     "&grave": "`"
     "&tilder": "~"
     "&senterer": "Shift Enterer"
