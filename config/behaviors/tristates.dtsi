@@ -4,6 +4,7 @@
     #define _DOT LB4
     #define _NEXUS LB3
     #define _ENTER LB2
+    #define _SENTER RM5
     #define _TAB RM1
     #define _KEYREPEAT RM1
     #define _NUMLEFT LH6
@@ -118,6 +119,14 @@
 			bindings = <&ns_enters>, <&gui_enters>;
 			mods = <(MOD_LGUI|MOD_RGUI)>;
 		};
+		senterer: shift_enterer {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
+				ignored-key-positions = <_NEXUS _ENTER _KEYREPEAT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
 
 		tabber_normal: tabber_normal {
 				compatible = "zmk,behavior-tri-state";
@@ -173,7 +182,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp QMARK>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_NEXUS _ENTER _SENTER _KEYREPEAT _NUMLEFT _NUMRIGHT RT1>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -182,7 +191,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp EXCL>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_NEXUS _ENTER _SENTER _KEYREPEAT _NUMLEFT _NUMRIGHT RT1>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
