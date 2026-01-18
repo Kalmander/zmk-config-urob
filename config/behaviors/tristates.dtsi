@@ -85,26 +85,26 @@
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TABBER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
+				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TRICODER>;
         timeout-ms = <2000>;
 		};
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
 		shift_enters: shift_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TABBER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
+				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER TRICODER>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
         timeout-ms = <2000>;
 		};
 		gui_enters: gui_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TABBER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK TABBER>;
+				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER TRICODER>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
         timeout-ms = <2000>;
 		};
 		ns_enters: normal_shift_enters {
