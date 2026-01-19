@@ -240,12 +240,28 @@
       >;
 		};
 
-    base_dot: base_dot {
+    cd_word: caps_dot_word {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
 			bindings = <&caps_dot_caps &caps_dot BASE_DOT>;
+		};
+
+    bd_word: base_dot_word {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&caps_dot BASE_DOT>;
+		};
+
+    cbd_word: cancel_then_base_dot_word {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp K_CANCEL &caps_dot BASE_DOT>;
 		};
 
 		base_cancel: base_cancel {

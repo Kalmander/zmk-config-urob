@@ -392,7 +392,7 @@
 		combo_capsdot {
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LH2 RH2>;
-			bindings = <&base_dot>;
+			bindings = <&cd_word>;
 		};
 		
 		/* combo_acomma { */

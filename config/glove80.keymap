@@ -86,12 +86,12 @@
 		BaseDot {
 			bindings = <
 			
-			&scrup_slow      &scrdn_slow     &scrup_fast   &scrdn_fast    &kp C_PREV                                                                                                                    &kp C_NEXT  &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kpdot RA(T)     &kpdot RA(D)     &kpdot Q      &kp MINUS      &kp ENTER      &key_repeat                                                                                     &key_repeat    &kp UNDER    &kpdot V          &kpdot Z        &kp K_CANCEL   &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &cancel_dot     &kpdot Y         &kpdot O          &kpdot U          &shift_repeat                                                                                   &rshift_repeat &kpdot F        &kpdot D          &kpdot L    &kpdot X          &kp C_PLAY_PAUSE
-			&kpdot RA(P)     &kpdot W        &kpdot I   &kpdot E  &kpdot A    &pulse                                                                                          &thorn_eth     &kpdot H  &kpdot T  &kpdot N  &kpdot P      &kp DQT
-			&kp SQT          &sl ICE         &kp DOT       &sl NEXUS      &kp COMMA      &backspace     &kp UNDER    &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &sk RCTRL     &kpdot M          &kpdot S        &kpdot G          &kpdot B        &kpdot J            &kpdot J
-      &magic MAGIC 0   &kp HOME        &cdeleter     &kp LEFT      &kp RIGHT                      &kp SPACE   &kpdot C  &sl NUM_WORD    &sl NUM_WORD  &kpdot K  &kpdot R                &kp DOWN     &kp UP         &deleter     &kp END         &kp PSCRN
+			&scrup_slow      &scrdn_slow   &scrup_fast &scrdn_fast &kp C_PREV                                                                                                              &kp C_NEXT &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
+			&kpdot RA(T)     &kpdot RA(D)  &kpdot Q    &kp MINUS   &kp ENTER  &key_repeat                                                                                   &key_repeat    &kp UNDER  &kpdot V  &kpdot Z  &kp K_CANCEL  &sk LC(LSHIFT)
+			&sk LC(LSHIFT)   &cancel_dot   &kpdot Y    &kpdot O    &kpdot U   &shift_repeat                                                                                 &rshift_repeat &kpdot F   &kpdot D  &kpdot L  &kpdot RA(T)  &kp C_PLAY_PAUSE
+			&kpdot RA(P)     &kpdot W      &kpdot I    &kpdot E    &kpdot A   &pulse                                                                                        &kpdot  RA(T)  &kpdot H   &kpdot T  &kpdot N  &kpdot P      &kpdot X
+			&kp SQT          &sl ICE       &kp DOT     &sl NEXUS   &kp COMMA  &backspace    &kp UNDER  &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto   &kp K_CANCEL  &sk RCTRL  &kpdot M       &kpdot S   &kpdot G  &kpdot B  &kpdot J      &kpdot L
+      &magic MAGIC 0   &kp HOME      &cdeleter   &kp LEFT    &kp RIGHT                &kp SPACE  &kpdot C      &sl NUM_WORD    &sl NUM_WORD  &kpdot K      &kpdot R                  &kp DOWN   &kp UP    &deleter  &kp END       &kp PSCRN
 			
       >;
 		};
@@ -274,7 +274,7 @@
 			&trans    &trans   &trans    &trans     &kp ENTER  &trans                                                                      &trans   &kp EXCL   &caret      &doller   &trans  &trans
 			&trans    &trans   &sk LGUI  &nav_guishift_macro   &pulse_auto &trans                                                          &star    &plus      &slash      &equal    &trans  &trans
 			&nav_alt  &capvim  &att      &nav_gui   &vim       &trans                                                                      &trans   &trans     &trans      &trans    &qu     &grave
-			&trans    &percent &pag      &sl NEXUS  &enters    &trans   &trans &nav_ctrlshift_macro &trans   &trans      &trans    &trans  &bslash  &less      &greater    &hash     &trans  &trans
+			&trans    &percent &pag      &sl NEXUS  &enters    &trans   &trans &nav_ctrlshift_macro &trans   &trans      &trans    &cbd_word  &bslash  &less      &greater    &hash     &trans  &trans
 			&trans    &trans   &sk LGUI  &trans     &trans              &nav_guictrl &nav_ctrl &bnums_perma   &bnums_perma &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
 			>;
@@ -287,7 +287,7 @@
 			&trans  &trans     &trans      &trans     &kp ENTER &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &trans   &trans
 			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &amp       &kp LPAR   &kp RPAR  &semi     &num_plus_nexus &grave
-			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &trans         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
+			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
 			&trans  &trans     &trans      &kp LEFT   &kp RIGHT                &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &sl FUNCTIONS             &gui_tab   &sgui_tab &trans    &trans   &trans
 
 			>;
