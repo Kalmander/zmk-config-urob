@@ -272,7 +272,7 @@
 			
 			&trans    &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
 			&trans    &trans   &trans    &trans     &kp ENTER  &trans                                                                      &trans   &kp EXCL   &caret      &doller   &trans  &trans
-			&trans    &trans   &nav_gui  &nav_guishift_macro   &pulse_auto &trans                                                          &star    &plus      &slash      &equal    &trans  &trans
+			&trans    &trans   &nav_guishift_macro  &nav_gui   &pulse_auto &trans                                                          &star    &plus      &slash      &equal    &trans  &trans
 			&nav_alt  &capvim  &att      &sk LGUI   &vim       &trans                                                                      &trans   &trans     &trans      &trans    &qu     &grave
 			&trans    &percent &pag      &sl NEXUS  &enters    &trans   &trans &nav_ctrlshift_macro &trans   &trans      &trans    &cbd_word  &bslash  &less      &greater    &hash     &trans  &trans
 			&trans    &trans   &trans    &trans     &trans              &nav_guictrl &nav_ctrl &bnums_perma   &bnums_perma &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
