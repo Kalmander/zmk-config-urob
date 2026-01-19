@@ -79,5 +79,24 @@
 				ignored-key-positions = <0 1>;
 				ignored-layers = <BASE TYPING MOUSE_WARP>;
 		};
+
+
+		scr_slow: scr_slow {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&tog_on_layer MOUSE_SLOW>, <&none>, <&tog_off_layer MOUSE_SLOW>;
+				ignored-key-positions = <6 7>;
+				ignored-layers = <BASE TYPING MOUSE_SLOW>;
+		};
+
+		scr_warp: scr_warp {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&tog_on_layer MOUSE_WARP>, <&none>, <&tog_off_layer MOUSE_WARP>;
+				ignored-key-positions = <6 7>;
+				ignored-layers = <BASE TYPING MOUSE_WARP>;
+		};
+
+
 	};
 };
