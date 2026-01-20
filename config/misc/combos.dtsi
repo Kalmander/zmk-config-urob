@@ -502,13 +502,6 @@
 			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
 		};
 		
-		combo_dotonnum {
-			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <LM1 LB1>;
-			bindings = <&num_adapt>;
-			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
-		};
-		
 		combo_numplusleft {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
       key-positions = <POS_RH_C2R4 POS_RH_C1R4>; 
@@ -551,6 +544,13 @@
 			key-positions = <LM2 LB2>;
 			bindings = <&base_adapt>;
 			layers = <BASE TYPING>;
+		};
+		
+		combo_dotonnum {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LM2 LB2>;
+			bindings = <&num_adapt>;
+			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED>;
 		};
 		
 		combo_tab {

@@ -284,6 +284,15 @@
         timeout-ms = <2000>;
 		};
 
+		minuser: minuser {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp MINUS>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
 		star: star {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;

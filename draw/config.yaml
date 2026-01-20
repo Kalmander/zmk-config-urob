@@ -16,6 +16,7 @@ parse_config:
     "&bnums_perma": "Num Perma"
     "&cbd_word": "Base Dot"
     "&cd_word": "Caps Dot"
+    "&minuser": "-"
     "&scr_slow": "Slow Scroll"
     "&scr_warp": "Warp Scroll"
     "&grave": "`"
