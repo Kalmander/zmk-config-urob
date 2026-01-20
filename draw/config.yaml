@@ -14,6 +14,8 @@ parse_config:
     "&pulse_auto": "Pulse Auto"
     "&num_plus_nexus": "Num + Nexus"
     "&bnums_perma": "Num Perma"
+    "&cbd_word": "Base Dot"
+    "&cd_word": "Caps Dot"
     "&scr_slow": "Slow Scroll"
     "&scr_warp": "Warp Scroll"
     "&grave": "`"
