@@ -270,12 +270,12 @@
 		Pulse {
 			bindings = <
 			
-			&trans    &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
-			&trans    &trans   &trans    &trans     &kp ENTER  &trans                                                                      &trans   &kp EXCL   &caret      &doller   &trans  &trans
-			&trans    &trans   &trans  &nav_guishift_macro &pulse_auto &trans                                                          &star    &plus      &slash      &equal    &trans  &trans
-			&vim     &capvim  &att      &nav_gui     &sk LGUI    &trans                                                                      &trans   &trans     &trans      &trans    &qu     &grave
-			&nav_alt    &percent &pag      &sl NEXUS  &enters    &trans   &trans &nav_ctrlshift_macro &trans   &trans      &trans    &cbd_word  &bslash  &less      &greater    &hash     &trans  &trans
-			&trans    &trans   &trans    &trans     &trans              &nav_guictrl &nav_ctrl &bnums_perma   &bnums_perma &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
+			&trans   &trans   &trans    &trans     &trans                                                                                             &trans     &trans      &trans    &trans  &trans
+			&trans   &trans   &trans    &trans     &kp ENTER  &trans                                                                         &trans   &kp EXCL   &caret      &doller   &trans  &trans
+			&trans   &trans   &sk LCTRL &nav_guishift_macro &pulse_auto &trans                                                               &star    &plus      &slash      &equal    &trans  &trans
+			&vim     &capvim  &att      &nav_gui   &sk LGUI    &trans                                                                        &trans   &trans     &trans      &trans    &qu     &grave
+			&nav_alt &percent &pag      &sl NEXUS  &enters    &trans   &trans &nav_ctrlshift_macro &trans   &trans      &trans    &cbd_word  &bslash  &less      &greater    &hash     &trans  &trans
+			&trans   &trans   &trans    &trans     &trans              &nav_guictrl &nav_ctrl &bnums_perma   &bnums_perma &coolword &colon           &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
 			>;
 		};

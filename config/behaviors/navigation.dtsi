@@ -5,10 +5,10 @@
 			compatible = "zmk,behavior-auto-layer";
 			#binding-cells = <1>;
 			continue-list = <LEFT DOWN UP RIGHT /* villt alls ekki CLEAR_AGAIN hér því notar það í amps */
-                       LCTRL RCTRL
-                        LALT RALT
-                        LSHIFT RSHIFT
-      >; /* sleppa gui af því eitt helsta aðgengið að því er á pulse og hef betri leið að gui örvum anyway */
+                       /* LCTRL RCTRL */
+                       /*  LALT RALT */
+                        /* LSHIFT RSHIFT */
+      >; /* sleppa mods því nota pulse til að komast í þá og hef modded nav anyway (plús örvarnar á base) */
 			ignore-numbers;
 			/* ignore-modifiers; */
 		};
