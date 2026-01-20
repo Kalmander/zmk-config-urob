@@ -488,13 +488,6 @@
 			layers = <BASE TYPING>;
 		};
 		
-		combo_dotonbase {
-			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <LM1 LB1>;
-			bindings = <&base_adapt>;
-			layers = <BASE TYPING>;
-		};
-		
 		combo_80 {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RM3 RT3>;
@@ -553,9 +546,16 @@
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
+		combo_dotonbase {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LM2 LB2>;
+			bindings = <&base_adapt>;
+			layers = <BASE TYPING>;
+		};
+		
 		combo_tab {
 			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LM2 LB2>;
+			key-positions = <LM1 LB1>;
 			bindings = <&tabber2>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};

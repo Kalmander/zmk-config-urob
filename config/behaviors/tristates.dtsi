@@ -166,7 +166,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM2 LB2>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1>;
 				ignored-layers = <BASE NEXUS NEXUS_LOCK TRICODER>;
 		};
 
