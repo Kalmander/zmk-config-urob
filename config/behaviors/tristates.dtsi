@@ -123,9 +123,46 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to MOUSE>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_NEXUS _ENTER LB1>;
+				ignored-key-positions = <_ENTER LB1 LF2>;
 				ignored-layers = <MOUSE>;
         timeout-ms = <2000>;
+		};
+		enters_normal2: enter_stick2 {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER LF2 LM3>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK TRICODER>;
+        timeout-ms = <2000>;
+		};
+    /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
+		shift_enters2: shift_enter_stick2 {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER TRICODER LF2 LM3>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+        timeout-ms = <2000>;
+		};
+		gui_enters2: gui_enter_stick2 {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER TRICODER LF2 LM3>;
+				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+        timeout-ms = <2000>;
+		};
+		ns_enters2: normal_shift_enters2 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&enters_normal2>, <&shift_enters2>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+		enters2: enters2 {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&ns_enters2>, <&gui_enters2>;
+			mods = <(MOD_LGUI|MOD_RGUI)>;
 		};
     
 
@@ -233,8 +270,8 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp COLON>, <&to BASE>;
-				/* ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>; */
-				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT LF2>;
+				/* ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>; */
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -243,8 +280,8 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp SEMI>, <&to BASE>;
-				/* ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT>; */
-				ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>;
+				ignored-key-positions = <_ENTER _KEYREPEAT _NUMLEFT _NUMRIGHT LF2>;
+				/* ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>; */
 				ignored-layers = <TRICODER>;
 		};
 
@@ -503,7 +540,7 @@
 		         67 68
 		  /* right */
 		16    18 19       \
-		28 29 30 31       \
+		28 29 30 31 32    \
 		40 41 42 43 44 45 \
 		58 59 60 61 62    \
 		75 76         

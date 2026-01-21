@@ -439,12 +439,12 @@
 			layers = <NEXUS NEXUS_LOCK>;
 		};
 		
-		combo_sqt {
-			timeout-ms = <COMBO_TIMEOUT>;
-			key-positions = <LM3 LB3>;
-			bindings = <&kp SQT>;
-			layers = <BASE TYPING>;
-		};
+		/* combo_sqt { */
+		/* 	timeout-ms = <COMBO_TIMEOUT>; */
+		/* 	key-positions = <LM3 LB3>; */
+		/* 	bindings = <&kp SQT>; */
+		/* 	layers = <BASE TYPING>; */
+		/* }; */
 		
 		combo_dqt {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
@@ -564,6 +564,13 @@
 			timeout-ms = <COMBO_TIMEOUT>;
 			key-positions = <LB1 LB2>;
 			bindings = <&senterer>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+		
+		combo_enter {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LM3 LB3>;
+			bindings = <&enters2>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		

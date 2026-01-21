@@ -285,7 +285,7 @@
 			
 			&trans  &trans     &trans      &trans     &trans                                                                                                        &trans     &trans    &trans    &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &kp ENTER &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
-			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &trans   &trans
+			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &kp SEMI &trans
 			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &amp       &kp LPAR   &kp RPAR  &semi     &num_plus_nexus &grave
 			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
 			&trans  &trans     &trans      &trans     &sk LALT                 &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &sl FUNCTIONS             &gui_tab   &sgui_tab &trans    &trans   &trans
@@ -313,7 +313,7 @@
 			
 			&trans    &trans   &trans    &trans     &trans                                                                                          &trans     &trans      &trans    &trans  &trans
 			&trans  &trans     &trans    &trans     &kp ENTER  &trans                                                                              &kp TAB   &trans     &kp TILDE  &kp FSLH   &trans   &trans
-			&trans  &trans     &trans    &trans     &kp BSLH   &to BASE                                                                            &kp LBKT  &kp RBKT   &kp LBRC   &kp RBRC   &trans   &trans
+			&trans  &trans     &trans    &trans     &kp BSLH   &to BASE                                                                            &kp LBKT  &kp RBKT   &kp LBRC   &kp RBRC   &kp SEMI &trans
 			&trans  &trans     &kp U     &kp SPACE  &kp COMMA  &bpulse                                                                             &kp AMPS  &kp LPAR   &kp RPAR   &kp SEMI   &bnums_perma &kp GRAVE
 			&trans  &kp AT     &kp DOT   &sl NEXUS  &enters    &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans       &trans     &trans   &to BASE  &kp QMARK  &kp EXCL   &kp PIPE   &trans   &trans
 			&trans  &trans     &trans    &leftbase  &rightbase               &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &kp COLON          &kp DOWN   &kp UP     &trans     &trans   &trans
@@ -408,7 +408,7 @@
 			&none  &to BASE   &kp LC(C)       &mmv MOVE_UP    &kp LC(V)        &to BASE                                                                                       &kp LCTRL  &mkp LCLK       &mkp MCLK       &mkp RCLK       &none     &none
 			&none  &kp LC(A)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                                                                                      &mkp MB4   &mo MOUSE_FAST  &mo MOUSE_WARP  &mo MOUSE_SLOW  &mkp MB5  &none
 			&none  &none      &none           &none           &kp LS(ENTER)    &kp BACKSPACE  &msc SCRL_LEFT  &to BASE      &msc SCRL_RIGHT    &none      &to BASE   &mkp MCLK    &to BASE   &none           &none           &none           &none     &none
-			&none  &none      &none           &none           &none                           &msc SCRL_DOWN  &msc SCRL_UP  &none              &none      &mkp RCLK  &mkp LCLK               &kp LC(TAB)     &kp LC(LS(TAB)) &none           &none     &none
+			&none  &none      &none           &none           &kp TAB                         &msc SCRL_DOWN  &msc SCRL_UP  &none              &none      &mkp RCLK  &mkp LCLK               &kp LC(TAB)     &kp LC(LS(TAB)) &none           &none     &none
 			
 			>;
 		};
