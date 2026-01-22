@@ -613,14 +613,14 @@
 		};
 
 		combo_leftctrlshift {
-			timeout-ms = <COMBO_TIMEOUT>;
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <LB1 LB2>;
 			bindings = <&sk LC(LSHIFT)>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
 		combo_rightctrlshift {
-			timeout-ms = <COMBO_TIMEOUT>;
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RB1 RB2>;
 			bindings = <&sk RC(RSHIFT)>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
