@@ -288,7 +288,7 @@
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &kp SEMI &trans
 			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &amp       &kp LPAR   &kp RPAR  &semi     &num_plus_nexus &grave
 			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
-			&trans  &trans     &trans      &trans     &sk LALT                 &tabber  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &sl FUNCTIONS             &gui_tab   &sgui_tab &trans    &trans   &trans
+			&trans  &trans     &trans      &trans     &sk LALT                 &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &sl FUNCTIONS             &gui_tab   &sgui_tab &trans    &trans   &trans
 
 			>;
 		};

@@ -563,8 +563,15 @@
 		
 		combo_rightgui {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <RT2 RT3>;
+			key-positions = <RM1 RM2>;
 			bindings = <&sk RGUI>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+		
+		combo_tab {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <RT2 RT3>;
+			bindings = <&tabber>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
@@ -590,13 +597,6 @@
 			bindings = <&kp I>;
 			layers = <BASE TYPING>; 
 		};
-		
-		/* combo_rightgui { */
-		/* 	timeout-ms = <COMBO_TIMEOUT>; */
-		/* 	key-positions = <RM1 RM2>; */
-		/* 	bindings = <&sk RGUI>; */
-		/* 	layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>;  */
-		/* }; */
 		
 		combo_leftctrl {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
