@@ -186,6 +186,14 @@
 			bindings = <&kp SPACE>, <&to BASE>;
 		};
 
+		underbase: underbase {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&kp UNDER>, <&to BASE>;
+		};
+
 		minusbase: minusbase {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
