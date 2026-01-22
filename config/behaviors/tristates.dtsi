@@ -87,7 +87,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -96,7 +96,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -104,7 +104,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -132,7 +132,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB LM2>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER LM2>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -141,7 +141,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB LM2>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER LM2>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -149,7 +149,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB LM2>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER LM2>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
