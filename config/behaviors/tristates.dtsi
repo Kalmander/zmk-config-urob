@@ -132,9 +132,8 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
-				/* ignored-key-positions = <_DOT _NEXUS _ENTER LF2 LM3>; */
-				ignored-key-positions = <_ENTER LB1 LF2>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK TRICODER>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB LM2>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
     /* Ath, þetta er frekar bjánaleg lausn til að láta sticky shift virka með enter (handa inni mods virka augljóslega enn) */
@@ -142,16 +141,16 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER TRICODER LF2 LM3>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB LM2>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
 		gui_enters2: gui_enter_stick2 {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER TRICODER LF2 LM3>;
-				ignored-layers = <BASE NEXUS NEXUS_LOCK>;
+				ignored-key-positions = <_DOT _NEXUS _ENTER _TAB LM2>;
+				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
 		ns_enters2: normal_shift_enters2 {
@@ -160,7 +159,7 @@
 			bindings = <&enters_normal2>, <&shift_enters2>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
-		enters2: enters2 {
+		enterer: enterer {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
 			bindings = <&ns_enters2>, <&gui_enters2>;

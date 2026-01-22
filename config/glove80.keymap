@@ -340,7 +340,7 @@
 			&trans  &trans  &trans  &trans  &trans                                                                                        &trans       &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &trans       &key_repeat  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &sk LSHIFT   &trans       &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans    &bpulse                                                                &key_repeat  &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &kp A     &bpulse                                                                &key_repeat  &trans       &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &bnexus &kp ENTER &kp DELETE  &trans  &trans  &trans       &trans      &trans  &trans    &kp ESC      &trans       &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans                  &kp TAB  &trans  &bnums_plus  &bnums_plus &kp LS(ENTER)  &trans                 &trans       &trans  &trans  &trans  &trans
 			
