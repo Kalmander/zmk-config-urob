@@ -10,6 +10,22 @@ parse_config:
 
   
   raw_binding_map:
+    "&kp DQT": \"
+    "&combo_dv_macro": "dv"
+    "&combo_sh_macro": "sh"
+    "&combo_gt_macro": "gt"
+    "&combo_rk_macro": "rk"
+    "&combo_cspacebase_macro": "C Sp"
+    "&combo_5spacebase_macro": "5 Sp"
+    "&cool_caps": "Cool Caps"
+    "&sk RC(RSHIFT)": "Ctrl Shift"
+    "&sk LC(LSHIFT)": "Ctrl Shift"
+    "&combo_au_macro": "au"
+    "&enterer": "Enter"
+    "&combo_eo_macro": "eo"
+    "&base_adapt": "æ ."
+    "&num_adapt": "."
+    "&num_plus_or_perma": "Num"
     "&cancel_dot": "Cancel (Dot)"
     "&pulse_auto": "Pulse Auto"
     "&num_plus_nexus": "Num + Nexus"
