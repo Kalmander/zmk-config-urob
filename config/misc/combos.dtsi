@@ -575,6 +575,13 @@
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
+		combo_leftctrl2 {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LT3 LN3>;
+			bindings = <&sk LCTRL>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+		
 		combo_rightctrl {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RB2 RB3>;
