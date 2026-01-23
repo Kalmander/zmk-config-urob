@@ -556,7 +556,7 @@
 		
 		combo_leftgui {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <LM1 LB1>;
+			key-positions = <LM3 LB3>;
 			bindings = <&sk LGUI>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PERMA NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
@@ -568,6 +568,20 @@
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PERMA NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
+		combo_leftctrl {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <LM1 LB1>;
+			bindings = <&sk LCTRL>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+		
+		combo_rightctrl {
+			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
+			key-positions = <RB2 RB3>;
+			bindings = <&sk RCTRL>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+
 		combo_tab {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RT2 RT3>;
@@ -605,20 +619,6 @@
 			layers = <BASE TYPING>; 
 		};
 		
-		combo_leftctrl {
-			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <LM3 LB3>;
-			bindings = <&sk LCTRL>;
-			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
-		};
-		
-		combo_rightctrl {
-			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
-			key-positions = <RB2 RB3>;
-			bindings = <&sk RCTRL>;
-			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
-		};
-
 		combo_leftctrlshift {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <LB1 LB2>;
