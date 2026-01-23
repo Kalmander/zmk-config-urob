@@ -33,15 +33,16 @@
 #define NEXUS_LOCK 19
 #define TABBER 20
 #define TRICODER 21
-#define FUNCTIONS 22
-#define ICE 23
-#define JOKER 24
-#define EDI 25
-#define MOUSE 26
-#define MOUSE_SLOW 27
-#define MOUSE_WARP 28
-#define MOUSE_FAST 29
-#define MAGIC 30
+#define BACKSPACER 22
+#define FUNCTIONS 23
+#define ICE 24
+#define JOKER 25
+#define EDI 26
+#define MOUSE 27
+#define MOUSE_SLOW 28
+#define MOUSE_WARP 29
+#define MOUSE_FAST 30
+#define MAGIC 31
 
 #include "misc/glove80keys.dtsi"
 #include "misc/settings.dtsi"
@@ -347,6 +348,18 @@
 			>;
 		};
 
+		Backspacer {
+			bindings = <
+			
+			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &to BASE  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bnexus &trans  &kp LC(BACKSPACE)             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+			
+			>;
+		};
 
 		Function {
 			bindings = <

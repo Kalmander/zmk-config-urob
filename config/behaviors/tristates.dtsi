@@ -422,12 +422,21 @@
         timeout-ms = <2000>;
 		};
 
+		/* ctrl_bs: ctrl_backspace { */
+		/* 		compatible = "zmk,behavior-tri-state"; */
+		/* 		#binding-cells = <0>; */
+		/* 		bindings = <&kp_on LCTRL>, <&kp LC(BACKSPACE)>, <&kp_off LCTRL>; */
+		/* 		ignored-key-positions = <RT1 LB1>; */
+		/*       timeout-ms = <6000>; */
+		/* }; */
+    /* Þetta kostar mig layer miðað við hitt implementation EN */
+    /* leyfir mér að toggle-a af með því að ýta aftur á RSHIFT */
 		ctrl_bs: ctrl_backspace {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&kp_on LCTRL>, <&kp LC(BACKSPACE)>, <&kp_off LCTRL>;
+				bindings = <&to BACKSPACER>, <&kp LC(BACKSPACE)>, <&to BASE>;
 				ignored-key-positions = <RT1 LB1>;
-				/* ignored-layers = <TRICODER>; */
+				ignored-layers = <BACKSPACER>;
         timeout-ms = <6000>;
 		};
 
