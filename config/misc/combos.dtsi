@@ -449,7 +449,9 @@
 		combo_dqt {
 			timeout-ms = <COMBO_TIMEOUT_BRIEF>;
 			key-positions = <RM3 RT3>;
-			bindings = <&kp DQT>;
+			/* bindings = <&kp DQT>; */
+      /* tristateið brotnar strax sem er bara gott, til að nota ýtiru á þorn takkann áður en ert búinn að sleppa comboinu */
+			bindings = <&quoter>;
 			layers = <BASE TYPING NEXUS NEXUS_LOCK PULSE_LOCK TRICODER>;
 		};
 
