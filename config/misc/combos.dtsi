@@ -350,7 +350,7 @@
 	combos {
 		compatible = "zmk,combos";
 		
-		#define COMBO_TIMEOUT_BRIEF 15
+		#define COMBO_TIMEOUT_BRIEF 17
 		#define COMBO_TIMEOUT 60
 		
 		combo_spacec {
