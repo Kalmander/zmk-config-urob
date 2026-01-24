@@ -555,6 +555,14 @@
 			>;
 				ignored-layers = <NEXUS NEXUS_LOCK>;
 		};
+		cancel_tristate: cancel_tristate {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+			bindings = <&to MOUSE>, <&to BASE>;
+		};
+		
 
 
 		/*   left */
