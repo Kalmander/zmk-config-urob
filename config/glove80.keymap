@@ -287,8 +287,8 @@
 			&trans  &trans     &trans      &trans     &trans                                                                                                        &trans     &trans    &trans    &j_lock  &f_lock
 			&trans  &trans     &trans      &trans     &kp LS(ENTER) &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &kp SEMI &trans
-			&trans  &trans     &kp U       &trans     &sticky_w &bpulse                                                                                  &amp       &kp LPAR   &kp RPAR  &semi     &num_plus_nexus &grave
-			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &ctrl_w        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
+			&trans  &ctrl_w    &kp U       &trans     &sticky_w &bpulse                                                                                  &amp       &kp LPAR   &kp RPAR  &semi     &num_plus_nexus &grave
+			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &trans        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
 			&trans  &trans     &trans      &trans     &sk LALT                 &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &sl FUNCTIONS             &gui_tab   &sgui_tab &trans    &trans   &trans
 
 			>;
@@ -328,7 +328,7 @@
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &trans  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &kp LC(W)  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &bnexus &trans  &kp LC(W)             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))   &trans  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
 			
