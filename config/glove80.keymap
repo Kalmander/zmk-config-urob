@@ -288,7 +288,7 @@
 			&trans  &trans     &trans      &trans     &kp LS(ENTER) &trans                                                                                   &trans     &trans     &tilder   &kp FSLH  &trans   &trans
 			&trans  &trans     &trans      &trans     &trans    &trans                                                                                   &kp LBKT   &kp RBKT   &kp LBRC  &kp RBRC  &kp SEMI &trans
 			&trans  &ctrl_w    &kp U       &trans     &sticky_w &bpulse                                                                                  &amp       &kp LPAR   &kp RPAR  &semi     &num_plus_nexus &grave
-			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &trans        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
+			&trans  &kp INSERT &nexus_auto &sl NEXUS  &enters   &tabber        &kp UNDER  &trans     &to TYPING    &trans      &trans     &cd_word         &mouse     &qmark     &exclaim  &pipe     &trans   &trans
 			&trans  &trans     &trans      &trans     &sk LALT                 &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &sl FUNCTIONS             &gui_tab   &sgui_tab &trans    &trans   &trans
 
 			>;
@@ -342,7 +342,7 @@
 			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &trans       &key_repeat  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &sk LSHIFT   &trans       &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &kp A     &bpulse                                                                &key_repeat  &trans       &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &bnexus &kp ENTER &kp DELETE  &trans  &trans  &trans       &trans      &trans  &trans    &kp ESC      &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &bnexus &kp ENTER &kp BACKSPACE &trans  &trans  &trans       &trans      &trans  &trans    &kp ESC      &trans       &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans                  &kp TAB  &trans  &bnums_plus  &bnums_plus &kp LS(ENTER)  &trans                 &trans       &trans  &trans  &trans  &trans
 			
 			>;
@@ -368,8 +368,8 @@
 			&none  &none  &none     &none      &none     &none                                                                      &kp SLCK    &kp F10  &kp F11  &kp F12  &none  &none
 			&none  &to BASE &none   &none      &none     &none                                                                      &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
 			&none  &none  &kp LALT  &kp LSHIFT &kp LGUI  &none                                                                      &kp CAPS    &kp F4   &kp F5   &kp F6   &none  &none
-			&none  &none  &none     &kp RSHIFT &kp LCTRL &none   &none  &to BASE &none   &kp C_BRI_DN  &to BASE      &kp C_BRI_UP   &to BASE    &kp F1   &kp F2   &kp F3   &none  &to TYPING
-			&none  &none  &none     &none      &none             &none  &none  &none     &kp C_MUTE    &volume_down  &volume_up                 &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE    &none  &to JOKER
+			&none  &none  &none     &kp RSHIFT &kp LCTRL &kp DELETE &none  &to BASE &none   &kp C_BRI_DN  &to BASE      &kp C_BRI_UP   &to BASE    &kp F1   &kp F2   &kp F3   &none  &to TYPING
+			&none  &none  &kp LC(DELETE)     &none      &none             &none  &none  &none     &kp C_MUTE    &volume_down  &volume_up                 &kp C_PREV    &kp C_NEXT    &kp DELETE    &none  &to JOKER
 			
 			>;
 		};

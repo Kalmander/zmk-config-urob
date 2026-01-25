@@ -171,21 +171,21 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT RT2 RT3>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1>;
 				ignored-layers = <TRICODER>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TABBER>, <&kp LS(TAB)>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT RT2 RT3>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1>;
 				ignored-layers = <TRICODER>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TABBER>, <&kp LG(TAB)>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT RT2 RT3>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1>;
 				ignored-layers = <TRICODER>;
 		};
 		ns_tabber: ns_tabber {
@@ -470,18 +470,18 @@
 		deleter: deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kp DELETE>, <&to BASE>;
+				bindings = <&to FUNCTIONS>, <&kp DELETE>, <&to BASE>;
 				ignored-key-positions = <LB1>;
-				ignored-layers = <TRICODER>;
+				ignored-layers = <FUNCTIONS>;
 		};
 
 
-		to_tricoder_and_ctrl_on: to_tricoder_and_ctrl_on {
+		to_function_and_ctrl_on: to_function_and_ctrl_on {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-			bindings = <&to TRICODER>, <&kp_on LCTRL>;
+			bindings = <&to FUNCTIONS>, <&kp_on LCTRL>;
 		};
 
 		ctrl_off_and_base: ctrl_off_and_base {
@@ -495,9 +495,9 @@
 		cdeleter: ctrl_deleter {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to_tricoder_and_ctrl_on>, <&kp DELETE>, <&ctrl_off_and_base>;
+				bindings = <&to_function_and_ctrl_on>, <&kp DELETE>, <&ctrl_off_and_base>;
 				ignored-key-positions = <LB1>;
-				ignored-layers = <TRICODER>;
+				ignored-layers = <FUNCTIONS>;
 		};
 
     lock_nexus_on: lock_nexus_on {
