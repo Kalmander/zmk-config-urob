@@ -565,13 +565,18 @@
 			layers = <BASE TYPING>;
 		};
 
+		combo_quoter {
+			timeout-ms = <COMBO_TIMEOUT_2>;
+			key-positions = <RM3 RT3>;
+			bindings = <&quoter>; /* tristateið brotnar strax sem er bara gott, til að nota ýtiru á þorn takkann áður en ert búinn að sleppa comboinu */
+			layers = <BASE>;
+		};
+
 		combo_dqt {
 			timeout-ms = <COMBO_TIMEOUT_2>;
 			key-positions = <RM3 RT3>;
-			/* bindings = <&kp DQT>; */
-      /* tristateið brotnar strax sem er bara gott, til að nota ýtiru á þorn takkann áður en ert búinn að sleppa comboinu */
-			bindings = <&quoter>;
-			layers = <BASE TYPING NEXUS NEXUS_LOCK PULSE_LOCK TRICODER>;
+			bindings = <&kp DQT>;
+			layers = <TYPING NEXUS NEXUS_LOCK PULSE_LOCK TRICODER>;
 		};
 
 		combo_au {

@@ -5428,9 +5428,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">}</text>
 </g>
-<g transform="translate(924, 168)" class="key keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">;</text>
+<g transform="translate(924, 168)" class="key trans keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(980, 168)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -5481,9 +5480,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(924, 224)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Num</tspan><tspan x="0" dy="1.2em">+</tspan><tspan x="0" dy="1.2em">Nexus</tspan>
-</text>
+<text x="0" y="0" class="key tap">;</text>
 </g>
 <g transform="translate(980, 224)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -5581,8 +5578,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(252, 308)" class="key keypos-68">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Alt</text>
-<text x="0" y="24" class="key hold">sticky</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Num</tspan><tspan x="0" dy="1.2em">+</tspan><tspan x="0" dy="1.2em">Nexus</tspan>
+</text>
 </g>
 <g transform="translate(314, 347) rotate(20.0)" class="key keypos-69">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -6069,9 +6067,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">}</text>
 </g>
-<g transform="translate(924, 168)" class="key keypos-32">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">;</text>
+<g transform="translate(924, 168)" class="key trans keypos-32">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 </g>
 <g transform="translate(980, 168)" class="key trans keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -6118,9 +6115,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(924, 224)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Num</tspan><tspan x="0" dy="1.2em">Perma</tspan>
-</text>
+<text x="0" y="0" class="key tap">;</text>
 </g>
 <g transform="translate(980, 224)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -10050,20 +10045,24 @@ path.combo { stroke: #7f7f7f; }
 <text x="812" y="168" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-30">
+<rect rx="6" ry="6" x="798" y="155" width="28" height="26" class="combo"/>
+<text x="812" y="168" class="combo tap">\&quot;</text>
+</g>
+<g class="combo combopos-31">
 <rect rx="6" ry="6" x="238" y="155" width="28" height="26" class="combo"/>
 <text x="252" y="168" class="combo tap">au</text>
 </g>
-<g class="combo combopos-31">
+<g class="combo combopos-32">
 <rect rx="6" ry="6" x="182" y="155" width="28" height="26" class="combo"/>
 <text x="196" y="168" class="combo tap">eo</text>
 </g>
-<g class="combo combopos-32">
+<g class="combo combopos-33">
 <rect rx="6" ry="6" x="798" y="155" width="28" height="26" class="combo"/>
 <text x="812" y="168" class="combo tap">
 <tspan x="812" dy="-0.6em">&amp;kps</tspan><tspan x="812" dy="1.2em">…</tspan>
 </text>
 </g>
-<g class="combo combopos-33">
+<g class="combo combopos-34">
 <rect rx="6" ry="6" x="182" y="155" width="28" height="26" class="combo"/>
 <text x="196" y="168" class="combo tap">
 <tspan x="196" dy="-0.6em">&amp;kps</tspan><tspan x="196" dy="1.2em">…</tspan>
