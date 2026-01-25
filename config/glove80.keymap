@@ -353,7 +353,7 @@
 			
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &trans                                                  &to BASE  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &trans                                                  &cancel_tristate  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &bnexus &trans  &kp LC(BACKSPACE)             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
