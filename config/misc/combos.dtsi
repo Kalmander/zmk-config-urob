@@ -408,7 +408,7 @@
 			layers = <NUM_WORD_PERMA>; 
 		};
 		
-		combo_dotonbase_ae {
+		combo_dotonbase_oe {
 			timeout-ms = <COMBO_TIMEOUT_3>;
 			key-positions = <LN3 LT3>;
 			bindings = <&base_adapt>;
