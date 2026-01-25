@@ -172,7 +172,7 @@
 			bindings = <&kp K_CANCEL>, <&navigation_autolayer_gui NAV_WORD_GUI>;
 		};
 
-		nav_guishift_macro: nav_guishift_macro {
+		nav_guish: nav_guishift_macro {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
@@ -183,7 +183,7 @@
 		nav_gui: nav_gui {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&nav_gui_macro>, <&nav_guishift_macro>;
+			bindings = <&nav_gui_macro>, <&nav_guish>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
