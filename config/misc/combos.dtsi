@@ -583,7 +583,7 @@
 		};
 
 		combo_dqt2 {
-			timeout-ms = <COMBO_TIMEOUT_2>;
+			timeout-ms = <COMBO_TIMEOUT_3>;
 			key-positions = <RM2 RT2>;
 			bindings = <&kp DQT>;
 			layers = <BASE TYPING NEXUS NEXUS_LOCK PULSE_LOCK TRICODER>;
