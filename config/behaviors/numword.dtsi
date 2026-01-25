@@ -96,7 +96,7 @@
 			bindings = <&to NAV_WORD>, <&to BASE>, <&kp K_CANCEL>, <&to NUM_WORD_PERMA>;
 		};
 		
-		num_plus_nexus: num_plus_nexus {
+		numnex: num_plus_nexus {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			wait-ms = <0>;
