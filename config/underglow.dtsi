@@ -68,7 +68,7 @@
 	// Num row-2 accents (distinct from Nexus palette)
 	/* #define Num     0xff4da6 */
 	#define Num  0xedb228
-	#define NumSti  0x3cff9a
+	#define NumP  0x3cff9a
 	#define NumMod   0x6f7bff
 	
 	// Mouse row-6 accents (distinct palette)
@@ -315,10 +315,10 @@
 		NumWordPerm {
 			bindings = <
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                              &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug Num &ug ___ &ug ___ &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug Num &ug ___ &ug ___ &ug Num &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug Num &ug Num &ug Num &ug Num &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug NumP &ug NumP &ug NumP &ug NumP &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug NumP &ug ___ &ug ___ &ug NumP &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug NumP &ug ___ &ug ___ &ug NumP &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug NumP &ug NumP &ug NumP &ug NumP &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NUM_WORD_PERMA>;
