@@ -94,7 +94,7 @@
 		shift_enters: shift_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kpsk LS(ENTER) LSHIFT>, <&cto BASE>;
+				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
 				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -102,7 +102,7 @@
 		gui_enters: gui_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kpsk LG(ENTER) LGUI>, <&cto BASE>;
+				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
 				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -110,7 +110,7 @@
 		guishift_enters: guishift_enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kpsk LG(LS(ENTER)) LS(LGUI)>, <&cto BASE>;
+				bindings = <&to TRICODER>, <&kp LG(LS(ENTER))>, <&to BASE>;
 				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -183,35 +183,38 @@
 		tabber_normal: tabber_normal {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kp TAB>, <&cto BASE>;
-				ignored-key-positions = <LM1 LB1 _TAB _RSHIFT>;
+				bindings = <&to TRICODER>, <&kp TAB>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kpsk LS(TAB) LSHIFT>, <&cto BASE>;
-				ignored-key-positions = <LM1 LB1 _TAB _RSHIFT>;
+				/* bindings = <&to TRICODER>, <&kpsk LS(TAB) LSHIFT>, <&to BASE>; */
+				bindings = <&to TRICODER>, <&kp LS(TAB)>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kpsk LG(TAB) LGUI>, <&cto BASE>;
-				ignored-key-positions = <LM1 LB1 _TAB _RSHIFT>;
+				/* bindings = <&to TRICODER>, <&kpsk LG(TAB) LGUI>, <&cto BASE>; */
+				bindings = <&to TRICODER>, <&kp LG(TAB)>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		guishift_tabber: guishift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kpsk LG(LS(TAB)) LS(LGUI)>, <&cto BASE>;
-				ignored-key-positions = <LM1 LB1 _TAB _RSHIFT>;
+				/* bindings = <&to TRICODER>, <&kpsk LG(LS(TAB)) LS(LGUI)>, <&cto BASE>; */
+				bindings = <&to TRICODER>, <&kp LG(LS(TAB))>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		gui_shift_or_not_tab: gui_shift_or_not_tab {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
-			bindings = <&gui_tabber>, <&shift_tabber>;
+			bindings = <&gui_tabber>, <&guishift_tabber>;
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 		ns_tabber: ns_tabber {
@@ -290,7 +293,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp COLON>, <&to BASE>;
-				ignored-key-positions = <_ENTER _TAB _KEYREPEAT _NUMLEFT _NUMRIGHT LF2>;
+				ignored-key-positions = <_ENTER _TAB _KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				/* ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>; */
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
@@ -300,7 +303,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp SEMI>, <&to BASE>;
-				ignored-key-positions = <_ENTER _TAB _KEYREPEAT _NUMLEFT _NUMRIGHT LF2>;
+				ignored-key-positions = <_ENTER _TAB _KEYREPEAT _NUMLEFT _NUMRIGHT>;
 				/* ignored-key-positions = <_KEYREPEAT _NUMLEFT _NUMRIGHT>; */
 				ignored-layers = <TRICODER>;
 		};
