@@ -1,7 +1,7 @@
 / {
 	behaviors {
 
-    #define _DOT LB4
+    #define _RSHIFT RT1
     #define _PULSE LM1
     #define _NEXUS LB3
     #define _ENTER LB2
@@ -86,7 +86,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER>;
+				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -95,7 +95,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER>;
+				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -103,7 +103,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER>;
+				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -131,7 +131,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER LM2>;
+				ignored-key-positions = <_TAB _NEXUS _ENTER LM2>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -140,7 +140,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LS(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER LM2>;
+				ignored-key-positions = <_TAB _NEXUS _ENTER LM2>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -148,7 +148,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp LG(ENTER)>, <&to BASE>;
-				ignored-key-positions = <_DOT _NEXUS _ENTER LM2>;
+				ignored-key-positions = <_TAB _NEXUS _ENTER LM2>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;
 		};
@@ -170,21 +170,21 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		shift_tabber: shift_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TABBER>, <&kp LS(TAB)>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB>;
+				bindings = <&to TRICODER>, <&kp LS(TAB)>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		gui_tabber: gui_tab_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TABBER>, <&kp LG(TAB)>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB>;
+				bindings = <&to TRICODER>, <&kp LG(TAB)>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		ns_tabber: ns_tabber {
