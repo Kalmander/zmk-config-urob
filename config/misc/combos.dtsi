@@ -451,9 +451,15 @@
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PERMA NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
 		};
 		
+		combo_rightshiftgui {
+			timeout-ms = <COMBO_TIMEOUT_2>;
+			key-positions = <RT1 RT2>;
+			bindings = <&sk LS(RGUI)>;
+			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PERMA NUM_WORD_PLUS NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
+		};
+		
 		combo_leftctrl {
 			timeout-ms = <COMBO_TIMEOUT>;
-			/* key-positions = <LM1 LB1>; */
 			key-positions = <LB1 LB2>;
 			bindings = <&sk LCTRL>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
