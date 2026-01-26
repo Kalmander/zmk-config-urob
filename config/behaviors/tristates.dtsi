@@ -85,7 +85,7 @@
 		enters_normal: enter_stick {
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
-				bindings = <&to TRICODER>, <&kp ENTER>, <&cto BASE>;
+				bindings = <&to TRICODER>, <&kp ENTER>, <&to BASE>;
 				ignored-key-positions = <_TAB _NEXUS _ENTER _RSHIFT>;
 				ignored-layers = <TRICODER>;
         timeout-ms = <2000>;

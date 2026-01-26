@@ -386,7 +386,7 @@
 		};
 
 		combo_esc {
-			timeout-ms = <COMBO_TIMEOUT_2>;
+			timeout-ms = <COMBO_TIMEOUT_3>;
 			key-positions = <RM1 RB1>;
 			bindings = <&escaper>;
 			layers = <BASE TYPING NAV_WORD NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED NEXUS NEXUS_LOCK PULSE PULSE_LOCK TRICODER TABBER>; 
