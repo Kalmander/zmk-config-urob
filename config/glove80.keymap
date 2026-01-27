@@ -328,7 +328,7 @@
 			&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &kp LC(W)  &trans  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans  &bnexus                                               &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &bnexus &trans  &kp LC(W)             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 			&trans  &trans  &trans  &kp LC(LS(PG_UP))  &kp LC(LS(PG_DN))   &trans  &trans  &trans  &trans  &trans  &trans          &kp LC(TAB)  &kp LC(LS(TAB))  &trans  &trans  &trans
 			

@@ -30,7 +30,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(TAB)>, <&to BASE>;
-				ignored-key-positions = <_PULSE LF2 LF3 RF2 RF3 LM5 RM1>;
+				ignored-key-positions = <_PULSE LF2 LF3 RF2 RF3 LM5 LB1>;
 				ignored-layers = <TABBER>;
 		};
 
@@ -38,7 +38,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(LS(TAB))>, <&to BASE>;
-				ignored-key-positions = <_PULSE LF2 LF3 RF2 RF3 LM5 RM1>;
+				ignored-key-positions = <_PULSE LF2 LF3 RF2 RF3 LM5 LB1>;
 				ignored-layers = <TABBER>;
 		};
 
@@ -46,7 +46,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(W)>, <&to BASE>;
-				ignored-key-positions = <_NEXUS LF2 LF3 RF2 RF3 LM5 RM1>;
+				ignored-key-positions = <_NEXUS LF2 LF3 RF2 RF3 LM5 LB1>;
 				ignored-layers = <NEXUS TABBER>;
 		};
 
@@ -54,7 +54,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(LS(PG_DN))>, <&to BASE>;
-				ignored-key-positions = <LF2 LF3 RF2 RF3 LM5 RM1>;
+				ignored-key-positions = <LF2 LF3 RF2 RF3 LM5 LB1>;
 				ignored-layers = <TABBER>;
 		};
 
@@ -62,7 +62,7 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&cto TABBER>, <&kp LC(LS(PG_UP))>, <&to BASE>;
-				ignored-key-positions = <LF2 LF3 RF2 RF3 LM5 RM1>;
+				ignored-key-positions = <LF2 LF3 RF2 RF3 LM5 LB1>;
 				ignored-layers = <TABBER>;
 		};
 
