@@ -289,7 +289,7 @@
 			&trans  &trans   &trans      &trans     &trans    &trans                                                                               &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &trans   &trans
 			&trans  &ctrl_w  &kp U       &trans     &sticky_w &bpulse                                                                              &amp      &kp LPAR  &kp RPAR  &semi     &kp SEMI &grave
 			&trans  &numnex  &nexus_auto &sl NEXUS  &enters   &tabber  &kp UNDER  &trans     &to TYPING     &trans       &trans     &cd_word       &mouse    &qmark    &exclaim  &pipe     &trans   &trans
-			&trans  &trans   &trans      &trans     &trans    &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma  &kp INSERT  &sl FUNCTIONS            &gui_tab  &sgui_tab &trans    &trans   &trans
+			&trans  &trans   &trans      &trans     &trans             &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma  &kp INSERT  &sl FUNCTIONS          &gui_tab  &sgui_tab &trans    &trans   &trans
 
 			>;
 		};
@@ -338,12 +338,12 @@
 		Tricoder {
 			bindings = <
 			
-			&trans  &trans  &trans  &trans  &trans                                                                                        &trans       &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &trans       &key_repeat  &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans    &trans                                                                 &sk LSHIFT   &trans       &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &kp A     &bpulse                                                                &key_repeat  &trans       &trans  &trans  &trans  &trans
-			&trans  &trans  &kp TAB &bnexus &kp ENTER &kp BACKSPACE &trans  &trans  &trans       &trans      &trans  &trans    &kp ESC      &trans       &trans  &trans  &trans  &trans
-			&trans  &trans  &trans  &trans  &trans                  &kp TAB  &trans  &bnums_plus  &bnums_plus &kp LS(ENTER)  &trans                 &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                                                                                               &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans    &trans                                                                        &trans       &key_repeat  &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans    &trans                                                                        &sk LSHIFT   &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &kp A     &bpulse                                                                       &key_repeat  &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &kp TAB &bnexus &kp ENTER &kp BACKSPACE &trans  &trans  &trans        &trans      &trans  &trans        &kp ESC      &trans       &trans  &trans  &trans  &trans
+			&trans  &trans  &trans  &trans  &trans                  &kp TAB  &trans  &bnums_plus  &bnums_plus &kp LS(ENTER)  &trans              &trans       &trans  &trans  &trans  &trans
 			
 			>;
 		};

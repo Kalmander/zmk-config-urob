@@ -9951,19 +9951,19 @@ path.combo { stroke: #7f7f7f; }
 <text x="196" y="235" class="combo hold">sticky</text>
 </g>
 <g class="combo combopos-12">
-<rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
-<text x="728" y="196" class="combo tap">Gui</text>
-<text x="728" y="207" class="combo hold">sticky</text>
+<rect rx="6" ry="6" x="742" y="155" width="28" height="26" class="combo"/>
+<text x="756" y="168" class="combo tap">Gui</text>
+<text x="756" y="179" class="combo hold">sticky</text>
 </g>
 <g class="combo combopos-13">
+<rect rx="6" ry="6" x="714" y="127" width="28" height="26" class="combo"/>
+<text x="728" y="140" class="combo tap">Sft+Gui</text>
+<text x="728" y="151" class="combo hold">sticky</text>
+</g>
+<g class="combo combopos-14">
 <rect rx="6" ry="6" x="266" y="239" width="28" height="26" class="combo"/>
 <text x="280" y="252" class="combo tap">Ctrl</text>
 <text x="280" y="263" class="combo hold">sticky</text>
-</g>
-<g class="combo combopos-14">
-<rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
-<text x="196" y="112" class="combo tap">Ctrl</text>
-<text x="196" y="123" class="combo hold">sticky</text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="770" y="239" width="28" height="26" class="combo"/>
@@ -10045,8 +10045,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="812" y="168" class="combo tap">\&quot;</text>
 </g>
 <g class="combo combopos-31">
-<rect rx="6" ry="6" x="742" y="155" width="28" height="26" class="combo"/>
-<text x="756" y="168" class="combo tap">\&quot;</text>
+<rect rx="6" ry="6" x="714" y="183" width="28" height="26" class="combo"/>
+<text x="728" y="196" class="combo tap">\&quot;</text>
 </g>
 <g class="combo combopos-32">
 <rect rx="6" ry="6" x="238" y="155" width="28" height="26" class="combo"/>
