@@ -21,6 +21,13 @@
 			mods = <(MOD_LSFT|MOD_RSFT)>;
 		};
 
+		combo_au_ice_macro: combo_au_ice_macro {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&kps RA(A) U>, <&kps LS(RA(A)) U>;
+			mods = <(MOD_LSFT|MOD_RSFT)>;
+		};
+
 		combo_eo_macro: combo_eo_macro {
 			compatible = "zmk,behavior-mod-morph";
 			#binding-cells = <0>;
@@ -600,6 +607,13 @@
 			key-positions = <LM2 LT2>;
 			bindings = <&combo_au_macro>;
 			layers = <BASE TYPING>;
+		};
+		
+		combo_au_isl {
+			timeout-ms = <COMBO_TIMEOUT>;
+			key-positions = <LM2 LT2>;
+			bindings = <&combo_au_ice_macro>;
+			layers = <ICE>;
 		};
 		
 		combo_eo {
