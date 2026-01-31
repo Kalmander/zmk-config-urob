@@ -150,7 +150,9 @@
 			/* ak_sk { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp K>; }; */
 			ak_sf { trigger-keys = <S>; max-prior-idle-ms = <2000>; bindings = <&kp F>; };
 			ak_kr { trigger-keys = <K>; max-prior-idle-ms = <2000>; bindings = <&kp R>; };
-			ak_pj { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp J>; };
+			ak_pj { trigger-keys = <P>; max-prior-idle-ms = <2000>; bindings = <&kp J>; strict-modifiers; }; /* strict fyrir öð */
+			ak_lspj { trigger-keys = <LS(P)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; strict-modifiers; };
+			ak_rspj { trigger-keys = <RS(P)>; max-prior-idle-ms = <2000>; bindings = <&kp J>; strict-modifiers; };
 			ak_jp { trigger-keys = <J>; max-prior-idle-ms = <2000>; bindings = <&kp P>; };
 
 			/* ak_hj { trigger-keys = <H>; max-prior-idle-ms = <2000>; bindings = <&kp J>; }; */
