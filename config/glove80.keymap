@@ -12,11 +12,11 @@
 #include <input/processors.dtsi>
 
 #define BASE 0
-#define TYPING 1
-#define BASE_DOT 2
-#define NAV_WORD 3
-#define NAV_WORD_GUI 4
-#define NAV_WORD_ALT 5
+#define BASE_DOT 1
+#define NAV_WORD 2
+#define NAV_WORD_GUI 3
+#define NAV_WORD_ALT 4
+#define NAV_WORD_SHIFT 5
 #define NAV_WORD_CTRL 6
 #define NAV_WORD_SHIFT_CTRL 7
 #define NAV_WORD_SHIFT_GUI 8
@@ -71,19 +71,6 @@
       >;
 		};
 		
-		Typing {
-			bindings = <
-			
-			&scr_slow        &sk LSHIFT      &sk LALT      &sk LCTRL      &sk LGUI                                                                                                                            &scr_warp    &msc SCRL_DOWN &msc SCRL_UP &kp C_VOL_DN   &kp C_VOL_UP
-			&kp LBKT         &kp RBKT        &kp Q         &kp MINUS      &sk LCTRL      &key_repeat                                                                                    &key_repeat    &kp AT        &kp V          &kp Z        &kp K_CANCEL   &sk LC(LSHIFT)
-			&sk LC(LSHIFT)   &kp K_CANCEL    &kp Y         &kp O          &kp U          &shift_repeat                                                                                  &rshift_repeat &kp F        &kp D          &lorshift    &kp X          &none
-			&oo_ak           &kp W           &hml LALT I   &hml LSHIFT E  &hml LGUI A    &ae_ak                                                                                          &thorn_eth     &hmr RGUI H  &hmr RSHIFT T  &hmr LALT N  &kp P      &kp DQT
-			&kp SQT          &sl ICE         &kp DOT       &pulse         &kp COMMA      &backspace     &kp UNDER   &kp K_CANCEL  &sl FUNCTIONS   &nexus_auto &kp K_CANCEL    &kp R     &kp M          &kp K        &kp G          &kp B        &jl            &kp J
-      &magic MAGIC 0   &none           &kp FSLH      &kp LEFT       &kp RIGHT                     &kp SPACE   &hml LCTRL C  &sl NUM_WORD    &sl NUM_WORD   &hmr LCTRL S  &sl NEXUS                &kp DOWN     &kp UP         &kp AT       &none         &kp PSCRN
-			
-			>;
-		};
-
 		BaseDot {
 			bindings = <
 			
@@ -136,6 +123,19 @@
 			>;
 		};
 
+		NavWordShift {
+			bindings = <
+			
+			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LS(LEFT)  &kp LS(DOWN)   &kp LS(UP)     &kp LS(RIGHT)  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans  &trans         &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans          &trans         &trans  &trans     &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
+			
+			>;
+		};
+
 		NavWordCtrl {
 			bindings = <
 			
@@ -154,8 +154,8 @@
 			
 			&trans  &trans  &trans    &trans  &trans                                                                                &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
-			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &cut_base  &trans
-			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &trans                                                              &trans    &trans     &trans     &trans     &trans  &trans
+			&trans  &trans  &trans    &trans  &trans  &cnav                                                               &kp LS(LC(LEFT))  &kp LS(LC(DOWN))   &kp LS(LC(UP))     &kp LS(LC(RIGHT))  &trans  &cut_base
 			&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
 			&trans  &trans  &trans    &trans  &trans          &trans  &copy_base  &trans &trans  &trans  &trans              &trans     &trans     &trans     &trans  &trans
 			
@@ -274,7 +274,7 @@
 			&trans   &trans   &trans    &trans     &trans                                                                                                &trans     &trans      &trans    &trans  &trans
 			&trans   &trans   &trans    &trans     &kp LS(ENTER) &trans                                                                         &trans   &kp EXCL   &caret      &doller   &trans  &trans
 			&trans   &trans   &sk LCTRL &nav_guish &pulse_auto   &trans                                                                         &star    &plus      &slash      &equal    &trans  &trans
-			&vim     &capvim  &att      &nav_gui   &sk LGUI      &trans                                                                         &trans   &trans     &trans      &trans    &qu     &grave
+			&vim     &capvim  &att      &nav_gui   &nav_shift    &trans                                                                         &trans   &trans     &trans      &trans    &qu     &grave
 			&nav_alt &percent &pag      &sl NEXUS  &enters       &trans  &trans &nav_ctrlshift_macro &trans    &trans      &trans    &cbd_word  &bslash  &less      &greater    &hash     &trans  &trans
 			&trans   &trans   &trans    &trans     &trans                &nav_guictrl &nav_ctrl &bnums_perma   &bnums_perma &coolword &colon             &ctrl_tab  &sctrl_tab  &trans    &trans  &trans
 		
@@ -288,7 +288,7 @@
 			&trans  &trans   &trans      &trans     &kp LS(ENTER) &trans                                                                           &trans    &trans    &tilder   &kp FSLH  &trans   &trans
 			&trans  &trans   &trans      &trans     &trans    &trans                                                                               &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &trans   &trans
 			&trans  &ctrl_w  &kp U       &trans     &sticky_w &bpulse                                                                              &amp      &kp LPAR  &kp RPAR  &semi     &kp SEMI &grave
-			&trans  &numnex  &nexus_auto &sl NEXUS  &enters   &tabber  &kp UNDER  &trans     &to TYPING     &trans       &trans     &cd_word       &mouse    &qmark    &exclaim  &pipe     &trans   &trans
+			&trans  &numnex  &nexus_auto &sl NEXUS  &enters   &tabber  &kp UNDER  &trans     &trans         &trans       &trans     &cd_word       &mouse    &qmark    &exclaim  &pipe     &trans   &trans
 			&trans  &trans   &trans      &trans     &trans             &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma  &kp INSERT  &sl FUNCTIONS          &gui_tab  &sgui_tab &trans    &trans   &trans
 
 			>;
@@ -316,7 +316,7 @@
 			&trans  &trans     &trans    &trans     &kp LS(ENTER)  &trans                                                                          &kp TAB   &trans     &kp TILDE  &kp FSLH   &trans   &trans
 			&trans  &trans     &trans    &trans     &kp BSLH   &cancel_tristate                                                                    &kp LBKT  &kp RBKT   &kp LBRC   &kp RBRC   &trans &trans
 			&trans  &trans     &kp U     &kp SPACE  &kp COMMA  &bpulse                                                                             &kp AMPS  &kp LPAR   &kp RPAR   &kp SEMI   &kp SEMI &kp GRAVE
-			&trans  &kp AT     &kp DOT   &sl NEXUS  &enters    &kp BACKSPACE  &kp UNDER  &trans     &to TYPING    &trans       &trans     &trans   &cancel_tristate  &kp QMARK  &kp EXCL   &kp PIPE   &trans   &trans
+			&trans  &kp AT     &kp DOT   &sl NEXUS  &enters    &kp BACKSPACE  &kp UNDER  &trans     &trans        &trans       &trans     &trans   &cancel_tristate  &kp QMARK  &kp EXCL   &kp PIPE   &trans   &trans
 			&trans  &trans     &trans    &leftbase  &rightbase               &kp SPACE  &sk LCTRL  &bnums_perma   &bnums_perma &coolword  &kp COLON          &kp DOWN   &kp UP     &trans     &trans   &trans
 			
 			>;
@@ -368,7 +368,7 @@
 			&none  &none  &none     &none      &none     &none                                                                      &kp SLCK    &kp F10  &kp F11  &kp F12  &none  &none
 			&none  &to BASE &none   &none      &none     &none                                                                      &kp KP_NUM  &kp F7   &kp F8   &kp F9   &none  &none
 			&none  &none  &kp LALT  &kp LSHIFT &kp LGUI  &none                                                                      &kp CAPS    &kp F4   &kp F5   &kp F6   &none  &none
-			&none  &none  &none     &kp RSHIFT &kp LCTRL &kp DELETE &none  &to BASE &none   &kp C_BRI_DN  &to BASE      &kp C_BRI_UP   &to BASE    &kp F1   &kp F2   &kp F3   &none  &to TYPING
+			&none  &none  &none     &kp RSHIFT &kp LCTRL &kp DELETE &none  &to BASE &none   &kp C_BRI_DN  &to BASE      &kp C_BRI_UP   &to BASE    &kp F1   &kp F2   &kp F3   &none  &none
 			&none  &none  &kp LC(DELETE)     &none      &none             &none  &none  &none     &kp C_MUTE    &volume_down  &volume_up                 &kp C_PREV    &kp C_NEXT    &kp DELETE    &none  &to JOKER
 			
 			>;

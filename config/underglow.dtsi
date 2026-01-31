@@ -156,18 +156,6 @@
 			layer-id = <BASE>;
 		};
 		
-		Typing {
-			bindings = <
-			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___   &ug ___   &ug ___ &ug ___ &ug ___
-			&ug ___  &ug ___ &ug_cl ___ WHITE   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			>;
-			layer-id = <TYPING>;
-		};
-		
 		BaseDot {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
@@ -214,6 +202,18 @@
 			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
 			layer-id = <NAV_WORD_ALT>;
+		};
+		
+		NavWordShift {
+			bindings = <
+			&ug ___ &ug ___ &ug ___    &ug ___  &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ColNavWordAltRow4 &ug ColNavWordAltRow4  &ug ColNavWordAltRow4   &ug ColNavWordAltRow4   &ug ColNavWordAltRow4   &ug ColNavWordAltRow4                                                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___   &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___   &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___   &ug ___   &ug ___           &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			>;
+			layer-id = <NAV_WORD_SHIFT>;
 		};
 		
 		NavWordCtrl {

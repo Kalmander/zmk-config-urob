@@ -6,7 +6,7 @@
 				#binding-cells = <0>;
 				bindings = <&none>, <&tog_on_layer MOUSE_SLOW>, <&tog_off_layer MOUSE_SLOW>;
 				ignored-key-positions = <0 1 2 3 4 5 6 7 8 9>;
-				ignored-layers = <BASE TYPING MOUSE_SLOW>;
+				ignored-layers = <BASE MOUSE_SLOW>;
 		};
 
 		mouse_fast: mouse_fast {
@@ -14,7 +14,7 @@
 				#binding-cells = <0>;
 				bindings = <&none>, <&tog_on_layer MOUSE_FAST>, <&tog_off_layer MOUSE_FAST>;
 				ignored-key-positions = <0 1 2 3 4 5 6 7 8 9>;
-				ignored-layers = <BASE TYPING MOUSE_FAST>;
+				ignored-layers = <BASE MOUSE_FAST>;
 		};
 
 		mouse_warp: mouse_warp {
@@ -22,7 +22,7 @@
 				#binding-cells = <0>;
 				bindings = <&none>, <&tog_on_layer MOUSE_WARP>, <&tog_off_layer MOUSE_WARP>;
 				ignored-key-positions = <0 1 2 3 4 5 6 7 8 9>;
-				ignored-layers = <BASE TYPING MOUSE_WARP>;
+				ignored-layers = <BASE MOUSE_WARP>;
 		};
 
 		scroll_speed_down: scroll_speed_down {
@@ -37,7 +37,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_SLOW>, <&msc SCRL_UP>, <&tog_off_layer MOUSE_SLOW>;
 				ignored-key-positions = <2 3>;
-				ignored-layers = <BASE TYPING MOUSE_SLOW>;
+				ignored-layers = <BASE MOUSE_SLOW>;
 		};
 
 		scrdn_slow: scrdn_slow {
@@ -45,7 +45,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_SLOW>, <&msc SCRL_DOWN>, <&tog_off_layer MOUSE_SLOW>;
 				ignored-key-positions = <2 3>;
-				ignored-layers = <BASE TYPING MOUSE_SLOW>;
+				ignored-layers = <BASE MOUSE_SLOW>;
 		};
 
 		scrup_fast: scrup_fast {
@@ -53,7 +53,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_FAST>, <&msc SCRL_UP>, <&tog_off_layer MOUSE_FAST>;
 				ignored-key-positions = <0 1>;
-				ignored-layers = <BASE TYPING MOUSE_FAST>;
+				ignored-layers = <BASE MOUSE_FAST>;
 		};
 
 		scrdn_fast: scrdn_fast {
@@ -61,7 +61,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_FAST>, <&msc SCRL_DOWN>, <&tog_off_layer MOUSE_FAST>;
 				ignored-key-positions = <0 1>;
-				ignored-layers = <BASE TYPING MOUSE_FAST>;
+				ignored-layers = <BASE MOUSE_FAST>;
 		};
 
 		scrup_warp: scrup_warp {
@@ -69,7 +69,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_WARP>, <&msc SCRL_UP>, <&tog_off_layer MOUSE_WARP>;
 				ignored-key-positions = <0 1>;
-				ignored-layers = <BASE TYPING MOUSE_WARP>;
+				ignored-layers = <BASE MOUSE_WARP>;
 		};
 
 		scrdn_warp: scrdn_warp {
@@ -77,7 +77,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_WARP>, <&msc SCRL_DOWN>, <&tog_off_layer MOUSE_WARP>;
 				ignored-key-positions = <0 1>;
-				ignored-layers = <BASE TYPING MOUSE_WARP>;
+				ignored-layers = <BASE MOUSE_WARP>;
 		};
 
 
@@ -86,7 +86,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_SLOW>, <&none>, <&tog_off_layer MOUSE_SLOW>;
 				ignored-key-positions = <6 7>;
-				ignored-layers = <BASE TYPING MOUSE_SLOW>;
+				ignored-layers = <BASE MOUSE_SLOW>;
 		};
 
 		scr_warp: scr_warp {
@@ -94,7 +94,7 @@
 				#binding-cells = <0>;
 				bindings = <&tog_on_layer MOUSE_WARP>, <&none>, <&tog_off_layer MOUSE_WARP>;
 				ignored-key-positions = <6 7>;
-				ignored-layers = <BASE TYPING MOUSE_WARP>;
+				ignored-layers = <BASE MOUSE_WARP>;
 		};
 
 
