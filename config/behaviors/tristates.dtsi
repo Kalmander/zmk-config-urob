@@ -466,7 +466,6 @@
 				bindings = <&to BACKSPACER>, <&kp LC(BACKSPACE)>, <&to BASE>;
 				ignored-key-positions = <RT1 LB1>;
 				ignored-layers = <BACKSPACER>;
-        timeout-ms = <6000>;
 		};
 
 		doller: doller {
