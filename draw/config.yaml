@@ -25,6 +25,7 @@ parse_config:
     "&enterer": "Enter"
     "&combo_eo_macro": "eo"
     "&base_adapt": "æ ."
+    "&nums_plus": "Num Plus"
     "&num_adapt": "."
     "&num_plus_or_perma": "Num"
     "&cancel_dot": "Cancel (Dot)"
