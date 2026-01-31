@@ -12,6 +12,7 @@ parse_config:
   raw_binding_map:
     "&kp DQT": \"
     "&combo_dv_macro": "dv"
+    "&combo_dv_macro": "dv"
     "&combo_sh_macro": "sh"
     "&combo_gt_macro": "gt"
     "&combo_rk_macro": "rk"
@@ -79,7 +80,9 @@ parse_config:
     "&colon": ":"
     "&semi": ";"
     "&camps": "&"
+    "&nav_shift": Nav Shift
     "&nav_guishift_macro": Nav Gui Shift
+    "&nav_guish": Nav Gui Shift
     "&nav_guictrl": Nav Gui Ctrl
     "&nav_alt": Nav Alt
     "&nav_ctrl": Nav Ctrl

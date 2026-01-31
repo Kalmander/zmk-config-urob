@@ -9,6 +9,9 @@
                        /* LCTRL RCTRL */
                        /*  LALT RALT */
       >; /* sleppa mods því nota pulse til að komast í þá og hef modded nav anyway (plús örvarnar á base) */
+      /* ókei nánar tiltekið um mods: vilt að gui og alt canceli af því comboin overlappa við örvarnar */
+      /* ah nei já vilt líklega líka að ctrl canceli út af stöffi eins og ctrl t,  */
+      /* on held það sleppi að leyfa shift, þó ég sé kominn með shift nav */
 			ignore-numbers;
 			/* ignore-modifiers; */
 		};
