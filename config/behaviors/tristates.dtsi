@@ -590,6 +590,14 @@
 			tap-ms = <0>;
 			bindings = <&to MOUSE>, <&to BASE>;
 		};
+		cancel_tristate_shift: cancel_tristate_and_sk_shift {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+      /* ATH þetta verður að vera lshift EKKI rshift til að ctrl backspacer virki rétt */
+			bindings = <&to MOUSE>, <&to BASE>, <&sk LSHIFT>;
+		};
 		
 
 
