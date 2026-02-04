@@ -400,7 +400,7 @@
 		};
 		
 		combo_tab {
-			timeout-ms = <COMBO_TIMEOUT_3>;
+			timeout-ms = <COMBO_TIMEOUT>;
 			/* key-positions = <RT2 RT3>; */
 			key-positions = <LM1 LB1>;
 			bindings = <&tabber>;
