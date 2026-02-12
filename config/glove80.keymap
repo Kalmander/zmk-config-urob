@@ -285,7 +285,7 @@
 			bindings = <
 			
 			&trans  &trans   &trans      &trans     &trans                                                                                                   &trans    &trans    &trans    &j_lock  &f_lock
-			&trans  &trans   &trans      &trans     &kp LS(ENTER) &trans                                                                           &trans    &trans    &tilder   &kp FSLH  &trans   &trans
+			&trans  &trans   &trans      &trans     &kp LS(ENTER) &trans                                                                           &trans    &trans    &tilder   &slashbase  &trans   &trans
 			&trans  &trans   &trans      &trans     &trans    &trans                                                                               &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &trans   &trans
 			&trans  &ctrl_w  &kp LS(RIGHT) &trans   &sticky_w &bpulse                                                                              &amp      &kp LPAR  &kp RPAR  &semi     &kp SEMI &grave
 			&trans  &numnex  &nexus_auto &sl NEXUS  &enters   &tabber  &kp UNDER  &trans     &trans         &trans       &trans     &cd_word       &mouse    &qmark    &exclaim  &pipe     &trans   &trans
@@ -313,7 +313,7 @@
 			bindings = <
 			
 			&trans    &trans   &trans    &trans     &trans                                                                                                   &trans     &trans      &trans    &trans  &trans
-			&trans  &trans     &trans    &trans     &kp LS(ENTER)  &trans                                                                          &kp TAB   &trans     &kp TILDE  &kp FSLH   &trans   &trans
+			&trans  &trans     &trans    &trans     &kp LS(ENTER)  &trans                                                                          &kp TAB   &trans     &kp TILDE  &slashbase &trans   &trans
 			&trans  &trans     &trans    &trans     &kp BSLH   &cancel_tristate                                                                    &kp LBKT  &kp RBKT   &kp LBRC   &kp RBRC   &trans &trans
 			&trans  &trans     &kp U     &kp SPACE  &kp COMMA  &bpulse                                                                             &kp AMPS  &kp LPAR   &kp RPAR   &kp SEMI   &kp SEMI &kp GRAVE
 			&trans  &kp AT     &kp DOT   &sl NEXUS  &enters    &kp BACKSPACE  &kp UNDER  &trans     &trans        &trans       &trans     &trans   &cancel_tristate  &kp QMARK  &kp EXCL   &kp PIPE   &trans   &trans
