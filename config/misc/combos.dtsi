@@ -416,20 +416,19 @@
 			layers = <NUM_WORD_PERMA>; 
 		};
 		
-		combo_dotonbase_oe {
+		combo_oe {
 			timeout-ms = <COMBO_TIMEOUT_3>;
 			key-positions = <LN3 LT3>;
-			bindings = <&base_adapt>;
+			bindings = <&kp RA(P)>;
 			layers = <BASE>;
 		};
 		
-		combo_dotonnum {
-			timeout-ms = <COMBO_TIMEOUT_2>;
-			/* key-positions = <LM2 LB2>; */
-			key-positions = <LT2 LT3>;
-			bindings = <&num_adapt>;
-			layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED>;
-		};
+		/* combo_dotonnum { */
+		/* 	timeout-ms = <COMBO_TIMEOUT_2>; */
+		/* 	key-positions = <LT2 LT3>; */
+		/* 	bindings = <&num_adapt>; */
+		/* 	layers = <NUM_WORD NUM_WORD_PLUS NUM_WORD_PERMA NUM_WORD_MODDED>; */
+		/* }; */
 		
 		combo_enter {
 			timeout-ms = <COMBO_TIMEOUT_2>;
