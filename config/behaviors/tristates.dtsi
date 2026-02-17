@@ -407,6 +407,15 @@
         timeout-ms = <2000>;
 		};
 
+		dotter: dotter {
+				compatible = "zmk,behavior-tri-state";
+				#binding-cells = <0>;
+				bindings = <&to TRICODER>, <&kp DOT>, <&to BASE>;
+				ignored-key-positions = <_KEYREPEAT>;
+				ignored-layers = <TRICODER>;
+        timeout-ms = <2000>;
+		};
+
 		clear_again_base: clear_again_base {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
