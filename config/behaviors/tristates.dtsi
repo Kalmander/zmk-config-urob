@@ -467,14 +467,20 @@
 		/* 		ignored-key-positions = <RT1 LB1>; */
 		/*       timeout-ms = <6000>; */
 		/* }; */
-    /* Þetta kostar mig layer miðað við hitt implementation EN */
-    /* leyfir mér að toggle-a af með því að ýta aftur á RSHIFT */
+    /* Auto-layer variant is more reliable than tri-state here. */
+    ctrl_bs_autolayer: ctrl_bs_autolayer {
+			compatible = "zmk,behavior-auto-layer";
+			#binding-cells = <1>;
+      continue-list = <BACKSPACE>;
+      ignore-modifiers;
+    };
+
 		ctrl_bs: ctrl_backspace {
-				compatible = "zmk,behavior-tri-state";
-				#binding-cells = <0>;
-				bindings = <&to BACKSPACER>, <&kp LC(BACKSPACE)>, <&to BASE>;
-				ignored-key-positions = <RT1 LB1>;
-				ignored-layers = <BACKSPACER>;
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+      wait-ms = <0>;
+      tap-ms = <0>;
+      bindings = <&kp LC(BACKSPACE)>, <&ctrl_bs_autolayer BACKSPACER>;
 		};
 
 		doller: doller {
@@ -604,8 +610,17 @@
 			#binding-cells = <0>;
 			wait-ms = <0>;
 			tap-ms = <0>;
-      /* ATH þetta verður að vera lshift EKKI rshift til að ctrl backspacer virki rétt */
+      /* Keep legacy behavior for existing tri-state paths. */
 			bindings = <&to MOUSE>, <&to BASE>, <&sk LSHIFT>;
+		};
+
+		cancel_backspacer: cancel_backspacer {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			wait-ms = <0>;
+			tap-ms = <0>;
+      /* Dedicated Backspacer exit: return to BASE and clear auto-layer state in sync. */
+			bindings = <&to MOUSE>, <&to BASE>, <&ctrl_bs_autolayer BACKSPACER>;
 		};
 		
 
