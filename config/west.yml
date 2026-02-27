@@ -12,7 +12,8 @@ manifest:
       # remote: moergo-sc
       # revision: main
       # revision: v25.04-beta.1
-      revision: rgb-layer-25.08 # 25.08 hjá moergo svarar til v0.3.0 hjá zmk
+      # revision: rgb-layer-25.08 # 25.08 hjá moergo svarar til v0.3.0 hjá zmk
+      revision: 8aeaaa66fbb4b94948c8763e06f1920ab0b69480
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
