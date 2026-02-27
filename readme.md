@@ -1,6 +1,4 @@
-# Kalman's Glove80 ZMK Config
-
-This is my personal ZMK workspace for a MoErgo Glove80.
+# The Gauntlet of Kal'manathas
 
 This repo started from urob's config, but this README documents how this
 specific repo works today.
