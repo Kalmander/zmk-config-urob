@@ -706,9 +706,9 @@
 		 70           73                 \
 		  71 54   55 72
 
-			>;
-				ignored-layers = <BASE NAV_WORD NUM_WORD NUM_WORD_PLUS PULSE PULSE_LOCK NEXUS NEXUS_LOCK TRICODER>;
-		};
+				>;
+					ignored-layers = <BASE NAV_WORD NUM_WORD NUM_WORD_PLUS ICE BACKSPACER PULSE PULSE_LOCK NEXUS NEXUS_LOCK TRICODER>;
+			};
 
 		coolword: cool_caps_word {
 			compatible = "zmk,behavior-tri-state";
