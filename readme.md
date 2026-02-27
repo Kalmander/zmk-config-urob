@@ -23,8 +23,8 @@ most reproducible path.
 ### 1. Clone
 
 ```bash
-git clone https://github.com/kalmander/zmk-config-urob.git
-cd zmk-config-urob
+git clone https://github.com/kalmander/gauntlet-of-kalmanathas.git
+cd gauntlet-of-kalmanathas
 ```
 
 ### 2. Enter the dev environment
