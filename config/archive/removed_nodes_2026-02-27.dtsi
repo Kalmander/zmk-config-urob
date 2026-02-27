@@ -1,0 +1,84 @@
+/*
+ * Archive of removed nodes from cleanup on 2026-02-27.
+ *
+ * Purpose:
+ * - Keep old experimental definitions available for reference/recovery.
+ * - Avoid keeping unused nodes active in the main config tree.
+ *
+ * Important:
+ * - This file is not included by the build.
+ * - All snippets are intentionally commented out.
+ */
+
+/* -------------------------------------------------------------------------- */
+/* Removed from config/behaviors/tristates.dtsi                               */
+/* -------------------------------------------------------------------------- */
+
+/* cancel_tristate_shift: cancel_tristate_and_sk_shift { */
+/* 	compatible = "zmk,behavior-macro"; */
+/* 	#binding-cells = <0>; */
+/* 	wait-ms = <0>; */
+/* 	tap-ms = <0>; */
+/* 	bindings = <&to MOUSE>, <&to BASE>, <&sk LSHIFT>; */
+/* }; */
+
+/* -------------------------------------------------------------------------- */
+/* Removed from config/behaviors/adaptive_keys.dtsi                           */
+/* -------------------------------------------------------------------------- */
+
+/* thorn_err_eth1: thorn_err_eth1 { */
+/* 	compatible = "zmk,behavior-adaptive-key"; */
+/* 	#binding-cells = <0>; */
+/* 	bindings = <&kp R>; */
+/*  */
+/* 	ak_thorn_eth1 { trigger-keys = <SPACE>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth2 { trigger-keys = <LSHIFT>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth3 { trigger-keys = <RSHIFT>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth4 { trigger-keys = <LPAR>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth5 { trigger-keys = <LBRC>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth6 { trigger-keys = <LBKT>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth7 { trigger-keys = <LT>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth8 { trigger-keys = <DQT>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth9 { trigger-keys = <SQT>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth10 { trigger-keys = <ENTER>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth11 { trigger-keys = <K_CANCEL>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth12 { trigger-keys = <MINUS>; bindings = <&kp RA(T)>; }; */
+/* 	ak_thorn_eth13 { trigger-keys = <UNDERSCORE>; bindings = <&kp RA(T)>; }; */
+/* }; */
+
+/* thorn_err_eth2: thorn_err_eth2 { */
+/* 	compatible = "zmk,behavior-adaptive-key"; */
+/* 	#binding-cells = <0>; */
+/* 	bindings = <&kp RA(D)>; */
+/*  */
+/* 	ak_reth { trigger-keys = <RA(T)>; bindings = <&kp R>; }; */
+/* }; */
+
+/* n1_adapt: n1_adapt { */
+/* 	compatible = "zmk,behavior-adaptive-key"; */
+/* 	#binding-cells = <0>; */
+/* 	bindings = <&kp N1>; */
+/*  */
+/* 	ak_13 { trigger-keys = <N1>; max-prior-idle-ms = <2000>; bindings = <&kp N3>; }; */
+/* }; */
+
+/* n0_adapt: n0_adapt { */
+/* 	compatible = "zmk,behavior-adaptive-key"; */
+/* 	#binding-cells = <0>; */
+/* 	bindings = <&kp N0>; */
+/*  */
+/* 	ak_08 { trigger-keys = <N0>; max-prior-idle-ms = <2000>; bindings = <&kp N8>; }; */
+/* }; */
+
+/* -------------------------------------------------------------------------- */
+/* Removed from config/misc/combos.dtsi                                       */
+/* -------------------------------------------------------------------------- */
+
+/* thorn_err_eth: thorn_err_eth { */
+/* 	compatible = "zmk,behavior-macro"; */
+/* 	#binding-cells = <0>; */
+/* 	wait-ms = <0>; */
+/* 	tap-ms = <0>; */
+/* 	bindings = <&thorn_err_eth1 &thorn_err_eth2>; */
+/* }; */
+

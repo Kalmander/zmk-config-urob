@@ -214,15 +214,6 @@
 			bindings = <&kp LS(C) &kp LS(K) &kp SPACE>;
 		};
 
-		thorn_err_eth: thorn_err_eth {
-			compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings = <&thorn_err_eth1 &thorn_err_eth2>;
-		};
-
-
 		epulse_lower: epulse_lower {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
