@@ -21,7 +21,10 @@ manifest:
     - name: zmk-adaptive-key
       remote: urob
       # revision: v0.2.1
-      revision: v0.3.0
+      # revision: v0.3.0
+      # Pinned past v0.3.0 to include adaptive-key fixes from main
+      # (notably dead-key roll handling and global last-key state).
+      revision: 18cc2795a64ccb394d1a7b7d591a5bfe3f25924b
     - name: zmk-tri-state
       remote: urob
       # revision: v0.2.1
