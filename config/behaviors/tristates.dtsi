@@ -184,7 +184,8 @@
 				compatible = "zmk,behavior-tri-state";
 				#binding-cells = <0>;
 				bindings = <&to TRICODER>, <&kp TAB>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
+				/* ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>; */
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		shift_tabber: shift_tab_stick {
@@ -192,7 +193,8 @@
 				#binding-cells = <0>;
 				/* bindings = <&to TRICODER>, <&kpsk LS(TAB) LSHIFT>, <&to BASE>; */
 				bindings = <&to TRICODER>, <&kp LS(TAB)>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
+				/* ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>; */
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		gui_tabber: gui_tab_stick {
@@ -200,7 +202,8 @@
 				#binding-cells = <0>;
 				/* bindings = <&to TRICODER>, <&kpsk LG(TAB) LGUI>, <&cto BASE>; */
 				bindings = <&to TRICODER>, <&kp LG(TAB)>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
+				/* ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>; */
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		guishift_tabber: guishift_tab_stick {
@@ -208,7 +211,8 @@
 				#binding-cells = <0>;
 				/* bindings = <&to TRICODER>, <&kpsk LG(LS(TAB)) LS(LGUI)>, <&cto BASE>; */
 				bindings = <&to TRICODER>, <&kp LG(LS(TAB))>, <&to BASE>;
-				ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>;
+				/* ignored-key-positions = <_KEYREPEAT LM1 LB1 _TAB _RSHIFT>; */
+				ignored-key-positions = <_KEYREPEAT LM1 LB1 _RSHIFT>;
 				ignored-layers = <TRICODER>;
 		};
 		gui_shift_or_not_tab: gui_shift_or_not_tab {
