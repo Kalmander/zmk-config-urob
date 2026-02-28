@@ -272,7 +272,7 @@
 			bindings = <
 			
 			&trans   &trans   &trans    &trans     &trans                                                                                                &trans     &trans      &trans    &trans  &trans
-			&trans   &trans   &trans    &trans     &kp LS(ENTER) &trans                                                                         &trans   &kp EXCL   &caret      &doller   &trans  &trans
+			&trans   &trans   &trans    &nav_guishctrl     &kp LS(ENTER) &trans                                                                         &trans   &kp EXCL   &caret      &doller   &trans  &trans
 			&trans   &trans   &nav_guish &nav_gui &pulse_auto  &trans                                                                         &star    &plus      &slash      &equal    &trans  &trans
 			&vim     &capvim  &att      &sk LCTRL   &nav_shift    &trans                                                                         &trans   &trans     &trans      &trans    &qu     &grave
 			&nav_alt &percent &pag      &sl NEXUS  &enters       &ctrl_w  &trans &nav_ctrlshift_macro &trans    &trans      &trans    &cbd_word  &bslash  &less      &greater    &hash     &trans  &trans
