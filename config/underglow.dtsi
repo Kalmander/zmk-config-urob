@@ -492,16 +492,16 @@
 			layer-id = <MOUSE_WARP>;
 		};
 		
-		MouseFast {
+		IcelandicHold {
 			bindings = <
 			&ug ___ &ug ___ &ug ___   &ug ___   &ug ___                                                                    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                          &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___ &ug MouF &ug MouF &ug MouF  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___           &ug MouF &ug MouF &ug MouF &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ColIce &ug ColIce &ug ColIce &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ColIce &ug ColIce &ug ColIce &ug ___                                       &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___   &ug ___ &ug ___  &ug ___  &ug ___   &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+			&ug ___ &ug ___  &ug ___    &ug ___   &ug ___           &ug ___  &ug ___  &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
 			>;
-			layer-id = <MOUSE_FAST>;
+			layer-id = <ICE_HOLD>;
 		};
 		
 		MoergoMagic {

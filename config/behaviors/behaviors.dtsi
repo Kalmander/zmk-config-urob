@@ -345,6 +345,18 @@
 				flavor = "tap-preferred";
 				bindings = <&kp>, <&sl>;
 			};
+
+			ice_slmo: ice_slmo {
+				compatible = "zmk,behavior-hold-tap";
+				#binding-cells = <2>;
+				// Tap => one-shot ICE.
+				// Hold => only when another key is pressed before timeout, and only for vowel positions.
+				flavor = "tap-unless-interrupted";
+				tapping-term-ms = <280>;
+				quick-tap-ms = <0>;
+				hold-trigger-key-positions = <LM2 LM3 LM4 LT2 LT3 LT4>;
+				bindings = <&mo>, <&sl>;
+			};
 	};
 	
 	macros {

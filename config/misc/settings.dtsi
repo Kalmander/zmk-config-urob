@@ -43,30 +43,26 @@
 &mmv_input_listener {
 	MouseSlow {
 		layers = <MOUSE_SLOW>;
-		input-processors = <&zip_xy_scaler 1 5>;
+		process-next;
+		input-processors = <&zip_xy_scaler 1 4>;
 	};
 	MouseWarp {
 		layers = <MOUSE_WARP>;
-		input-processors = <&zip_xy_scaler 10 1>;
-	};
-	MouseFast {
-		layers = <MOUSE_FAST>;
-		input-processors = <&zip_xy_scaler 3 1>;
+		process-next;
+		input-processors = <&zip_xy_scaler 12 1>;
 	};
 };
 
 &msc_input_listener {
 	MouseSlow {
 		layers = <MOUSE_SLOW>;
-		input-processors = <&zip_scroll_scaler 1 5>;
+		process-next;
+		input-processors = <&zip_scroll_scaler 1 4>;
 	};
 	MouseWarp {
 		layers = <MOUSE_WARP>;
-		input-processors = <&zip_scroll_scaler 18 1>;
-	};
-	MouseFast {
-		layers = <MOUSE_FAST>;
-		input-processors = <&zip_scroll_scaler 4 1>;
+		process-next;
+		input-processors = <&zip_scroll_scaler 16 1>;
 	};
 };
 
